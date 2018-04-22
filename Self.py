@@ -18,16 +18,16 @@ from bs4 import BeautifulSoup
 from threading import Thread
 
 cl = CYBERTK.LINE()
-cl.login(token="Ero6Q92iUY9eTY4fuX0f.H37LYk2v0tba8asW9G323W.bZ8c6oj49D63H0O01f1CGk4cQPIcrf0j322mpeiv4pE=")
+cl.login(token="EsFy3B9Uc0sN0Op4UnPe.4uWnRTJU51yT+/CjXTyHBG.YiaxIqSoSV2x0LQrqNPwXQB+f8m+ljfHofT4yQvJrWc=")
 cl.loginResult()
 
-#cybertk = CYBERTK.LINE()
-#cybertk.login(token="ErdyyKBdoDUthtdfN5t8.B+z/CDMzggwUKzZXmvXWsa.uH+jmfJzFpL+VfvKD/cytw0KEYtgBw0RJOIMdbyyxmM=")
-#cybertk.loginResult()
+cybertk = CYBERTK.LINE()
+cybertk.login(token="EsIgDTLzWCCP0vaWKCpb.drkXjI9kC7gz45kx2rUb2W.BREqzLd1atgEYr7lfEPwWnbgQqSDcBeD1jcOmepAhDY=")
+cybertk.loginResult()
 
-#cybertk = CYBERTK.LINE()
-#cybertk.login(token="EreI8YYovJNse8T2ch7a.sXqhCpHf0bRi6jS0iLLyUG.qGfQZVEObEvEuGjC89SHnspSi9H3ff5jzLu/NnsF4sI=")
-#cybertk.loginResult()
+cybertk = CYBERTK.LINE()
+cybertk.login(token="ErcObyeuALAHalKB9dw3.eXGEKA8y87MQtoFvPFGwuW.EY8lKdsLeg4/6K7am2SPaFOHXBQuRVaKmlYGrWIsLgo=")
+cybertk.loginResult()
 
 kc = kk = ki = kl = cl
 
@@ -64,7 +64,7 @@ _▒______▓▒▓▒▓▒▓▒▓▒▓▒▓▒▓▒▓▒▓▒▓▒▓�
 ▒▒▒▒__▓▒▓▒▓▒▓▒▓▒▓▒▓▒▓▒▓▒▓▒▓▒▓▒▓▒▓▒▓▒▓▒▓▒▓
 ▒▒▒__▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
 \n
-Login śєʟғ =====[̴̘̤̫̼̗̯͎̲̈́͑͑̅̂͊͐̾͆ͥͮ͟͠C̼̟̭͓͚̮̝͙̲̞͇̻̦̟͔̫ͯ̿̅̈́ͬ͊̓ͦ͌̌͗̆ͮ͂̍̚]̣̅[҉̷͚͓̼͉̮̲̟̝̬̱̱͖̅ͩ̎̀̈́̋ͣ̂̋ͩͮ̉Ý̢̲͇͚̦̻̰̻ͫ̍ͮ̅]̨̃ͯͨ̂̋ͪ̅[̪̲̘̲ͣͯ̑̅̑̎B̧̡̘͇͚̹̖̣͎̼̖̫̲̦̪̹̺̠̰̓ͬ̿̅ͯ̓̾́̍͋ͤ̒͋̆̈́̽̅][̧̤̘̮̪̮̟̠̻̲̘̻̥̲̬̑̍͑̐̈̓̿̅̐͑̿ͬͮͫE̪̙͖̫̲̣̥͔̊͒̏͊̅ͦͯ̋]̠̖̭̳͇̑́̉̆͛[͇̩̘̖͕̝̖̱̲̌ͧ̉ͬ̅̃̀ͦ̎́̅ͫ̉̇ͬ̏͋͝Ŗ̛̱̜̭͔̻̼̦̲̅]͡[͔͓̳̪̟͔̲̤̮͙̅ͬͫ̌̊͑ͧ́ͪṬ̢͍͇̠̩̮̪͇͚̱̫̖̲͆͛ͧ̃̓̑̅̎̓ͦ̈́̊̿̎̋̉̑̍̓̌]͆̈́ͧ͛[̯͉̬͈̱̪̞̺̥̲̲͕̗̆́̀̅̎̊ͬͭͧ͌͌̔ͭ̀͌͞ͅK̨̦̣͉͍͚̳̗̫̘͉̲ͣ͗̄̅̚͞]====
+Login śєʟғ =====[̴̘̤̫̼̗̯͎̲̈́͑͑̅̂͊͐̾͆ͥͮ͟͠WONG-JOMBANG]====
 """
 reload(sys)
 sys.setdefaultencoding('utf-8')
@@ -76,7 +76,7 @@ helpMessage ="""
 ║════════════════
 ║[̲̅C̲̅][̲̅o̲̅][̲̅m̲̅][̲̅m̲̅][̲̅a̲̅][̲̅n̲̅][̲̅d̲̅] [̲̅M̲̅][̲̅e̲̅][̲̅n̲̅][̲̅ü̲̅]
 ║
-║=====[̴̘̤̫̼̗̯͎̲̈́͑͑̅̂͊͐̾͆ͥͮ͟͠C̼̟̭͓͚̮̝͙̲̞͇̻̦̟͔̫ͯ̿̅̈́ͬ͊̓ͦ͌̌͗̆ͮ͂̍̚]̣̅[҉̷͚͓̼͉̮̲̟̝̬̱̱͖̅ͩ̎̀̈́̋ͣ̂̋ͩͮ̉Ý̢̲͇͚̦̻̰̻ͫ̍ͮ̅]̨̃ͯͨ̂̋ͪ̅[̪̲̘̲ͣͯ̑̅̑̎B̧̡̘͇͚̹̖̣͎̼̖̫̲̦̪̹̺̠̰̓ͬ̿̅ͯ̓̾́̍͋ͤ̒͋̆̈́̽̅][̧̤̘̮̪̮̟̠̻̲̘̻̥̲̬̑̍͑̐̈̓̿̅̐͑̿ͬͮͫE̪̙͖̫̲̣̥͔̊͒̏͊̅ͦͯ̋]̠̖̭̳͇̑́̉̆͛[͇̩̘̖͕̝̖̱̲̌ͧ̉ͬ̅̃̀ͦ̎́̅ͫ̉̇ͬ̏͋͝Ŗ̛̱̜̭͔̻̼̦̲̅]͡[͔͓̳̪̟͔̲̤̮͙̅ͬͫ̌̊͑ͧ́ͪṬ̢͍͇̠̩̮̪͇͚̱̫̖̲͆͛ͧ̃̓̑̅̎̓ͦ̈́̊̿̎̋̉̑̍̓̌]͆̈́ͧ͛[̯͉̬͈̱̪̞̺̥̲̲͕̗̆́̀̅̎̊ͬͭͧ͌͌̔ͭ̀͌͞ͅK̨̦̣͉͍͚̳̗̫̘͉̲ͣ͗̄̅̚͞]====
+║=====[̴̘̤̫̼̗̯͎̲̈́͑͑̅̂͊͐̾͆ͥͮ͟͠WONG-JOMBANG]====
 ║
 ║[̲̅G̲̅][̲̅e̲̅][̲̅n̲̅][̲̅e̲̅][̲̅r̲̅][̲̅a̲̅][̲̅l̲̅] [̲̅s̲̅][̲̅e̲̅][̲̅t̲̅][̲̅t̲̅][̲̅i̲̅][̲̅n̲̅][̲̅g̲̅]
 ║               〘/Protect〙
@@ -101,7 +101,7 @@ helpMessage ="""
 ║❂͜͡☆➣ /Setting [ċȏṃṃѧṅԀ śєṭṭıṅɢ]
 ╠
 ║❂͜͡☆➣ ċяєѧṭȏя :
-║❂͜͡☆➣ line://ti/p/~cybertk0
+║❂͜͡☆➣ line://ti/p/~yudi_std02
 ╠
 ║❂͜͡☆➣ ṿєяśıȏṅ :
 ║=❂͜͡☆➣ 1.7.5ɞєṭѧ
@@ -118,7 +118,7 @@ helpMessage ="""
 protectMessage ="""
 ║śєʟғ Protect
 ║
-║=====[̴̘̤̫̼̗̯͎̲̈́͑͑̅̂͊͐̾͆ͥͮ͟͠C̼̟̭͓͚̮̝͙̲̞͇̻̦̟͔̫ͯ̿̅̈́ͬ͊̓ͦ͌̌͗̆ͮ͂̍̚]̣̅[҉̷͚͓̼͉̮̲̟̝̬̱̱͖̅ͩ̎̀̈́̋ͣ̂̋ͩͮ̉Ý̢̲͇͚̦̻̰̻ͫ̍ͮ̅]̨̃ͯͨ̂̋ͪ̅[̪̲̘̲ͣͯ̑̅̑̎B̧̡̘͇͚̹̖̣͎̼̖̫̲̦̪̹̺̠̰̓ͬ̿̅ͯ̓̾́̍͋ͤ̒͋̆̈́̽̅][̧̤̘̮̪̮̟̠̻̲̘̻̥̲̬̑̍͑̐̈̓̿̅̐͑̿ͬͮͫE̪̙͖̫̲̣̥͔̊͒̏͊̅ͦͯ̋]̠̖̭̳͇̑́̉̆͛[͇̩̘̖͕̝̖̱̲̌ͧ̉ͬ̅̃̀ͦ̎́̅ͫ̉̇ͬ̏͋͝Ŗ̛̱̜̭͔̻̼̦̲̅]͡[͔͓̳̪̟͔̲̤̮͙̅ͬͫ̌̊͑ͧ́ͪṬ̢͍͇̠̩̮̪͇͚̱̫̖̲͆͛ͧ̃̓̑̅̎̓ͦ̈́̊̿̎̋̉̑̍̓̌]͆̈́ͧ͛[̯͉̬͈̱̪̞̺̥̲̲͕̗̆́̀̅̎̊ͬͭͧ͌͌̔ͭ̀͌͞ͅK̨̦̣͉͍͚̳̗̫̘͉̲ͣ͗̄̅̚͞]====
+║=====[̴̘̤̫̼̗̯͎̲̈́͑͑̅̂͊͐̾͆ͥͮ͟͠WONG-JOMBANG]====
 ║
 ║❂͜͡☆➣ qr on/oғғ
 ║❂͜͡☆➣ gυeѕт on/oғғ
@@ -128,7 +128,7 @@ protectMessage ="""
 ║❂͜͡☆➣ cancel on/oғғ
 ╠
 ║❂͜͡☆➣ ċяєѧṭȏя :
-║❂͜͡☆➣ line://ti/p/~cybertk0
+║❂͜͡☆➣ line://ti/p/~yudi_std02
 ╠
 ║❂͜͡☆➣ ṿєяśıȏṅ :
 ║❂͜͡☆➣ 1.7.5ɞєṭѧ
@@ -145,7 +145,7 @@ protectMessage ="""
 socmedMessage ="""
 ║śєʟғ Socmed
 ║
-║=====[̴̘̤̫̼̗̯͎̲̈́͑͑̅̂͊͐̾͆ͥͮ͟͠C̼̟̭͓͚̮̝͙̲̞͇̻̦̟͔̫ͯ̿̅̈́ͬ͊̓ͦ͌̌͗̆ͮ͂̍̚]̣̅[҉̷͚͓̼͉̮̲̟̝̬̱̱͖̅ͩ̎̀̈́̋ͣ̂̋ͩͮ̉Ý̢̲͇͚̦̻̰̻ͫ̍ͮ̅]̨̃ͯͨ̂̋ͪ̅[̪̲̘̲ͣͯ̑̅̑̎B̧̡̘͇͚̹̖̣͎̼̖̫̲̦̪̹̺̠̰̓ͬ̿̅ͯ̓̾́̍͋ͤ̒͋̆̈́̽̅][̧̤̘̮̪̮̟̠̻̲̘̻̥̲̬̑̍͑̐̈̓̿̅̐͑̿ͬͮͫE̪̙͖̫̲̣̥͔̊͒̏͊̅ͦͯ̋]̠̖̭̳͇̑́̉̆͛[͇̩̘̖͕̝̖̱̲̌ͧ̉ͬ̅̃̀ͦ̎́̅ͫ̉̇ͬ̏͋͝Ŗ̛̱̜̭͔̻̼̦̲̅]͡[͔͓̳̪̟͔̲̤̮͙̅ͬͫ̌̊͑ͧ́ͪṬ̢͍͇̠̩̮̪͇͚̱̫̖̲͆͛ͧ̃̓̑̅̎̓ͦ̈́̊̿̎̋̉̑̍̓̌]͆̈́ͧ͛[̯͉̬͈̱̪̞̺̥̲̲͕̗̆́̀̅̎̊ͬͭͧ͌͌̔ͭ̀͌͞ͅK̨̦̣͉͍͚̳̗̫̘͉̲ͣ͗̄̅̚͞]====
+║=====[̴̘̤̫̼̗̯͎̲̈́͑͑̅̂͊͐̾͆ͥͮ͟͠WONG-JOMBANG]====
 ║
 ║❂͜͡☆➣ wιĸι [тeхт]
 ║❂͜͡☆➣ ιg [тeхт]
@@ -160,7 +160,7 @@ socmedMessage ="""
 ║❂͜͡☆➣ ѕay [тeхт]
 ╠
 ║❂͜͡☆➣ ċяєѧṭȏя :
-║❂͜͡☆➣ line://ti/p/~cybertk0
+║❂͜͡☆➣ line://ti/p/~yudi_std02
 ╠
 ║❂͜͡☆➣ ṿєяśıȏṅ :
 ║❂͜͡☆➣ 1.7.5ɞєṭѧ
@@ -177,7 +177,7 @@ socmedMessage ="""
 translateMessage ="""
 ║śєʟғ Translate
 ║
-║=====[̴̘̤̫̼̗̯͎̲̈́͑͑̅̂͊͐̾͆ͥͮ͟͠C̼̟̭͓͚̮̝͙̲̞͇̻̦̟͔̫ͯ̿̅̈́ͬ͊̓ͦ͌̌͗̆ͮ͂̍̚]̣̅[҉̷͚͓̼͉̮̲̟̝̬̱̱͖̅ͩ̎̀̈́̋ͣ̂̋ͩͮ̉Ý̢̲͇͚̦̻̰̻ͫ̍ͮ̅]̨̃ͯͨ̂̋ͪ̅[̪̲̘̲ͣͯ̑̅̑̎B̧̡̘͇͚̹̖̣͎̼̖̫̲̦̪̹̺̠̰̓ͬ̿̅ͯ̓̾́̍͋ͤ̒͋̆̈́̽̅][̧̤̘̮̪̮̟̠̻̲̘̻̥̲̬̑̍͑̐̈̓̿̅̐͑̿ͬͮͫE̪̙͖̫̲̣̥͔̊͒̏͊̅ͦͯ̋]̠̖̭̳͇̑́̉̆͛[͇̩̘̖͕̝̖̱̲̌ͧ̉ͬ̅̃̀ͦ̎́̅ͫ̉̇ͬ̏͋͝Ŗ̛̱̜̭͔̻̼̦̲̅]͡[͔͓̳̪̟͔̲̤̮͙̅ͬͫ̌̊͑ͧ́ͪṬ̢͍͇̠̩̮̪͇͚̱̫̖̲͆͛ͧ̃̓̑̅̎̓ͦ̈́̊̿̎̋̉̑̍̓̌]͆̈́ͧ͛[̯͉̬͈̱̪̞̺̥̲̲͕̗̆́̀̅̎̊ͬͭͧ͌͌̔ͭ̀͌͞ͅK̨̦̣͉͍͚̳̗̫̘͉̲ͣ͗̄̅̚͞]====
+║=====[̴̘̤̫̼̗̯͎̲̈́͑͑̅̂͊͐̾͆ͥͮ͟͠WONG-JOMBANG]====
 ║════════════════
 ║❂͜͡☆➣ тr-ιd = ιndoneѕιa
 ║❂͜͡☆➣ тr-мy = мyanмar
@@ -194,7 +194,7 @@ translateMessage ="""
 ║❂͜͡☆➣ тr-нy = arмenιan
 ╠
 ║❂͜͡☆➣ ċяєѧṭȏя :
-║❂͜͡☆➣ line://ti/p/~cybertk0
+║❂͜͡☆➣ line://ti/p/~yudi_std02
 ╠
 ║❂͜͡☆➣ ṿєяśıȏṅ :
 ║❂͜͡☆➣ 1.7.5ɞєṭѧ
@@ -211,7 +211,7 @@ translateMessage ="""
 botMessage ="""
 ║śєʟғ Bot
 ║
-║=====[̴̘̤̫̼̗̯͎̲̈́͑͑̅̂͊͐̾͆ͥͮ͟͠C̼̟̭͓͚̮̝͙̲̞͇̻̦̟͔̫ͯ̿̅̈́ͬ͊̓ͦ͌̌͗̆ͮ͂̍̚]̣̅[҉̷͚͓̼͉̮̲̟̝̬̱̱͖̅ͩ̎̀̈́̋ͣ̂̋ͩͮ̉Ý̢̲͇͚̦̻̰̻ͫ̍ͮ̅]̨̃ͯͨ̂̋ͪ̅[̪̲̘̲ͣͯ̑̅̑̎B̧̡̘͇͚̹̖̣͎̼̖̫̲̦̪̹̺̠̰̓ͬ̿̅ͯ̓̾́̍͋ͤ̒͋̆̈́̽̅][̧̤̘̮̪̮̟̠̻̲̘̻̥̲̬̑̍͑̐̈̓̿̅̐͑̿ͬͮͫE̪̙͖̫̲̣̥͔̊͒̏͊̅ͦͯ̋]̠̖̭̳͇̑́̉̆͛[͇̩̘̖͕̝̖̱̲̌ͧ̉ͬ̅̃̀ͦ̎́̅ͫ̉̇ͬ̏͋͝Ŗ̛̱̜̭͔̻̼̦̲̅]͡[͔͓̳̪̟͔̲̤̮͙̅ͬͫ̌̊͑ͧ́ͪṬ̢͍͇̠̩̮̪͇͚̱̫̖̲͆͛ͧ̃̓̑̅̎̓ͦ̈́̊̿̎̋̉̑̍̓̌]͆̈́ͧ͛[̯͉̬͈̱̪̞̺̥̲̲͕̗̆́̀̅̎̊ͬͭͧ͌͌̔ͭ̀͌͞ͅK̨̦̣͉͍͚̳̗̫̘͉̲ͣ͗̄̅̚͞]====
+║=====[̴̘̤̫̼̗̯͎̲̈́͑͑̅̂͊͐̾͆ͥͮ͟͠WONG-JOMBANG]====
 ║
 ║> nĸ [naмe]
 ║> vĸ [naмe]
@@ -228,7 +228,7 @@ botMessage ="""
 ║> мe
 ╠
 ║> ċяєѧṭȏя :
-║=> line://ti/p/~cybertk0
+║=> line://ti/p/~yudi_std02
 ╠
 ║> ṿєяśıȏṅ :
 ║=> 1.7.5ɞєṭѧ
@@ -245,7 +245,7 @@ botMessage ="""
 settingMessage ="""
 ║śєʟғ Setting
 ║
-║=====[̴̘̤̫̼̗̯͎̲̈́͑͑̅̂͊͐̾͆ͥͮ͟͠C̼̟̭͓͚̮̝͙̲̞͇̻̦̟͔̫ͯ̿̅̈́ͬ͊̓ͦ͌̌͗̆ͮ͂̍̚]̣̅[҉̷͚͓̼͉̮̲̟̝̬̱̱͖̅ͩ̎̀̈́̋ͣ̂̋ͩͮ̉Ý̢̲͇͚̦̻̰̻ͫ̍ͮ̅]̨̃ͯͨ̂̋ͪ̅[̪̲̘̲ͣͯ̑̅̑̎B̧̡̘͇͚̹̖̣͎̼̖̫̲̦̪̹̺̠̰̓ͬ̿̅ͯ̓̾́̍͋ͤ̒͋̆̈́̽̅][̧̤̘̮̪̮̟̠̻̲̘̻̥̲̬̑̍͑̐̈̓̿̅̐͑̿ͬͮͫE̪̙͖̫̲̣̥͔̊͒̏͊̅ͦͯ̋]̠̖̭̳͇̑́̉̆͛[͇̩̘̖͕̝̖̱̲̌ͧ̉ͬ̅̃̀ͦ̎́̅ͫ̉̇ͬ̏͋͝Ŗ̛̱̜̭͔̻̼̦̲̅]͡[͔͓̳̪̟͔̲̤̮͙̅ͬͫ̌̊͑ͧ́ͪṬ̢͍͇̠̩̮̪͇͚̱̫̖̲͆͛ͧ̃̓̑̅̎̓ͦ̈́̊̿̎̋̉̑̍̓̌]͆̈́ͧ͛[̯͉̬͈̱̪̞̺̥̲̲͕̗̆́̀̅̎̊ͬͭͧ͌͌̔ͭ̀͌͞ͅK̨̦̣͉͍͚̳̗̫̘͉̲ͣ͗̄̅̚͞]====
+║=====[̴̘̤̫̼̗̯͎̲̈́͑͑̅̂͊͐̾͆ͥͮ͟͠WONG-JOMBANG]====
 ║═
 ║❂͜͡☆➣ ѕeт
 ║❂͜͡☆➣ тag on/oғғ
@@ -260,7 +260,7 @@ settingMessage ="""
 ║❂͜͡☆➣ nleave on/oғғ
 ╠
 ║❂͜͡☆➣ ċяєѧṭȏя :
-║❂͜͡☆➣ line://ti/p/~cybertk0
+║❂͜͡☆➣ line://ti/p/~yudi_std02
 ╠
 ║❂͜͡☆➣ ṿєяśıȏṅ :
 ║❂͜͡☆➣ 1.7.5ɞєṭѧ
@@ -277,14 +277,14 @@ settingMessage ="""
 giftMessage ="""
 ║śєʟғ Gift
 ║
-║=====[̴̘̤̫̼̗̯͎̲̈́͑͑̅̂͊͐̾͆ͥͮ͟͠C̼̟̭͓͚̮̝͙̲̞͇̻̦̟͔̫ͯ̿̅̈́ͬ͊̓ͦ͌̌͗̆ͮ͂̍̚]̣̅[҉̷͚͓̼͉̮̲̟̝̬̱̱͖̅ͩ̎̀̈́̋ͣ̂̋ͩͮ̉Ý̢̲͇͚̦̻̰̻ͫ̍ͮ̅]̨̃ͯͨ̂̋ͪ̅[̪̲̘̲ͣͯ̑̅̑̎B̧̡̘͇͚̹̖̣͎̼̖̫̲̦̪̹̺̠̰̓ͬ̿̅ͯ̓̾́̍͋ͤ̒͋̆̈́̽̅][̧̤̘̮̪̮̟̠̻̲̘̻̥̲̬̑̍͑̐̈̓̿̅̐͑̿ͬͮͫE̪̙͖̫̲̣̥͔̊͒̏͊̅ͦͯ̋]̠̖̭̳͇̑́̉̆͛[͇̩̘̖͕̝̖̱̲̌ͧ̉ͬ̅̃̀ͦ̎́̅ͫ̉̇ͬ̏͋͝Ŗ̛̱̜̭͔̻̼̦̲̅]͡[͔͓̳̪̟͔̲̤̮͙̅ͬͫ̌̊͑ͧ́ͪṬ̢͍͇̠̩̮̪͇͚̱̫̖̲͆͛ͧ̃̓̑̅̎̓ͦ̈́̊̿̎̋̉̑̍̓̌]͆̈́ͧ͛[̯͉̬͈̱̪̞̺̥̲̲͕̗̆́̀̅̎̊ͬͭͧ͌͌̔ͭ̀͌͞ͅK̨̦̣͉͍͚̳̗̫̘͉̲ͣ͗̄̅̚͞]====
+║=====[̴̘̤̫̼̗̯͎̲̈́͑͑̅̂͊͐̾͆ͥͮ͟͠WONG-JOMBANG]====
 
 ║❂͜͡☆➣ gιғт
 ║❂͜͡☆➣ gιғт 1
 ║❂͜͡☆➣ gιғт 2
 ║❂͜͡☆➣ gιғт 3
 ║❂͜͡☆➣ ċяєѧṭȏя :
-║❂͜͡☆➣ line://ti/p/~cybertk0
+║❂͜͡☆➣ line://ti/p/~yudi_std02
 ╠
 ║❂͜͡☆➣ ṿєяśıȏṅ :
 ║❂͜͡☆➣ 1.7.5ɞєṭѧ
@@ -301,7 +301,7 @@ giftMessage ="""
 stealMessage ="""
 ║śєʟғ Steal
 ║
-║=====[̴̘̤̫̼̗̯͎̲̈́͑͑̅̂͊͐̾͆ͥͮ͟͠C̼̟̭͓͚̮̝͙̲̞͇̻̦̟͔̫ͯ̿̅̈́ͬ͊̓ͦ͌̌͗̆ͮ͂̍̚]̣̅[҉̷͚͓̼͉̮̲̟̝̬̱̱͖̅ͩ̎̀̈́̋ͣ̂̋ͩͮ̉Ý̢̲͇͚̦̻̰̻ͫ̍ͮ̅]̨̃ͯͨ̂̋ͪ̅[̪̲̘̲ͣͯ̑̅̑̎B̧̡̘͇͚̹̖̣͎̼̖̫̲̦̪̹̺̠̰̓ͬ̿̅ͯ̓̾́̍͋ͤ̒͋̆̈́̽̅][̧̤̘̮̪̮̟̠̻̲̘̻̥̲̬̑̍͑̐̈̓̿̅̐͑̿ͬͮͫE̪̙͖̫̲̣̥͔̊͒̏͊̅ͦͯ̋]̠̖̭̳͇̑́̉̆͛[͇̩̘̖͕̝̖̱̲̌ͧ̉ͬ̅̃̀ͦ̎́̅ͫ̉̇ͬ̏͋͝Ŗ̛̱̜̭͔̻̼̦̲̅]͡[͔͓̳̪̟͔̲̤̮͙̅ͬͫ̌̊͑ͧ́ͪṬ̢͍͇̠̩̮̪͇͚̱̫̖̲͆͛ͧ̃̓̑̅̎̓ͦ̈́̊̿̎̋̉̑̍̓̌]͆̈́ͧ͛[̯͉̬͈̱̪̞̺̥̲̲͕̗̆́̀̅̎̊ͬͭͧ͌͌̔ͭ̀͌͞ͅK̨̦̣͉͍͚̳̗̫̘͉̲ͣ͗̄̅̚͞]====
+║=====[̴̘̤̫̼̗̯͎̲̈́͑͑̅̂͊͐̾͆ͥͮ͟͠WONG-JOMBANG]====
 ║
 ║❂͜͡☆➣ geтnaмe @
 ║❂͜͡☆➣ geтвιo @
@@ -318,7 +318,7 @@ stealMessage ="""
 ║❂͜͡☆➣ мyвacĸυp
 ╠
 ║❂͜͡☆➣ ċяєѧṭȏя :
-║❂͜͡☆➣ line://ti/p/~cybertk0
+║❂͜͡☆➣ line://ti/p/~yudi_std02
 ╠
 ║❂͜͡☆➣ ṿєяśıȏṅ :
 ║❂͜͡☆➣ 1.7.5ɞєṭѧ
@@ -340,8 +340,8 @@ Dmid = kl.getProfile().mid
 #Emid = cybertk.getProfile().mid
 
 Bots=[mid,Amid,Bmid,Cmid]
-admin=["u877ee5c8ad95d13040f004b0f60df6df"]
-creator=["u877ee5c8ad95d13040f004b0f60df6df"]
+admin=["u6b34b703cbc5fc83cd1e5b6832a05352"]
+creator=["u6b34b703cbc5fc83cd1e5b6832a05352"]
 wait = {
     'contact':False,
     'autoJoin':True,
@@ -356,13 +356,13 @@ wait = {
 💥🔥AUTO ꧁꧂[̲̅B̲̅][̲̅O̲̅][̲̅T̲̅]꧁꧂ FRIEND🔥💥
 		
 		
-=====[̴̘̤̫̼̗̯͎̲̈́͑͑̅̂͊͐̾͆ͥͮ͟͠C̼̟̭͓͚̮̝͙̲̞͇̻̦̟͔̫ͯ̿̅̈́ͬ͊̓ͦ͌̌͗̆ͮ͂̍̚]̣̅[҉̷͚͓̼͉̮̲̟̝̬̱̱͖̅ͩ̎̀̈́̋ͣ̂̋ͩͮ̉Ý̢̲͇͚̦̻̰̻ͫ̍ͮ̅]̨̃ͯͨ̂̋ͪ̅[̪̲̘̲ͣͯ̑̅̑̎B̧̡̘͇͚̹̖̣͎̼̖̫̲̦̪̹̺̠̰̓ͬ̿̅ͯ̓̾́̍͋ͤ̒͋̆̈́̽̅][̧̤̘̮̪̮̟̠̻̲̘̻̥̲̬̑̍͑̐̈̓̿̅̐͑̿ͬͮͫE̪̙͖̫̲̣̥͔̊͒̏͊̅ͦͯ̋]̠̖̭̳͇̑́̉̆͛[͇̩̘̖͕̝̖̱̲̌ͧ̉ͬ̅̃̀ͦ̎́̅ͫ̉̇ͬ̏͋͝Ŗ̛̱̜̭͔̻̼̦̲̅]͡[͔͓̳̪̟͔̲̤̮͙̅ͬͫ̌̊͑ͧ́ͪṬ̢͍͇̠̩̮̪͇͚̱̫̖̲͆͛ͧ̃̓̑̅̎̓ͦ̈́̊̿̎̋̉̑̍̓̌]͆̈́ͧ͛[̯͉̬͈̱̪̞̺̥̲̲͕̗̆́̀̅̎̊ͬͭͧ͌͌̔ͭ̀͌͞ͅK̨̦̣͉͍͚̳̗̫̘͉̲ͣ͗̄̅̚͞]==== ☆
+=====[̴̘̤̫̼̗̯͎̲̈́͑͑̅̂͊͐̾͆ͥͮ͟͠WONG-JOMBANG]==== ☆
 		
-Support By ~ ҳ̸Ҳ̸ҳ Сўв∝я тҝ ҳ̸Ҳ̸ҳ
+Support By ~ yudi_std02
 		
 ✯==== Creator ====✯
 		
-⇩    [̲̅İ̲̅][̲̅l̲̅][̲̅e̲̅][̲̅t̲̅][̲̅i̲̅][̲̅ş̲̅][̲̅i̲̅][̲̅m̲̅]   ⇩
+⇩    wahyudi   ⇩
 
 ⇩★ Blog Sitemiz ★⇩
 
@@ -395,7 +395,7 @@ https://forum.ayyildiz.org/uye/cybertk.293440/
 ➤live:c026956865cff967		
 """,    
     "lang":"JP",
-    "comment":"Thanks For Add ☆ TK  B̴̡̛͈̖̺͖̙̝̩̞̐̂̀͂̏̚͟͠O̊̑̾͘T Ç̵͔̟̫̰̮̺̟̥̂̋̂͋͐͛͑̔̚̚O̷̧̺̠̰̳̿́͆̕̕͠ͅ N̶͖̜̻̰͍̮̼̒́̐̑͒́̕ͅŢ̢̯̱͕̠͙̤̙̄̂͗̊̈́̕R̶̛̙̩̱̗̯͌̈͆̆Ơ̴̡͈̖̺͖̙̝̩̞̐̂̀͂̏̚͟͠L̸̡̩̣̲̣̜̊̑̾̾͊̃͘͜ͅ  ☆\n\n\Support By ~ ҳ̸Ҳ̸ҳ Сўв∝я тҝ ҳ̸Ҳ̸ҳ\n\n✯==== Creator ====✯\n\nhttp://line.me/ti/p/~cybertk0",
+    "comment":"Thanks For Add ☆ wahyudi  ☆\n\n\Support By ~ ҳ̸Ҳ̸ҳ wong-jombang ҳ̸Ҳ̸ҳ\n\n✯==== Creator ====✯\n\nhttp://line.me/ti/p/~yudi_std02",
     "commentOn":True,
     "commentBlack":{},
     "wblack":False,
@@ -2136,7 +2136,7 @@ def bot(op):
 
 #-----------------------------------------------
 
-            elif msg.text in ["All join","Join"]:
+            elif msg.text in ["All join","Masuk"]:
 				if msg.from_ in admin:
 							G = cl.getGroup(msg.to)
 							ginfo = cl.getGroup(msg.to)
@@ -2157,7 +2157,7 @@ def bot(op):
 							G.preventJoinByTicket(G)
 							ki.updateGroup(G)
 
-            elif msg.text in ["Ghost join"]:
+            elif msg.text in ["Ghost1"]:
 				if msg.from_ in admin:
 					X = cl.getGroup(msg.to)
 					X.preventJoinByTicket = False
@@ -2198,7 +2198,7 @@ def bot(op):
 							G.preventJoinByTicket = True
 							kc.updateGroup(G)
 #-----------------------------------------------
-            elif msg.text in ["Out","out"]:
+            elif msg.text in ["Out","Moleh"]:
 				if msg.from_ in admin:
 					if msg.toType == 2:
 						ginfo = cl.getGroup(msg.to)
@@ -2208,7 +2208,7 @@ def bot(op):
 							kc.leaveGroup(msg.to)
 						except:
 							pass
-            elif msg.text in ["Ghost bye"]:
+            elif msg.text in ["Ghost0"]:
 				if msg.from_ in admin:
 					if msg.toType == 2:
 						ginfo = cl.getGroup(msg.to)
@@ -2284,7 +2284,7 @@ def bot(op):
 						gs = ki.getGroup(msg.to)
 						gs = kk.getGroup(msg.to)
 						gs = kc.getGroup(msg.to)
-						cl.sendText(msg.to,"[Ȼyber | τK  в̴̡̛͈̖̺͖̙̝̩̞̐̂̀͂̏̚͟͠σ̊̑̾͘т║")
+						cl.sendText(msg.to,"[wong-jombang")
 						#kk.sendText(msg.to,"..")
 						targets = []
 						for g in gs.members:
@@ -2500,12 +2500,12 @@ def bot(op):
             elif msg.text.lower() == 'TK2':
               if msg.from_ in admin:
                 msg.contentType = 13
-                msg.contentMetadata = {'mid': "u6a66b6b389d27052f7c8ac0bdc2cee7e',"}
+                msg.contentMetadata = {'mid': "u0d12b1262f4a73b199e39297d91b81db',"}
                 cl.sendMessage(msg)
 								
             elif msg.text in ["Attack"]:
                 msg.contentType = 13
-                msg.contentMetadata = {'mid': "u6a66b6b389d27052f7c8ac0bdc2cee7e',"}
+                msg.contentMetadata = {'mid': "u0d12b1262f4a73b199e39297d91b81db',"}
                 ki.sendMessage(msg)
                 ki.sendMessage(msg)
                 ki.sendMessage(msg)
@@ -2585,11 +2585,11 @@ def bot(op):
 					ki.sendText(msg.to,(bctxt))
             elif msg.text in ["/Creator"]:
 					msg.contentType = 13
-					msg.contentMetadata = {'mid': "u6a66b6b389d27052f7c8ac0bdc2cee7e"}
+					msg.contentMetadata = {'mid': "u0d12b1262f4a73b199e39297d91b81db"}
 					cl.sendText(msg.to,"MyCreator")
 					ki.sendMessage(msg)
 					msg.contentType = 13
-					msg.contentMetadata = {'mid': "u6a66b6b389d27052f7c8ac0bdc2cee7e"}
+					msg.contentMetadata = {'mid': "u0d12b1262f4a73b199e39297d91b81db"}
 					kk.sendText(msg.to,"MyCreator")
 					ki.sendText(msg.to,"ya!!")
 					ki.sendMessage(msg)
@@ -3930,13 +3930,13 @@ Min- - - - - - - - - - - -●Max
 💥🔥AUTO ꧁꧂[̲̅B̲̅][̲̅O̲̅][̲̅T̲̅]꧁꧂ FRIEND🔥💥
 		
 		
-=====[̴̘̤̫̼̗̯͎̲̈́͑͑̅̂͊͐̾͆ͥͮ͟͠C̼̟̭͓͚̮̝͙̲̞͇̻̦̟͔̫ͯ̿̅̈́ͬ͊̓ͦ͌̌͗̆ͮ͂̍̚]̣̅[҉̷͚͓̼͉̮̲̟̝̬̱̱͖̅ͩ̎̀̈́̋ͣ̂̋ͩͮ̉Ý̢̲͇͚̦̻̰̻ͫ̍ͮ̅]̨̃ͯͨ̂̋ͪ̅[̪̲̘̲ͣͯ̑̅̑̎B̧̡̘͇͚̹̖̣͎̼̖̫̲̦̪̹̺̠̰̓ͬ̿̅ͯ̓̾́̍͋ͤ̒͋̆̈́̽̅][̧̤̘̮̪̮̟̠̻̲̘̻̥̲̬̑̍͑̐̈̓̿̅̐͑̿ͬͮͫE̪̙͖̫̲̣̥͔̊͒̏͊̅ͦͯ̋]̠̖̭̳͇̑́̉̆͛[͇̩̘̖͕̝̖̱̲̌ͧ̉ͬ̅̃̀ͦ̎́̅ͫ̉̇ͬ̏͋͝Ŗ̛̱̜̭͔̻̼̦̲̅]͡[͔͓̳̪̟͔̲̤̮͙̅ͬͫ̌̊͑ͧ́ͪṬ̢͍͇̠̩̮̪͇͚̱̫̖̲͆͛ͧ̃̓̑̅̎̓ͦ̈́̊̿̎̋̉̑̍̓̌]͆̈́ͧ͛[̯͉̬͈̱̪̞̺̥̲̲͕̗̆́̀̅̎̊ͬͭͧ͌͌̔ͭ̀͌͞ͅK̨̦̣͉͍͚̳̗̫̘͉̲ͣ͗̄̅̚͞]==== ☆
+=====[̴̘̤̫̼̗̯͎̲̈́͑͑̅̂͊͐̾͆ͥͮ͟͠WONG-JOMBANG]==== ☆
 		
-Support By ~ ҳ̸Ҳ̸ҳ Сўв∝я тҝ ҳ̸Ҳ̸ҳ
+Support By ~ yudi_std02
 		
 ✯==== Creator ====✯
 		
-⇩    [̲̅İ̲̅][̲̅l̲̅][̲̅e̲̅][̲̅t̲̅][̲̅i̲̅][̲̅ş̲̅][̲̅i̲̅][̲̅m̲̅]   ⇩
+⇩    [̲̅w][̲̅a][̲̅h][̲̅y][̲̅u][̲̅d][̲̅i]   ⇩
 
 ⇩★ Blog Sitemiz ★⇩
 
@@ -3958,7 +3958,7 @@ https://cybertk-blog.wixsite.com/cybe...
 
 ⇩★ Line İletişim  ★⇩
 
-➤https://line.me//ti/p/~cybertk0
+➤https://line.me//ti/p/~yudi_std02
 
 ⇩★ Twitter İletişim  ★⇩
 
