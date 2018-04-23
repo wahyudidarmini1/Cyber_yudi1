@@ -46,7 +46,7 @@ ki6.login(token="EsRTnS2XJvUseJVHj2Ua.SD28EqyjtLBjPT144PdcQG.cpDFMsy5pUKzJLzxpHV
 ki6.loginResult()
 
 ki7 = CYBERTK.LINE()
-ki7.login(token="Eslrl9nIv8ffrUp3Ommc.Ee/eeDlrP0uTdFlXuHf9Na.WfXuiqwhbGKI2UuaKFru01WcT7vrJiaC5aeyOmPb7Q4=")
+ki7.login(token="EsuWN8qSLsQeqGLb4yZ4./0DOo/10A+PUJG8iHA76Pa.s7UMlX5VYAtz0+xh5e3pLGJ1t/bDu9q/3IFdznqzNEI=")
 ki7.loginResult()
 
 ki8 = CYBERTK.LINE()
