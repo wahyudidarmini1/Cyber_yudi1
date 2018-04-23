@@ -17,37 +17,37 @@ import time,random,sys,json,codecs,threading,glob,re
 from bs4 import BeautifulSoup
 from threading import Thread
 
-cl = CYBERTK(authToken='EpKRMvwu9eBKS3IK8ivc.sVCqTiIkfujwHVOznKXlla.ZUoCVYRNMm9czWD9RdSZA64LXi8qV+KBspTn6nIxyPE=')
-cl.log("Auth Token : " + str(cl.authToken))
-channel = LineChannel(cl)
-cl.log("Channel Access Token : " + str(channel.channelAccessToken))
+cl = CYBERTK.LINE() 
+#cl.login(qr=True)
+cl.login(token="EsZeMeVVVoFWkOmKqx7e.4uWnRTJU51yT+/CjXTyHBG.nISJ/o+QSOhjsy7l0zxxhH6zA+jeBYXsvcBrnrQ89Js=")#1
+cl.loginResult()
 
-ki = CYBERTK(authToken='EpVWlpYYD1pYL5yGEJI1.VZq819K+MTjFp7EJL7DGCq.TPURLoZWVJOYtDcPMBnVvCsoPc2NNnhxVQjq45TBQ14=')
-ki.log("Auth Token : " + str(ki.authToken))
-channel1 = LineChannel(ki)
-ki.log("Channel Access Token : " + str(channel1.channelAccessToken))
+ki = CYBERTK.LINE() 
+#ki.login(qr=True)
+ki.login(token="EsLBGJZMuXZW4TLvfxU2.AZs3a8Vf+ipnhLTOmQbtuG.76K+KaxQsQ1mxy8yyy1Z8cbdNGnuXLJxrRuvQz+R7Qw=")#2
+ki.loginResult()
 
-kk = CYBERTK(authToken='EpDU06Uy9J24U81UiGO4.fG185DzpN/oBUhOUTcrLfa.ZM9KnvNqWHs/HCfYDWDxTSGVM7e5vCCdl64RKRw9ZZE=')
-kk.log("Auth Token : " + str(kk.authToken))
-channel2 = LineChannel(kk)
-kk.log("Channel Access Token : " + str(channel2.channelAccessToken))
+kk = CYBERTK.LINE() 
+#kk.login(qr=True)
+kk.login(token="EswXitR5bFB1Q9dF2MHb.drkXjI9kC7gz45kx2rUb2W.O/DD36aXIaDFhq+9Xo0nNod8V5kYukzf6H0ppRyB+9Q=")#3
+kk.loginResult()
 
-kc = CYBERTK(authToken='EpBZ26TLJwUQ16hx8af5.JFqPWmGNQCrnZwiG3a94vq.dn3X8CYFlhwkNKYtGGPSIPcaa58J57gFu81UWgl8a5o=')
-kc.log("Auth Token : " + str(kc.authToken))
-channel3 = LineChannel(kc)
-kc.log("Channel Access Token : " + str(channel3.channelAccessToken))
+kc = CYBERTK.LINE() 
+#kc.login(qr=True)
+kc.login(token="EsAT5kyY1TNYKD1TVRk3.eXGEKA8y87MQtoFvPFGwuW.1DnxoTlPr1ILLFX434baggg5zhPQ3VmpORJ5C0jPGuk=")#4
+kc.loginResult()
 
-sw = CYBERTK(authToken='Epb3mJhX70IDASJeqcza.fdZ3mfXjEHiMPpSnvvUW/G.IUmH6xliKXmbV8xVBpsiWvfwcYkIKHuueGeRhVmT8Ps=')
-sw.log("Auth Token : " + str(sw.authToken))
-channel11 = LineChannel(sw)
-sw.log("Channel Access Token : " + str(channel11.channelAccessToken))
+ks = CYBERTK.LINE() 
+#ks.login(qr=True)
+ks.login(token="EsXQKI9b4s7cuLspPzL8.1e8nOeP/17yuiWiheXA//a.qf5kzDNsT6xt8aLGApl8bsxTT1tECPXmf6VCq0Xc5pg=")#5
+ks.loginResult()
 
 poll = LinePoll(cl)
 call = LineCall(cl)
-creator = ["u02aea92a3d7e44f587e7a91141e78b59"]
-owner = ["u02aea92a3d7e44f587e7a91141e78b59"]
-admin = ["u4af710b4888a15425686fa19364c4b2c"]
-staff = ["u4af710b4888a15425686fa19364c4b2c"]
+creator = ["u6b34b703cbc5fc83cd1e5b6832a05352"]
+owner = ["u6b34b703cbc5fc83cd1e5b6832a05352"]
+admin = ["ue14c0daed8eee7562dffe709c6d6216e"]
+staff = ["ue14c0daed8eee7562dffe709c6d6216e"]
 mid = cl.getProfile().mid
 Amid = ki.getProfile().mid
 Bmid = kk.getProfile().mid
