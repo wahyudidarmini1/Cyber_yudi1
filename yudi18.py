@@ -99,68 +99,68 @@ helpMessage ="""=====[WAHYUDI]=====
 
 ~~~~~ Command Admin ~~~~~
 ¤  =====[WAHYUDI]=====	¤
-¤[My help]							¤
-¤[Mybot]								¤
-¤[Me]										¤
-¤[Kb-Kb18?Contact Bot?]	¤
-¤[Gift-Gift3]						¤
-¤[Contact]							¤
-¤[Mid]									¤
-¤[All mid]							¤
-¤[TL:?Text?							¤
-¤[Mybio:?Text?]					¤
-¤[MyName:?Text?]				¤
-¤[Mid:?mid?]						¤
-¤[Contact ?On/Off?]			¤
-¤[Auto Join ?On/Off?]		¤
-¤[Add ?On/Off?]					¤
-¤[Share ?On/Off?]				¤
-¤[Jam ?On/Off?]					¤
-¤[Leave ?On/Off?]				¤
-¤[Group Cancel:]				¤
-¤[Jam Say:?Nama?]				¤
-¤[Update]								¤
-¤[Groups]								¤
-¤[Mcheck]								¤
-¤[Pesan Cek]						¤
-¤[Blocklist]						¤
-¤[Creator]							¤
-¤[Pesan set:?Text?]			¤
+¤[My help]							
+¤[Mybot]								
+¤[Me]									
+¤[Kb-Kb18?Contact Bot?]	
+¤[Gift-Gift3]					
+¤[Contact]							
+¤[Mid]									
+¤[All mid]						
+¤[TL:?Text?							
+¤[Mybio:?Text?]
+¤[MyName:?Text?]				
+¤[Mid:?mid?]						
+¤[Contact ?On/Off?]			
+¤[Auto Join ?On/Off?]		
+¤[Add ?On/Off?]					
+¤[Share ?On/Off?]				
+¤[Jam ?On/Off?]					
+¤[Leave ?On/Off?]				
+¤[Group Cancel:]				
+¤[Jam Say:?Nama?]				
+¤[Update]								
+¤[Groups]								
+¤[Mcheck]								
+¤[Pesan Cek]						
+¤[Blocklist]						
+¤[Creator]							
+¤[Pesan set:?Text?]			
 ~~~~ Command Player ~~~~~
 ¤  =====[WAHYUDI]=====	¤
-¤[Kick:?mid?]						¤
-¤[Invite:?mid?]					¤
-¤[Cancel]								¤
-¤[Ourl]									¤
-¤[Banlist]							¤
-¤[Curl]									¤
-¤[Invite:gcreator]			¤
-¤[Protect ?On/Off?]			¤
-¤[Qr ?On/Off?]					¤
-¤[Cancel ?On/Off?]			¤
-¤[Invite ?On/Off?]			¤
-¤[Ginfo]								¤
-¤[Backup]								¤
-¤[Sayang]								¤
-¤[Gn ?Nama Grup?]				¤
-¤[Album:?ID?]						¤
-¤[Gurl ?ID?]						¤
-¤[Nk?nama?]							¤
-¤[Ban]									¤
-¤[Unban]								¤
-¤[Ban:]									¤
-¤[Unban:]  							¤
+¤[Kick:?mid?]						
+¤[Invite:?mid?]					
+¤[Cancel]								
+¤[Ourl]									
+¤[Banlist]							
+¤[Curl]									
+¤[Invite:gcreator]			
+¤[Protect ?On/Off?]			
+¤[Qr ?On/Off?]					
+¤[Cancel ?On/Off?]			
+¤[Invite ?On/Off?]			
+¤[Ginfo]								
+¤[Backup]								
+¤[Sayang]								
+¤[Gn ?Nama Grup?]				
+¤[Album:?ID?]						
+¤[Gurl ?ID?]						
+¤[Nk?nama?]							
+¤[Ban]									
+¤[Unban]								
+¤[Ban:]									
+¤[Unban:]  							
    =====[WAHYUDI]=====
 ~~ Auto Setting Command ~
-¤  [Panick:on/off]      ¤
-¤  [Protect on]					¤
-¤  [Qrprotect on/off]		¤
+¤  [Panick:on/off]      
+¤  [Protect on]					
+¤  [Qrprotect on/off]		
 ¤  [Inviteprotect on/off]
 ¤  [Cancelprotect on/off]
-¤  [Staff add/remove @]	¤
+¤  [Staff add/remove @]	
 ¤  =====[WAHYUDI]=====	¤
 """
-KAC=[cl,ki,ki2,ki3,ki4,ki5,ki6,ki7,ki8,ki9,ki10,ki11,ki12,ki13,ki14,ki15,ki16,ki17,ki18,"uc0049a1270cb90c67fe1ad7df540d"]
+KAC=[cl,ki,ki2,ki3,ki4,ki5,ki6,ki7,ki8,ki9,ki10,ki11,ki12,ki13,ki14,ki15,ki16,ki17,ki18,"u6b34b703cbc5fc83cd1e5b6832a05352"]
 mid = cl.getProfile().mid
 kimid = ki.getProfile().mid
 ki2mid = ki2.getProfile().mid
