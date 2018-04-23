@@ -54,7 +54,7 @@ k2.loginResult()
 
 k3 = CYBERTK.LINE() 
 #k3.login(qr=True)
-k3.login(token="Eslrl9nIv8ffrUp3Ommc.Ee/eeDlrP0uTdFlXuHf9Na.WfXuiqwhbGKI2UuaKFru01WcT7vrJiaC5aeyOmPb7Q4=")#8
+k3.login(token="Esr3YuojB0sylnXPTWX3.Z7tUqKO5oaEP2cnIzYreyW.YueNAifwqpRcwq6oUjxmO148hlttV4knXgFnO3Xzx7c=")#8
 k3.loginResult()
 
 k4 = CYBERTK.LINE() 
