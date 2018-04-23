@@ -18,11 +18,11 @@ from bs4 import BeautifulSoup
 from threading import Thread
 
 cl = CYBERTK.LINE() #Luffy
-cl.login(token="Es59JPcgpdawKI5REQI3./1+U7PaL+Yrh/gwcQRLguW.cjrdozq5IN9CZttjh6SfiGyy28Y+gdbNmRCD52C3IIQ=")
+cl.login(token="Es8gCNp1nu2HG4whMWZ5.cv+fV8NaLqRd7z/Fu4bk1q.Hi+yFtX9sWIOsRom+VxBsiBcOUSZgL6orCLnc3XNCjU=")
 cl.loginResult()
 
 ki = CYBERTK.LINE() #Zorro
-ki.login(token="Es8gCNp1nu2HG4whMWZ5.cv+fV8NaLqRd7z/Fu4bk1q.Hi+yFtX9sWIOsRom+VxBsiBcOUSZgL6orCLnc3XNCjU=")
+ki.login(token="Es59JPcgpdawKI5REQI3./1+U7PaL+Yrh/gwcQRLguW.cjrdozq5IN9CZttjh6SfiGyy28Y+gdbNmRCD52C3IIQ=")
 ki.loginResult()
 
 kk = CYBERTK.LINE() #Sanji
