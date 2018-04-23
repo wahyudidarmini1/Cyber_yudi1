@@ -1,28 +1,40 @@
 # -*- coding: utf-8 -*-
 
-import LINETCR
-from LINETCR.lib.curve.ttypes import *
+import CYBERTK
+import goslate
+import requests
+import urllib
+import urllib2
+import subprocess
+import profile
+import client
+import wikipedia
+import requests
+from gtts import gTTS
+from CYBERTK.lib.curve.ttypes import *
 from datetime import datetime
-import time,random,sys,json,codecs,threading,glob,re,os,subprocess
+import time,random,sys,json,codecs,threading,glob,re
+from bs4 import BeautifulSoup
+from threading import Thread
 
-cl = LINETCR.LINE() #Luffy
-cl.login(token="En5szruqGezurZl9gloa.jUtRoiUSG9DJhoX6oSTTIG.noEnBgf4wHqYxO+mN+0HrC+VwLWjG7kzVe19moivNXc=")
+cl = CYBERTK.LINE() #Luffy
+cl.login(token="Es59JPcgpdawKI5REQI3./1+U7PaL+Yrh/gwcQRLguW.cjrdozq5IN9CZttjh6SfiGyy28Y+gdbNmRCD52C3IIQ=")
 cl.loginResult()
 
-ki = LINETCR.LINE() #Zorro
-ki.login(token="EnrrjC0k7RxHpecBqaS0.MsOi6uVzxa4qA+cHgMnbWa.FJW49WVyPiGnCdPlqobdQZi9WpybqnQGOJoE155+t2M=")
+ki = CYBERTK.LINE() #Zorro
+ki.login(token="Es8gCNp1nu2HG4whMWZ5.cv+fV8NaLqRd7z/Fu4bk1q.Hi+yFtX9sWIOsRom+VxBsiBcOUSZgL6orCLnc3XNCjU=")
 ki.loginResult()
 
-kk = LINETCR.LINE() #Sanji
-kk.login(token="EnyWhB1JJZRKRB0jJ8Z7.7Vbk3zfGuJk3W4wl8d8brW.SK8PT7TJt9Hc9YfA8H2bFxYwKPcJvFCyNewJdZQIL4E=")
+kk = CYBERTK.LINE() #Sanji
+kk.login(token="EsZRcpw8PIty5QxhJ5L2.I3AjDl7xKBoFFJIhzC0hSG.UB3aV+DDvK1Paaun7Vuv3bKca4RIgjaN039QWJawxIg=")
 kk.loginResult()
 
-kc = LINETCR.LINE() #Ussop
-kc.login(token="EnPZI9WHSulM0e6r8Tic.206JUnl6CWcOivpdHpNtZa.BYJkbzvlrCwDidmLPWeLeva8Z3o4hINlnelgMzOVI8Q=")
+kc = CYBERTK.LINE() #Ussop
+kc.login(token="EsKXRvcNJ5FWGsRkvLM6.mVJhZzaxq149ROLaiDpbDG.xLR5O67bDzBUkC+oRGxgL84OeafJ1tWHsit+IvVcgT0=")
 kc.loginResult()
 
-ks = LINETCR.LINE() #Chooper
-ks.login(token="EnESNblvjZ9wTauQpvr6.rlS4MMX9nYUjawGSeXG6HG.Lq1yb/moVx2ozSqzeHR+lQlQobwlk293TvJUalPgGRQ=")
+ks = CYBERTK.LINE() #Chooper
+ks.login(token="Es2HU2rAZczX8e4c8R70.h15LZJwcpaJRdd99IbjYua.Hr/pDEuRtvLI3IujPmTHOUQMGzUka8YhYXhbqjk4ahU=")
 ks.loginResult()
 
 print "login success plak"
@@ -76,8 +88,8 @@ Cmid = kc.getProfile().mid #Ussop
 Dmid = ks.getProfile().mid #Chooper
 
 Bots=[mid,Amid,Bmid,Cmid,Dmid]
-admin=["u26e4eb388bac83d7631cec7a3acb6d8a"] 
-owner=["u26e4eb388bac83d7631cec7a3acb6d8a"]
+admin=["ufb5feeee9025ff2447f86582aab94653"] 
+owner=["ufb5feeee9025ff2447f86582aab94653"]
 whitelist=[""]
 wait = {
     'contact':False,
