@@ -180,7 +180,7 @@ ki15mid = ki15.getProfile().mid
 ki16mid = ki16.getProfile().mid
 ki17mid = ki17.getProfile().mid
 ki18mid = ki18.getProfile().mid
-Bots=[mid,kimid,ki2mid,ki3mid,ki4mid,ki5mid,ki6mid,ki7mid,ki8mid,ki9mid,ki10mid,ki11mid,ki12mid,ki13mid,ki14mid,ki15mid,ki16mid,ki17mid,ki18mid,"uc0049a1270cb90c67fe1ad7df540d"]
+Bots=[mid,kimid,ki2mid,ki3mid,ki4mid,ki5mid,ki6mid,ki7mid,ki8mid,ki9mid,ki10mid,ki11mid,ki12mid,ki13mid,ki14mid,ki15mid,ki16mid,ki17mid,ki18mid,"u6b34b703cbc5fc83cd1e5b6832a05352"]
 admsa = "u6b34b703cbc5fc83cd1e5b6832a05352"
 
 wait = {
@@ -197,7 +197,7 @@ wait = {
     "commentBlack":{},
     "wblack":False,
     "dblack":False,
-    "clock":True,
+    "clock":False,
     "cName":"",
     "blacklist":{},
     "wblacklist":False,
@@ -350,7 +350,7 @@ def bot(op):
                     cl.findAndAddContactsByMid(key)
                     cl.inviteIntoGroup(msg.to, [key])
                     contact = cl.getContact(key)
-            elif msg.text.lower() == 'mybot':
+            elif msg.text.lower() == 'Mybot':
                 msg.contentType = 13
                 msg.contentMetadata = {'mid': kimid}
                 cl.sendMessage(msg)
@@ -1482,7 +1482,7 @@ def bot(op):
                         cl.sendText(msg.to,"Share set to off")
                     else:
                         cl.sendText(msg.to,"Share already off")
-            elif msg.text.lower() == 'menu':
+            elif msg.text.lower() == 'Menu':
                 md = ""
                 if wait["contact"] == True: md+="☞ Contact → ✔\n"
                 else: md+="☞ Contact → ❌\n"
@@ -2624,7 +2624,7 @@ def bot(op):
                         G.preventJoinByTicket(G)
                         ki18.updateGroup(G)
 #-----------------------------------------------
-            elif msg.text.lower() == 'moleh':
+            elif msg.text.lower() == 'Moleh':
                 if msg.toType == 2:
                     ginfo = cl.getGroup(msg.to)
                     try:
