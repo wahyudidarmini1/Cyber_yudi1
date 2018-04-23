@@ -21,13 +21,13 @@ cl = CYBERTK.LINE()
 cl.login(token="EsFy3B9Uc0sN0Op4UnPe.4uWnRTJU51yT+/CjXTyHBG.YiaxIqSoSV2x0LQrqNPwXQB+f8m+ljfHofT4yQvJrWc=")
 cl.loginResult()
 
-cybertk = CYBERTK.LINE()
-cybertk.login(token="EsIgDTLzWCCP0vaWKCpb.drkXjI9kC7gz45kx2rUb2W.BREqzLd1atgEYr7lfEPwWnbgQqSDcBeD1jcOmepAhDY=")
-cybertk.loginResult()
+kl = CYBERTK.LINE()
+kl.login(token="EsIgDTLzWCCP0vaWKCpb.drkXjI9kC7gz45kx2rUb2W.BREqzLd1atgEYr7lfEPwWnbgQqSDcBeD1jcOmepAhDY=")
+kl.loginResult()
 
-cybertk = CYBERTK.LINE()
-cybertk.login(token="ErcObyeuALAHalKB9dw3.eXGEKA8y87MQtoFvPFGwuW.EY8lKdsLeg4/6K7am2SPaFOHXBQuRVaKmlYGrWIsLgo=")
-cybertk.loginResult()
+ki = CYBERTK.LINE()
+ki.login(token="ErcObyeuALAHalKB9dw3.eXGEKA8y87MQtoFvPFGwuW.EY8lKdsLeg4/6K7am2SPaFOHXBQuRVaKmlYGrWIsLgo=")
+ki.loginResult()
 
 kc = kk = ki = kl = cl
 
