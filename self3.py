@@ -1,36 +1,43 @@
-# -*- coding: utf-8 -*- 
-import LINEPY
-from LINEPY import *
-from akad.ttypes import *
-from multiprocessing import Pool, Process
-from time import sleep
-import pytz, datetime, pafy, time, timeit, random, sys, ast, re, os, json, subprocess, threading, string, codecs, requests, tweepy, ctypes, urllib, wikipedia
-from datetime import timedelta, date
-from datetime import datetime
-from bs4 import BeautifulSoup
-import youtube_dl
+# -*- coding: utf-8 -*-
 
-cl = LineClient(authToken='EpKRMvwu9eBKS3IK8ivc.sVCqTiIkfujwHVOznKXlla.ZUoCVYRNMm9czWD9RdSZA64LXi8qV+KBspTn6nIxyPE=')
+import CYBERTK
+import goslate
+import requests
+import urllib
+import urllib2
+import subprocess
+import profile
+import client
+import wikipedia
+import requests
+from gtts import gTTS
+from CYBERTK.lib.curve.ttypes import *
+from datetime import datetime
+import time,random,sys,json,codecs,threading,glob,re
+from bs4 import BeautifulSoup
+from threading import Thread
+
+cl = CYBERTK(authToken='EpKRMvwu9eBKS3IK8ivc.sVCqTiIkfujwHVOznKXlla.ZUoCVYRNMm9czWD9RdSZA64LXi8qV+KBspTn6nIxyPE=')
 cl.log("Auth Token : " + str(cl.authToken))
 channel = LineChannel(cl)
 cl.log("Channel Access Token : " + str(channel.channelAccessToken))
 
-ki = LineClient(authToken='EpVWlpYYD1pYL5yGEJI1.VZq819K+MTjFp7EJL7DGCq.TPURLoZWVJOYtDcPMBnVvCsoPc2NNnhxVQjq45TBQ14=')
+ki = CYBERTK(authToken='EpVWlpYYD1pYL5yGEJI1.VZq819K+MTjFp7EJL7DGCq.TPURLoZWVJOYtDcPMBnVvCsoPc2NNnhxVQjq45TBQ14=')
 ki.log("Auth Token : " + str(ki.authToken))
 channel1 = LineChannel(ki)
 ki.log("Channel Access Token : " + str(channel1.channelAccessToken))
 
-kk = LineClient(authToken='EpDU06Uy9J24U81UiGO4.fG185DzpN/oBUhOUTcrLfa.ZM9KnvNqWHs/HCfYDWDxTSGVM7e5vCCdl64RKRw9ZZE=')
+kk = CYBERTK(authToken='EpDU06Uy9J24U81UiGO4.fG185DzpN/oBUhOUTcrLfa.ZM9KnvNqWHs/HCfYDWDxTSGVM7e5vCCdl64RKRw9ZZE=')
 kk.log("Auth Token : " + str(kk.authToken))
 channel2 = LineChannel(kk)
 kk.log("Channel Access Token : " + str(channel2.channelAccessToken))
 
-kc = LineClient(authToken='EpBZ26TLJwUQ16hx8af5.JFqPWmGNQCrnZwiG3a94vq.dn3X8CYFlhwkNKYtGGPSIPcaa58J57gFu81UWgl8a5o=')
+kc = CYBERTK(authToken='EpBZ26TLJwUQ16hx8af5.JFqPWmGNQCrnZwiG3a94vq.dn3X8CYFlhwkNKYtGGPSIPcaa58J57gFu81UWgl8a5o=')
 kc.log("Auth Token : " + str(kc.authToken))
 channel3 = LineChannel(kc)
 kc.log("Channel Access Token : " + str(channel3.channelAccessToken))
 
-sw = LineClient(authToken='Epb3mJhX70IDASJeqcza.fdZ3mfXjEHiMPpSnvvUW/G.IUmH6xliKXmbV8xVBpsiWvfwcYkIKHuueGeRhVmT8Ps=')
+sw = CYBERTK(authToken='Epb3mJhX70IDASJeqcza.fdZ3mfXjEHiMPpSnvvUW/G.IUmH6xliKXmbV8xVBpsiWvfwcYkIKHuueGeRhVmT8Ps=')
 sw.log("Auth Token : " + str(sw.authToken))
 channel11 = LineChannel(sw)
 sw.log("Channel Access Token : " + str(channel11.channelAccessToken))
