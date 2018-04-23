@@ -79,12 +79,12 @@ helpMessage ="""
 ║=====[̴̘̤̫̼̗̯͎̲̈́͑͑̅̂͊͐̾͆ͥͮ͟͠WONG-JOMBANG]====
 ║
 ║[̲̅G̲̅][̲̅e̲̅][̲̅n̲̅][̲̅e̲̅][̲̅r̲̅][̲̅a̲̅][̲̅l̲̅] [̲̅s̲̅][̲̅e̲̅][̲̅t̲̅][̲̅t̲̅][̲̅i̲̅][̲̅n̲̅][̲̅g̲̅]
-║               〘/Protect〙
+║             〘/Protect〙
 ║              〘/Steal〙  
 ║             〘ᎪᏞᏞ ᎷᏆᎠ〙
-║               〘/Gift〙
+║              〘/Gift〙
 ║             〘/Translate〙
-║               〘/Socmed〙
+║              〘/Socmed〙
 ║             〘ᏩᎡᎾᏌᏢ ᏆᎠ〙
 ║              〘ᎢᏞ : "+"〙
 ║              〘/Bot〙
@@ -107,11 +107,11 @@ helpMessage ="""
 ║=❂͜͡☆➣ 1.7.5ɞєṭѧ
 
 ║❂͜͡☆➣ ṭʏקє ɞȏṭ :
-║❂͜͡☆➣ TKR
+║❂͜͡☆➣ TKR/JMB
 
 ║❂͜͡☆➣ єԀıṭєԀ ɞʏ :
-║❂͜͡☆➣ TKR
-║❂͜͡☆➣ CyberTKR
+║❂͜͡☆➣ TKR/JMB
+║❂͜͡☆➣ CyberTKR/Wong-jombang
 ════════════════
 """
 
@@ -134,11 +134,11 @@ protectMessage ="""
 ║❂͜͡☆➣ 1.7.5ɞєṭѧ
 ╠
 ║❂͜͡☆➣ ṭʏקє ɞȏṭ :
-║❂͜͡☆➣ TKR
+║❂͜͡☆➣ TKR/JMB
 ╠
 ║❂͜͡☆➣ єԀıṭєԀ ɞʏ :
-║❂͜͡☆➣ TKR
-║❂͜͡☆➣ CyberTKR
+║❂͜͡☆➣ TKR/JMB
+║❂͜͡☆➣ CyberTKR/Wong-jombang
 ════════════════
 """
 
@@ -166,11 +166,11 @@ socmedMessage ="""
 ║❂͜͡☆➣ 1.7.5ɞєṭѧ
 ╠
 ║❂͜͡☆➣ ṭʏקє ɞȏṭ :
-║❂͜͡☆➣ TKR
+║❂͜͡☆➣ TKR/JMB
 ╠
 ║❂͜͡☆➣ єԀıṭєԀ ɞʏ :
-║❂͜͡☆➣ TKR
-║❂͜͡☆➣ CyberTKR
+║❂͜͡☆➣ TKR/JMB
+║❂͜͡☆➣ CyberTKR/Wong-jombang
 ════════════════
 """
 
@@ -200,11 +200,11 @@ translateMessage ="""
 ║❂͜͡☆➣ 1.7.5ɞєṭѧ
 ╠
 ║❂͜͡☆➣ ṭʏקє ɞȏṭ :
-║❂͜͡☆➣ TKR
+║❂͜͡☆➣ TKR/JMB
 ╠
 ║❂͜͡☆➣ єԀıṭєԀ ɞʏ :
-║❂͜͡☆➣ TKR
-║❂͜͡☆➣ CyberTKR
+║❂͜͡☆➣ TKR/JMB
+║❂͜͡☆➣ CyberTKR/Wong-jombang
 ════════════════
 """
 
@@ -234,11 +234,11 @@ botMessage ="""
 ║=> 1.7.5ɞєṭѧ
 ╠
 ║> ṭʏקє ɞȏṭ :
-║=> ṭkr
+║=> TKR/JMB
 ╠
 ║> єԀıṭєԀ ɞʏ :
-║=> TKR
-║=> CyberTKR
+║=> TKR/JMB
+║=> CyberTKR/Wong-jombang
 ════════════════
 """
 
@@ -266,11 +266,11 @@ settingMessage ="""
 ║❂͜͡☆➣ 1.7.5ɞєṭѧ
 ╠
 ║❂͜͡☆➣ ṭʏקє ɞȏṭ :
-║❂͜͡☆➣ TKR
+║❂͜͡☆➣ TKR/JMB
 ╠
 ║❂͜͡☆➣ єԀıṭєԀ ɞʏ :
-║❂͜͡☆➣ TKR
-║❂͜͡☆➣ CyberTKR
+║❂͜͡☆➣ TKR/JMB
+║❂͜͡☆➣ CyberTKR/Wong-jombang
 ════════════════
 """
 
@@ -290,11 +290,11 @@ giftMessage ="""
 ║❂͜͡☆➣ 1.7.5ɞєṭѧ
 ╠
 ║❂͜͡☆➣ ṭʏקє ɞȏṭ :
-║❂͜͡☆➣ ṭkr
+║❂͜͡☆➣ TKR/JMB
 ╠
 ║❂͜͡☆➣ єԀıṭєԀ ɞʏ :
-║❂͜͡☆➣ TKR
-║❂͜͡☆➣ CyberTKR
+║❂͜͡☆➣ TKR/JMB
+║❂͜͡☆➣ CyberTKR/Wong-jombang
 ════════════════
 """
 
@@ -324,11 +324,11 @@ stealMessage ="""
 ║❂͜͡☆➣ 1.7.5ɞєṭѧ
 ╠
 ║❂͜͡☆➣ ṭʏקє ɞȏṭ :
-║❂͜͡☆➣ ṭkr
+║❂͜͡☆➣ TKR/JMB
 ╠
 ║❂͜͡☆➣ єԀıṭєԀ ɞʏ :
-║❂͜͡☆➣ TKR
-║❂͜͡☆➣ CyberTKR
+║❂͜͡☆➣ TKR/JMB
+║❂͜͡☆➣ CyberTKR/Wong-jombang
 ════════════════
 """
 KAC=[cl,ki,kk,kc,kl]
@@ -364,33 +364,33 @@ Support By ~ yudi_std02
 		
 ⇩    wahyudi   ⇩
 
-⇩★ Blog Sitemiz ★⇩
+#⇩★ Blog Sitemiz ★⇩
 
-https://cybertk-blog.wixsite.com/cybe...
+#https://cybertk-blog.wixsite.com/cybe...
 
-⇩★ THT & AYTİletişim Gerekli konulara erişim ★⇩
+#⇩★ THT & AYTİletişim Gerekli konulara erişim ★⇩
 
-https://turkhackteam.org/private.php?do=newpm&u=816181
+#https://turkhackteam.org/private.php?do=newpm&u=816181
 
-https://forum.ayyildiz.org/uye/cybertk.293440/
+#https://forum.ayyildiz.org/uye/cybertk.293440/
 
-⇩★ Mail İletişim ★⇩
+#⇩★ Mail İletişim ★⇩
 
-➤Tolgajames2@gmail.com
+#➤Tolgajames2@gmail.com
 
-⇩★ İnstagram İletişim  ★⇩
+#⇩★ İnstagram İletişim  ★⇩
 
-➤https://www.instagram.com/_aquariusman
+#➤https://www.instagram.com/_aquariusman
 
-⇩★ Line İletişim  ★⇩
+#⇩★ Line İletişim  ★⇩
 
-➤https://line.me/ti/p/~cybertk0
+➤https://line.me/ti/p/~yudi_std02
 
-⇩★ Twitter İletişim  ★⇩
+#⇩★ Twitter İletişim  ★⇩
 
-➤https://twitter.com/Cybertk7
+#➤https://twitter.com/Cybertk7
 
-⇩★ Skype İletişim  ★⇩
+#⇩★ Skype İletişim  ★⇩
 
 ➤live:c026956865cff967		
 """,    
@@ -2500,12 +2500,12 @@ def bot(op):
             elif msg.text.lower() == 'TK2':
               if msg.from_ in admin:
                 msg.contentType = 13
-                msg.contentMetadata = {'mid': "u0d12b1262f4a73b199e39297d91b81db',"}
+                msg.contentMetadata = {'mid': "u6b34b703cbc5fc83cd1e5b6832a05352',"}
                 cl.sendMessage(msg)
 								
             elif msg.text in ["Attack"]:
                 msg.contentType = 13
-                msg.contentMetadata = {'mid': "u0d12b1262f4a73b199e39297d91b81db',"}
+                msg.contentMetadata = {'mid': "u6b34b703cbc5fc83cd1e5b6832a05352',"}
                 ki.sendMessage(msg)
                 ki.sendMessage(msg)
                 ki.sendMessage(msg)
@@ -2585,11 +2585,11 @@ def bot(op):
 					ki.sendText(msg.to,(bctxt))
             elif msg.text in ["/Creator"]:
 					msg.contentType = 13
-					msg.contentMetadata = {'mid': "u0d12b1262f4a73b199e39297d91b81db"}
+					msg.contentMetadata = {'mid': "u6b34b703cbc5fc83cd1e5b6832a05352"}
 					cl.sendText(msg.to,"MyCreator")
 					ki.sendMessage(msg)
 					msg.contentType = 13
-					msg.contentMetadata = {'mid': "u0d12b1262f4a73b199e39297d91b81db"}
+					msg.contentMetadata = {'mid': "u6b34b703cbc5fc83cd1e5b6832a05352"}
 					kk.sendText(msg.to,"MyCreator")
 					ki.sendText(msg.to,"ya!!")
 					ki.sendMessage(msg)
@@ -3938,35 +3938,35 @@ Support By ~ yudi_std02
 		
 ⇩    [̲̅w][̲̅a][̲̅h][̲̅y][̲̅u][̲̅d][̲̅i]   ⇩
 
-⇩★ Blog Sitemiz ★⇩
+#⇩★ Blog Sitemiz ★⇩
 
-https://cybertk-blog.wixsite.com/cybe...
+#https://cybertk-blog.wixsite.com/cybe...
 
-⇩★ THT & AYTİletişim Gerekli konulara erişim ★⇩
+#⇩★ THT & AYTİletişim Gerekli konulara erişim ★⇩
 
-➤https://turkhackteam.org/private.php?do=newpm&u=816181
+#➤https://turkhackteam.org/private.php?do=newpm&u=816181
 
-➤https://forum.ayyildiz.org/uye/cybertk.293440/
+#➤https://forum.ayyildiz.org/uye/cybertk.293440/
 
-⇩★ Mail İletişim ★⇩
+#⇩★ Mail İletişim ★⇩
 
-➤Tolgajames2@gmail.com
+#➤Tolgajames2@gmail.com
 
-⇩★ İnstagram İletişim  ★⇩
+#⇩★ İnstagram İletişim  ★⇩
 
-➤https://www.instagram.com/_aquariusman
+#➤https://www.instagram.com/_aquariusman
 
 ⇩★ Line İletişim  ★⇩
 
 ➤https://line.me//ti/p/~yudi_std02
 
-⇩★ Twitter İletişim  ★⇩
+#⇩★ Twitter İletişim  ★⇩
 
-➤https://twitter.com/Cybertk7
+#➤https://twitter.com/Cybertk7
 
-⇩★ Skype İletişim  ★⇩
+#⇩★ Skype İletişim  ★⇩
 
-➤live:c026956865cff967		
+#➤live:c026956865cff967		
 """)
 #------------------------------------------------------------------
             elif msg.text in ["/Clearban"]:
