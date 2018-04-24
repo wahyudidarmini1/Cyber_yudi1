@@ -19,12 +19,12 @@ from threading import Thread
 
 cl = CYBERTK.LINE() 
 #cl.login(qr=True)
-cl.login(token="Es78bnERjKNbEJLI0CP2.AZs3a8Vf+ipnhLTOmQbtuG.AU2/L/5P4IAWRrmZOeOzFsUIXQ19jlsE+stzKhK+sOU=")#1
+cl.login(token="EsZeMeVVVoFWkOmKqx7e.4uWnRTJU51yT+/CjXTyHBG.nISJ/o+QSOhjsy7l0zxxhH6zA+jeBYXsvcBrnrQ89Js=")#1
 cl.loginResult()
 
 ki = CYBERTK.LINE() 
 #ki.login(qr=True)
-ki.login(token="EsZeMeVVVoFWkOmKqx7e.4uWnRTJU51yT+/CjXTyHBG.nISJ/o+QSOhjsy7l0zxxhH6zA+jeBYXsvcBrnrQ89Js=")#2
+ki.login(token="Es78bnERjKNbEJLI0CP2.AZs3a8Vf+ipnhLTOmQbtuG.AU2/L/5P4IAWRrmZOeOzFsUIXQ19jlsE+stzKhK+sOU=")#2
 ki.loginResult()
 
 kk = CYBERTK.LINE() 
