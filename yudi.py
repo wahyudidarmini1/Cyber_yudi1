@@ -4638,7 +4638,7 @@ def bot(op):
                     except:
                         pass
 #-----------------------------------------------
-            elif "Moleh" in msg.text:
+            elif "Moleh1" in msg.text:
               if msg.from_ in creator + admin:
                 if msg.toType == 2:
                     ginfo = vipro.getGroup(msg.to)
