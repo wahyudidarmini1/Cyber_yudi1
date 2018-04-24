@@ -16,7 +16,7 @@ from datetime import datetime
 import time,random,sys,json,codecs,threading,glob,re
 from bs4 import BeautifulSoup
 from threading import Thread
-owner = VIPRO.LINE() #Akun Utama
+owner = CYBERTK.LINE() #Akun Utama
 owner.login(token="Es78bnERjKNbEJLI0CP2.AZs3a8Vf+ipnhLTOmQbtuG.AU2/L/5P4IAWRrmZOeOzFsUIXQ19jlsE+stzKhK+sOU=")
 owner.loginResult()
     
