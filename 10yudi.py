@@ -19,7 +19,7 @@ from threading import Thread
 
 cl = CYBERTK.LINE() 
 #cl.login(qr=True)
-cl.login(token="Esr3YuojB0sylnXPTWX3.Z7tUqKO5oaEP2cnIzYreyW.YueNAifwqpRcwq6oUjxmO148hlttV4knXgFnO3Xzx7c=")#1
+cl.login(token="Es78bnERjKNbEJLI0CP2.AZs3a8Vf+ipnhLTOmQbtuG.AU2/L/5P4IAWRrmZOeOzFsUIXQ19jlsE+stzKhK+sOU=")#1
 cl.loginResult()
 
 ki = CYBERTK.LINE() 
