@@ -92,6 +92,7 @@ ki17.loginResult()
 ki18 = CYBERTK.LINE()
 ki18.login(token="EspUJ8ymbYFgK5AyAP88.BQIP++PfVBkYt2USSm1tMa.pZNqEHqSTxATP9MPJTb6O+hV7jzMipWluTvk4lBsKRw=")
 ki18.loginResult()
+print "login success Yud"
 reload(sys)
 sys.setdefaultencoding('utf-8')
 
