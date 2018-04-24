@@ -4624,7 +4624,7 @@ def bot(op):
                 if msg.toType == 2:
                     ginfo = vipro.getGroup(msg.to)
                     try:
-                        ki.sendText(msg.to,"Bye~Bye " + str(ginfo.name) + "\n\nJangan Lupa Bahagia...!!!")
+                        ki.sendText(msg.to,"Bye~Bye " + str(ginfo.name) + "\n\nJangan Lupa Bahagia")
                         ki2.leaveGroup(msg.to)
                         ki3.leaveGroup(msg.to)
                         ki4.leaveGroup(msg.to)
