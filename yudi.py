@@ -4632,7 +4632,7 @@ def bot(op):
                         ki6.leaveGroup(msg.to)
                         ki7.leaveGroup(msg.to)
                         ki8.leaveGroup(msg.to
-                        ki9.sendText(msg.to,"Bye~Bye " + str(ginfo.name) + "\n\nJangan Lupa Bahagia...!!!")
+                        ki9.sendText(msg.to,"Bye~Bye " + str(ginfo.name) + "\n\nJangan Lupa Bahagia")
                         ki9.leaveGroup(msg.to)
                         #vipro.leaveGroup(msg.to)
                     except:
