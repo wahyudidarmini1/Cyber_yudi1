@@ -1,24 +1,21 @@
 # -*- coding: utf-8 -*-
-import VIPRO
-from VIPRO.lib.curve.ttypes import *	
-from datetime import datetime	
-import io,os,re,ast,six,sys,glob,json,time,timeit,codecs,random,shutil,urllib,urllib2,urllib3,goslate,requests,threading,wikipedia,subprocess,googletrans
-from gtts import gTTS	
-from random import randint	
-from time import sleep	
-from urllib import urlopen, urlretrieve, urlencode	
-from io import StringIO	
-from bs4 import BeautifulSoup	
-from threading import Thread	
-from googletrans import Translator	
 
-if (six.PY2):
-    import urllib2
-    import urllib
-else:
-    import urllib.request
-    import urllib.parse
-
+import CYBERTK
+import goslate
+import requests
+import urllib
+import urllib2
+import subprocess
+import profile
+import client
+import wikipedia
+import requests
+from gtts import gTTS
+from CYBERTK.lib.curve.ttypes import *
+from datetime import datetime
+import time,random,sys,json,codecs,threading,glob,re
+from bs4 import BeautifulSoup
+from threading import Thread
 owner = VIPRO.LINE() #Akun Utama
 owner.login(token="Es78bnERjKNbEJLI0CP2.AZs3a8Vf+ipnhLTOmQbtuG.AU2/L/5P4IAWRrmZOeOzFsUIXQ19jlsE+stzKhK+sOU=")
 owner.loginResult()
