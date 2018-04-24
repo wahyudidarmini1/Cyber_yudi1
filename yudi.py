@@ -4394,39 +4394,38 @@ def bot(op):
                     msg.text = txt
                     msg.contentMetadata = {u'MENTION':json.dumps({"MENTIONEES":d})}
                     vipro.sendMessage(msg) 
-            elif msg.text.lower() == 'Masuk':
+            elif msg.text in ["1","Masuk","Asup"]: #Panggil Semua Bot
               if msg.from_ in creator + admin:
-                        G = vipro.getGroup(msg.to)
-                        ginfo = vipro.getGroup(msg.to)
-                        G.preventJoinByTicket = False
-                        vipro.updateGroup(G)
-                        invsend = 0
-                        Ticket = vipro.reissueGroupTicket(msg.to)
-                        ki.acceptGroupInvitationByTicket(msg.to,Ticket)
-                        time.sleep(0.01)
-                        ki2.acceptGroupInvitationByTicket(msg.to,Ticket)
-                        time.sleep(0.01)
-                        ki3.acceptGroupInvitationByTicket(msg.to,Ticket)
-                        time.sleep(0.01)
-                        ki4.acceptGroupInvitationByTicket(msg.to,Ticket)
-                        time.sleep(0.01)
-                        ki5.acceptGroupInvitationByTicket(msg.to,Ticket)
-                        time.sleep(0.01)
-                        ki6.acceptGroupInvitationByTicket(msg.to,Ticket)
-                        time.sleep(0.01)
-                        ki7.acceptGroupInvitationByTicket(msg.to,Ticket)
-                        time.sleep(0.01)
-                        ki8.acceptGroupInvitationByTicket(msg.to,Ticket)
-                        time.sleep(0.01)
-                        ki9.acceptGroupInvitationByTicket(msg.to,Ticket)
-                        time.sleep(0.01)
-                        G = vipro.getGroup(msg.to)
-                        ginfo = vipro.getGroup(msg.to)
-                        G.preventJoinByTicket = True
-                        random.choice(KAC).updateGroup(G)
-                        print "kicker ok"
-                        G.preventJoinByTicket(G)
-                        random.choice(KAC).updateGroup(G)
+                G = vipro.getGroup(msg.to)
+                ginfo = vipro.getGroup(msg.to)
+                G.preventJoinByTicket = False
+                vipro.updateGroup(G)
+                invsend = 0
+                Ticket = cl.reissueGroupTicket(msg.to)
+                ki.acceptGroupInvitationByTicket(msg.to,Ticket)
+                time.sleep(0.01)
+                ki2.acceptGroupInvitationByTicket(msg.to,Ticket)
+                time.sleep(0.01)
+                ki3.acceptGroupInvitationByTicket(msg.to,Ticket)
+                time.sleep(0.01)
+                ki4.acceptGroupInvitationByTicket(msg.to,Ticket)
+                time.sleep(0.01)
+                ki5.acceptGroupInvitationByTicket(msg.to,Ticket)
+                time.sleep(0.01)
+                ki6.acceptGroupInvitationByTicket(msg.to,Ticket)
+                time.sleep(0.01)
+                ki7.acceptGroupInvitationByTicket(msg.to,Ticket)
+                time.sleep(0.01)
+                ki8.acceptGroupInvitationByTicket(msg.to,Ticket)
+                time.sleep(0.01)
+                ki9.acceptGroupInvitationByTicket(msg.to,Ticket)
+                time.sleep(0.01)
+                ki.sendText(msg.to,"Hello " + str(ginfo.name))
+                G = cl.getGroup(msg.to)
+                ginfo = cl.getGroup(msg.to)
+                G.preventJoinByTicket = True
+                cl.updateGroup(G)
+                print "Semua Sudah Lengkap"
 
 #-----------------------------------------------
             elif msg.text.lower() == 'reinvite':
@@ -4620,22 +4619,22 @@ def bot(op):
                         ki9.updateGroup(G)
 #-----------------------------------------------
 #------------------------------------------------------------------
-
-            elif msg.text.lower() == 'Moleh':
-              if msg.from_ in creator + admin:
+            elif msg.text in ["moleh"]: #Semua Bot Ninggalin Group Kecuali Bot Induk
+              if msg.from_ in owner:
                 if msg.toType == 2:
                     ginfo = vipro.getGroup(msg.to)
                     try:
-                        vipro.sendText(msg.to,"􀜁􀇔􏿿Bye Bye😘 "  +  str(ginfo.name)  + "")
-                        ki.leaveGroup(msg.to)
+                        ki.sendText(msg.to,"Bye~Bye " + str(ginfo.name) + "\n\nJangan Lupa Bahagia...!!!")
                         ki2.leaveGroup(msg.to)
                         ki3.leaveGroup(msg.to)
                         ki4.leaveGroup(msg.to)
                         ki5.leaveGroup(msg.to)
                         ki6.leaveGroup(msg.to)
                         ki7.leaveGroup(msg.to)
-                        ki8.leaveGroup(msg.to)
+                        ki8.leaveGroup(msg.to
+                        ki9.sendText(msg.to,"Bye~Bye " + str(ginfo.name) + "\n\nJangan Lupa Bahagia...!!!")
                         ki9.leaveGroup(msg.to)
+                        #vipro.leaveGroup(msg.to)
                     except:
                         pass
 #-----------------------------------------------
