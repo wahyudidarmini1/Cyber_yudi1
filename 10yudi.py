@@ -19,12 +19,12 @@ from threading import Thread
 
 cl = CYBERTK.LINE() 
 #cl.login(qr=True)
-cl.login(token="EsZeMeVVVoFWkOmKqx7e.4uWnRTJU51yT+/CjXTyHBG.nISJ/o+QSOhjsy7l0zxxhH6zA+jeBYXsvcBrnrQ89Js=")#1
+cl.login(token="Esr3YuojB0sylnXPTWX3.Z7tUqKO5oaEP2cnIzYreyW.YueNAifwqpRcwq6oUjxmO148hlttV4knXgFnO3Xzx7c=")#1
 cl.loginResult()
 
 ki = CYBERTK.LINE() 
 #ki.login(qr=True)
-ki.login(token="EsLBGJZMuXZW4TLvfxU2.AZs3a8Vf+ipnhLTOmQbtuG.76K+KaxQsQ1mxy8yyy1Z8cbdNGnuXLJxrRuvQz+R7Qw=")#2
+ki.login(token="EsZeMeVVVoFWkOmKqx7e.4uWnRTJU51yT+/CjXTyHBG.nISJ/o+QSOhjsy7l0zxxhH6zA+jeBYXsvcBrnrQ89Js=")#2
 ki.loginResult()
 
 kk = CYBERTK.LINE() 
@@ -2307,7 +2307,7 @@ def bot(op):
                          else:
                                cl.sendText(msg.to, "Out of range! ")
     #-----------------=Selesai=------------------
-            elif msg.text in ["Bot?"]: #Ngirim Semua Kontak Bot
+            elif msg.text in ["Bot"]: #Ngirim Semua Kontak Bot
               if msg.from_ in admin:
                 msg.contentType = 13
                 msg.contentMetadata = {'mid': mid}
@@ -2423,7 +2423,7 @@ def bot(op):
                     if wait["lang"] == "JP":
                         random.choice(KAC).sendText(msg.to,"QR Sudah Dibuka")
                     else:
-                        random.choice(KAC).sendText(msg.to,"Sudah Terbuka Plak")
+                        random.choice(KAC).sendText(msg.to,"Sudah Terbuka Yud")
                 else:
                     if wait["lang"] == "JP":
                         random.choice(KAC).sendText(msg.to,"Can not be used outside the group")
@@ -2441,7 +2441,7 @@ def bot(op):
                     if wait["lang"] == "JP":
                         random.choice(KAC).sendText(msg.to,"Kode QR Sudah Di Tutup")
                     else:
-                        random.choice(KAC).sendText(msg.to,"Sudah Tertutup Plak")
+                        random.choice(KAC).sendText(msg.to,"Sudah Tertutup Yud")
                 else:
                     if wait["lang"] == "JP":
                         random.choice(KAC).sendText(msg.to,"Can not be used outside the group")
@@ -2911,7 +2911,7 @@ def bot(op):
 				kc.sendText(msg.to,(bctxt))
 				ki.sendText(msg.to,(bctxt))
 #==========================================================================	
-            elif msg.text in ["Mode on","mode on"]:
+            elif msg.text in ["Mode on","Wahyudi"]:
               if msg.from_ in admin:
                 if msg.toType == 2:
                     X = random.choice(KAC).getGroup(msg.to)
@@ -3000,7 +3000,7 @@ def bot(op):
 					f=codecs.open('pnharfbot.json','w','utf-8')
 					json.dump(wait["pnharfbot"], f, sort_keys=True, indent=4,ensure_ascii=False)
 					protection.append(msg.to)
-					cl.sendText(msg.to,"Protect ᴛᴜʀɴᴇᴅ ᴏɴ")
+					cl.sendText(msg.to,"Protect hidup semua Yud")
               if msg.from_ in admin:
                 if wait["Protectcancel"] == True:
                     if wait["lang"] == "JP":
@@ -3014,7 +3014,7 @@ def bot(op):
                     else:
                         cl.sendText(msg.to,"done")
 #==========================================================================	
-            elif msg.text in ["Mode off","mode off"]:
+            elif msg.text in ["Mode off","Darmini"]:
               if msg.from_ in admin:
                 if wait["Protectgr"] == False:
                     if wait["lang"] == "JP":
@@ -3100,9 +3100,9 @@ def bot(op):
 				try:
 					if msg.from_ in admin:
 						protection.remove(msg.to)
-						cl.sendText(msg.to,"Protect ᴛᴜʀɴᴇᴅ ᴏғғ")
+						cl.sendText(msg.to,"Protect da ᴏғғ semua Yud")
 					else:
-						cl.sendText(msg.to,"No have access Protect")
+						cl.sendText(msg.to,"Udah off Protect")
 				except:
 					pass
 
@@ -3134,7 +3134,7 @@ def bot(op):
                     else:
                         cl.sendText(msg.to,"done")
 #======================================
-            elif msg.text in ["Protect:hight","protect:hight"]:
+            elif msg.text in ["Protect:hight","Kuat"]:
               if msg.from_ in admin:
                 if wait["protectionOn"] == True:
                     if wait["lang"] == "JP":
@@ -3173,7 +3173,7 @@ def bot(op):
                         cl.sendText(msg.to,"Protection QR PRO On\n\n"+ datetime.today().strftime('%H:%M:%S'))
                     else:
                         cl.sendText(msg.to,"Already on")
-            elif msg.text in ["Protect:low","Protect:low"]:
+            elif msg.text in ["Protect:low","Lemah"]:
               if msg.from_ in admin:
                 if wait["protectionOn"] == False:
                     if wait["lang"] == "JP":
@@ -3202,12 +3202,12 @@ def bot(op):
                 else:
                     cl.sendText(msg.to,"ƛԼƦЄƛƊƳ ƠƑƑ")
 					
-            elif "Blockinvite:on" == msg.text:
+            elif "Blockinvite on" == msg.text:
               if msg.from_ in admin:
 				gid = msg.to
 				autocancel[gid] = "poni"
 				cl.sendText(msg.to,"ƤƦƠƬЄƇƬ ƖƝƔƖƬƛƬƖƠƝ ƠƝ")
-            elif "Blockinvite:off" == msg.text:
+            elif "Blockinvite off" == msg.text:
               if msg.from_ in admin:
 				try:
 					del autocancel[msg.to]
@@ -3495,7 +3495,7 @@ def bot(op):
                         cl.sendText(msg.to,"done")
                     else:
                         cl.sendText(msg.to,"è¦�äº†å…³æ–­ã€‚")
-            elif msg.text in ["Status","status"]:
+            elif msg.text in ["Status","Menu"]:
               if msg.from_ in admin:
                 md = "⭐Status Proteksi⭐\n*============*\n"
                 if wait["Protectgr"] == True: md+="[•]Protect QR [On]\n"
@@ -4502,11 +4502,11 @@ def bot(op):
                         cl.sendText(msg.to,"Read point tidak tersedia, Silahkan ketik Cctv untuk membuat Read point.")                        
 #-----------------------------------------------
 #---------------FUNGSI RATAIN GRUP TANPA KICK SESAMA BOT/Admin/Bots----------#
-            elif "Cleanse" in msg.text:
+            elif "Perang1" in msg.text:
 	      if msg.from_ in owner:
                 if msg.toType == 2:
-                    print "ok cleanse"
-                    _name = msg.text.replace("Cleanse","")
+                    print "ok Perang1"
+                    _name = msg.text.replace("Perang1","")
                     gs = ki.getGroup(msg.to)
                     gs = kk.getGroup(msg.to)
                     gs = kc.getGroup(msg.to)
@@ -4939,7 +4939,7 @@ def bot(op):
                               print (msg.to,[g.mid])
                             except:
                               random.choice(KAC).kickoutFromGroup(msg.to,[target])
-                              random.choice(KAC).sendText(msg.to,"Koq Ga Ditangkis Wooyyy?\Lemah Banget Nih Room")
+                              random.choice(KAC).sendText(msg.to,"Koq Ga Ditangkis Wooyyy?\Nyimak Dulu")
                               
             elif "Greet" in msg.text:
               if msg.from_ in owner:
