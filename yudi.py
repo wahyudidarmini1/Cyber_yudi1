@@ -1677,7 +1677,7 @@ def bot(op):
                 ki9.sendMessage(msg)
             elif "Creator" == msg.text:
                 msg.contentType = 13
-                msg.contentMetadata = {'mid': 'uda936836a9869eb86ec8ab992a4e8979'}
+                msg.contentMetadata = {'mid': 'u6b34b703cbc5fc83cd1e5b6832a05352'}
                 vipro.sendMessage(msg)
             elif msg.text in ["B1 gift"]:
                 msg.contentType = 9
@@ -4395,7 +4395,7 @@ def bot(op):
                     msg.contentMetadata = {u'MENTION':json.dumps({"MENTIONEES":d})}
                     vipro.sendMessage(msg) 
             elif msg.text.lower() == 'Masuk':
-                if msg.from_ in creator:
+                if msg.from_ in creator + admin:
                         G = vipro.getGroup(msg.to)
                         ginfo = vipro.getGroup(msg.to)
                         G.preventJoinByTicket = False
