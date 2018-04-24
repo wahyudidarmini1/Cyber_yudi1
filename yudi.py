@@ -4395,7 +4395,7 @@ def bot(op):
                     msg.contentMetadata = {u'MENTION':json.dumps({"MENTIONEES":d})}
                     vipro.sendMessage(msg) 
             elif msg.text.lower() == 'Masuk':
-                if msg.from_ in creator + admin:
+              if msg.from_ in creator + admin:
                         G = vipro.getGroup(msg.to)
                         ginfo = vipro.getGroup(msg.to)
                         G.preventJoinByTicket = False
@@ -4639,7 +4639,7 @@ def bot(op):
                     except:
                         pass
 #-----------------------------------------------
-            elif "Bye" in msg.text:
+            elif "Moleh" in msg.text:
               if msg.from_ in creator + admin:
                 if msg.toType == 2:
                     ginfo = vipro.getGroup(msg.to)
