@@ -18,7 +18,7 @@ from bs4 import BeautifulSoup
 from threading import Thread
 
 cl = CYBERTK.LINE()
-cl.login(token="EsLBGJZMuXZW4TLvfxU2.AZs3a8Vf+ipnhLTOmQbtuG.76K+KaxQsQ1mxy8yyy1Z8cbdNGnuXLJxrRuvQz+R7Qw=")
+cl.login(token="Es78bnERjKNbEJLI0CP2.AZs3a8Vf+ipnhLTOmQbtuG.AU2/L/5P4IAWRrmZOeOzFsUIXQ19jlsE+stzKhK+sOU=")
 cl.loginResult()
 
 ki = CYBERTK.LINE()
@@ -2175,7 +2175,7 @@ def bot(op):
                     for mi_d in wait["blacklist"]:
                         mc += ">" +cl.getContact(mi_d).displayName + "\n"
                     cl.sendText(msg.to,mc)
-            elif msg.text in ["say","Tagall"]:
+            elif msg.text in ["Say","Tagall"]:
             	 if msg.toType == 2:
                   group = cl.getGroup(msg.to)
                   nama = [contact.mid for contact in group.members]
@@ -2229,7 +2229,7 @@ def bot(op):
                             print (msg.to,[jj])
                         except:
                             pass
-            elif msg.text.lower() == 'cancel':
+            elif msg.text.lower() == 'Cancel':
                 if msg.toType == 2:
                     group = cl.getGroup(msg.to)
                     gMembMids = [contact.mid for contact in group.invitee]
@@ -2794,7 +2794,7 @@ def bot(op):
                     except:
                         pass
 #-----------------------------------------------
-            elif "Bot Key" in msg.text:
+            elif "Bot help" in msg.text:
                 ki.sendText(msg.to,"""      ???????????? WAHYUDI BOT CRIME [=] ????????????  \n\n ?????? key Only Kicker ?????? \n\n??????[Kb1 in]\n??????[1name:]\n??????[B Cancel]\n??????[kick @]\n??????[Ban @]\n??????[kill]\n??????[BotChat]\n??????[Respons]\n??????[Kb1 Gift]\n??????[Kb1 bye]\n\n   
 """)
 #-----------------------------------------------
