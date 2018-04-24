@@ -61,9 +61,9 @@ ki9.login(token="Esr3YuojB0sylnXPTWX3.Z7tUqKO5oaEP2cnIzYreyW.YueNAifwqpRcwq6oUjx
 ki9.loginResult()
 
 ki10 = CYBERTK.LINE() #Ghost
-ki10.login(token="EsGzmax1m9HCvjscTSvc.Ee/eeDlrP0uTdFlXuHf9Na.kBFK3ofvtKp2VAP4r6pZw2nioywfdhgin3IqzbyFIA4=")
+ki10.login(token="EsYG5inLFlL4x1xgIyv1.hSPlQK0sOlldo8W2iFcJWq.+EM/UrNqR2ihNEkmgt4dQWUOL8H0TOPzAp5LbpGJN6c=")
 ki10.loginResult()
-print "═══「vipro login success」═══"
+print "═══「wahyudi login success」═══"
 reload(sys)
 sys.setdefaultencoding('utf-8')
 helpMenu="""╔═══「 jombang ʙᴏᴛ」═══╗
