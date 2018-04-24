@@ -20,47 +20,47 @@ owner = VIPRO.LINE() #Akun Utama
 owner.login(token="Es78bnERjKNbEJLI0CP2.AZs3a8Vf+ipnhLTOmQbtuG.AU2/L/5P4IAWRrmZOeOzFsUIXQ19jlsE+stzKhK+sOU=")
 owner.loginResult()
     
-vipro = VIPRO.LINE()
+vipro = CYBERTK.LINE()
 vipro.login(token="EswXitR5bFB1Q9dF2MHb.drkXjI9kC7gz45kx2rUb2W.O/DD36aXIaDFhq+9Xo0nNod8V5kYukzf6H0ppRyB+9Q=")
 vipro.loginResult()
 
-ki = VIPRO.LINE()
+ki = CYBERTK.LINE()
 ki.login(token="EsAT5kyY1TNYKD1TVRk3.eXGEKA8y87MQtoFvPFGwuW.1DnxoTlPr1ILLFX434baggg5zhPQ3VmpORJ5C0jPGuk=")
 ki.loginResult()
 
-ki2= VIPRO.LINE()
+ki2= CYBERTK.LINE()
 ki2.login(token="EsXQKI9b4s7cuLspPzL8.1e8nOeP/17yuiWiheXA//a.qf5kzDNsT6xt8aLGApl8bsxTT1tECPXmf6VCq0Xc5pg=")
 ki2.loginResult()
 
-ki3 = VIPRO.LINE()
+ki3 = CYBERTK.LINE()
 ki3.login(token="EsqqFxpV0wbhpqm119Qf.StMJ2yMSv7H5XrT17lGnZW.5y/gFUTpJASiv0SPf1fRU6e9iu9aBWYr6xpzfxlNC+o=")
 ki3.loginResult()
 
-ki4 = VIPRO.LINE()
+ki4 = CYBERTK.LINE()
 ki4.login(token="EsRTnS2XJvUseJVHj2Ua.SD28EqyjtLBjPT144PdcQG.cpDFMsy5pUKzJLzxpHVYu6AzHfVf7KZA1qKw/42/nW4=")
 ki4.loginResult()
 
-ki5 = VIPRO.LINE()
+ki5 = CYBERTK.LINE()
 ki5.login(token="Eslrl9nIv8ffrUp3Ommc.Ee/eeDlrP0uTdFlXuHf9Na.WfXuiqwhbGKI2UuaKFru01WcT7vrJiaC5aeyOmPb7Q4=")
 ki5.loginResult()
 
-ki6 = VIPRO.LINE()
+ki6 = CYBERTK.LINE()
 ki6.login(token="EsRNxYSs8sEXjqZTnYJ9.VfG2daMSMKOL78PxRGOi6q.i+jYhy6BEauEJpoCpHjYtMv+/giVSnvOCqqm+5deSrQ=")
 ki6.loginResult()
 
-ki7 = VIPRO.LINE()
+ki7 = CYBERTK.LINE()
 ki7.login(token="EsXWKc1xIVBABEpguSY6.u5E0qHumGolsyebggFHFzG.kXPGyCt15KeM7Ch6SzKylMmwCiO/o9pl6xuPzE42bsE=")
 ki7.loginResult()
 
-ki8 = VIPRO.LINE()
+ki8 = CYBERTK.LINE()
 ki8.login(token="EsXYhSGsrBgirQIgiFlf.0Gxc/M3RVqR4nYkPcDjtZW.a8reeSge/Q7XLhSjK2G+efF1RzASHkRHL8xdeWUHqAI=")
 ki8.loginResult()
 
-ki9 = VIPRO.LINE()
+ki9 = CYBERTK.LINE()
 ki9.login(token="Esr3YuojB0sylnXPTWX3.Z7tUqKO5oaEP2cnIzYreyW.YueNAifwqpRcwq6oUjxmO148hlttV4knXgFnO3Xzx7c=")
 ki9.loginResult()
 
-ki10 = VIPRO.LINE() #Ghost
+ki10 = CYBERTK.LINE() #Ghost
 ki10.login(token="EsGzmax1m9HCvjscTSvc.Ee/eeDlrP0uTdFlXuHf9Na.kBFK3ofvtKp2VAP4r6pZw2nioywfdhgin3IqzbyFIA4=")
 ki10.loginResult()
 print "═══「vipro login success」═══"
