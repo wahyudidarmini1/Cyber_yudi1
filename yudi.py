@@ -28,41 +28,41 @@ ki = CYBERTK.LINE()
 ki.login(token="EsAT5kyY1TNYKD1TVRk3.eXGEKA8y87MQtoFvPFGwuW.1DnxoTlPr1ILLFX434baggg5zhPQ3VmpORJ5C0jPGuk=")
 ki.loginResult()
 
-kk= CYBERTK.LINE()
-kk.login(token="EsXQKI9b4s7cuLspPzL8.1e8nOeP/17yuiWiheXA//a.qf5kzDNsT6xt8aLGApl8bsxTT1tECPXmf6VCq0Xc5pg=")
-kk.loginResult()
+ki2= CYBERTK.LINE()
+ki2.login(token="EsXQKI9b4s7cuLspPzL8.1e8nOeP/17yuiWiheXA//a.qf5kzDNsT6xt8aLGApl8bsxTT1tECPXmf6VCq0Xc5pg=")
+ki2.loginResult()
 
-kc = CYBERTK.LINE()
-kc.login(token="EsqqFxpV0wbhpqm119Qf.StMJ2yMSv7H5XrT17lGnZW.5y/gFUTpJASiv0SPf1fRU6e9iu9aBWYr6xpzfxlNC+o=")
-kc.loginResult()
+ki3 = CYBERTK.LINE()
+ki3.login(token="EsqqFxpV0wbhpqm119Qf.StMJ2yMSv7H5XrT17lGnZW.5y/gFUTpJASiv0SPf1fRU6e9iu9aBWYr6xpzfxlNC+o=")
+ki3.loginResult()
 
-ks = CYBERTK.LINE()
-ks.login(token="EsRTnS2XJvUseJVHj2Ua.SD28EqyjtLBjPT144PdcQG.cpDFMsy5pUKzJLzxpHVYu6AzHfVf7KZA1qKw/42/nW4=")
-ks.loginResult()
+ki4 = CYBERTK.LINE()
+ki4.login(token="EsRTnS2XJvUseJVHj2Ua.SD28EqyjtLBjPT144PdcQG.cpDFMsy5pUKzJLzxpHVYu6AzHfVf7KZA1qKw/42/nW4=")
+ki4.loginResult()
 
-k1 = CYBERTK.LINE()
-k1.login(token="Esr3aFqK0L6GCKC13d4b.laBbOEpcsXIXQThDvNl//W.ilft7V/z9TdTFNRh2jeR2QpLDKtdt5apyFz3slp/QN0=")
-k1.loginResult()
+ki5 = CYBERTK.LINE()
+ki5.login(token="Esr3aFqK0L6GCKC13d4b.laBbOEpcsXIXQThDvNl//W.ilft7V/z9TdTFNRh2jeR2QpLDKtdt5apyFz3slp/QN0=")
+ki5.loginResult()
 
-k2 = CYBERTK.LINE()
-k2.login(token="EsRNxYSs8sEXjqZTnYJ9.VfG2daMSMKOL78PxRGOi6q.i+jYhy6BEauEJpoCpHjYtMv+/giVSnvOCqqm+5deSrQ=")
-k2.loginResult()
+ki6 = CYBERTK.LINE()
+ki6.login(token="EsRNxYSs8sEXjqZTnYJ9.VfG2daMSMKOL78PxRGOi6q.i+jYhy6BEauEJpoCpHjYtMv+/giVSnvOCqqm+5deSrQ=")
+ki6.loginResult()
 
-k3 = CYBERTK.LINE()
-k3.login(token="EsXWKc1xIVBABEpguSY6.u5E0qHumGolsyebggFHFzG.kXPGyCt15KeM7Ch6SzKylMmwCiO/o9pl6xuPzE42bsE=")
-k3.loginResult()
+ki7 = CYBERTK.LINE()
+ki7.login(token="EsXWKc1xIVBABEpguSY6.u5E0qHumGolsyebggFHFzG.kXPGyCt15KeM7Ch6SzKylMmwCiO/o9pl6xuPzE42bsE=")
+ki7.loginResult()
 
-k4 = CYBERTK.LINE()
-k4.login(token="EsXYhSGsrBgirQIgiFlf.0Gxc/M3RVqR4nYkPcDjtZW.a8reeSge/Q7XLhSjK2G+efF1RzASHkRHL8xdeWUHqAI=")
-k4.loginResult()
+ki8 = CYBERTK.LINE()
+ki8.login(token="EsXYhSGsrBgirQIgiFlf.0Gxc/M3RVqR4nYkPcDjtZW.a8reeSge/Q7XLhSjK2G+efF1RzASHkRHL8xdeWUHqAI=")
+ki8.loginResult()
 
-k5 = CYBERTK.LINE()
-k5.login(token="Esr3YuojB0sylnXPTWX3.Z7tUqKO5oaEP2cnIzYreyW.YueNAifwqpRcwq6oUjxmO148hlttV4knXgFnO3Xzx7c=")
-k5.loginResult()
+ki9 = CYBERTK.LINE()
+ki9.login(token="Esr3YuojB0sylnXPTWX3.Z7tUqKO5oaEP2cnIzYreyW.YueNAifwqpRcwq6oUjxmO148hlttV4knXgFnO3Xzx7c=")
+ki9.loginResult()
 
-k6 = CYBERTK.LINE() #Ghost
-k6.login(token="EsYG5inLFlL4x1xgIyv1.hSPlQK0sOlldo8W2iFcJWq.+EM/UrNqR2ihNEkmgt4dQWUOL8H0TOPzAp5LbpGJN6c=")
-k6.loginResult()
+ki10 = CYBERTK.LINE() #Ghost
+ki10.login(token="EsYG5inLFlL4x1xgIyv1.hSPlQK0sOlldo8W2iFcJWq.+EM/UrNqR2ihNEkmgt4dQWUOL8H0TOPzAp5LbpGJN6c=")
+ki10.loginResult()
 print "═══「wahyudi login success」═══"
 reload(sys)
 sys.setdefaultencoding('utf-8')
@@ -2528,9 +2528,9 @@ def bot(op):
                         vipro.sendText(msg.to,"Off ✖")
                     else:
                         vipro.sendText(msg.to,"Off ✖")
-            elif msg.text.lower() == 'Set':
+            elif msg.text.lower() == 'set':
               if msg.from_ in creator + admin:
-                md = "╔══「 jombang ʙᴏᴛ」══╗\n║═════════════║\n"
+                md = "╔══「 ᴠɪᴘʀᴏ ʙᴏᴛ」══╗\n║═════════════║\n"
                 if wait["likeOn"] == True: md+="║☆║Like:ON➡️✅\n"
                 else: md+="║☆║Like:OFF➡️❌\n"
                 if wait["wcOn"] == True: md+="║☆║Welcome:ON➡️✅\n"
@@ -2562,7 +2562,7 @@ def bot(op):
                 if wait["autoAdd"] == True: md+="║☆║Add:ON➡️✅\n"
                 else:md+="║☆║Add:OFF➡️❌\n"
                 if wait["commentOn"] == True: md+="║☆║Com:ON➡️✅\n"
-                else:md+="║☆║Com:OFF➡️❌\n║═║❨◄═══►❩\n║☆║◄═PROTECTION═►\n║═║═jombang═╣\n"
+                else:md+="║☆║Com:OFF➡️❌\n║═║❨◄═══►❩\n║☆║◄═PROTECTION═►\n║═║═VIPRO═╣\n"
                 if wait["protect"] == True: md+="║☆║Pro:ON➡️✅\n"
                 else:md+="║☆║Pro:OFF➡️❌\n"
                 if wait["linkprotect"] == True: md+="║☆║ProtectQr:ON➡️✅\n"
@@ -4395,8 +4395,8 @@ def bot(op):
                     msg.text = txt
                     msg.contentMetadata = {u'MENTION':json.dumps({"MENTIONEES":d})}
                     vipro.sendMessage(msg) 
-            elif msg.text.lower() == 'Masuk':
-                if msg.from_ in creator:
+            elif msg.text.lower() == 'in':
+                if msg.from_ in creator + admin:
                         G = vipro.getGroup(msg.to)
                         ginfo = vipro.getGroup(msg.to)
                         G.preventJoinByTicket = False
@@ -4428,7 +4428,6 @@ def bot(op):
                         print "kicker ok"
                         G.preventJoinByTicket(G)
                         random.choice(KAC).updateGroup(G)
-
 #-----------------------------------------------
             elif msg.text.lower() == 'reinvite':
               if msg.from_ in creator + admin:
@@ -4466,7 +4465,7 @@ def bot(op):
                         G.preventJoinByTicket(G)
                         ki.updateGroup(G)
 #-----------------------------------------------
-            elif "B1 in" in msg.text:
+            elif "Masuk" in msg.text:
                 if msg.from_ in creator + admin:
                         G = vipro.getGroup(msg.to)
                         ginfo = vipro.getGroup(msg.to)
@@ -4475,6 +4474,23 @@ def bot(op):
                         invsend = 0
                         Ticket = vipro.reissueGroupTicket(msg.to)
                         ki.acceptGroupInvitationByTicket(msg.to,Ticket)
+                        time.sleep(0.01)
+                        ki2.acceptGroupInvitationByTicket(msg.to,Ticket)
+                        time.sleep(0.01)
+                        ki3.acceptGroupInvitationByTicket(msg.to,Ticket)
+                        time.sleep(0.01)
+                        ki4.acceptGroupInvitationByTicket(msg.to,Ticket)
+                        time.sleep(0.01)
+                        ki5.acceptGroupInvitationByTicket(msg.to,Ticket)
+                        time.sleep(0.01)
+                        ki6.acceptGroupInvitationByTicket(msg.to,Ticket)
+                        time.sleep(0.01)
+                        ki7.acceptGroupInvitationByTicket(msg.to,Ticket)
+                        time.sleep(0.01)
+                        ki8.acceptGroupInvitationByTicket(msg.to,Ticket)
+                        time.sleep(0.01)
+                        ki9.acceptGroupInvitationByTicket(msg.to,Ticket)
+                        time.sleep(0.01)
                         G = vipro.getGroup(msg.to)
                         ginfo = vipro.getGroup(msg.to)
                         G.preventJoinByTicket = True
@@ -4626,8 +4642,7 @@ def bot(op):
               if msg.from_ in creator + admin:
                 if msg.toType == 2:
                     ginfo = vipro.getGroup(msg.to)
-                    try:
-                        vipro.sendText(msg.to,"􀜁􀇔􏿿Bye Bye😘 "  +  str(ginfo.name)  + "")
+                    try
                         ki.leaveGroup(msg.to)
                         ki2.leaveGroup(msg.to)
                         ki3.leaveGroup(msg.to)
@@ -4637,6 +4652,7 @@ def bot(op):
                         ki7.leaveGroup(msg.to)
                         ki8.leaveGroup(msg.to)
                         ki9.leaveGroup(msg.to)
+			vipro.sendText(msg.to,"􀜁􀇔􏿿Bye Bye😘 "  +  str(ginfo.name)  + "")
                     except:
                         pass
 #-----------------------------------------------
