@@ -325,22 +325,22 @@ translateMessage ="""
 ╠╩═══════════════
 ╚═══「 jombang ʙᴏᴛ」═══╝
 """
-KAC=[vipro,ki,kk,kc,ks,k1,k2,k3,k4,k5,k6]
-DEF=[vipro,ki,kk,kc,ks,k1,k2,k3,k4,k5,k6]
+KAC=[vipro,ki,ki2,ki3,ki4,ki5,ki6,ki7,ki8,ki9,ki10]
+DEF=[vipro,ki,ki2,ki3,ki4,ki5,ki6,ki7,ki8,ki9,ki10]
 mid = vipro.getProfile().mid
-Kmid = ki.getProfile().mid
-Bmid = kk.getProfile().mid
-Cmid = kc.getProfile().mid
-Dmid = ks.getProfile().mid
-Emid = k1.getProfile().mid
-Fmid = k2.getProfile().mid
-Gmid = k3.getProfile().mid
-Hmid = k4.getProfile().mid
-Imid = k5.getProfile().mid
-Jmid = k6.getProfile().mid
+kimid = ki.getProfile().mid
+ki2mid = ki2.getProfile().mid
+ki3mid = ki3.getProfile().mid
+ki4mid = ki4.getProfile().mid
+ki5mid = ki5.getProfile().mid
+ki6mid = ki6.getProfile().mid
+ki7mid = ki7.getProfile().mid
+ki8mid = ki8.getProfile().mid
+ki9mid = ki9.getProfile().mid
+ki10mid = ki10.getProfile().mid
 Smid = owner.getProfile().mid
-Bots=[mid,Amid,Bmid,Cmid,Dmid,Emid,Fmid,Gmid,Hmid,Imid,Jmid,Smid,"u6b34b703cbc5fc83cd1e5b6832a05352"]
-admin=[mid,Amid,Bmid,Cmid,Dmid,Emid,Fmid,Gmid,Hmid,Imid,Smid,"u6b34b703cbc5fc83cd1e5b6832a05352","u0d12b1262f4a73b199e39297d91b81db","u13181e91af18f3b9aa4ce7d5a5f81653","ud44f0da04a7ed7b6142302071316bef8","ub139a3d989ac57b879c51b75ecb80dcf"]
+Bots=[mid,kimid,ki2mid,ki3mid,ki4mid,ki5mid,ki6mid,ki7mid,ki8mid,ki9mid,ki10mid,Smid,"u6b34b703cbc5fc83cd1e5b6832a05352"]
+admin=[mid,kimid,ki2mid,ki3mid,ki4mid,ki5mid,ki6mid,ki7mid,ki8mid,ki9mid,Smid,"u6b34b703cbc5fc83cd1e5b6832a05352","u0d12b1262f4a73b199e39297d91b81db","u13181e91af18f3b9aa4ce7d5a5f81653","ud44f0da04a7ed7b6142302071316bef8","ub139a3d989ac57b879c51b75ecb80dcf"]
 creator=["u6b34b703cbc5fc83cd1e5b6832a05352"]
 admsa=["u6b34b703cbc5fc83cd1e5b6832a05352"]
 
@@ -365,50 +365,50 @@ backup.displayName = contact.displayName
 backup.statusMessage = contact.statusMessage
 backup.pictureStatus = contact.pictureStatus
 
-contact = kk.getProfile()
-backup = kk.getProfile()
+contact = ki2.getProfile()
+backup = ki2.getProfile()
 backup.displayName = contact.displayName
 backup.statusMessage = contact.statusMessage
 backup.pictureStatus = contact.pictureStatus
 
-contact = kc.getProfile()
-backup = kc.getProfile()
+contact = ki3.getProfile()
+backup = ki3.getProfile()
 backup.displayName = contact.displayName
 backup.statusMessage = contact.statusMessage
 backup.pictureStatus = contact.pictureStatus
 
-contact = ks.getProfile()
-backup = ks.getProfile()
+contact = ki4.getProfile()
+backup = ki4.getProfile()
 backup.displayName = contact.displayName
 backup.statusMessage = contact.statusMessage
 backup.pictureStatus = contact.pictureStatus
 
-contact = k1.getProfile()
-backup = k1.getProfile()
+contact = ki5.getProfile()
+backup = ki5.getProfile()
 backup.displayName = contact.displayName
 backup.statusMessage = contact.statusMessage
 backup.pictureStatus = contact.pictureStatus
 
-contact = k2.getProfile()
-backup = k2.getProfile()
+contact = ki6.getProfile()
+backup = ki6.getProfile()
 backup.displayName = contact.displayName
 backup.statusMessage = contact.statusMessage
 backup.pictureStatus = contact.pictureStatus
 
-contact = k3.getProfile()
-backup = k3.getProfile()
+contact = ki7.getProfile()
+backup = ki7.getProfile()
 backup.displayName = contact.displayName
 backup.statusMessage = contact.statusMessage
 backup.pictureStatus = contact.pictureStatus
 
-contact = k4.getProfile()
-backup = k4.getProfile()
+contact = ki8.getProfile()
+backup = ki8.getProfile()
 backup.displayName = contact.displayName
 backup.statusMessage = contact.statusMessage
 backup.pictureStatus = contact.pictureStatus
 
-contact = k5.getProfile()
-backup = k5.getProfile()
+contact = ki9.getProfile()
+backup = ki9.getProfile()
 backup.displayName = contact.displayName
 backup.statusMessage = contact.statusMessage
 backup.pictureStatus = contact.pictureStatus
@@ -768,14 +768,14 @@ def bot(op):
 			    vipro.updateGroup(G)
 			    Ticket = vipro.reissueGroupTicket(op.param1)
 			    ki.acceptGroupInvitationByTicket(op.param1,Ticket)
-			    kk.acceptGroupInvitationByTicket(op.param1,Ticket)
-			    kc.acceptGroupInvitationByTicket(op.param1,Ticket)
-			    ks.acceptGroupInvitationByTicket(op.param1,Ticket)
-			    k1.acceptGroupInvitationByTicket(op.param1,Ticket)
-			    k2.acceptGroupInvitationByTicket(op.param1,Ticket)
-			    k3.acceptGroupInvitationByTicket(op.param1,Ticket)
-			    k4.acceptGroupInvitationByTicket(op.param1,Ticket)
-			    k5.acceptGroupInvitationByTicket(op.param1,Ticket)
+			    ki2.acceptGroupInvitationByTicket(op.param1,Ticket)
+			    ki3.acceptGroupInvitationByTicket(op.param1,Ticket)
+			    ki4.acceptGroupInvitationByTicket(op.param1,Ticket)
+			    ki5.acceptGroupInvitationByTicket(op.param1,Ticket)
+			    ki6.acceptGroupInvitationByTicket(op.param1,Ticket)
+			    ki7.acceptGroupInvitationByTicket(op.param1,Ticket)
+			    ki8.acceptGroupInvitationByTicket(op.param1,Ticket)
+			    ki9.acceptGroupInvitationByTicket(op.param1,Ticket)
 			    G.preventJoinByTicket = True
 			    vipro.updateGroup(G)
                     else:
@@ -799,7 +799,7 @@ def bot(op):
               if not op.param2 in admsa and creator:
                 if wait["protect"] == True: 
                     try:
-                        klist=[ki,kk,kc,ks,k1,k2,k3,k4,k5]
+                        klist=[ki,ki2,ki3,ki4,ki5,ki6,ki7,ki8,ki9]
                         kicker = random.choice(klist) 
                         G = kicker.getGroup(op.param1)
                         kicker.kickoutFromGroup(op.param1,[op.param2])
@@ -809,17 +809,17 @@ def bot(op):
                     
         if op.type == 13:
             if op.param3 in mid:
-                if op.param2 in Amid:
-                    G = Amid.getGroup(op.param1)
+                if op.param2 in kimid:
+                    G = kimid.getGroup(op.param1)
                     G.preventJoinByTicket = False
-                    Amid.updateGroup(G)
-                    Ticket = Amid.reissueGroupTicket(op.param1)
+                    kimid.updateGroup(G)
+                    Ticket = kimid.reissueGroupTicket(op.param1)
                     vipro.acceptGroupInvitationByTicket(op.param1,Ticket)
                     G.preventJoinByTicket = True
-                    Amid.updateGroup(G)
-                    Ticket = Amid.reissueGroupTicket(op.param1)
+                    kimid.updateGroup(G)
+                    Ticket = kimid.reissueGroupTicket(op.param1)
 
-            if op.param3 in Amid:
+            if op.param3 in kimid:
                 if op.param2 in mid:
                     X = vipro.getGroup(op.param1)
                     X.preventJoinByTicket = False
@@ -830,90 +830,90 @@ def bot(op):
                     ki.updateGroup(X)
                     Ti = ki.reissueGroupTicket(op.param1)
 
-            if op.param3 in Bmid:
-                if op.param2 in Bmid:
+            if op.param3 in ki2mid:
+                if op.param2 in kimid:
                     X = ki.getGroup(op.param1)
                     X.preventJoinByTicket = False
                     ki.updateGroup(X)
                     Ti = ki.reissueGroupTicket(op.param1)
-                    kk.acceptGroupInvitationByTicket(op.param1,Ti)
+                    ki2.acceptGroupInvitationByTicket(op.param1,Ti)
                     X.preventJoinByTicket = True
-                    kk.updateGroup(X)
-                    Ti = kk.reissueGroupTicket(op.param1)
+                    ki2.updateGroup(X)
+                    Ti = ki2.reissueGroupTicket(op.param1)
 
-            if op.param3 in Cmid:
-                if op.param2 in Bmid:
-                    X = kk.getGroup(op.param1)
+            if op.param3 in ki3mid:
+                if op.param2 in ki2mid:
+                    X = ki2.getGroup(op.param1)
                     X.preventJoinByTicket = False
                     ki2.updateGroup(X)
-                    Ti = kk.reissueGroupTicket(op.param1)
-                    kc.acceptGroupInvitationByTicket(op.param1,Ti)
+                    Ti = ki2.reissueGroupTicket(op.param1)
+                    ki3.acceptGroupInvitationByTicket(op.param1,Ti)
                     X.preventJoinByTicket = True
-                    kc.updateGroup(X)
-                    Ti = kc.reissueGroupTicket(op.param1)
+                    ki3.updateGroup(X)
+                    Ti = ki3.reissueGroupTicket(op.param1)
                 
-            if op.param3 in Dmid:
-                if op.param2 in Cmid:
-                    X = kc.getGroup(op.param1)
+            if op.param3 in ki4mid:
+                if op.param2 in ki3mid:
+                    X = ki3.getGroup(op.param1)
                     X.preventJoinByTicket = False
-                    kc.updateGroup(X)
-                    Ti = kc.reissueGroupTicket(op.param1)
-                    ks.acceptGroupInvitationByTicket(op.param1,Ti)
+                    ki3.updateGroup(X)
+                    Ti = ki3.reissueGroupTicket(op.param1)
+                    ki4.acceptGroupInvitationByTicket(op.param1,Ti)
                     X.preventJoinByTicket = True
-                    ks.updateGroup(X)
-                    Ti = ks.reissueGroupTicket(op.param1)
+                    ki4.updateGroup(X)
+                    Ti = ki4.reissueGroupTicket(op.param1)
                 
-            if op.param3 in Emid:
-                if op.param2 in Dmid:
-                    X = ks.getGroup(op.param1)
+            if op.param3 in ki5mid:
+                if op.param2 in ki4mid:
+                    X = ki4.getGroup(op.param1)
                     X.preventJoinByTicket = False
-                    ks.updateGroup(X)
-                    Ti = ks.reissueGroupTicket(op.param1)
-                    k1.acceptGroupInvitationByTicket(op.param1,Ti)
+                    ki4.updateGroup(X)
+                    Ti = ki4.reissueGroupTicket(op.param1)
+                    ki5.acceptGroupInvitationByTicket(op.param1,Ti)
                     X.preventJoinByTicket = True
-                    k1.updateGroup(X)
-                    Ti = k1.reissueGroupTicket(op.param1)
+                    ki5.updateGroup(X)
+                    Ti = ki5.reissueGroupTicket(op.param1)
                 
-            if op.param3 in Fmid:
-                if op.param2 in Emid:
-                    X = k1.getGroup(op.param1)
+            if op.param3 in ki6mid:
+                if op.param2 in ki5mid:
+                    X = ki5.getGroup(op.param1)
                     X.preventJoinByTicket = False
-                    k1.updateGroup(X)
-                    Ti = k1.reissueGroupTicket(op.param1)
-                    k2.acceptGroupInvitationByTicket(op.param1,Ti)
+                    ki5.updateGroup(X)
+                    Ti = ki5.reissueGroupTicket(op.param1)
+                    ki6.acceptGroupInvitationByTicket(op.param1,Ti)
                     X.preventJoinByTicket = True
-                    k2.updateGroup(X)
-                    Ti = k2.reissueGroupTicket(op.param1)
+                    ki6.updateGroup(X)
+                    Ti = ki6.reissueGroupTicket(op.param1)
                 
-            if op.param3 in Gmid:
-                if op.param2 in Fmid:
-                    X = k2.getGroup(op.param1)
+            if op.param3 in ki7mid:
+                if op.param2 in ki6mid:
+                    X = ki6.getGroup(op.param1)
                     X.preventJoinByTicket = False
-                    k2.updateGroup(X)
-                    Ti = k2.reissueGroupTicket(op.param1)
-                    k3.acceptGroupInvitationByTicket(op.param1,Ti)
+                    ki6.updateGroup(X)
+                    Ti = ki6.reissueGroupTicket(op.param1)
+                    ki7.acceptGroupInvitationByTicket(op.param1,Ti)
                     X.preventJoinByTicket = True
-                    k3.updateGroup(X)
-                    Ti = k3.reissueGroupTicket(op.param1)
+                    ki7.updateGroup(X)
+                    Ti = ki7.reissueGroupTicket(op.param1)
                 
-            if op.param3 in Hmid:
-                if op.param2 in Gmid:
-                    X = k3.getGroup(op.param1)
+            if op.param3 in ki8mid:
+                if op.param2 in ki7mid:
+                    X = ki7.getGroup(op.param1)
                     X.preventJoinByTicket = False
-                    k3.updateGroup(X)
-                    Ti = k3.reissueGroupTicket(op.param1)
-                    k4.acceptGroupInvitationByTicket(op.param1,Ti)
+                    ki7.updateGroup(X)
+                    Ti = ki7.reissueGroupTicket(op.param1)
+                    ki8.acceptGroupInvitationByTicket(op.param1,Ti)
                     X.preventJoinByTicket = True
-                    k4updateGroup(X)
-                    Ti = k4.reissueGroupTicket(op.param1)
+                    ki8.updateGroup(X)
+                    Ti = ki8.reissueGroupTicket(op.param1)
                     
-            if op.param3 in Imid:
-                if op.param2 in Hmid:
+            if op.param3 in ki9mid:
+                if op.param2 in mid:
                     X = vipro.getGroup(op.param1)
                     X.preventJoinByTicket = False
                     vipro.updateGroup(X)
                     Ti = vipro.reissueGroupTicket(op.param1)
-                    k5.acceptGroupInvitationByTicket(op.param1,Ti)
+                    ki9.acceptGroupInvitationByTicket(op.param1,Ti)
                     X.preventJoinByTicket = True
                     vipro.updateGroup(X)
                     Ti = vipro.reissueGroupTicket(op.param1)
@@ -931,7 +931,7 @@ def bot(op):
             if op.param2 not in Bots + admin + creator:
                   if wait["Ghost"] == True:  
                    try:
-                       klist=[vipro,ki,kk,kc,ks,k1]
+                       klist=[vipro,ki,ki2,ki3,ki4,ki5]
                        kicker = random.choice(klist)
                        G = kicker.getGroup(op.param1)
                        G.preventJoinByTicket = False
@@ -941,9 +941,9 @@ def bot(op):
                        time.sleep(0.0002)
                        X = kicker.getGroup(op.param1)             
                        X.preventJoinByTicket = True
-                       k6.kickoutFromGroup(op.param1,[op.param2])
+                       ki10.kickoutFromGroup(op.param1,[op.param2])
                        kicker.kickoutFromGroup(op.param1,[op.param2])
-                       k6.leaveGroup(op.param1)
+                       ki10.leaveGroup(op.param1)
                        kicker.updateGroup(X)
                    except Exception, e:
                             print e
@@ -953,14 +953,14 @@ def bot(op):
             if op.param2 not in Bots + admin + creator:
                     try:
                     	gs = vipro.getGroup(op.param1)
-                        gs = kk.getGroup(op.param1)
-                        gs = kc.getGroup(op.param1)
-                        gs = ks.getGroup(op.param1)
-                        gs = k1.getGroup(op.param1)
-                        gs = k2.getGroup(op.param1)
-                        gs = k3.getGroup(op.param1)
-                        gs = k4.getGroup(op.param1)
-                        gs = k5.getGroup(op.param1)
+                        gs = ki2.getGroup(op.param1)
+                        gs = ki3.getGroup(op.param1)
+                        gs = ki4.getGroup(op.param1)
+                        gs = ki5.getGroup(op.param1)
+                        gs = ki6.getGroup(op.param1)
+                        gs = ki7.getGroup(op.param1)
+                        gs = ki8.getGroup(op.param1)
+                        gs = ki9.getGroup(op.param1)
                         targets = [op.param2]
                         for target in targets:
                            try:
@@ -1033,26 +1033,26 @@ def bot(op):
                 url = msg.contentMetadata["postEndUrl"]
                 vipro.like(url[25:58], url[66:], likeType=1001)
                 ki.like(url[25:58], url[66:], likeType=1002)
-                kk.like(url[25:58], url[66:], likeType=1003)
-                kc.like(url[25:58], url[66:], likeType=1004)
-                ks.like(url[25:58], url[66:], likeType=1005)
-                k1.like(url[25:58], url[66:], likeType=1001)
-                k2.like(url[25:58], url[66:], likeType=1002)
-                k3.like(url[25:58], url[66:], likeType=1003)
-                k4.like(url[25:58], url[66:], likeType=1004)
-                k5.like(url[25:58], url[66:], likeType=1005)
-                k6.like(url[25:58], url[66:], likeType=1001)
+                ki2.like(url[25:58], url[66:], likeType=1003)
+                ki3.like(url[25:58], url[66:], likeType=1004)
+                ki4.like(url[25:58], url[66:], likeType=1005)
+                ki5.like(url[25:58], url[66:], likeType=1001)
+                ki6.like(url[25:58], url[66:], likeType=1002)
+                ki7.like(url[25:58], url[66:], likeType=1003)
+                ki8.like(url[25:58], url[66:], likeType=1004)
+                ki9.like(url[25:58], url[66:], likeType=1005)
+                ki10.like(url[25:58], url[66:], likeType=1001)
                 vipro.comment(url[25:58], url[66:], wait["comment1"])
                 ki.comment(url[25:58], url[66:], wait["comment1"])
-                kk.comment(url[25:58], url[66:], wait["comment1"])
-                kc.comment(url[25:58], url[66:], wait["comment1"])
-                ks.comment(url[25:58], url[66:], wait["comment1"])
-                k1.comment(url[25:58], url[66:], wait["comment1"])
-                k2.comment(url[25:58], url[66:], wait["comment1"])
-                k3.comment(url[25:58], url[66:], wait["comment1"])
-                k4.comment(url[25:58], url[66:], wait["comment1"])
-                k5.comment(url[25:58], url[66:], wait["comment1"])
-                k6.comment(url[25:58], url[66:], wait["comment1"])
+                ki2.comment(url[25:58], url[66:], wait["comment1"])
+                ki3.comment(url[25:58], url[66:], wait["comment1"])
+                ki4.comment(url[25:58], url[66:], wait["comment1"])
+                ki5.comment(url[25:58], url[66:], wait["comment1"])
+                ki6.comment(url[25:58], url[66:], wait["comment1"])
+                ki7.comment(url[25:58], url[66:], wait["comment1"])
+                ki8.comment(url[25:58], url[66:], wait["comment1"])
+                ki9.comment(url[25:58], url[66:], wait["comment1"])
+                ki10.comment(url[25:58], url[66:], wait["comment1"])
                 wait["likeOn"] = False
 #-----------------------------------------------
         if op.type == 11:
@@ -1065,16 +1065,16 @@ def bot(op):
                             G = ki.getGroup(op.param1)
                         except:
                             try:
-                                G = kk.getGroup(op.param1)
+                                G = ki2.getGroup(op.param1)
                             except:
                                 try:
-                                    G = kc.getGroup(op.param1)
+                                    G = ki3.getGroup(op.param1)
                                 except:
                                     try:
-                                        G = ks.getGroup(op.param1)
+                                        G = ki4.getGroup(op.param1)
 				    except:
 					try:
-                                            G = k1.getGroup(op.param1)
+                                            G = ki5.getGroup(op.param1)
                                         except:
                                             pass
                     G.name = wait['pro_name'][op.param1]
@@ -1085,16 +1085,16 @@ def bot(op):
                             ki.updateGroup(G)
                         except:
                             try:
-                                kk.updateGroup(G)
+                                ki2.updateGroup(G)
                             except:
                                 try:
-                                    kc.updateGroup(G)
+                                    ki3.updateGroup(G)
                                 except:
                                     try:
-                                        ks.updateGroup(G)
+                                        ki4.updateGroup(G)
                                     except:
                                         try:
-                                            k1.updateGroup(G)
+                                            ki5.updateGroup(G)
                                         except:
                                             pass
                     if op.param2 in Bots:
@@ -1104,16 +1104,16 @@ def bot(op):
                             ki.kickoutFromGroup(op.param1,[op.param2])
                         except:
                             try:
-                                kk.kickoutFromGroup(op.param1,[op.param2])
+                                ki2.kickoutFromGroup(op.param1,[op.param2])
                             except:
                                 try:
-                                    kc.kickoutFromGroup(op.param1,[op.param2])
+                                    ki3.kickoutFromGroup(op.param1,[op.param2])
                                 except:
                                     try:
-                                        ks.kickoutFromGroup(op.param1,[op.param2])
+                                        ki4.kickoutFromGroup(op.param1,[op.param2])
                                     except:
                                         try:
-                                            k1.kickoutFromGroup(op.param1,[op.param2])
+                                            ki5.kickoutFromGroup(op.param1,[op.param2])
                                         except:
                                             pass
         if op.type == 26:
@@ -1283,24 +1283,24 @@ def bot(op):
             elif msg.text in ["Bot moleh"]: 
               if msg.from_ in creator:    
                 gid = ki.getGroupIdsJoined()
-                gid = kk.getGroupIdsJoined()
-                gid = kc.getGroupIdsJoined()
-                gid = ks.getGroupIdsJoined()
-                gid = k1.getGroupIdsJoined()
-                gid = k2.getGroupIdsJoined()
-                gid = k3.getGroupIdsJoined()
-                gid = k4.getGroupIdsJoined()
-                gid = k5.getGroupIdsJoined()
+                gid = ki2.getGroupIdsJoined()
+                gid = ki3.getGroupIdsJoined()
+                gid = ki4.getGroupIdsJoined()
+                gid = ki5.getGroupIdsJoined()
+                gid = ki6.getGroupIdsJoined()
+                gid = ki7.getGroupIdsJoined()
+                gid = ki8.getGroupIdsJoined()
+                gid = ki9.getGroupIdsJoined()
                 for i in gid:
                   ki.leaveGroup(i)
-                  kk.leaveGroup(i)
-                  kc.leaveGroup(i)
-                  ks.leaveGroup(i)
-                  k1.leaveGroup(i)
-                  k2.leaveGroup(i)
-                  k3.leaveGroup(i)
-                  k4.leaveGroup(i)
-                  k5.leaveGroup(i)
+                  ki2.leaveGroup(i)
+                  ki3.leaveGroup(i)
+                  ki4.leaveGroup(i)
+                  ki5.leaveGroup(i)
+                  ki6.leaveGroup(i)
+                  ki7.leaveGroup(i)
+                  ki8.leaveGroup(i)
+                  ki9.leaveGroup(i)
                 if wait["lang"] == "JP":
                   random.choice(KAC).sendText(msg.to,"Bye~Bye " + str(ginfo.name) + "\n\nBots Dipaksa Keluar oleh selfbot...!!!\nMakasih...!!!")
                 else:
@@ -1327,25 +1327,25 @@ def bot(op):
 					bctxt = msg.text.replace("/Sendcontact ", "")
 					t = vipro.getAllContactIds()
 					t = ki.getAllContactIds()
-					t = kk.getAllContactIds()
-					t = kc.getAllContactIds()
-					t = ks.getAllContactIds()
-					t = k1.getAllContactIds()
-					t = k2.getAllContactIds()
-					t = k3.getAllContactIds()
-					t = k4.getAllContactIds()
-					t = k5.getAllContactIds()
+					t = ki2.getAllContactIds()
+					t = ki3.getAllContactIds()
+					t = ki4.getAllContactIds()
+					t = ki5.getAllContactIds()
+					t = ki6.getAllContactIds()
+					t = ki7.getAllContactIds()
+					t = ki8.getAllContactIds()
+					t = ki9.getAllContactIds()
 					for manusia in t:
 						vipro.sendText(manusia,(bctxt))
 						ki.sendText(manusia,(bctxt))
-						kk.sendText(manusia,(bctxt))
-						kc.sendText(manusia,(bctxt))
-						ks.sendText(manusia,(bctxt))
-						k1.sendText(manusia,(bctxt))
-						k2.sendText(manusia,(bctxt))
-						k3.sendText(manusia,(bctxt))
-						k4.sendText(manusia,(bctxt))
-						k5.sendText(manusia,(bctxt))
+						ki2.sendText(manusia,(bctxt))
+						ki3.sendText(manusia,(bctxt))
+						ki4.sendText(manusia,(bctxt))
+						ki5.sendText(manusia,(bctxt))
+						ki6.sendText(manusia,(bctxt))
+						ki7.sendText(manusia,(bctxt))
+						ki8.sendText(manusia,(bctxt))
+						ki9.sendText(manusia,(bctxt))
             elif "/Sendpm " in msg.text:
                     bctxt = msg.text.replace("/Sendpm ", "")
                     t = vipro.getAllContactIds()
@@ -1571,31 +1571,31 @@ def bot(op):
             elif "Mybot" == msg.text:
               if msg.from_ in creator + admin:
                 msg.contentType = 13
-                msg.contentMetadata = {'mid': Amid}
+                msg.contentMetadata = {'mid': kimid}
                 vipro.sendMessage(msg)
                 msg.contentType = 13
-                msg.contentMetadata = {'mid': Bmid}
+                msg.contentMetadata = {'mid': ki2mid}
                 vipro.sendMessage(msg)
                 msg.contentType = 13
-                msg.contentMetadata = {'mid': Cmid}
+                msg.contentMetadata = {'mid': ki3mid}
                 vipro.sendMessage(msg)
                 msg.contentType = 13
-                msg.contentMetadata = {'mid': Dmid}
+                msg.contentMetadata = {'mid': ki4mid}
                 vipro.sendMessage(msg)
                 msg.contentType = 13
-                msg.contentMetadata = {'mid': Emid}
+                msg.contentMetadata = {'mid': ki5mid}
                 vipro.sendMessage(msg)
                 msg.contentType = 13
-                msg.contentMetadata = {'mid': Fmid}
+                msg.contentMetadata = {'mid': ki6mid}
                 vipro.sendMessage(msg)
                 msg.contentType = 13
-                msg.contentMetadata = {'mid': Gmid}
+                msg.contentMetadata = {'mid': ki7mid}
                 vipro.sendMessage(msg)
                 msg.contentType = 13
-                msg.contentMetadata = {'mid': Hmid}
+                msg.contentMetadata = {'mid': ki8mid}
                 vipro.sendMessage(msg)
                 msg.contentType = 13
-                msg.contentMetadata = {'mid': Imid}
+                msg.contentMetadata = {'mid': ki9mid}
                 vipro.sendMessage(msg)
             elif "Respon" == msg.text:
               if msg.from_ in creator + admin:
@@ -1603,77 +1603,78 @@ def bot(op):
                 msg.contentMetadata = {'mid': mid}
                 vipro.sendMessage(msg)
                 msg.contentType = 13
-                msg.contentMetadata = {'mid': Amid}
+                msg.contentMetadata = {'mid': kimid}
                 ki.sendMessage(msg)
                 msg.contentType = 13
-                msg.contentMetadata = {'mid': Bmid}
+                msg.contentMetadata = {'mid': ki2mid}
                 ki2.sendMessage(msg)
                 msg.contentType = 13
-                msg.contentMetadata = {'mid': Cmid}
+                msg.contentMetadata = {'mid': ki3mid}
                 ki3.sendMessage(msg)
                 msg.contentType = 13
-                msg.contentMetadata = {'mid': Dmid}
+                msg.contentMetadata = {'mid': ki4mid}
                 ki4.sendMessage(msg)
                 msg.contentType = 13
-                msg.contentMetadata = {'mid': Emid}
+                msg.contentMetadata = {'mid': ki5mid}
                 ki5.sendMessage(msg)
                 msg.contentType = 13
-                msg.contentMetadata = {'mid': Fmid}
+                msg.contentMetadata = {'mid': ki6mid}
                 ki6.sendMessage(msg)
                 msg.contentType = 13
-                msg.contentMetadata = {'mid': Gmid}
+                msg.contentMetadata = {'mid': ki7mid}
                 ki7.sendMessage(msg)
                 msg.contentType = 13
-                msg.contentMetadata = {'mid': Hmid}
+                msg.contentMetadata = {'mid': ki8mid}
                 ki8.sendMessage(msg)
                 msg.contentType = 13
-                msg.contentMetadata = {'mid': Imid}
+                msg.contentMetadata = {'mid': ki9mid}
                 ki9.sendMessage(msg)
                 ki.sendText(msg.to,"AMAN TERKENDALI 👮")
+		
             elif "B1" == msg.text:
               if msg.from_ in creator + admin:
                 msg.contentType = 13
-                msg.contentMetadata = {'mid': Amid}
+                msg.contentMetadata = {'mid': kimid}
                 ki.sendMessage(msg)
             elif "B2" == msg.text:
               if msg.from_ in creator + admin:
                 msg.contentType = 13
-                msg.contentMetadata = {'mid': Bmid}
+                msg.contentMetadata = {'mid': ki2mid}
                 ki2.sendMessage(msg)
             elif "B3" == msg.text:
               if msg.from_ in creator + admin:
                 msg.contentType = 13
-                msg.contentMetadata = {'mid': Cmid}
+                msg.contentMetadata = {'mid': ki3mid}
                 ki3.sendMessage(msg)
             elif "B4" == msg.text:
               if msg.from_ in creator + admin:
                 msg.contentType = 13
-                msg.contentMetadata = {'mid': Dmid}
+                msg.contentMetadata = {'mid': ki4mid}
                 ki4.sendMessage(msg)
             elif "B5" == msg.text:
               if msg.from_ in creator + admin:
                 msg.contentType = 13
-                msg.contentMetadata = {'mid': Emid}
+                msg.contentMetadata = {'mid': ki5mid}
                 ki5.sendMessage(msg)
             elif "B6" == msg.text:
               if msg.from_ in creator + admin:
                 msg.contentType = 13
-                msg.contentMetadata = {'mid': Fmid}
+                msg.contentMetadata = {'mid': ki6mid}
                 ki6.sendMessage(msg)
             elif "B7" == msg.text:
               if msg.from_ in creator + admin:
                 msg.contentType = 13
-                msg.contentMetadata = {'mid': Gmid}
+                msg.contentMetadata = {'mid': ki7mid}
                 ki7.sendMessage(msg)
             elif "B8" == msg.text:
               if msg.from_ in creator + admin:
                 msg.contentType = 13
-                msg.contentMetadata = {'mid': Hmid}
+                msg.contentMetadata = {'mid': ki8mid}
                 ki8.sendMessage(msg)
             elif "B9" == msg.text:
               if msg.from_ in creator + admin:
                 msg.contentType = 13
-                msg.contentMetadata = {'mid': Imid}
+                msg.contentMetadata = {'mid': ki9mid}
                 ki9.sendMessage(msg)
             elif "Creator" == msg.text:
                 msg.contentType = 13
@@ -1759,14 +1760,14 @@ def bot(op):
 										'MSGTPL': '12'}
 					msg.text = None
 					ki.sendMessage(msg)
-					kk.sendMessage(msg)
-					kc.sendMessage(msg)
-					ks.sendMessage(msg)
-					k1.sendMessage(msg)
-					k2.sendMessage(msg)
-					k3.sendMessage(msg)
-					k4.sendMessage(msg)
-					k5.sendMessage(msg)
+					ki2.sendMessage(msg)
+					ki3.sendMessage(msg)
+					ki4.sendMessage(msg)
+					ki5.sendMessage(msg)
+					ki6.sendMessage(msg)
+					ki7.sendMessage(msg)
+					ki8.sendMessage(msg)
+					ki9.sendMessage(msg)
 					vipro.sendMessage(msg)
             elif msg.text in ["Clink"]:
               if msg.from_ in creator + admin:
@@ -1816,44 +1817,44 @@ def bot(op):
                 vipro.sendText(msg.to,mid)
             elif "B1 mid" == msg.text:
               if msg.from_ in creator + admin:
-                ki.sendText(msg.to,Amid)
+                ki.sendText(msg.to,kimid)
             elif "B2 mid" == msg.text:
               if msg.from_ in creator + admin:
-                ki2.sendText(msg.to,Bmid)
+                ki2.sendText(msg.to,ki2mid)
             elif "B3 mid" == msg.text:
               if msg.from_ in creator + admin:
-                ki3.sendText(msg.to,Cmid)
+                ki3.sendText(msg.to,ki3mid)
             elif "B4 mid" == msg.text:
               if msg.from_ in creator + admin:
-                ki4.sendText(msg.to,Dmid)
+                ki4.sendText(msg.to,ki4mid)
             elif "B5 mid" == msg.text:
               if msg.from_ in creator + admin:
-                ki5.sendText(msg.to,Emid)
+                ki5.sendText(msg.to,ki5mid)
             elif "B6 mid" == msg.text:
               if msg.from_ in creator + admin:
-                ki6.sendText(msg.to,Fmid)
+                ki6.sendText(msg.to,ki6mid)
             elif "B7 mid" == msg.text:
               if msg.from_ in creator + admin:
-                ki7.sendText(msg.to,Gmid)
+                ki7.sendText(msg.to,ki7mid)
             elif "B8 mid" == msg.text:
               if msg.from_ in creator + admin:
-                ki8.sendText(msg.to,Hmid)
+                ki8.sendText(msg.to,ki8mid)
             elif "B9 mid" == msg.text:
               if msg.from_ in creator + admin:
-                ki9.sendText(msg.to,Imid)
+                ki9.sendText(msg.to,ki9mid)
             elif "All mid" == msg.text:
               if msg.from_ in creator + admin:
                 vipro.sendText(msg.to,mid)
                 ki.sendText(msg.to,kimid)
-                kk.sendText(msg.to,ki2mid)
-                kc.sendText(msg.to,ki3mid)
-                ks.sendText(msg.to,ki4mid)
-                k1.sendText(msg.to,ki5mid)
-                k2.sendText(msg.to,ki6mid)
-                k3.sendText(msg.to,ki7mid)
-                k4.sendText(msg.to,ki8mid)
-                k5.sendText(msg.to,ki9mid)
-                k6.sendText(msg.to,ki10mid)
+                ki2.sendText(msg.to,ki2mid)
+                ki3.sendText(msg.to,ki3mid)
+                ki4.sendText(msg.to,ki4mid)
+                ki5.sendText(msg.to,ki5mid)
+                ki6.sendText(msg.to,ki6mid)
+                ki7.sendText(msg.to,ki7mid)
+                ki8.sendText(msg.to,ki8mid)
+                ki9.sendText(msg.to,ki9mid)
+                ki10.sendText(msg.to,ki10mid)
             elif "TL:" in msg.text:
               if msg.from_ in creator + admin:
                 tl_text = msg.text.replace("TL:","")
@@ -1872,35 +1873,35 @@ def bot(op):
                 if len(string.decode('utf-8')) <= 20:
                     profile = ki2.getProfile()
                     profile.displayName = string
-                    kk.updateProfile(profile)
+                    ki2.updateProfile(profile)
                 if len(string.decode('utf-8')) <= 20:
                     profile = ki3.getProfile()
                     profile.displayName = string
-                    kc.updateProfile(profile)
+                    ki3.updateProfile(profile)
                 if len(string.decode('utf-8')) <= 20:
                     profile = ki4.getProfile()
                     profile.displayName = string
-                    ks.updateProfile(profile)
+                    ki4.updateProfile(profile)
                 if len(string.decode('utf-8')) <= 20:
                     profile = ki5.getProfile()
                     profile.displayName = string
-                    k1.updateProfile(profile)
+                    ki5.updateProfile(profile)
                 if len(string.decode('utf-8')) <= 20:
                     profile = ki6.getProfile()
                     profile.displayName = string
-                    k2.updateProfile(profile)
+                    ki6.updateProfile(profile)
                 if len(string.decode('utf-8')) <= 20:
                     profile = ki7.getProfile()
                     profile.displayName = string
-                    k3.updateProfile(profile)
+                    ki7.updateProfile(profile)
                 if len(string.decode('utf-8')) <= 20:
                     profile = ki8.getProfile()
                     profile.displayName = string
-                    k4.updateProfile(profile)
+                    ki8.updateProfile(profile)
                 if len(string.decode('utf-8')) <= 20:
                     profile = ki9.getProfile()
                     profile.displayName = string
-                    k5.updateProfile(profile)
+                    ki9.updateProfile(profile)
                     vipro.sendText(msg.to,"􀜁􀇔􏿿NAMA BOT BERHASIL DI UBAH MENJADI\n👉" + string + "👈")
             elif "Allbio " in msg.text:
               if msg.from_ in creator + admin:
@@ -1916,35 +1917,35 @@ def bot(op):
                 if len(string.decode('utf-8')) <= 500:
                     profile = ki2.getProfile()
                     profile.statusMessage = string
-                    kk.updateProfile(profile)
+                    ki2.updateProfile(profile)
                 if len(string.decode('utf-8')) <= 500:
                     profile = ki3.getProfile()
                     profile.statusMessage = string
-                    kc.updateProfile(profile)
+                    ki3.updateProfile(profile)
                 if len(string.decode('utf-8')) <= 500:
                     profile = ki4.getProfile()
                     profile.statusMessage = string
-                    ks.updateProfile(profile)
+                    ki4.updateProfile(profile)
                 if len(string.decode('utf-8')) <= 500:
                     profile = ki5.getProfile()
                     profile.statusMessage = string
-                    k1.updateProfile(profile)
+                    ki5.updateProfile(profile)
                 if len(string.decode('utf-8')) <= 500:
                     profile = ki6.getProfile()
                     profile.statusMessage = string
-                    k2.updateProfile(profile)
+                    ki6.updateProfile(profile)
                 if len(string.decode('utf-8')) <= 500:
                     profile = ki7.getProfile()
                     profile.statusMessage = string
-                    k3.updateProfile(profile)
+                    ki7.updateProfile(profile)
                 if len(string.decode('utf-8')) <= 500:
                     profile = ki8.getProfile()
                     profile.statusMessage = string
-                    k4.updateProfile(profile)
+                    ki8.updateProfile(profile)
                 if len(string.decode('utf-8')) <= 500:
                     profile = ki9.getProfile()
                     profile.statusMessage = string
-                    k5.updateProfile(profile)
+                    ki9.updateProfile(profile)
                     vipro.sendText(msg.to,"􀜁􀇔􏿿SEMUA TELAH  UPDATE BIO PROFILE\n👉" + string + "👈")
             elif "Mybio " in msg.text:
               if msg.from_ in creator + admin:
@@ -1977,74 +1978,74 @@ def bot(op):
               if msg.from_ in creator + admin:
                 string = msg.text.replace("B2name ","")
                 if len(string.decode('utf-8')) <= 20:
-                    profile = kk.getProfile()
+                    profile = ki2.getProfile()
                     profile.displayName = string
-                    kk.updateProfile(profile)
-                    kk.sendText(msg.to,"􀜁􀇔􏿿Update Names👉" + string + "👈")
+                    ki2.updateProfile(profile)
+                    ki2.sendText(msg.to,"􀜁􀇔􏿿Update Names👉" + string + "👈")
 #--------------------------------------------------------
             elif "B3name " in msg.text:
               if msg.from_ in creator + admin:
                 string = msg.text.replace("B3name ","")
                 if len(string.decode('utf-8')) <= 20:
-                    profile = kc.getProfile()
+                    profile = ki3.getProfile()
                     profile.displayName = string
-                    kc.updateProfile(profile)
-                    kc.sendText(msg.to,"??􀇔􏿿Update Names👉" + string + "👈")
+                    ki3.updateProfile(profile)
+                    ki3.sendText(msg.to,"??􀇔􏿿Update Names👉" + string + "👈")
 #--------------------------------------------------------
             elif "B4name " in msg.text:
               if msg.from_ in creator + admin:
                 string = msg.text.replace("B4name ","")
                 if len(string.decode('utf-8')) <= 20:
-                    profile = ks.getProfile()
+                    profile = ki4.getProfile()
                     profile.displayName = string
-                    ks.updateProfile(profile)
-                    ks.sendText(msg.to,"􀜁􀇔􏿿Update Names👉" + string + "👈")
+                    ki4.updateProfile(profile)
+                    ki4.sendText(msg.to,"􀜁􀇔􏿿Update Names👉" + string + "👈")
 #--------------------------------------------------------
 #--------------------------------------------------------
             elif "B5name " in msg.text:
               if msg.from_ in creator + admin:
                 string = msg.text.replace("B5name ","")
                 if len(string.decode('utf-8')) <= 20:
-                    profile = k1.getProfile()
+                    profile = ki5.getProfile()
                     profile.displayName = string
-                    k1.updateProfile(profile)
-                    k1.sendText(msg.to,"􀇔 􏿿Update Names👉" + string + "👈")
+                    ki5.updateProfile(profile)
+                    ki5.sendText(msg.to,"􀇔 􏿿Update Names👉" + string + "👈")
 #--------------------------------------------------------
             elif "B6name " in msg.text:
               if msg.from_ in creator + admin:
                 string = msg.text.replace("B6name ","")
                 if len(string.decode('utf-8')) <= 20:
-                    profile = k2.getProfile()
+                    profile = ki6.getProfile()
                     profile.displayName = string
-                    k2.updateProfile(profile)
-                    k2.sendText(msg.to,"􀜁􀇔􏿿Update Names��" + string + "👈")
+                    ki6.updateProfile(profile)
+                    ki6.sendText(msg.to,"􀜁􀇔􏿿Update Names��" + string + "👈")
 #---------------------------------------------------------
             elif "B7name " in msg.text:
               if msg.from_ in creator + admin:
                 string = msg.text.replace("B7name ","")
                 if len(string.decode('utf-8')) <= 20:
-                    profile = k3.getProfile()
+                    profile = ki7.getProfile()
                     profile.displayName = string
-                    k3.updateProfile(profile)
-                    k3.sendText(msg.to,"􀜁􀇔􏿿Update Names👉" + string + "👈")
+                    ki7.updateProfile(profile)
+                    ki7.sendText(msg.to,"􀜁􀇔􏿿Update Names👉" + string + "👈")
 #---------------------------------------------------------
             elif "B8name " in msg.text:
               if msg.from_ in creator + admin:
                 string = msg.text.replace("B8name ","")
                 if len(string.decode('utf-8')) <= 20:
-                    profile = k4.getProfile()
+                    profile = ki8.getProfile()
                     profile.displayName = string
-                    k4.updateProfile(profile)
-                    k4.sendText(msg.to,"􀜁􀇔􏿿Update Names👉" + string + "👈")
+                    ki8.updateProfile(profile)
+                    ki8.sendText(msg.to,"􀜁􀇔􏿿Update Names👉" + string + "👈")
 #---------------------------------------------------------
             elif "B9name " in msg.text:
               if msg.from_ in creator + admin:
                 string = msg.text.replace("B9name ","")
                 if len(string.decode('utf-8')) <= 20:
-                    profile = k5.getProfile()
+                    profile = ki9.getProfile()
                     profile.displayName = string
-                    k5.updateProfile(profile)
-                    k5.sendText(msg.to,"􀜁􀇔􏿿Update Names👉" + string + "👈")
+                    ki9.updateProfile(profile)
+                    ki9.sendText(msg.to,"􀜁􀇔􏿿Update Names👉" + string + "👈")
 #---------------------------------------------------------
 #--------------------------------------------------------
             elif "wkwkwk" in msg.text.lower():
@@ -3074,9 +3075,9 @@ def bot(op):
                        targets.append(x["M"])
                    for target in targets:
                        try:
-                           kk.kickoutFromGroup(msg.to,[target])
+                           ki2.kickoutFromGroup(msg.to,[target])
                        except:
-                           kk.sendText(msg.to,"Error")
+                           ki2.sendText(msg.to,"Error")
             elif ("Kick3 " in msg.text):
                 if msg.from_ in creator + admin:
                    targets = []
@@ -3086,9 +3087,9 @@ def bot(op):
                        targets.append(x["M"])
                    for target in targets:
                        try:
-                           kc.kickoutFromGroup(msg.to,[target])
+                           ki3.kickoutFromGroup(msg.to,[target])
                        except:
-                           kc.sendText(msg.to,"Error")
+                           ki3.sendText(msg.to,"Error")
             elif ("Kick4 " in msg.text):
                 if msg.from_ in creator + admin:
                    targets = []
@@ -3098,9 +3099,9 @@ def bot(op):
                        targets.append(x["M"])
                    for target in targets:
                        try:
-                           ks.kickoutFromGroup(msg.to,[target])
+                           ki4.kickoutFromGroup(msg.to,[target])
                        except:
-                           ks.sendText(msg.to,"Error")
+                           ki4.sendText(msg.to,"Error")
             elif ("Kick5 " in msg.text):
                 if msg.from_ in creator + admin:
                    targets = []
@@ -3110,9 +3111,9 @@ def bot(op):
                        targets.append(x["M"])
                    for target in targets:
                        try:
-                           k1.kickoutFromGroup(msg.to,[target])
+                           ki5.kickoutFromGroup(msg.to,[target])
                        except:
-                           k1.sendText(msg.to,"Error")
+                           ki5.sendText(msg.to,"Error")
             elif ("Kick6 " in msg.text):
                 if msg.from_ in creator + admin:
                    targets = []
@@ -3122,9 +3123,9 @@ def bot(op):
                        targets.append(x["M"])
                    for target in targets:
                        try:
-                           k2.kickoutFromGroup(msg.to,[target])
+                           ki6.kickoutFromGroup(msg.to,[target])
                        except:
-                           k2.sendText(msg.to,"Error")
+                           ki6.sendText(msg.to,"Error")
             elif ("Kick7 " in msg.text):
                 if msg.from_ in creator + admin:
                    targets = []
@@ -3134,9 +3135,9 @@ def bot(op):
                        targets.append(x["M"])
                    for target in targets:
                        try:
-                           k3.kickoutFromGroup(msg.to,[target])
+                           ki7.kickoutFromGroup(msg.to,[target])
                        except:
-                           k3.sendText(msg.to,"Error")
+                           ki7.sendText(msg.to,"Error")
             elif ("Kick8 " in msg.text):
                 if msg.from_ in creator + admin:
                    targets = []
@@ -3146,9 +3147,9 @@ def bot(op):
                        targets.append(x["M"])
                    for target in targets:
                        try:
-                           k4.kickoutFromGroup(msg.to,[target])
+                           ki8.kickoutFromGroup(msg.to,[target])
                        except:
-                           k4.sendText(msg.to,"Error")
+                           ki8.sendText(msg.to,"Error")
             elif ("Kick9 " in msg.text):
                 if msg.from_ in creator + admin:
                    targets = []
@@ -3158,9 +3159,9 @@ def bot(op):
                        targets.append(x["M"])
                    for target in targets:
                        try:
-                           k5.kickoutFromGroup(msg.to,[target])
+                           ki9.kickoutFromGroup(msg.to,[target])
                        except:
-                           k5.sendText(msg.to,"Error")
+                           ki9.sendText(msg.to,"Error")
             elif ("Sc " in msg.text):
                 if msg.from_ in creator + admin:
                    key = eval(msg.contentMetadata["MENTION"])
@@ -3327,13 +3328,13 @@ def bot(op):
                 else:
                         for target in targets:
                                 try:
-                                        k6.kickoutFromGroup(msg.to,[target])
-                                        k6.leaveGroup(msg.to)
+                                        ki10.kickoutFromGroup(msg.to,[target])
+                                        ki10.leaveGroup(msg.to)
                                         print (msg.to,[g.mid])
                                 except:
-                                        k6.sendText(msg.t,"Ter ELIMINASI....")
-                                        k6.sendText(msg.to,"WOLES brooo....!!!")
-                                        k6.leaveGroup(msg.to)
+                                        ki10.sendText(msg.t,"Ter ELIMINASI....")
+                                        ki10.sendText(msg.to,"WOLES brooo....!!!")
+                                        ki10.leaveGroup(msg.to)
                                         gs = vipro.getGroup(msg.to)
                                         gs.preventJoinByTicket = True
                                         vipro.updateGroup(gs)
@@ -3345,14 +3346,14 @@ def bot(op):
                     print "ok cleanse"
                     _name = msg.text.replace("Cleanse","")
                     gs = ki.getGroup(msg.to)
-                    gs = kk.getGroup(msg.to)
-                    gs = kc.getGroup(msg.to)
-                    gs = ks.getGroup(msg.to)
-                    gs = k1.getGroup(msg.to)
-                    gs = k2.getGroup(msg.to)
-                    gs = k3.getGroup(msg.to)
-                    gs = k4.getGroup(msg.to)
-                    gs = k5.getGroup(msg.to)
+                    gs = ki2.getGroup(msg.to)
+                    gs = ki3.getGroup(msg.to)
+                    gs = ki4.getGroup(msg.to)
+                    gs = ki5.getGroup(msg.to)
+                    gs = ki6.getGroup(msg.to)
+                    gs = ki7.getGroup(msg.to)
+                    gs = ki8.getGroup(msg.to)
+                    gs = ki9.getGroup(msg.to)
                     vipro.sendText(msg.to,"Maaf group kami sita (^_^) ")
                     targets = []
                     for g in gs.members:
@@ -3367,7 +3368,7 @@ def bot(op):
                               if not target in admsa:
                                 if not target in creator:
                                     try:
-                                     klist=[ki,kk,kc,ks,k1,k2,k3,k4,k5]
+                                     klist=[ki,ki2,ki3,ki4,ki5,ki6,ki7,ki8,ki9]
                                      kicker=random.choice(klist)
                                      kicker.kickoutFromGroup(msg.to,[target])
                                      print (msg.to,[g.mid])
@@ -3691,116 +3692,116 @@ def bot(op):
                 for g in gs.members:
                     if _nametarget == g.displayName:
 		       vipro.sendText(msg.to,"Wating in progres...")
-                       k2.sendText(g.mid,"Your Account Has Been Spammed !")
-                       kk.sendText(g.mid,"Your Account Has Been Spammed !")
+                       ki6.sendText(g.mid,"Your Account Has Been Spammed !")
+                       ki2.sendText(g.mid,"Your Account Has Been Spammed !")
                        ki.sendText(g.mid,"Your Account Has Been Spammed !")
-                       kc.sendText(g.mid,"Your Account Has Been Spammed !")
-		       ks.sendText(g.mid,"Your Account Has Been Spammed !")
-                       k1.sendText(g.mid,"Your Account Has Been Spammed !")
+                       ki3.sendText(g.mid,"Your Account Has Been Spammed !")
+		       ki4.sendText(g.mid,"Your Account Has Been Spammed !")
+                       ki5.sendText(g.mid,"Your Account Has Been Spammed !")
                        ki.sendText(g.mid,"Your Account Has Been Spammed !")
-                       k2.sendText(g.mid,"Your Account Has Been Spammed !")
-		       kk.sendText(g.mid,"Your Account Has Been Spammed !")
-                       ks.sendText(g.mid,"Your Account Has Been Spammed !")
+                       ki6.sendText(g.mid,"Your Account Has Been Spammed !")
+		       ki2.sendText(g.mid,"Your Account Has Been Spammed !")
+                       ki4.sendText(g.mid,"Your Account Has Been Spammed !")
                        ki.sendText(g.mid,"Your Account Has Been Spammed !")
-                       kc.sendText(g.mid,"Your Account Has Been Spammed !")
-	  	       k2.sendText(g.mid,"Your Account Has Been Spammed !")
-                       kk.sendText(g.mid,"Your Account Has Been Spammed !")
-                       ks.sendText(g.mid,"Your Account Has Been Spammed !")
-                       k1.sendText(g.mid,"Your Account Has Been Spammed !")
-		       ks.sendText(g.mid,"Your Account Has Been Spammed !")
-                       kk.sendText(g.mid,"Your Account Has Been Spammed !")
-                       k2.sendText(g.mid,"Your Account Has Been Spammed !")
-                       kk.sendText(g.mid,"Your Account Has Been Spammed !")
-		       k2.sendText(g.mid,"Your Account Has Been Spammed !")
-		       kk.sendText(g.mid,"Your Account Has Been Spammed !")
+                       ki3.sendText(g.mid,"Your Account Has Been Spammed !")
+	  	       ki6.sendText(g.mid,"Your Account Has Been Spammed !")
+                       ki2.sendText(g.mid,"Your Account Has Been Spammed !")
+                       ki4.sendText(g.mid,"Your Account Has Been Spammed !")
+                       ki5.sendText(g.mid,"Your Account Has Been Spammed !")
+		       ki4.sendText(g.mid,"Your Account Has Been Spammed !")
+                       ki2.sendText(g.mid,"Your Account Has Been Spammed !")
+                       ki6.sendText(g.mid,"Your Account Has Been Spammed !")
+                       ki3.sendText(g.mid,"Your Account Has Been Spammed !")
+		       ki6.sendText(g.mid,"Your Account Has Been Spammed !")
+		       ki2.sendText(g.mid,"Your Account Has Been Spammed !")
                        ki.sendText(g.mid,"Your Account Has Been Spammed !")
-		       kc.sendText(g.mid,"Your Account Has Been Spammed !")
-                       ks.sendText(g.mid,"Your Account Has Been Spammed !")
-                       k1.sendText(g.mid,"Your Account Has Been Spammed !")
-                       kk.sendText(g.mid,"Your Account Has Been Spammed !")
-		       kc.sendText(g.mid,"Your Account Has Been Spammed !")
-                       k1.sendText(g.mid,"Your Account Has Been Spammed !")
+		       ki3.sendText(g.mid,"Your Account Has Been Spammed !")
+                       ki4.sendText(g.mid,"Your Account Has Been Spammed !")
+                       ki5.sendText(g.mid,"Your Account Has Been Spammed !")
+                       ki2.sendText(g.mid,"Your Account Has Been Spammed !")
+		       ki3.sendText(g.mid,"Your Account Has Been Spammed !")
+                       ki5.sendText(g.mid,"Your Account Has Been Spammed !")
 		       ki.sendText(g.mid,"Your Account Has Been Spammed !")
                        ki.sendText(g.mid,"Your Account Has Been Spammed !")
-		       kc.sendText(g.mid,"Your Account Has Been Spammed !")
-                       k2.sendText(g.mid,"Your Account Has Been Spammed !")
-                       kk.sendText(g.mid,"Your Account Has Been Spammed !")
-                       ks.sendText(g.mid,"Your Account Has Been Spammed !")
-		       k1.sendText(g.mid,"Your Account Has Been Spammed !")
-		       ks.sendText(g.mid,"Your Account Has Been Spammed !")
-                       k2.sendText(g.mid,"Your Account Has Been Spammed !")
-		       k1.sendText(g.mid,"Your Account Has Been Spammed !")
-		       kk.sendText(g.mid,"Your Account Has Been Spammed !")
-                       kk.sendText(g.mid,"Your Account Has Been Spammed !")
+		       ki3.sendText(g.mid,"Your Account Has Been Spammed !")
+                       ki6.sendText(g.mid,"Your Account Has Been Spammed !")
+                       ki2.sendText(g.mid,"Your Account Has Been Spammed !")
+                       ki4.sendText(g.mid,"Your Account Has Been Spammed !")
+		       ki5.sendText(g.mid,"Your Account Has Been Spammed !")
+		       ki4.sendText(g.mid,"Your Account Has Been Spammed !")
+                       ki6.sendText(g.mid,"Your Account Has Been Spammed !")
+		       ki5.sendText(g.mid,"Your Account Has Been Spammed !")
+		       ki2.sendText(g.mid,"Your Account Has Been Spammed !")
+                       ki2.sendText(g.mid,"Your Account Has Been Spammed !")
                        ki.sendText(g.mid,"Your Account Has Been Spammed !")
-		       kc.sendText(g.mid,"Your Account Has Been Spammed !")
-                       k2.sendText(g.mid,"Your Account Has Been Spammed !")
-                       kk.sendText(g.mid,"Your Account Has Been Spammed !")
-		       ks.sendText(g.mid,"Your Account Has Been Spammed !")
+		       ki3.sendText(g.mid,"Your Account Has Been Spammed !")
+                       ki6.sendText(g.mid,"Your Account Has Been Spammed !")
+                       ki2.sendText(g.mid,"Your Account Has Been Spammed !")
+		       ki4.sendText(g.mid,"Your Account Has Been Spammed !")
                        ki.sendText(g.mid,"Your Account Has Been Spammed !")
-                       kk.sendText(g.mid,"Your Account Has Been Spammed !")
-                       kc.sendText(g.mid,"Your Account Has Been Spammed !")
-                       ks.sendText(g.mid,"Your Account Has Been Spammed !")
-                       k1.sendText(g.mid,"Your Account Has Been Spammed !")
-                       k2.sendText(g.mid,"Your Account Has Been Spammed !")
-                       k3.sendText(g.mid,"Your Account Has Been Spammed !")
-                       k4.sendText(g.mid,"Your Account Has Been Spammed !")
-                       k5.sendText(g.mid,"Your Account Has Been Spammed !")
+                       ki2.sendText(g.mid,"Your Account Has Been Spammed !")
+                       ki3.sendText(g.mid,"Your Account Has Been Spammed !")
+                       ki4.sendText(g.mid,"Your Account Has Been Spammed !")
+                       ki5.sendText(g.mid,"Your Account Has Been Spammed !")
+                       ki6.sendText(g.mid,"Your Account Has Been Spammed !")
+                       ki7.sendText(g.mid,"Your Account Has Been Spammed !")
+                       ki8.sendText(g.mid,"Your Account Has Been Spammed !")
+                       ki9.sendText(g.mid,"Your Account Has Been Spammed !")
                        ki.sendText(g.mid,"Your Account Has Been Spammed !")
-                       kk.sendText(g.mid,"Your Account Has Been Spammed !")
-                       kc.sendText(g.mid,"Your Account Has Been Spammed !")
-                       ks.sendText(g.mid,"Your Account Has Been Spammed !")
-                       k1.sendText(g.mid,"Your Account Has Been Spammed !")
-                       k2.sendText(g.mid,"Your Account Has Been Spammed !")
-                       k3.sendText(g.mid,"Your Account Has Been Spammed !")
-                       k4.sendText(g.mid,"Your Account Has Been Spammed !")
-                       k5.sendText(g.mid,"Your Account Has Been Spammed !")
+                       ki2.sendText(g.mid,"Your Account Has Been Spammed !")
+                       ki3.sendText(g.mid,"Your Account Has Been Spammed !")
+                       ki4.sendText(g.mid,"Your Account Has Been Spammed !")
+                       ki5.sendText(g.mid,"Your Account Has Been Spammed !")
+                       ki6.sendText(g.mid,"Your Account Has Been Spammed !")
+                       ki7.sendText(g.mid,"Your Account Has Been Spammed !")
+                       ki8.sendText(g.mid,"Your Account Has Been Spammed !")
+                       ki9.sendText(g.mid,"Your Account Has Been Spammed !")
                        ki.sendText(g.mid,"Your Account Has Been Spammed !")
-                       kk.sendText(g.mid,"Your Account Has Been Spammed !")
-                       kc.sendText(g.mid,"Your Account Has Been Spammed !")
-                       ks.sendText(g.mid,"Your Account Has Been Spammed !")
-                       k1.sendText(g.mid,"Your Account Has Been Spammed !")
-                       k2.sendText(g.mid,"Your Account Has Been Spammed !")
-                       k3.sendText(g.mid,"Your Account Has Been Spammed !")
-                       k4.sendText(g.mid,"Your Account Has Been Spammed !")
-                       k5.sendText(g.mid,"Your Account Has Been Spammed !")
+                       ki2.sendText(g.mid,"Your Account Has Been Spammed !")
+                       ki3.sendText(g.mid,"Your Account Has Been Spammed !")
+                       ki4.sendText(g.mid,"Your Account Has Been Spammed !")
+                       ki5.sendText(g.mid,"Your Account Has Been Spammed !")
+                       ki6.sendText(g.mid,"Your Account Has Been Spammed !")
+                       ki7.sendText(g.mid,"Your Account Has Been Spammed !")
+                       ki8.sendText(g.mid,"Your Account Has Been Spammed !")
+                       ki9.sendText(g.mid,"Your Account Has Been Spammed !")
                        ki.sendText(g.mid,"Your Account Has Been Spammed !")
-                       kk.sendText(g.mid,"Your Account Has Been Spammed !")
-                       kc.sendText(g.mid,"Your Account Has Been Spammed !")
-                       ks.sendText(g.mid,"Your Account Has Been Spammed !")
-                       k1.sendText(g.mid,"Your Account Has Been Spammed !")
-                       k2.sendText(g.mid,"Your Account Has Been Spammed !")
-                       k3.sendText(g.mid,"Your Account Has Been Spammed !")
-                       k4.sendText(g.mid,"Your Account Has Been Spammed !")
-                       k5.sendText(g.mid,"Your Account Has Been Spammed !")
-		       k2.sendText(g.mid,"Your Account Has Been Spammed !")
+                       ki2.sendText(g.mid,"Your Account Has Been Spammed !")
+                       ki3.sendText(g.mid,"Your Account Has Been Spammed !")
+                       ki4.sendText(g.mid,"Your Account Has Been Spammed !")
+                       ki5.sendText(g.mid,"Your Account Has Been Spammed !")
+                       ki6.sendText(g.mid,"Your Account Has Been Spammed !")
+                       ki7.sendText(g.mid,"Your Account Has Been Spammed !")
+                       ki8.sendText(g.mid,"Your Account Has Been Spammed !")
+                       ki9.sendText(g.mid,"Your Account Has Been Spammed !")
+		       ki6.sendText(g.mid,"Your Account Has Been Spammed !")
                        ki.sendText(g.mid,"Your Account Has Been Spammed !")
-                       kk.sendText(g.mid,"Your Account Has Been Spammed !")
-                       kc.sendText(g.mid,"Your Account Has Been Spammed !")
-                       ks.sendText(g.mid,"Your Account Has Been Spammed !")
-                       k1.sendText(g.mid,"Your Account Has Been Spammed !")
-                       k2.sendText(g.mid,"Your Account Has Been Spammed !")
-                       k3.sendText(g.mid,"Your Account Has Been Spammed !")
-                       k4.sendText(g.mid,"Your Account Has Been Spammed !")
-                       k5.sendText(g.mid,"Your Account Has Been Spammed !")
+                       ki2.sendText(g.mid,"Your Account Has Been Spammed !")
+                       ki3.sendText(g.mid,"Your Account Has Been Spammed !")
+                       ki4.sendText(g.mid,"Your Account Has Been Spammed !")
+                       ki5.sendText(g.mid,"Your Account Has Been Spammed !")
+                       ki6.sendText(g.mid,"Your Account Has Been Spammed !")
+                       ki7.sendText(g.mid,"Your Account Has Been Spammed !")
+                       ki8.sendText(g.mid,"Your Account Has Been Spammed !")
+                       ki9.sendText(g.mid,"Your Account Has Been Spammed !")
                        ki.sendText(g.mid,"Your Account Has Been Spammed !")
-                       kk.sendText(g.mid,"Your Account Has Been Spammed !")
-                       kc.sendText(g.mid,"Your Account Has Been Spammed !")
-                       ks.sendText(g.mid,"Your Account Has Been Spammed !")
-                       k1.sendText(g.mid,"Your Account Has Been Spammed !")
-                       k2.sendText(g.mid,"Your Account Has Been Spammed !")
-                       k3.sendText(g.mid,"Your Account Has Been Spammed !")
-                       k4.sendText(g.mid,"Your Account Has Been Spammed !")
-                       k5.sendText(g.mid,"Your Account Has Been Spammed !")
+                       ki2.sendText(g.mid,"Your Account Has Been Spammed !")
+                       ki3.sendText(g.mid,"Your Account Has Been Spammed !")
+                       ki4.sendText(g.mid,"Your Account Has Been Spammed !")
+                       ki5.sendText(g.mid,"Your Account Has Been Spammed !")
+                       ki6.sendText(g.mid,"Your Account Has Been Spammed !")
+                       ki7.sendText(g.mid,"Your Account Has Been Spammed !")
+                       ki8.sendText(g.mid,"Your Account Has Been Spammed !")
+                       ki9.sendText(g.mid,"Your Account Has Been Spammed !")
                        ki.sendText(g.mid,"Your Account Has Been Spammed !")
-                       kk.sendText(g.mid,"Your Account Has Been Spammed !")
-                       kc.sendText(g.mid,"Your Account Has Been Spammed !")
-                       ks.sendText(g.mid,"Your Account Has Been Spammed !")
-                       k1.sendText(g.mid,"Your Account Has Been Spammed !")
-                       k2.sendText(g.mid,"Your Account Has Been Spammed !")
-                       k3.sendText(g.mid,"Your Account Has Been Spammed !")
-                       k4.sendText(g.mid,"Your Account Has Been Spammed !")
-                       k5.sendText(g.mid,"Your Account Has Been Spammed !")
+                       ki2.sendText(g.mid,"Your Account Has Been Spammed !")
+                       ki3.sendText(g.mid,"Your Account Has Been Spammed !")
+                       ki4.sendText(g.mid,"Your Account Has Been Spammed !")
+                       ki5.sendText(g.mid,"Your Account Has Been Spammed !")
+                       ki6.sendText(g.mid,"Your Account Has Been Spammed !")
+                       ki7.sendText(g.mid,"Your Account Has Been Spammed !")
+                       ki8.sendText(g.mid,"Your Account Has Been Spammed !")
+                       ki9.sendText(g.mid,"Your Account Has Been Spammed !")
                        vipro.sendText(msg.to, "Succes")
                        print " Spammed !"
 #--------------------------------------------------------------------------
@@ -4075,14 +4076,14 @@ def bot(op):
                    wait["blacklist"] = {}
                    vipro.sendText(msg.to,"clear all blacklist")
                    ki.sendText(msg.to,"done ✔")
-                   kk.sendText(msg.to,"done ✔")
-                   kc.sendText(msg.to,"done ✔")
-                   ks.sendText(msg.to,"done ✔")
-                   k1.sendText(msg.to,"done ✔")
-                   k2.sendText(msg.to,"done ✔")
-                   k3.sendText(msg.to,"done ✔")
-                   k4.sendText(msg.to,"done ✔")
-                   k5.sendText(msg.to,"done ✔")
+                   ki2.sendText(msg.to,"done ✔")
+                   ki3.sendText(msg.to,"done ✔")
+                   ki4.sendText(msg.to,"done ✔")
+                   ki5.sendText(msg.to,"done ✔")
+                   ki6.sendText(msg.to,"done ✔")
+                   ki7.sendText(msg.to,"done ✔")
+                   ki8.sendText(msg.to,"done ✔")
+                   ki9.sendText(msg.to,"done ✔")
                    ki.sendText(msg.to,"blacklist done all removed 👮")
             elif msg.text.lower() == 'kick@mbl':
               if msg.from_ in creator + admin:
@@ -4099,14 +4100,14 @@ def bot(op):
                         try:
                             vipro.kickoutFromGroup(msg.to,[jj])
                             ki.kickoutFromGroup(msg.to,[jj])
-                            kk.kickoutFromGroup(msg.to,[jj])
-                            kc.kickoutFromGroup(msg.to,[jj])
-                            ks.kickoutFromGroup(msg.to,[jj])
-                            k1.kickoutFromGroup(msg.to,[jj])
-                            k2.kickoutFromGroup(msg.to,[jj])
-                            k3.kickoutFromGroup(msg.to,[jj])
-                            k4.kickoutFromGroup(msg.to,[jj])
-                            k5.kickoutFromGroup(msg.to,[jj])
+                            ki2.kickoutFromGroup(msg.to,[jj])
+                            ki3.kickoutFromGroup(msg.to,[jj])
+                            ki4.kickoutFromGroup(msg.to,[jj])
+                            ki5.kickoutFromGroup(msg.to,[jj])
+                            ki6.kickoutFromGroup(msg.to,[jj])
+                            ki7.kickoutFromGroup(msg.to,[jj])
+                            ki8.kickoutFromGroup(msg.to,[jj])
+                            ki9.kickoutFromGroup(msg.to,[jj])
                             print (msg.to,[jj])
                         except:
                             pass
@@ -4354,14 +4355,14 @@ def bot(op):
                     _name = msg.text.replace("Nuke","")
                     gs = vipro.getGroup(msg.to)
                     gs = ki.getGroup(msg.to)
-                    gs = kk.getGroup(msg.to)
-                    gs = kc.getGroup(msg.to)
-                    gs = ks.getGroup(msg.to)
-                    gs = k1.getGroup(msg.to)
-                    gs = k2.getGroup(msg.to)
-                    gs = k3.getGroup(msg.to)
-                    gs = k4.getGroup(msg.to)
-                    gs = k5.getGroup(msg.to)
+                    gs = ki2.getGroup(msg.to)
+                    gs = ki3.getGroup(msg.to)
+                    gs = ki4.getGroup(msg.to)
+                    gs = ki5.getGroup(msg.to)
+                    gs = ki6.getGroup(msg.to)
+                    gs = ki7.getGroup(msg.to)
+                    gs = ki8.getGroup(msg.to)
+                    gs = ki9.getGroup(msg.to)
                     targets = []
                     for g in gs.members:
                         if _name in g.displayName:
@@ -4372,7 +4373,7 @@ def bot(op):
                         for target in targets:
                           if not target in Bots:
                             try:
-                                klist=[vipro,ki,kk,kc,ks,k1,k2,k3,k4,k5]
+                                klist=[vipro,ki,ki2,ki3,ki4,ki5,ki6,ki7,ki8,ki9]
                                 kicker=random.choice(klist)
                                 kicker.kickoutFromGroup(msg.to,[target])
                                 print (msg.to,[g.mid])
@@ -4394,38 +4395,39 @@ def bot(op):
                     msg.text = txt
                     msg.contentMetadata = {u'MENTION':json.dumps({"MENTIONEES":d})}
                     vipro.sendMessage(msg) 
-            elif msg.text in ["1","Masuk","Asup"]: #Panggil Semua Bot
-              if msg.from_ in creator + admin:
-                G = vipro.getGroup(msg.to)
-                ginfo = vipro.getGroup(msg.to)
-                G.preventJoinByTicket = False
-                vipro.updateGroup(G)
-                invsend = 0
-                Ticket = cl.reissueGroupTicket(msg.to)
-                ki.acceptGroupInvitationByTicket(msg.to,Ticket)
-                time.sleep(0.01)
-                kk.acceptGroupInvitationByTicket(msg.to,Ticket)
-                time.sleep(0.01)
-                kc.acceptGroupInvitationByTicket(msg.to,Ticket)
-                time.sleep(0.01)
-                ks.acceptGroupInvitationByTicket(msg.to,Ticket)
-                time.sleep(0.01)
-                k1.acceptGroupInvitationByTicket(msg.to,Ticket)
-                time.sleep(0.01)
-                k2.acceptGroupInvitationByTicket(msg.to,Ticket)
-                time.sleep(0.01)
-                k3.acceptGroupInvitationByTicket(msg.to,Ticket)
-                time.sleep(0.01)
-                k4.acceptGroupInvitationByTicket(msg.to,Ticket)
-                time.sleep(0.01)
-                k5.acceptGroupInvitationByTicket(msg.to,Ticket)
-                time.sleep(0.01)
-                ki.sendText(msg.to,"Hello " + str(ginfo.name))
-                G = cl.getGroup(msg.to)
-                ginfo = cl.getGroup(msg.to)
-                G.preventJoinByTicket = True
-                cl.updateGroup(G)
-                print "Semua Sudah Lengkap"
+            elif msg.text.lower() == 'Masuk':
+                if msg.from_ in creator:
+                        G = vipro.getGroup(msg.to)
+                        ginfo = vipro.getGroup(msg.to)
+                        G.preventJoinByTicket = False
+                        vipro.updateGroup(G)
+                        invsend = 0
+                        Ticket = vipro.reissueGroupTicket(msg.to)
+                        ki.acceptGroupInvitationByTicket(msg.to,Ticket)
+                        time.sleep(0.01)
+                        ki2.acceptGroupInvitationByTicket(msg.to,Ticket)
+                        time.sleep(0.01)
+                        ki3.acceptGroupInvitationByTicket(msg.to,Ticket)
+                        time.sleep(0.01)
+                        ki4.acceptGroupInvitationByTicket(msg.to,Ticket)
+                        time.sleep(0.01)
+                        ki5.acceptGroupInvitationByTicket(msg.to,Ticket)
+                        time.sleep(0.01)
+                        ki6.acceptGroupInvitationByTicket(msg.to,Ticket)
+                        time.sleep(0.01)
+                        ki7.acceptGroupInvitationByTicket(msg.to,Ticket)
+                        time.sleep(0.01)
+                        ki8.acceptGroupInvitationByTicket(msg.to,Ticket)
+                        time.sleep(0.01)
+                        ki9.acceptGroupInvitationByTicket(msg.to,Ticket)
+                        time.sleep(0.01)
+                        G = vipro.getGroup(msg.to)
+                        ginfo = vipro.getGroup(msg.to)
+                        G.preventJoinByTicket = True
+                        random.choice(KAC).updateGroup(G)
+                        print "kicker ok"
+                        G.preventJoinByTicket(G)
+                        random.choice(KAC).updateGroup(G)
 
 #-----------------------------------------------
             elif msg.text.lower() == 'reinvite':
@@ -4435,27 +4437,27 @@ def bot(op):
                         ginfo = vipro.getGroup(msg.to)
                         vipro.sendText(msg.to,"waitting...")
                         ki.leaveGroup(msg.to)
-                        kk.leaveGroup(msg.to)
-                        kc.leaveGroup(msg.to)
-                        ks.leaveGroup(msg.to)
-                        k1.leaveGroup(msg.to)
-                        k2.leaveGroup(msg.to)
-                        k3.leaveGroup(msg.to)
-                        k4.leaveGroup(msg.to)
-                        k5.leaveGroup(msg.to)
+                        ki2.leaveGroup(msg.to)
+                        ki3.leaveGroup(msg.to)
+                        ki4.leaveGroup(msg.to)
+                        ki5.leaveGroup(msg.to)
+                        ki6.leaveGroup(msg.to)
+                        ki7.leaveGroup(msg.to)
+                        ki8.leaveGroup(msg.to)
+                        ki9.leaveGroup(msg.to)
                         G.preventJoinByTicket = False
                         vipro.updateGroup(G)
                         invsend = 0
                         Ticket = vipro.reissueGroupTicket(msg.to)
                         ki.acceptGroupInvitationByTicket(msg.to,Ticket)
-                        kk.acceptGroupInvitationByTicket(msg.to,Ticket)
-                        kc.acceptGroupInvitationByTicket(msg.to,Ticket)
-                        ks.acceptGroupInvitationByTicket(msg.to,Ticket)
-                        k1.acceptGroupInvitationByTicket(msg.to,Ticket)
-                        k2.acceptGroupInvitationByTicket(msg.to,Ticket)
-                        k3.acceptGroupInvitationByTicket(msg.to,Ticket)
-                        k4.acceptGroupInvitationByTicket(msg.to,Ticket)
-                        k5.acceptGroupInvitationByTicket(msg.to,Ticket)
+                        ki2.acceptGroupInvitationByTicket(msg.to,Ticket)
+                        ki3.acceptGroupInvitationByTicket(msg.to,Ticket)
+                        ki4.acceptGroupInvitationByTicket(msg.to,Ticket)
+                        ki5.acceptGroupInvitationByTicket(msg.to,Ticket)
+                        ki6.acceptGroupInvitationByTicket(msg.to,Ticket)
+                        ki7.acceptGroupInvitationByTicket(msg.to,Ticket)
+                        ki8.acceptGroupInvitationByTicket(msg.to,Ticket)
+                        ki9.acceptGroupInvitationByTicket(msg.to,Ticket)
                         G = vipro.getGroup(msg.to)
                         ginfo = vipro.getGroup(msg.to)
                         G.preventJoinByTicket = True
@@ -4489,14 +4491,14 @@ def bot(op):
                         vipro.updateGroup(G)
                         invsend = 0
                         Ticket = vipro.reissueGroupTicket(msg.to)
-                        kk.acceptGroupInvitationByTicket(msg.to,Ticket)
+                        ki2.acceptGroupInvitationByTicket(msg.to,Ticket)
                         G = vipro.getGroup(msg.to)
                         ginfo = vipro.getGroup(msg.to)
                         G.preventJoinByTicket = True
-                        kk.updateGroup(G)
+                        ki2.updateGroup(G)
                         print "kicker ok"
                         G.preventJoinByTicket(G)
-                        kk.updateGroup(G)
+                        ki2.updateGroup(G)
 #-----------------------------------------------
             elif "B3 in" in msg.text:
                 
@@ -4507,14 +4509,14 @@ def bot(op):
                         vipro.updateGroup(G)
                         invsend = 0
                         Ticket = vipro.reissueGroupTicket(msg.to)
-                        kc.acceptGroupInvitationByTicket(msg.to,Ticket)
+                        ki3.acceptGroupInvitationByTicket(msg.to,Ticket)
                         G = vipro.getGroup(msg.to)
                         ginfo = vipro.getGroup(msg.to)
                         G.preventJoinByTicket = True
-                        kc.updateGroup(G)
+                        ki2.updateGroup(G)
                         print "kicker ok"
                         G.preventJoinByTicket(G)
-                        kc.updateGroup(G)
+                        ki2.updateGroup(G)
 #-----------------------------------------------
             elif "B4 in" in msg.text:
                 if msg.from_ in creator + admin:
@@ -4524,14 +4526,14 @@ def bot(op):
                         vipro.updateGroup(G)
                         invsend = 0
                         Ticket = vipro.reissueGroupTicket(msg.to)
-                        ks.acceptGroupInvitationByTicket(msg.to,Ticket)
+                        ki4.acceptGroupInvitationByTicket(msg.to,Ticket)
                         G = vipro.getGroup(msg.to)
                         ginfo = vipro.getGroup(msg.to)
                         G.preventJoinByTicket = True
-                        ks.updateGroup(G)
+                        ki3.updateGroup(G)
                         print "kicker ok"
                         G.preventJoinByTicket(G)
-                        ks.updateGroup(G)
+                        ki3.updateGroup(G)
 #-----------------------------------------------
             elif "B5 in" in msg.text:
                 if msg.from_ in creator + admin:
@@ -4541,14 +4543,14 @@ def bot(op):
                         vipro.updateGroup(G)
                         invsend = 0
                         Ticket = vipro.reissueGroupTicket(msg.to)
-                        k1.acceptGroupInvitationByTicket(msg.to,Ticket)
+                        ki5.acceptGroupInvitationByTicket(msg.to,Ticket)
                         G = vipro.getGroup(msg.to)
                         ginfo = vipro.getGroup(msg.to)
                         G.preventJoinByTicket = True
-                        k1.updateGroup(G)
+                        ki5.updateGroup(G)
                         print "kicker ok"
                         G.preventJoinByTicket(G)
-                        k1.updateGroup(G)
+                        ki5.updateGroup(G)
 #-----------------------------------------------
             elif "B6 in" in msg.text:
                 if msg.from_ in creator + admin:
@@ -4558,14 +4560,14 @@ def bot(op):
                         vipro.updateGroup(G)
                         invsend = 0
                         Ticket = vipro.reissueGroupTicket(msg.to)
-                        k2.acceptGroupInvitationByTicket(msg.to,Ticket)
+                        ki6.acceptGroupInvitationByTicket(msg.to,Ticket)
                         G = vipro.getGroup(msg.to)
                         ginfo = vipro.getGroup(msg.to)
                         G.preventJoinByTicket = True
-                        k2.updateGroup(G)
+                        ki6.updateGroup(G)
                         print "kicker ok"
                         G.preventJoinByTicket(G)
-                        k2.updateGroup(G)
+                        ki6.updateGroup(G)
 #-----------------------------------------------
             elif "B7 in" in msg.text:
                 if msg.from_ in creator + admin:
@@ -4575,14 +4577,14 @@ def bot(op):
                         vipro.updateGroup(G)
                         invsend = 0
                         Ticket = vipro.reissueGroupTicket(msg.to)
-                        k3.acceptGroupInvitationByTicket(msg.to,Ticket)
+                        ki7.acceptGroupInvitationByTicket(msg.to,Ticket)
                         G = vipro.getGroup(msg.to)
                         ginfo = vipro.getGroup(msg.to)
                         G.preventJoinByTicket = True
-                        k3.updateGroup(G)
+                        ki7.updateGroup(G)
                         print "kicker ok"
                         G.preventJoinByTicket(G)
-                        k3.updateGroup(G)
+                        ki7.updateGroup(G)
 #-----------------------------------------------
             elif "B8 in" in msg.text:
                 if msg.from_ in creator + admin:
@@ -4592,14 +4594,14 @@ def bot(op):
                         vipro.updateGroup(G)
                         invsend = 0
                         Ticket = vipro.reissueGroupTicket(msg.to)
-                        k4.acceptGroupInvitationByTicket(msg.to,Ticket)
+                        ki8.acceptGroupInvitationByTicket(msg.to,Ticket)
                         G = vipro.getGroup(msg.to)
                         ginfo = vipro.getGroup(msg.to)
                         G.preventJoinByTicket = True
-                        k4.updateGroup(G)
+                        ki8.updateGroup(G)
                         print "kicker ok"
                         G.preventJoinByTicket(G)
-                        k4.updateGroup(G)
+                        ki8.updateGroup(G)
 #-----------------------------------------------
             elif "B9 in" in msg.text:
                 if msg.from_ in creator + admin:
@@ -4609,48 +4611,49 @@ def bot(op):
                         vipro.updateGroup(G)
                         invsend = 0
                         Ticket = vipro.reissueGroupTicket(msg.to)
-                        k5.acceptGroupInvitationByTicket(msg.to,Ticket)
+                        ki9.acceptGroupInvitationByTicket(msg.to,Ticket)
                         G = vipro.getGroup(msg.to)
                         ginfo = vipro.getGroup(msg.to)
                         G.preventJoinByTicket = True
-                        k5.updateGroup(G)
+                        ki9.updateGroup(G)
                         print "kicker ok"
                         G.preventJoinByTicket(G)
-                        k5.updateGroup(G)
+                        ki9.updateGroup(G)
 #-----------------------------------------------
 #------------------------------------------------------------------
-            elif msg.text in ["moleh"]: #Semua Bot Ninggalin Group Kecuali Bot Induk
+
+            elif msg.text.lower() == 'Moleh':
               if msg.from_ in creator + admin:
                 if msg.toType == 2:
                     ginfo = vipro.getGroup(msg.to)
                     try:
+                        vipro.sendText(msg.to,"􀜁􀇔􏿿Bye Bye😘 "  +  str(ginfo.name)  + "")
                         ki.leaveGroup(msg.to)
-                        kk.leaveGroup(msg.to)
-                        kc.leaveGroup(msg.to)
-                        ks.leaveGroup(msg.to)
-                        k1.leaveGroup(msg.to)
-                        k2.leaveGroup(msg.to)
-                        k3.leaveGroup(msg.to)
-                        k4.leaveGroup(msg.to)
-                        k5.leaveGroup(msg.to)
-                        #vipro.leaveGroup(msg.to)
+                        ki2.leaveGroup(msg.to)
+                        ki3.leaveGroup(msg.to)
+                        ki4.leaveGroup(msg.to)
+                        ki5.leaveGroup(msg.to)
+                        ki6.leaveGroup(msg.to)
+                        ki7.leaveGroup(msg.to)
+                        ki8.leaveGroup(msg.to)
+                        ki9.leaveGroup(msg.to)
                     except:
                         pass
 #-----------------------------------------------
-            elif "Moleh1" in msg.text:
+            elif "Bye" in msg.text:
               if msg.from_ in creator + admin:
                 if msg.toType == 2:
                     ginfo = vipro.getGroup(msg.to)
                     try:
                     	ki.leaveGroup(msg.to)
-                        kk.leaveGroup(msg.to)
-                        kc.leaveGroup(msg.to)
-                        ks.leaveGroup(msg.to)
-                        k1.leaveGroup(msg.to)
-                        k2.leaveGroup(msg.to)
-                        k3.leaveGroup(msg.to)
-                        k4.leaveGroup(msg.to)
-                        k5.leaveGroup(msg.to)
+                        ki2.leaveGroup(msg.to)
+                        ki3.leaveGroup(msg.to)
+                        ki4.leaveGroup(msg.to)
+                        ki5.leaveGroup(msg.to)
+                        ki6.leaveGroup(msg.to)
+                        ki7.leaveGroup(msg.to)
+                        ki8.leaveGroup(msg.to)
+                        ki9.leaveGroup(msg.to)
                         #vipro.leaveGroup(msg.to)
                     except:
                         pass
@@ -4669,7 +4672,7 @@ def bot(op):
                 if msg.toType == 2:
                     ginfo = vipro.getGroup(msg.to)
                     try:
-                        kk.leaveGroup(msg.to)
+                        ki2.leaveGroup(msg.to)
                     except:
                         pass
 #-----------------------------------------------
@@ -4678,7 +4681,7 @@ def bot(op):
                 if msg.toType == 2:
                     ginfo = vipro.getGroup(msg.to)
                     try:
-                        kc.leaveGroup(msg.to)
+                        ki3.leaveGroup(msg.to)
                     except:
                         pass
 #-----------------------------------------------
@@ -4687,7 +4690,7 @@ def bot(op):
                 if msg.toType == 2:
                     ginfo = vipro.getGroup(msg.to)
                     try:
-                        ks.leaveGroup(msg.to)
+                        ki4.leaveGroup(msg.to)
                     except:
                         pass
 #-----------------------------------------------
@@ -4696,7 +4699,7 @@ def bot(op):
                 if msg.toType == 2:
                     ginfo = vipro.getGroup(msg.to)
                     try:
-                        k1.leaveGroup(msg.to)
+                        ki5.leaveGroup(msg.to)
                     except:
                         pass
 #-----------------------------------------------
@@ -4705,7 +4708,7 @@ def bot(op):
                 if msg.toType == 2:
                     ginfo = vipro.getGroup(msg.to)
                     try:
-                        k2.leaveGroup(msg.to)
+                        ki6.leaveGroup(msg.to)
                     except:
                         pass
 #-----------------------------------------------
@@ -4714,7 +4717,7 @@ def bot(op):
                 if msg.toType == 2:
                     ginfo = vipro.getGroup(msg.to)
                     try:
-                        k3.leaveGroup(msg.to)
+                        ki7.leaveGroup(msg.to)
                     except:
                         pass
 #-----------------------------------------------
@@ -4723,7 +4726,7 @@ def bot(op):
                 if msg.toType == 2:
                     ginfo = vipro.getGroup(msg.to)
                     try:
-                        k4.leaveGroup(msg.to)
+                        ki8.leaveGroup(msg.to)
                     except:
                         pass
 #-----------------------------------------------
@@ -4732,7 +4735,7 @@ def bot(op):
                 if msg.toType == 2:
                     ginfo = vipro.getGroup(msg.to)
                     try:
-                        k5.leaveGroup(msg.to)
+                        ki9.leaveGroup(msg.to)
                     except:
                         pass
 #-----------------------------------------------
@@ -4774,14 +4777,14 @@ def bot(op):
               if msg.from_ in creator + admin:
                 vipro.sendText(msg.to,"Ping ")
                 ki.sendText(msg.to,"Ping 􀜁􀇔􏿿")
-                kk.sendText(msg.to,"Ping 􀜁􀇔􏿿")
-                kc.sendText(msg.to,"Ping 􀜁􀇔􏿿")
-                ks.sendText(msg.to,"Ping 􀜁􀇔􏿿")
-                k1.sendText(msg.to,"Ping ??􀇔􏿿")
-                k2.sendText(msg.to,"Ping 􀜁􀇔􏿿")
-                k3.sendText(msg.to,"Ping 􀜁􀇔􏿿")
-                k4.sendText(msg.to,"Ping 􀜁??􏿿")
-                k5.sendText(msg.to,"Ping 􀜁􀇔􏿿")
+                ki2.sendText(msg.to,"Ping 􀜁􀇔􏿿")
+                ki3.sendText(msg.to,"Ping 􀜁􀇔􏿿")
+                ki4.sendText(msg.to,"Ping 􀜁􀇔􏿿")
+                ki5.sendText(msg.to,"Ping ??􀇔􏿿")
+                ki6.sendText(msg.to,"Ping 􀜁􀇔􏿿")
+                ki7.sendText(msg.to,"Ping 􀜁􀇔􏿿")
+                ki8.sendText(msg.to,"Ping 􀜁??􏿿")
+                ki9.sendText(msg.to,"Ping 􀜁􀇔􏿿")
                 
             elif msg.text.lower() == 'ifconfig':
               if msg.from_ in admin + creator:
@@ -4873,23 +4876,60 @@ def bot(op):
               wait["blacklist"][op.param2] = True
 #-----------------------------------------------        
         if op.type == 19:
+	 if wait["Ghost"] == True:
+          if op.param2 not in admin + creator:
+           if op.param2 not in Bots:
+               pass
+          else:
+            try:
+              G = vipro.getGroup(op.param1)
+              G.preventJoinByTicket = False
+              vipro.updateGroup(G)
+              Ticket = vipro.reissueGroupTicket(op.param1)
+              ki10.acceptGroupInvitationByTicket(op.param1,Ticket)
+              time.sleep(0.01)
+              ki10.kickoutFromGroup(op.param1,[op.param2])
+              c = Message(to=op.param1, from_=None, text=None, contentType=13)
+              c.contentMetadata={'mid':op.param2}
+              ki10.sendMessage(c)
+              ki10.leaveGroup(op.param1)
+              G.preventJoinByTicket = True
+              vipro.updateGroup(G)
+              wait["blacklist"][op.param2] = True
+            except:
+              G = vipro.getGroup(op.param1)
+              G.preventJoinByTicket = False
+              vipro.updateGroup(G)
+              Ticket = vipro.reissueGroupTicket(op.param1)
+              ki10.acceptGroupInvitationByTicket(op.param1,Ticket)
+              time.sleep(0.01)
+              ki10.kickoutFromGroup(op.param1,[op.param2])
+              c = Message(to=op.param1, from_=None, text=None, contentType=13)
+              c.contentMetadata={'mid':op.param2}
+              ki10.sendMessage(c)
+              ki10.leaveGroup(op.param1)
+              G.preventJoinByTicket = True
+              vipro.updateGroup(G)
+              wait["blacklist"][op.param2] = True
+#-----------------------------------------------        
+        if op.type == 19:
             try:
                 if op.param3 in mid:
-                    if op.param2 in Amid:
+                    if op.param2 in kimid:
                         G = ki.getGroup(op.param1)
                         G.preventJoinByTicket = False
                         ki.updateGroup(G)
                         Ticket = ki.reissueGroupTicket(op.param1)
                         vipro.acceptGroupInvitationByTicket(op.param1,Ticket)
                         ki.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        kk.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        kc.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        ks.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        k1.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        k2.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        k3.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        k4.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        k5.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki2.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki3.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki4.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki5.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki6.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki7.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki8.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki9.acceptGroupInvitationByTicket(op.param1,Ticket)
                         G.preventJoinByTicket = True
                         vipro.updateGroup(G)
                     else:
@@ -4899,397 +4939,397 @@ def bot(op):
                         ki.updateGroup(G)
                         Ticket = ki.reissueGroupTicket(op.param1)
                         vipro.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        kki.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        kk.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        kc.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        ks.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        k1.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        k2.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        k3.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        k4.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        k5.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki2.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki3.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki4.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki5.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki6.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki7.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki8.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki9.acceptGroupInvitationByTicket(op.param1,Ticket)
                         G.preventJoinByTicket = True
                         vipro.updateGroup(G)
                         ki.updateGroup(G)
                         wait["blacklist"][op.param2] = True
-                elif op.param3 in Amid:
-                    if op.param2 in Bmid:
-                        G = kk.getGroup(op.param1)
+                elif op.param3 in kimid:
+                    if op.param2 in ki2mid:
+                        G = ki2.getGroup(op.param1)
                         G.preventJoinByTicket = False
-                        kk.updateGroup(G)
-                        Ticket = kk.reissueGroupTicket(op.param1)
+                        ki2.updateGroup(G)
+                        Ticket = ki2.reissueGroupTicket(op.param1)
                         vipro.acceptGroupInvitationByTicket(op.param1,Ticket)
                         ki.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        kk.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        kc.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        ks.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        k1.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        k2.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        k3.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        k4.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        k5.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki2.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki3.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki4.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki5.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki6.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki7.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki8.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki9.acceptGroupInvitationByTicket(op.param1,Ticket)
                         G.preventJoinByTicket = True
                         ki2.updateGroup(G)
                     else:
-                        G = kk.getGroup(op.param1)
+                        G = ki2.getGroup(op.param1)
                         ki2.kickoutFromGroup(op.param1,[op.param2])
                         G.preventJoinByTicket = False
-                        kk.updateGroup(G)
-                        Ticket = kk.reissueGroupTicket(op.param1)
+                        ki2.updateGroup(G)
+                        Ticket = ki2.reissueGroupTicket(op.param1)
                         vipro.acceptGroupInvitationByTicket(op.param1,Ticket)
                         ki.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        kk.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        kc.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        ks.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        k1.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        k2.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        k3.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        k4.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        k5.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki2.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki3.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki4.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki5.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki6.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki7.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki8.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki9.acceptGroupInvitationByTicket(op.param1,Ticket)
                         G.preventJoinByTicket = True
                         vipro.updateGroup(G)
                         ki2.updateGroup(G)
                         wait["blacklist"][op.param2] = True
-                elif op.param3 in Cmid:
-                    if op.param2 in Bmid:
-                        G = kk.getGroup(op.param1)
+                elif op.param3 in ki3mid:
+                    if op.param2 in ki2mid:
+                        G = ki2.getGroup(op.param1)
                         G.preventJoinByTicket = False
-                        kk.updateGroup(G)
-                        Ticket = kk.reissueGroupTicket(op.param1)
+                        ki2.updateGroup(G)
+                        Ticket = ki2.reissueGroupTicket(op.param1)
                         vipro.acceptGroupInvitationByTicket(op.param1,Ticket)
                         ki.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        kk.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        kc.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        ks.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        k1.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        k2.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        k3.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        k4.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        k5.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki2.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki3.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki4.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki5.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki6.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki7.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki8.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki9.acceptGroupInvitationByTicket(op.param1,Ticket)
                         G.preventJoinByTicket = True
-                        kk.updateGroup(G)
+                        ki2.updateGroup(G)
                     else:
                         G = vipro.getGroup(op.param1)
-                        kk.kickoutFromGroup(op.param1,[op.param2])
+                        ki2.kickoutFromGroup(op.param1,[op.param2])
                         G.preventJoinByTicket = False
-                        kk.updateGroup(G)
-                        Ticket = kk.reissueGroupTicket(op.param1)
+                        ki2.updateGroup(G)
+                        Ticket = ki2.reissueGroupTicket(op.param1)
                         vipro.acceptGroupInvitationByTicket(op.param1,Ticket)
                         ki.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        kk.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        kc.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        ks.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        k1.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        k2.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        k3.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        k4.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        k5.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki2.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki3.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki4.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki5.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki6.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki7.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki8.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki9.acceptGroupInvitationByTicket(op.param1,Ticket)
                         G.preventJoinByTicket = True
-                        kk.updateGroup(G)
+                        ki2.updateGroup(G)
                         vipro.updateGroup(G)
                         wait["blacklist"][op.param2] = True
-                elif op.param3 in Bmid:
-                    if op.param2 in Cmid:
-                        G = kc.getGroup(op.param1)
+                elif op.param3 in ki2mid:
+                    if op.param2 in ki3mid:
+                        G = ki3.getGroup(op.param1)
                         G.preventJoinByTicket = False
-                        kc.updateGroup(G)
-                        Ticket = kc.reissueGroupTicket(op.param1)
+                        ki3.updateGroup(G)
+                        Ticket = ki3.reissueGroupTicket(op.param1)
                         vipro.acceptGroupInvitationByTicket(op.param1,Ticket)
                         ki.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        kk.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        kc.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        ks.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        k1.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        k2.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        k3.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        k4.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        k5.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki2.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki3.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki4.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki5.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki6.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki7.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki8.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki9.acceptGroupInvitationByTicket(op.param1,Ticket)
                         G.preventJoinByTicket = True
-                        kc.updateGroup(G)
+                        ki3.updateGroup(G)
                     else:
                         G = vipro.getGroup(op.param1)
-                        kc.kickoutFromGroup(op.param1,[op.param2])
+                        ki3.kickoutFromGroup(op.param1,[op.param2])
                         G.preventJoinByTicket = False
-                        kc.updateGroup(G)
-                        Ticket = kc.reissueGroupTicket(op.param1)
+                        ki3.updateGroup(G)
+                        Ticket = ki3.reissueGroupTicket(op.param1)
                         vipro.acceptGroupInvitationByTicket(op.param1,Ticket)
                         ki.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        kk.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        kc.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        ks.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        k1.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        k2.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        k3.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        k4.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        k5.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki2.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki3.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki4.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki5.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki6.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki7.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki8.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki9.acceptGroupInvitationByTicket(op.param1,Ticket)
                         G.preventJoinByTicket = True
-                        kc.updateGroup(G)
+                        ki3.updateGroup(G)
                         vipro.updateGroup(G)
                         wait["blacklist"][op.param2] = True
-                elif op.param3 in Dmid:
-                    if op.param2 in Emid:
-                        G = k1.getGroup(op.param1)
+                elif op.param3 in ki4mid:
+                    if op.param2 in ki5mid:
+                        G = ki5.getGroup(op.param1)
                         G.preventJoinByTicket = False
-                        k1.updateGroup(G)
-                        Ticket = k1.reissueGroupTicket(op.param1)
+                        ki5.updateGroup(G)
+                        Ticket = ki5.reissueGroupTicket(op.param1)
                         vipro.acceptGroupInvitationByTicket(op.param1,Ticket)
                         ki.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        kk.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        kc.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        ks.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        k1.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        k2.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        k3.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        k4.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        k5.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki2.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki3.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki4.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki5.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki6.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki7.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki8.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki9.acceptGroupInvitationByTicket(op.param1,Ticket)
                         G.preventJoinByTicket = True
                         vipro.updateGroup(G)
                     else:
-                        G = k1.getGroup(op.param1)
-                        k1.kickoutFromGroup(op.param1,[op.param2])
+                        G = ki5.getGroup(op.param1)
+                        ki5.kickoutFromGroup(op.param1,[op.param2])
                         G.preventJoinByTicket = False
-                        k1.updateGroup(G)
-                        Ticket = k1.reissueGroupTicket(op.param1)
+                        ki5.updateGroup(G)
+                        Ticket = ki5.reissueGroupTicket(op.param1)
                         vipro.acceptGroupInvitationByTicket(op.param1,Ticket)
                         ki.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        kk.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        kc.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        ks.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        k1.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        k2.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        k3.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        k4.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        k5.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki2.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki3.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki4.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki5.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki6.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki7.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki8.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki9.acceptGroupInvitationByTicket(op.param1,Ticket)
                         G.preventJoinByTicket = True
-                        k1.updateGroup(G)
+                        ki5.updateGroup(G)
                         vipro.updateGroup(G)
                         wait["blacklist"][op.param2] = True
-                elif op.param3 in Emid:
-                    if op.param2 in Dmid:
-                        G = ks.getGroup(op.param1)
+                elif op.param3 in ki5mid:
+                    if op.param2 in ki4mid:
+                        G = ki4.getGroup(op.param1)
                         G.preventJoinByTicket = False
-                        ks.updateGroup(G)
-                        Ticket = ks.reissueGroupTicket(op.param1)
+                        ki4.updateGroup(G)
+                        Ticket = ki4.reissueGroupTicket(op.param1)
                         vipro.acceptGroupInvitationByTicket(op.param1,Ticket)
                         ki.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        kk.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        kc.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        ks.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        k1.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        k2.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        k3.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        k4.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        k5.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki2.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki3.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki4.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki5.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki6.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki7.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki8.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki9.acceptGroupInvitationByTicket(op.param1,Ticket)
                         G.preventJoinByTicket = True
-                        ks.updateGroup(G)
+                        ki4.updateGroup(G)
                     else:
-                        G = ks.getGroup(op.param1)
-                        ks.kickoutFromGroup(op.param1,[op.param2])
+                        G = ki4.getGroup(op.param1)
+                        ki4.kickoutFromGroup(op.param1,[op.param2])
                         G.preventJoinByTicket = False
-                        ks.updateGroup(G)
-                        Ticket = ks.reissueGroupTicket(op.param1)
+                        ki4.updateGroup(G)
+                        Ticket = ki4.reissueGroupTicket(op.param1)
                         vipro.acceptGroupInvitationByTicket(op.param1,Ticket)
                         ki.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        kk.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        kc.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        ks.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        k1.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        k2.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        k3.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        k4.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        k5.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki2.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki3.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki4.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki5.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki6.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki7.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki8.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki9.acceptGroupInvitationByTicket(op.param1,Ticket)
                         G.preventJoinByTicket = True
-                        ks.updateGroup(G)
+                        ki4.updateGroup(G)
                         vipro.updateGroup(G)
                         wait["blacklist"][op.param2] = True
-                elif op.param3 in Fmid:
-                    if op.param2 in Emid:
-                        G = k1.getGroup(op.param1)
+                elif op.param3 in ki6mid:
+                    if op.param2 in ki5mid:
+                        G = ki5.getGroup(op.param1)
                         G.preventJoinByTicket = False
-                        k1.updateGroup(G)
-                        Ticket = k1.reissueGroupTicket(op.param1)
+                        ki5.updateGroup(G)
+                        Ticket = ki5.reissueGroupTicket(op.param1)
                         vipro.acceptGroupInvitationByTicket(op.param1,Ticket)
                         ki.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        kk.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        kc.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        ks.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        k1.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        k2.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        k3.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        k4.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        k5.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki2.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki3.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki4.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki5.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki6.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki7.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki8.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki9.acceptGroupInvitationByTicket(op.param1,Ticket)
                         G.preventJoinByTicket = True
-                        k1.updateGroup(G)
+                        ki5.updateGroup(G)
                     else:
-                        G = k1.getGroup(op.param1)
-                        k1.kickoutFromGroup(op.param1,[op.param2])
+                        G = ki5.getGroup(op.param1)
+                        ki5.kickoutFromGroup(op.param1,[op.param2])
                         G.preventJoinByTicket = False
-                        k1.updateGroup(G)
-                        Ticket = k1.reissueGroupTicket(op.param1)
+                        ki5.updateGroup(G)
+                        Ticket = ki5.reissueGroupTicket(op.param1)
                         vipro.acceptGroupInvitationByTicket(op.param1,Ticket)
                         ki.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        kk.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        kc.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        ks.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        k1.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        k2.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        k3.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        k4.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        k5.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki2.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki3.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki4.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki5.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki6.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki7.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki8.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki9.acceptGroupInvitationByTicket(op.param1,Ticket)
                         G.preventJoinByTicket = True
-                        k1.updateGroup(G)
+                        ki5.updateGroup(G)
                         vipro.updateGroup(G)
                         wait["blacklist"][op.param2] = True
-                elif op.param3 in Hmid:
-                    if op.param2 in Gmid:
-                        G = k3.getGroup(op.param1)
+                elif op.param3 in ki8mid:
+                    if op.param2 in ki7mid:
+                        G = ki7.getGroup(op.param1)
                         G.preventJoinByTicket = False
-                        k1.updateGroup(G)
-                        Ticket = k3.reissueGroupTicket(op.param1)
+                        ki5.updateGroup(G)
+                        Ticket = ki7.reissueGroupTicket(op.param1)
                         vipro.acceptGroupInvitationByTicket(op.param1,Ticket)
                         ki.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        kk.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        kc.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        ks.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        k1.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        k2.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        k3.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        k4.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        k5.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki2.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki3.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki4.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki5.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki6.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki7.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki8.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki9.acceptGroupInvitationByTicket(op.param1,Ticket)
                         G.preventJoinByTicket = True
-                        k3.updateGroup(G)
+                        ki7.updateGroup(G)
                     else:
-                        G = k3.getGroup(op.param1)
-                        k3.kickoutFromGroup(op.param1,[op.param2])
+                        G = ki7.getGroup(op.param1)
+                        ki7.kickoutFromGroup(op.param1,[op.param2])
                         G.preventJoinByTicket = False
-                        k3.updateGroup(G)
-                        Ticket = k3.reissueGroupTicket(op.param1)
+                        ki7.updateGroup(G)
+                        Ticket = ki7.reissueGroupTicket(op.param1)
                         vipro.acceptGroupInvitationByTicket(op.param1,Ticket)
                         ki.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        kk.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        kc.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        ks.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        k1.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        k2.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        k3.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        k4.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        k5.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki2.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki3.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki4.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki5.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki6.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki7.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki8.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki9.acceptGroupInvitationByTicket(op.param1,Ticket)
                         G.preventJoinByTicket = True
-                        k3.updateGroup(G)
+                        ki7.updateGroup(G)
                         vipro.updateGroup(G)
                         wait["blacklist"][op.param2] = True
-                elif op.param3 in Amid:
-                    if op.param2 in Gmid:
-                        G = k4.getGroup(op.param1)
+                elif op.param3 in kimid:
+                    if op.param2 in ki7mid:
+                        G = ki8.getGroup(op.param1)
                         G.preventJoinByTicket = False
-                        k4.updateGroup(G)
-                        Ticket = k4.reissueGroupTicket(op.param1)
+                        ki8.updateGroup(G)
+                        Ticket = ki8.reissueGroupTicket(op.param1)
                         vipro.acceptGroupInvitationByTicket(op.param1,Ticket)
                         ki.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        kk.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        kc.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        ks.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        k1.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        k2.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        k3.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        k4.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        k5.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki2.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki3.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki4.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki5.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki6.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki7.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki8.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki9.acceptGroupInvitationByTicket(op.param1,Ticket)
                         G.preventJoinByTicket = True
-                        k4.updateGroup(G)
+                        ki8.updateGroup(G)
                     else:
-                        G = k4.getGroup(op.param1)
-                        k4.kickoutFromGroup(op.param1,[op.param2])
+                        G = ki8.getGroup(op.param1)
+                        ki8.kickoutFromGroup(op.param1,[op.param2])
                         G.preventJoinByTicket = False
-                        k4.updateGroup(G)
-                        Ticket = k4.reissueGroupTicket(op.param1)
+                        ki8.updateGroup(G)
+                        Ticket = ki8.reissueGroupTicket(op.param1)
                         vipro.acceptGroupInvitationByTicket(op.param1,Ticket)
                         ki.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        kk.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        kc.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        ks.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        k1.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        k2.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        k3.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        k4.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        k5.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki2.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki3.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki4.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki5.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki6.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki7.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki8.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki9.acceptGroupInvitationByTicket(op.param1,Ticket)
                         G.preventJoinByTicket = True
-                        k1.updateGroup(G)
+                        ki5.updateGroup(G)
                         vipro.updateGroup(G)
                         wait["blacklist"][op.param2] = True
-                elif op.param3 in Amid:
-                    if op.param2 in Imid:
-                        G = k5.getGroup(op.param1)
+                elif op.param3 in kimid:
+                    if op.param2 in ki9mid:
+                        G = ki9.getGroup(op.param1)
                         G.preventJoinByTicket = False
-                        k5.updateGroup(G)
-                        Ticket = k5.reissueGroupTicket(op.param1)
+                        ki9.updateGroup(G)
+                        Ticket = ki9.reissueGroupTicket(op.param1)
                         vipro.acceptGroupInvitationByTicket(op.param1,Ticket)
                         ki.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        kk.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        kc.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        ks.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        k1.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        k2.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        k3.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        k4.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        k5.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki2.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki3.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki4.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki5.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki6.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki7.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki8.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki9.acceptGroupInvitationByTicket(op.param1,Ticket)
                         G.preventJoinByTicket = True
-                        k5.updateGroup(G)
+                        ki9.updateGroup(G)
                     else:
-                        G = k5.getGroup(op.param1)
-                        k5.kickoutFromGroup(op.param1,[op.param2])
+                        G = ki9.getGroup(op.param1)
+                        ki9.kickoutFromGroup(op.param1,[op.param2])
                         G.preventJoinByTicket = False
-                        k5.updateGroup(G)
-                        Ticket = k5.reissueGroupTicket(op.param1)
+                        ki9.updateGroup(G)
+                        Ticket = ki9.reissueGroupTicket(op.param1)
                         vipro.acceptGroupInvitationByTicket(op.param1,Ticket)
                         ki.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        kk.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        kc.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        ks.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        k1.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        k2.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        k3.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        k4.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        k5.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki2.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki3.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki4.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki5.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki6.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki7.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki8.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki9.acceptGroupInvitationByTicket(op.param1,Ticket)
                         G.preventJoinByTicket = True
-                        ks.updateGroup(G)
+                        ki4.updateGroup(G)
                         vipro.updateGroup(G)
                         wait["blacklist"][op.param2] = True
-                elif op.param3 in Imid:
-                    if op.param2 in Emid:
-                        G = k1.getGroup(op.param1)
+                elif op.param3 in ki9mid:
+                    if op.param2 in ki5mid:
+                        G = ki5.getGroup(op.param1)
                         G.preventJoinByTicket = False
-                        kk.updateGroup(G)
-                        Ticket = k1.reissueGroupTicket(op.param1)
+                        ki2.updateGroup(G)
+                        Ticket = ki5.reissueGroupTicket(op.param1)
                         vipro.acceptGroupInvitationByTicket(op.param1,Ticket)
                         ki.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        kk.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        kc.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        ks.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        k1.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        k2.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        k3.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        k4.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        k5.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki2.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki3.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki4.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki5.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki6.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki7.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki8.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki9.acceptGroupInvitationByTicket(op.param1,Ticket)
                         G.preventJoinByTicket = True
-                        k1.updateGroup(G)
+                        ki5.updateGroup(G)
                     else:
-                        G = k1.getGroup(op.param1)
-                        k1.kickoutFromGroup(op.param1,[op.param2])
+                        G = ki5.getGroup(op.param1)
+                        ki5.kickoutFromGroup(op.param1,[op.param2])
                         G.preventJoinByTicket = False
-                        k1.updateGroup(G)
-                        Ticket = k1.reissueGroupTicket(op.param1)
+                        ki5.updateGroup(G)
+                        Ticket = ki5.reissueGroupTicket(op.param1)
                         vipro.acceptGroupInvitationByTicket(op.param1,Ticket)
                         ki.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        kk.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        kc.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        ks.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        k1.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        k2.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        k3.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        k4.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        k5.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki2.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki3.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki4.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki5.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki6.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki7.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki8.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki9.acceptGroupInvitationByTicket(op.param1,Ticket)
                         G.preventJoinByTicket = True
-                        k3.updateGroup(G)
+                        ki7.updateGroup(G)
                         vipro.updateGroup(G)
                         wait["blacklist"][op.param2] = True
             except:
@@ -5388,22 +5428,22 @@ def bot(op):
                     vipro.sendMessage(c)
                     ki.sendText(op.param1,str(wait["message"]))
                     ki.sendMessage(c)
-                    kk.sendText(op.param1,str(wait["message"]))
-                    kk.sendMessage(c)
-                    kc.sendText(op.param1,str(wait["message"]))
-                    kc.sendMessage(c)
-                    ks.sendText(op.param1,str(wait["message"]))
-                    ks.sendMessage(c)
-                    k1.sendText(op.param1,str(wait["message"]))
-                    k1.sendMessage(c)
-                    k2.sendText(op.param1,str(wait["message"]))
-                    k2.sendMessage(c)
-                    k3.sendText(op.param1,str(wait["message"]))
-                    k3.sendMessage(c)
-                    k4.sendText(op.param1,str(wait["message"]))
-                    k4.sendMessage(c)
-                    k5.sendText(op.param1,str(wait["message"]))
-                    k5.sendMessage(c)
+                    ki2.sendText(op.param1,str(wait["message"]))
+                    ki2.sendMessage(c)
+                    ki3.sendText(op.param1,str(wait["message"]))
+                    ki3.sendMessage(c)
+                    ki4.sendText(op.param1,str(wait["message"]))
+                    ki4.sendMessage(c)
+                    ki5.sendText(op.param1,str(wait["message"]))
+                    ki5.sendMessage(c)
+                    ki6.sendText(op.param1,str(wait["message"]))
+                    ki6.sendMessage(c)
+                    ki7.sendText(op.param1,str(wait["message"]))
+                    ki7.sendMessage(c)
+                    ki8.sendText(op.param1,str(wait["message"]))
+                    ki8.sendMessage(c)
+                    ki9.sendText(op.param1,str(wait["message"]))
+                    ki9.sendMessage(c)
                     
 #------Open QR Kick start------#
         if op.type == 11:
