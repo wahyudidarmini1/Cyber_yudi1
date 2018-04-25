@@ -4642,7 +4642,7 @@ def bot(op):
               if msg.from_ in creator + admin:
                 if msg.toType == 2:
                     ginfo = vipro.getGroup(msg.to)
-                    try
+                    try:
                         ki.leaveGroup(msg.to)
                         ki2.leaveGroup(msg.to)
                         ki3.leaveGroup(msg.to)
