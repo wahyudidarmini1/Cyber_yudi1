@@ -4620,20 +4620,19 @@ def bot(op):
 #-----------------------------------------------
 #------------------------------------------------------------------
             elif msg.text in ["moleh"]: #Semua Bot Ninggalin Group Kecuali Bot Induk
-              if msg.from_ in owner:
+              if msg.from_ in creator + admin:
                 if msg.toType == 2:
                     ginfo = vipro.getGroup(msg.to)
                     try:
-                        ki.sendText(msg.to,"Bye~Bye " + str(ginfo.name) + "\n\nJangan Lupa Bahagia")
+                        ki.leaveGroup(msg.to)
                         kk.leaveGroup(msg.to)
                         kc.leaveGroup(msg.to)
                         ks.leaveGroup(msg.to)
                         k1.leaveGroup(msg.to)
                         k2.leaveGroup(msg.to)
                         k3.leaveGroup(msg.to)
-                        k4.leaveGroup(msg.to
-                        k5.sendText(msg.to,"Bye~Bye " + str(ginfo.name) + "\n\nJangan Lupa Bahagia")
-                        k6.leaveGroup(msg.to)
+                        k4.leaveGroup(msg.to)
+                        k5.leaveGroup(msg.to)
                         #vipro.leaveGroup(msg.to)
                     except:
                         pass
