@@ -4638,11 +4638,12 @@ def bot(op):
 #-----------------------------------------------
 #------------------------------------------------------------------
 
-            elif msg.text.lower() == 'Moleh':
+            elif msg.text.lower() == 'out':
               if msg.from_ in creator + admin:
                 if msg.toType == 2:
                     ginfo = vipro.getGroup(msg.to)
                     try:
+                        vipro.sendText(msg.to,"􀜁􀇔􏿿Bye Bye😘 "  +  str(ginfo.name)  + "")
                         ki.leaveGroup(msg.to)
                         ki2.leaveGroup(msg.to)
                         ki3.leaveGroup(msg.to)
@@ -4652,16 +4653,15 @@ def bot(op):
                         ki7.leaveGroup(msg.to)
                         ki8.leaveGroup(msg.to)
                         ki9.leaveGroup(msg.to)
-			vipro.sendText(msg.to,"􀜁􀇔􏿿Bye Bye😘 "  +  str(ginfo.name)  + "")
                     except:
                         pass
 #-----------------------------------------------
-            elif "Bye" in msg.text:
+            elif "Moleh" in msg.text:
               if msg.from_ in creator + admin:
                 if msg.toType == 2:
                     ginfo = vipro.getGroup(msg.to)
                     try:
-                    	ki.leaveGroup(msg.to)
+                    	#ki.leaveGroup(msg.to)
                         ki2.leaveGroup(msg.to)
                         ki3.leaveGroup(msg.to)
                         ki4.leaveGroup(msg.to)
