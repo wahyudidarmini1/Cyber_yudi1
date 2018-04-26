@@ -333,7 +333,6 @@ def help():
                   "™↔ " + key + "Broadcast:「Text」\n" + \
                   "™↔ " + key + "Setkey「New Key」\n" + \
                   "™↔ " + key + "Mykey\n" + \
-                  "™↔ " + key + "Resetkey\n" + \ 
                   "\n ™[Selfbot Hiburan]™\n   Gunakan「 " + key + " 」di depannya\n\n" + \
                   "™↔ " + key + "ID line:「Id Line nya」\n" + \
                   "™↔ " + key + "Sholat:「Nama Kota」\n" + \
