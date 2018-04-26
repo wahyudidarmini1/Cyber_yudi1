@@ -17,29 +17,26 @@ import time,random,sys,json,codecs,threading,glob,re
 from bs4 import BeautifulSoup
 from threading import Thread
 
-cl = CYBERTK(authToken='Es78bnERjKNbEJLI0CP2.AZs3a8Vf+ipnhLTOmQbtuG.AU2/L/5P4IAWRrmZOeOzFsUIXQ19jlsE+stzKhK+sOU=')
-cl.log("Auth Token : " + str(cl.authToken))
-channel = CYBERTK(cl)
-cl.log("Channel Access Token : " + str(channel.channelAccessToken))
+cl = CYBERTK.LINE()
+cl.login(token="Es78bnERjKNbEJLI0CP2.AZs3a8Vf+ipnhLTOmQbtuG.AU2/L/5P4IAWRrmZOeOzFsUIXQ19jlsE+stzKhK+sOU=")
+cl.loginResult()
 
-ki = CYBERTK(authToken='EsvJqAx4mkbOUShODxne.4uWnRTJU51yT+/CjXTyHBG.WvpqqGEV9Gue72Jjdo+A2tmI4luS5RpZQg7539+jXN4=')
-ki.log("Auth Token : " + str(ki.authToken))
-channel1 = CYBERTK(ki)
-ki.log("Channel Access Token : " + str(channel1.channelAccessToken))
+ki = CYBERTK.LINE()
+ki.login(token="EsvJqAx4mkbOUShODxne.4uWnRTJU51yT+/CjXTyHBG.WvpqqGEV9Gue72Jjdo+A2tmI4luS5RpZQg7539+jXN4=")
+ki.loginResult()
 
-kk = CYBERTK(authToken='EswXitR5bFB1Q9dF2MHb.drkXjI9kC7gz45kx2rUb2W.O/DD36aXIaDFhq+9Xo0nNod8V5kYukzf6H0ppRyB+9Q=')
-kk.log("Auth Token : " + str(kk.authToken))
-channel2 = CYBERTK(kk)
-kk.log("Channel Access Token : " + str(channel2.channelAccessToken))
+kk = CYBERTK.LINE()
+kk.login(token="EswXitR5bFB1Q9dF2MHb.drkXjI9kC7gz45kx2rUb2W.O/DD36aXIaDFhq+9Xo0nNod8V5kYukzf6H0ppRyB+9Q=")
+kk.loginResult()
 
-kc = CYBERTK(authToken='EsAT5kyY1TNYKD1TVRk3.eXGEKA8y87MQtoFvPFGwuW.1DnxoTlPr1ILLFX434baggg5zhPQ3VmpORJ5C0jPGuk=')
-kc.log("Auth Token : " + str(kc.authToken))
-channel3 = CYBERTK(kc)
-kc.log("Channel Access Token : " + str(channel3.channelAccessToken))
+kc = CYBERTK.LINE()
+kc.login(token="EsAT5kyY1TNYKD1TVRk3.eXGEKA8y87MQtoFvPFGwuW.1DnxoTlPr1ILLFX434baggg5zhPQ3VmpORJ5C0jPGuk=")
+kc.loginResult()
 
-sw = CYBERTK(authToken='EsXQKI9b4s7cuLspPzL8.1e8nOeP/17yuiWiheXA//a.qf5kzDNsT6xt8aLGApl8bsxTT1tECPXmf6VCq0Xc5pg=')
-sw.log("Auth Token : " + str(sw.authToken))
-channel11 = CYBERTK(sw)
+sw = CYBERTK.LINE()
+sw.login(token="EsXQKI9b4s7cuLspPzL8.1e8nOeP/17yuiWiheXA//a.qf5kzDNsT6xt8aLGApl8bsxTT1tECPXmf6VCq0Xc5pg")
+sw.loginResult()
+
 sw.log("Channel Access Token : " + str(channel11.channelAccessToken))
 
 poll = LinePoll(cl)
