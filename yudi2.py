@@ -17,10 +17,10 @@ import time,random,sys,json,codecs,threading,glob,re
 from bs4 import BeautifulSoup
 from threading import Thread
 acil = CYBERTK.LINE()
-acil.login(token="Es78bnERjKNbEJLI0CP2.AZs3a8Vf+ipnhLTOmQbtuG.AU2/L/5P4IAWRrmZOeOzFsUIXQ19jlsE+stzKhK+sOU=")
+acil.login(token="EsvJqAx4mkbOUShODxne.4uWnRTJU51yT+/CjXTyHBG.WvpqqGEV9Gue72Jjdo+A2tmI4luS5RpZQg7539+jXN4=")
 acil.loginResult()
 ki = CYBERTK.LINE()
-ki.login(token="EsvJqAx4mkbOUShODxne.4uWnRTJU51yT+/CjXTyHBG.WvpqqGEV9Gue72Jjdo+A2tmI4luS5RpZQg7539+jXN4=")
+ki.login(token="EsRTnS2XJvUseJVHj2Ua.SD28EqyjtLBjPT144PdcQG.cpDFMsy5pUKzJLzxpHVYu6AzHfVf7KZA1qKw/42/nW4=")
 ki.loginResult()
 ki2= CYBERTK.LINE()
 ki2.login(token="EswXitR5bFB1Q9dF2MHb.drkXjI9kC7gz45kx2rUb2W.O/DD36aXIaDFhq+9Xo0nNod8V5kYukzf6H0ppRyB+9Q=")
@@ -36,8 +36,8 @@ ki5.login(token="EsqqFxpV0wbhpqm119Qf.StMJ2yMSv7H5XrT17lGnZW.5y/gFUTpJASiv0SPf1f
 print "login success"
 reload(sys)
 sys.setdefaultencoding('utf-8')
-helpMessage="""(╣••℘̰̰̈́ґ̰̰̈́∂̰̰̈́η̰̰̈́к̰̰̈́ ̰в̰̰̈́❍̰̰̈́т̰̰̈́ѕ̰̰̈́••╣)
-╔═B༘̈́̈́L༘̈́̈́Ä༘́̈́C༘̈́̈́K༘̈́̈́   ̈́Ö༘́̈́F༘̈́̈́ ̈́  G༘̈́̈́Ä༘́̈́M༘̈́̈́Ë༘́̈́R༘̈́̈́═╗
+helpMessage="""(╣WONG-JOMBANG╣)
+╔═http://line.me/ti/p/~yudi_std02═╗
 ║1║ ✰ Me
 ║2║ ✰ Add
 ║3║ ✰ Gift
@@ -117,8 +117,8 @@ helpMessage="""(╣••℘̰̰̈́ґ̰̰̈́∂̰̰̈́η̰̰̈́к̰̰̈́ ̰в̰̰̈́�
 ║🔛║ ✰ {Setauto}
 ╚══╩════════╝
   """
-helpMessage1="""(╣••℘̰̰̈́ґ̰̰̈́∂̰̰̈́η̰̰̈́к̰̰̈́ ̰в̰̰̈́❍̰̰̈́т̰̰̈́ѕ̰̰̈́••╣)
-╔═B༘̈́̈́L༘̈́̈́Ä༘́̈́C༘̈́̈́K༘̈́̈́   ̈́Ö༘́̈́F༘̈́̈́ ̈́  G༘̈́̈́Ä༘́̈́M༘̈́̈́Ë༘́̈́R༘̈́̈́═╗
+helpMessage1="""(╣WONG-JOMBANG╣)
+╔═http://line.me/ti/p/~yudi_std02═╗
 ║╩═ADMIN+OWNER═╦
 ║1║ ✰ Me
 ║2║ ✰ Smule 
@@ -169,8 +169,8 @@ helpMessage1="""(╣••℘̰̰̈́ґ̰̰̈́∂̰̰̈́η̰̰̈́к̰̰̈́ ̰в̰̰̈́
 ║║ ✰ Virus
 ╚══╩═══════╝
   """
-helpMedia="""(╣••℘̰̰̈́ґ̰̰̈́∂̰̰̈́η̰̰̈́к̰̰̈́ ̰в̰̰̈́❍̰̰̈́т̰̰̈́ѕ̰̰̈́••╣)
-╔═B༘̈́̈́L༘̈́̈́Ä༘́̈́C༘̈́̈́K༘̈́̈́   ̈́Ö༘́̈́F༘̈́̈́ ̈́  G༘̈́̈́Ä༘́̈́M༘̈́̈́Ë༘́̈́R༘̈́̈́═╗
+helpMedia="""(╣WONG-JOMBANG╣)
+╔═http://line.me/ti/p/~yudi_std02═╗
 ║╦═══MEDIA═══
 ║1║ ✰ Youtube *text*
 ║2║ ✰ Youtubesearch *user*
@@ -247,8 +247,8 @@ helpMedia="""(╣••℘̰̰̈́ґ̰̰̈́∂̰̰̈́η̰̰̈́к̰̰̈́ ̰в̰̰̈́❍
 ║🔛║ ✰ {Setauto}
 ╚══╩══════╝
 """
-helpFun = """(╣℘̰̰̈́ґ̰̰̈́∂̰̰̈́η̰̰̈́к̰̰̈́ ̰в̰̰̈́❍̰̰̈́т̰̰̈́ѕ̰̰̈́╣)
-╔═B༘̈́̈́L༘̈́̈́Ä༘́̈́C༘̈́̈́K༘̈́̈́   ̈́Ö༘́̈́F༘̈́̈́ ̈́  G༘̈́̈́Ä༘́̈́M༘̈́̈́Ë༘́̈́R༘̈́̈́═╗
+helpFun = """(╣WONG-JOMBANG╣)
+╔═http://line.me/ti/p/~yudi_std02═╗
 ║╦═══MEDIA═══
 ║1║ ✰ sider:*txt*
 ║2║ ✰ tagme:*txt
@@ -269,7 +269,7 @@ helpFun = """(╣℘̰̰̈́ґ̰̰̈́∂̰̰̈́η̰̰̈́к̰̰̈́ ̰в̰̰̈́❍̰̰̈́
 ╚══╩══════╝
 """
 helpself="""
-╔╦═C༘֮֮O༘֮֮M༘֮֮M༘֮֮A༘֮֮N༘֮֮D༘֮֮ ֮A༘֮֮L༘֮֮L༘֮֮ ֮B༘֮֮O༘֮֮T༘֮֮S༘֮֮═╦╗
+╔╦═http://line.me/ti/p/~yudi_std02═╦╗
 ║ ═══════════║
 ║1║ ✰ Fuck1/10 "@"
 ║2║ ✰ Kick1/10 "@"
@@ -295,10 +295,10 @@ helpself="""
 ║23║ ✰ Allbio "status"
 ║24║ ✰ Sendcontact "text"
 ║25║ ✰ Botbyeall  
-║••℘̰̰̈́ґ̰̰̈́∂̰̰̈́η̰̰̈́к̰̰̈́ ̰в̰̰̈́❍̰̰̈́т̰̰̈́ѕ̰̰̈́••
+║••WONG-JOMBANG••
 ╚═══════════╝
   """
-helpset="""╔(╣ S༘̏̏Ȅ༘̏T༘̏̏T༘̏̏Ȉ༘̏N༘̏̏G༘̏̏ ̏B༘̏̏Ȍ༘̏T༘̏̏S༘̏̏.╣)╗
+helpset="""╔(╣ SETING BOT-╣)╗
 ║ ✰ Ban:on/Unbl:on
 ║ ✰ Contact:on/off
 ║ ✰ Add:on/off
@@ -318,7 +318,7 @@ helpset="""╔(╣ S༘̏̏Ȅ༘̏T༘̏̏T༘̏̏Ȉ༘̏N༘̏̏G༘̏̏ ̏B
 ║ ✰ Read:0n/off
 ║ ✰ Like:on/off
 ║ ✰ Runtime
-║═(╣S̰֮֮Ḛ֮֮T̰֮֮T̰֮֮Ḭ֮֮N̰֮֮G̰֮֮ ֮G̰֮֮R̰֮֮O̰֮֮Ṵ֮֮P̰֮֮S̰֮֮╣)═
+║═(╣SETING GROUP╣)═
 ║ ★ Pro:on/off
 ║ ★ Prolink:on/off
 ║ ★ Proinvite:on/off
@@ -334,12 +334,12 @@ helpset="""╔(╣ S༘̏̏Ȅ༘̏T༘̏̏T༘̏̏Ȉ༘̏N༘̏̏G༘̏̏ ̏B
 ║🔧║ ✰ {Settings}
 ║🔛║ ✰ {Setauto}
 ╚══╩══════╝
-║ ╦═B༘̈́̈́L༘̈́̈́Ä༘́̈́C༘̈́̈́K༘̈́̈́   ̈́Ö༘́̈́F༘̈́̈́ ̈́  G༘̈́̈́Ä༘́̈́M༘̈́̈́Ë༘́̈́R༘̈́̈́═╦
-╚═•℘̰̰̈́ґ̰̰̈́∂̰̰̈́η̰̰̈́к̰̰̈́ ̰в̰̰̈́❍̰̰̈́т̰̰̈́ѕ̰̰̈́•╝
+║ ╦═http://line.me/ti/p/~yudi_std02═╦
+╚═•WONG-JOMBANG•╝
 """
 translateMessage ="""
 ╔══════════
-║(╣℘̰̰̈́ґ̰̰̈́∂̰̰̈́η̰̰̈́к̰̰̈́ ̰в̰̰̈́❍̰̰̈́т̰̰̈́ѕ̰̰̈́╣)
+║(╣WONG-JOMBANG╣)
 ║╔═════════
 ║══════════
 ║✰║ Afrika/
@@ -2767,7 +2767,7 @@ def bot(op):
                     else:
                         acil.sendText(msg.to,"Off ✖")
             elif msg.text.lower() == 'set':
-                md = "╔▬▬℘ґ∂ηк в❍тs▬▬╗\n║▬▬▬℘▬▬в▬▬▬║\n"
+                md = "╔▬▬Wong-Jombang▬▬╗\n║▬▬▬℘▬▬в▬▬▬║\n"
                 if wait["likeOn"] == True: md+="║☆║Like:ON➡️📱\n"
                 else: md+="║☆║Like:OFF➡️📴\n"
                 if wait["wcOn"] == True: md+="║☆║Welcome:ON➡️📱\n"
@@ -2799,7 +2799,7 @@ def bot(op):
                 if wait["autoAdd"] == True: md+="║☆║Add:ON➡️📱\n"
                 else:md+="║☆║Add:OFF➡️??\n"
                 if wait["commentOn"] == True: md+="║☆║Com:ON➡️📱\n"
-                else:md+="║☆║Com:OFF➡️??\n║▬║❨◄▬▬▬►❩\n║☆║◄═PROTECTION═►\n║▬║▬PRANKBOTS▬╣\n"
+                else:md+="║☆║Com:OFF➡️??\n║▬║❨◄▬▬▬►❩\n║☆║◄═PROTECTION═►\n║▬║▬wong-jombang▬╣\n"
                 if wait["protect"] == True: md+="║☆║Pro:ON➡️📱\n"
                 else:md+="║☆║Pro:OFF➡️📴\n"
                 if wait["linkprotect"] == True: md+="║☆║ProtectQr:ON➡️📱\n"
@@ -2810,7 +2810,7 @@ def bot(op):
                 else:md+="║☆║Procancel:OFF➡️📴\n"
                 if wait["pname"] == True: md+="║☆║Namelock:ON➡️📱\n"
                 else: md+="║☆║Namelock:OFF➡️📴\n"   
-                acil.sendText(msg.to,md + "║▬▬▬℘▬▬в▬▬▬║\n╚▬▬℘ґ∂ηк в❍тs▬▬╝")
+                acil.sendText(msg.to,md + "║▬▬▬W▬▬O▬▬▬║\n╚▬▬wong jombang▬▬╝")
             elif "Creatorgrup" == msg.text:
                 try:
                     group = acil.getGroup(msg.to)
