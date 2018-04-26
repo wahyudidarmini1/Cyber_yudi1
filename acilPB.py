@@ -1,38 +1,37 @@
 # -*- coding: utf-8 -*-
-import PRANKBOTS
-from PRANKBOTS.lib.curve.ttypes import *	
-from datetime import datetime	
-import io,os,re,ast,six,sys,glob,json,time,timeit,codecs,random,shutil,urllib,urllib2,urllib3,goslate,html5lib,requests,threading,wikipedia,subprocess,googletrans
-from gtts import gTTS	
-from random import randint	
-from time import sleep	
-from urllib import urlopen, urlretrieve, urlencode	
-from io import StringIO	
-from bs4 import BeautifulSoup	
-from threading import Thread	
-from googletrans import Translator	
-if (six.PY2):
-    import urllib2
-    import urllib
-else:
-    import urllib.request
-    import urllib.parse
-acil = PRANKBOTS.LINE()
+
+import CYBERTK
+import goslate
+import requests
+import urllib
+import urllib2
+import subprocess
+import profile
+import client
+import wikipedia
+import requests
+from gtts import gTTS
+from CYBERTK.lib.curve.ttypes import *
+from datetime import datetime
+import time,random,sys,json,codecs,threading,glob,re
+from bs4 import BeautifulSoup
+from threading import Thread
+acil = CYBERTK.LINE()
 acil.login(token="ErYWjY9YV79Z38JKxKo3.Zyqdf0szEvhn7GgnUvgUOW.UjX05iErsgigbASwAmC2c+XpFJ6lR5Tz3fa/+/Zf6bk=")
 acil.loginResult()
-ki = PRANKBOTS.LINE()
+ki = CYBERTK.LINE()
 ki.login(token="EriNWY115rLz2hdl48v6.AtUxbv5bm36lwyvJZPmvLG.oLcFDSxUslenk2Rz2XQg1E/dUM90SsPowtl3mIsCh+w=")
 ki.loginResult()
-ki2= PRANKBOTS.LINE()
+ki2= CYBERTK.LINE()
 ki2.login(token="ErnJswlRxEo8wSuOebF3.MH2J3w8lfsAoWo4z8qxeuW.pmKfHC0OdXbZY5pUV/Ruyu1NohldbTi/nfmPsBzMvds=")
 ki2.loginResult()
-ki3 = PRANKBOTS.LINE()
+ki3 = CYBERTK.LINE()
 ki3.login(token="ErkFmsynownacQGE3XDf.pMI0m8HrhHEeXjG/H6SepW.yLA1mS6JHgxa7qZzjVQ5JbbB3UFJPR0b4nxCbMc6qLY=")
 ki3.loginResult()
-ki4 = PRANKBOTS.LINE()
+ki4 = CYBERTK.LINE()
 ki4.login(token="Er8h61l1jTFFUVf3e13a.NSj60VJy3+WTBIuVnvXHwG.wkwr4TT7v1FWJv4KfHc/Q2yDXxx7deHxXvq65XHjCJg=")
 ki4.loginResult()
-ki5 = PRANKBOTS.LINE()
+ki5 = CYBERTK.LINE()
 ki5.login(token="ErzbXhPnCAsXlc6MA7i3.duo4C3Drdvi2rzJhZXuAaW.mkuqhMhfYByBeUBHcwNeGwpTRoaBxBFv5pSbT/yqcMo=")
 print "login success"
 reload(sys)
@@ -410,8 +409,8 @@ ki3mid = ki3.getProfile().mid
 ki4mid = ki4.getProfile().mid
 ki5mid = ki5.getProfile().mid
 Bots=[mid,kimid,ki2mid,ki3mid,ki4mid,ki5mid]
-admsa = "ucd84031744997951cdee018db951aea3" #MID SELFBOT
-PRANKBOT = ["ufce863f62f40706c01fa4a3c3c4cb096"] #MID OWNER
+admsa = "ue14c0daed8eee7562dffe709c6d6216e" #MID SELFBOT
+PRANKBOT = ["u6b34b703cbc5fc83cd1e5b6832a05352"] #MID OWNER
 wait = {
     'contact':False,
     'autoJoin':True,
