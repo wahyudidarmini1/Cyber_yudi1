@@ -1,63 +1,75 @@
 # -*- coding: utf-8 -*-
 
-import LINETCR
-from LINETCR.lib.curve.ttypes import *
+import CYBERTK
+import goslate
+import requests
+import urllib
+import urllib2
+import subprocess
+import profile
+import client
+import wikipedia
+import requests
+from gtts import gTTS
+from CYBERTK.lib.curve.ttypes import *
 from datetime import datetime
-import time,random,sys,json,codecs,threading,glob,re,ast,os,subprocess,requests
+import time,random,sys,json,codecs,threading,glob,re
+from bs4 import BeautifulSoup
+from threading import Thread
 
-satpam = LINETCR.LINE() # Koplaxs
+satpam = CYBERTK.LINE() # Koplaxs
 satpam.login(token="EsQJO4am8uNQ1MKPffY2.AZs3a8Vf+ipnhLTOmQbtuG.sPYgVqTS51F1VWIFQNDkxrRCdli3W9Shj6CMuNlPG+4=")
 satpam.loginResult()
 
-cl = LINETCR.LINE() # Koplaxs
+cl = CYBERTK.LINE() # Koplaxs
 cl.login(token="Es0tC3qZpJ9yAf2p9fze.4uWnRTJU51yT+/CjXTyHBG.9t2i0AJNoDGSG/wYv53WOj5LDKx4zt8hmcWepI+36T4=")
 cl.loginResult()
 
-ki = LINETCR.LINE() #Luffy
+ki = CYBERTK.LINE() #Luffy
 ki.login(token="EEsGeLt0wGpw4lxVEkfrb.drkXjI9kC7gz45kx2rUb2W.YLMPgsy7VvNW7aqg81oOrFj6C4EK5ey61r+s7ZO7/5g=")
 ki.loginResult()
 
-kk = LINETCR.LINE() #Zorro
+kk = CYBERTK.LINE() #Zorro
 kk.login(token="EsV4melT6DSiaPov2QT3.eXGEKA8y87MQtoFvPFGwuW.h0KZfk94tOhM4A8mOTHZOS0UOJruzBUpc4wmNElUvLY=")
 kk.loginResult()
 
-kc = LINETCR.LINE() #Sanji
+kc = CYBERTK.LINE() #Sanji
 kc.login(token="EsgfDaaBRXtj06q4iRt8.1e8nOeP/17yuiWiheXA//a.szB6Mo80SA/ykNQxwf5/3TjkJxp5J6H7LIi5DLIeCxo=")
 kc.loginResult()
 
-ks = LINETCR.LINE() #Ussop
+ks = CYBERTK.LINE() #Ussop
 ks.login(token="EsjQm0n2tdpprHUvI4Ef.StMJ2yMSv7H5XrT17lGnZW.QFpwc6+XtSxE5lzZel5GqYsv9eGcny/N2vkqLtZQ8T4=")
 ks.loginResult()
 
-ka = LINETCR.LINE() #Chooper
+ka = CYBERTK.LINE() #Chooper
 ka.login(token="Esx2WRzbGqatmcvRgmAa.SD28EqyjtLBjPT144PdcQG.mkG2Prb5slJtZ74V0hAvZh1op/hBvVJ8ekt3waO3tIU=")
 ka.loginResult()
 
-kb = LINETCR.LINE() #Franky
+kb = CYBERTK.LINE() #Franky
 kb.login(token="EsJMcXRaDmExzzr5zTI9.VfG2daMSMKOL78PxRGOi6q.RcWGMagc5K3+6LlDanR2YYPvhF8BYa33FNlQhqSYMMo=")
 kb.loginResult()
 
-ko = LINETCR.LINE() #Brook
+ko = CYBERTK.LINE() #Brook
 ko.login(token="Esvd9ObxZrobhTC5u1L6.u5E0qHumGolsyebggFHFzG.RWIqnGwLiPAJ5HRTu/bn7IB5hFByqbEHRdG0NCyp5KI=")
 ko.loginResult()
 
-ke = LINETCR.LINE() #Nami
+ke = CYBERTK.LINE() #Nami
 ke.login(token="EskoBxPbmbSjxYkKlOZf.0Gxc/M3RVqR4nYkPcDjtZW.ZLKJVOrji80ndfEs9UB4lAafmX7K2ndX7h3OzhIr+z0=")
 ke.loginResult()
 
-ku = LINETCR.LINE() #Robin
+ku = CYBERTK.LINE() #Robin
 ku.login(token="EsJVJnHzC1pbeVvYLn53.Z7tUqKO5oaEP2cnIzYreyW.e/fxuZx5P3p9MiPHZt8a0Bi/sez+Evya92UQJMV6/3g=")
 ku.loginResult()
 
-satpam = LINETCR.LINE() # Jinbei
+satpam = CYBERTK.LINE() # Jinbei
 satpam.login(token="EswMurTdeyhmrrlB0ryc.Ee/eeDlrP0uTdFlXuHf9Na.gPqP/QHUWAxvhxQkoTqHguBjHWDxmUgnTtZd15gyg9E=")
 satpam.loginResult()
 
-k1 = LINETCR.LINE() #Backup (Gunanya Kalo Akun Self Ke Kick, Dy masuk ke Group dan Ngekick yang Kick Selfbot Dan Selfbot Di undang sama dia,lalu dy leave lagi :D)
+k1 = CYBERTK.LINE() #Backup (Gunanya Kalo Akun Self Ke Kick, Dy masuk ke Group dan Ngekick yang Kick Selfbot Dan Selfbot Di undang sama dia,lalu dy leave lagi :D)
 k1.login(token="EseSSJsiyyFc3656qUpb.laBbOEpcsXIXQThDvNl//W.MfHgHRAqMKgCBGVznGVsZe6q8LQY4I+5OFw3gEi646Y=")
 k1.loginResult()
 
-print "Login Success Plak"
+print "Login Success Yud"
 reload(sys)
 sys.setdefaultencoding('utf-8')
 
