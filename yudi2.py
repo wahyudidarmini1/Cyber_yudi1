@@ -17,10 +17,10 @@ import time,random,sys,json,codecs,threading,glob,re
 from bs4 import BeautifulSoup
 from threading import Thread
 acil = CYBERTK.LINE()
-acil.login(token="EsvJqAx4mkbOUShODxne.4uWnRTJU51yT+/CjXTyHBG.WvpqqGEV9Gue72Jjdo+A2tmI4luS5RpZQg7539+jXN4=")
+acil.login(token="Es78bnERjKNbEJLI0CP2.AZs3a8Vf+ipnhLTOmQbtuG.AU2/L/5P4IAWRrmZOeOzFsUIXQ19jlsE+stzKhK+sOU=")
 acil.loginResult()
 ki = CYBERTK.LINE()
-ki.login(token="EsRTnS2XJvUseJVHj2Ua.SD28EqyjtLBjPT144PdcQG.cpDFMsy5pUKzJLzxpHVYu6AzHfVf7KZA1qKw/42/nW4=")
+ki.login(token="EsvJqAx4mkbOUShODxne.4uWnRTJU51yT+/CjXTyHBG.WvpqqGEV9Gue72Jjdo+A2tmI4luS5RpZQg7539+jXN4=")
 ki.loginResult()
 ki2= CYBERTK.LINE()
 ki2.login(token="EswXitR5bFB1Q9dF2MHb.drkXjI9kC7gz45kx2rUb2W.O/DD36aXIaDFhq+9Xo0nNod8V5kYukzf6H0ppRyB+9Q=")
@@ -423,10 +423,10 @@ wait = {
     'joingc':"message member join belum di set",
     'leftgc':"message member left belum di set",
     "stickerMention":False,
-    'message':"""THANKS FOR ADD ME\n\nSUBCRABE ME ON YOUTUBE\n\nhttps://www.youtube.com/channel/UCycBrqSWEHdk-slnhUmGWiQ""",
+    'message':"""THANKS FOR ADD ME\n\nMAKASIH TELAH ADD KAMI""",
     "lang":"JP",
     "comment":"Thanks For Add Me",
-    "comment1":"|======AUTO LIKE======|\n\nSUBCRABE ME ON YOUTUBE\n\nhttps://www.youtube.com/channel/UCycBrqSWEHdk-slnhUmGWiQ\n\nMENERIMA PESANAN SELFBOT MINAT.!!\nINFO LANGSUNG KE\n\nID:::::http://line.me/ti/p/~adiputra.95",
+    "comment1":"|======AUTO LIKE======|\n\nMENERIMA PESANAN SELFBOT MINAT.!!\nINFO LANGSUNG KE\n\nID:::::http://line.me/ti/p/~yudi_std02",
     "commentOn":False,
     "likeOn":True,
     "wcOn":True,
@@ -1250,7 +1250,7 @@ def bot(op):
                 ki.sendText(msg.to,"AMAN TERKENDALI KOMANDAN 👮")
             if "Set" == msg.text:
               if msg.from_ in PRANKBOT:
-                md = "╔▬▬℘ґ∂ηк в❍тs▬▬╗\n║▬▬▬℘▬▬в▬▬▬║\n"
+                md = "╔▬▬wong-jombang▬▬╗\n║▬▬▬℘▬▬в▬▬▬║\n"
                 if wait["likeOn"] == True: md+="║☆║Like:ON➡️📱\n"
                 else: md+="║☆║Like:OFF➡️📴\n"
                 if wait["wcOn"] == True: md+="║☆║Welcome:ON➡️📱\n"
@@ -1293,7 +1293,7 @@ def bot(op):
                 else:md+="║☆║Procancel:OFF➡️📴\n"
                 if wait["pname"] == True: md+="║☆║Namelock:ON➡️📱\n"
                 else: md+="║☆║Namelock:OFF➡️📴\n"   
-                acil.sendText(msg.to,md + "║▬▬▬℘▬▬в▬▬▬║\n╚▬▬℘ґ∂ηк в❍тs▬▬╝")
+                acil.sendText(msg.to,md + "║▬▬▬yudi▬▬▬║\n╚▬▬wong-jombang▬▬╝")
             if "Sider:on" in msg.text:
 	          if msg.from_ in PRANKBOT:
                     del cctv['point'][msg.to]
@@ -2210,7 +2210,7 @@ def bot(op):
                 ki5.sendMessage(msg)
             elif "Creator" == msg.text:
                 msg.contentType = 13
-                msg.contentMetadata = {'mid':'ufce863f62f40706c01fa4a3c3c4cb096'}
+                msg.contentMetadata = {'mid':'u6b34b703cbc5fc83cd1e5b6832a05352'}
                 acil.sendText(msg.to,"MINAT PESAN VPS DAN SELFBOT SILAHKAN ADD CREATOR PRANKBOTS")
                 acil.sendMessage(msg)
             elif msg.text in ["Allgift","B1 gift"]:
@@ -2832,11 +2832,11 @@ def bot(op):
                     acil.sendText(msg.to,"old user")
             elif cms(msg.text,["Add"]):
                 msg.contentType = 13
-                msg.contentMetadata = {'mid': 'u5818cb4404411c2e2e6e6937d172cca8'}
+                msg.contentMetadata = {'mid': 'u6b34b703cbc5fc83cd1e5b6832a05352'}
                 acil.sendText(msg.to,"❂•••••••••✧••••••••••❂")
                 acil.sendMessage(msg)
                 msg.contentType = 13
-                msg.contentMetadata = {'mid': 'udfaf52176415b46cb445ae2757ec85f3'}
+                msg.contentMetadata = {'mid': 'u6b34b703cbc5fc83cd1e5b6832a05352'}
                 acil.sendMessage(msg)
                 acil.sendText(msg.to,"❂••••••••✰•✰••••••••❂")
             elif "Tagme: " in msg.text:
@@ -3132,7 +3132,7 @@ def bot(op):
                     if wait["lang"] == "JP":
                         pass
             elif "Sider:on" in msg.text:
-	#      if msg.toType == 2:
+	      if msg.toType == 2:
                 try:
                     del cctv['point'][msg.to]
                     del cctv['sidermem'][msg.to]
@@ -3145,7 +3145,7 @@ def bot(op):
                 wait["Sider"] = True
                 acil.sendText(msg.to,"Siap On Cek Sider")
             elif "Sider:off" in msg.text:
-	#      if msg.toType == 2:
+	      if msg.toType == 2:
                 if msg.to in cctv['point']:
                     cctv['cyduk'][msg.to]=False
                     wait["Sider"] = False
@@ -4202,7 +4202,7 @@ def bot(op):
                     msg.text = txt
                     msg.contentMetadata = {u'MENTION':json.dumps({"MENTIONEES":d})}
                     acil.sendMessage(msg) 
-            elif msg.text.lower() == '.':
+            elif msg.text.lower() == 'Masuk':
                         G = acil.getGroup(msg.to)
                         ginfo = acil.getGroup(msg.to)
                         G.preventJoinByTicket = False
@@ -4335,7 +4335,7 @@ def bot(op):
                         print "kicker ok"
                         G.preventJoinByTicket(G)
                         ki5.updateGroup(G)
-            elif msg.text.lower() == ',':
+            elif msg.text.lower() == 'Moleh':
                 if msg.toType == 2:
                     ginfo = acil.getGroup(msg.to)
                     try:
