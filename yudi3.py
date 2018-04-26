@@ -139,9 +139,16 @@ cctv = {
     "point":{},
     "sidermem":{}
 }
-
-mulai = time.time()
-
+setTime = {}
+setTime = wait2['setTime']
+mulai = time.time() 
+def cms(string, commands): #/XXX, >XXX, ;XXX, ^XXX, %XXX, $XXX...
+    tex = ["+","@","/",">",";","^","%","$","＾","サテラ:","サテラ:","サテラ：","サテラ："]
+    for texX in tex:
+        for command in commands:
+            if string ==command:
+                return True
+    return False
 def restart_program(): 
     python = sys.executable
     os.execl(python, python, * sys.argv)
