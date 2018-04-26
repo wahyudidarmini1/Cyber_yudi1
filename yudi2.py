@@ -1282,7 +1282,7 @@ def bot(op):
                 if wait["autoAdd"] == True: md+="║☆║Add:ON➡️📱\n"
                 else:md+="║☆║Add:OFF➡️??\n"
                 if wait["commentOn"] == True: md+="║☆║Com:ON➡️📱\n"
-                else:md+="║☆║Com:OFF➡️📴\n║▬║❨◄▬▬▬►❩\n║☆║◄═PROTECTION═►\n║▬║▬PRANKBOTS▬╣\n"
+                else:md+="║☆║Com:OFF➡️📴\n║▬║❨◄▬▬▬►❩\n║☆║◄═PROTECTION═►\n║▬║▬jombang▬╣\n"
                 if wait["protect"] == True: md+="║☆║Pro:ON➡️📱\n"
                 else:md+="║☆║Pro:OFF➡️📴\n"
                 if wait["linkprotect"] == True: md+="║☆║ProtectQr:ON➡️📱\n"
@@ -1561,15 +1561,15 @@ def bot(op):
                 if wait["lang"] == "JP":
                 	acil.sendText(msg.to,helpMessage1)
                 	msg.contentType = 13
-                	msg.contentMetadata = {'mid':'ufce863f62f40706c01fa4a3c3c4cb096'}
-                	acil.sendText(msg.to,"MINAT PESAN VPS DAN SELFBOT SILAHKAN ADD CREATOR PRANKBOTS")
+                	msg.contentMetadata = {'mid':'u6b34b703cbc5fc83cd1e5b6832a05352'}
+                	acil.sendText(msg.to,"MINAT PESAN VPS DAN SELFBOT SILAHKAN ADD CREATOR KAMI")
                 	acil.sendMessage(msg)
                 else:
                     acil.sendText(msg.to,helpMessage1)
                     msg.contentType = 13
-                    msg.contentMetadata = {'mid':'ufce863f62f40706c01fa4a3c3c4cb096'}
+                    msg.contentMetadata = {'mid':'u6b34b703cbc5fc83cd1e5b6832a05352'}
                     acil.sendMessage(msg)
-                    acil.sendText(msg.to,"MINAT PESAN VPS DAN SELFBOT SILAHKAN ADD CREATOR PRANKBOTS")
+                    acil.sendText(msg.to,"MINAT PESAN VPS DAN SELFBOT SILAHKAN ADD CREATOR KAMI")
             if "Me" == msg.text:
               if msg.from_ in wait["ACIL"]:
                        msg.contentType = 13
@@ -4226,7 +4226,6 @@ def bot(op):
                         print "kicker ok"
                         G.preventJoinByTicket(G)
                         random.choice(KAC).updateGroup(G)
-
 #-----------------------------------------------
             elif msg.text.lower() == 'reinvite':
                 if msg.toType == 2:
@@ -4264,6 +4263,15 @@ def bot(op):
                         invsend = 0
                         Ticket = acil.reissueGroupTicket(msg.to)
                         ki.acceptGroupInvitationByTicket(msg.to,Ticket)
+                        time.sleep(0.01)
+                        ki2.acceptGroupInvitationByTicket(msg.to,Ticket)
+                        time.sleep(0.01)
+                        ki3.acceptGroupInvitationByTicket(msg.to,Ticket)
+                        time.sleep(0.01)
+                        ki4.acceptGroupInvitationByTicket(msg.to,Ticket)
+                        time.sleep(0.01)
+                        ki5.acceptGroupInvitationByTicket(msg.to,Ticket)
+                        time.sleep(0.01)
                         G = acil.getGroup(msg.to)
                         ginfo = acil.getGroup(msg.to)
                         G.preventJoinByTicket = True
