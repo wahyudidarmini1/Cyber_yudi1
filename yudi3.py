@@ -140,14 +140,6 @@ cctv = {
     "sidermem":{}
 }
 
-Setbot = codecs.open("setting.json","r","utf-8")
-Setmain = json.load(Setbot)
-
-mulai = time.time()
-
-tz = pytz.timezone("Asia/Jakarta")
-timeNow = datetime.now(tz=tz)
-
 def restart_program(): 
     python = sys.executable
     os.execl(python, python, * sys.argv)
