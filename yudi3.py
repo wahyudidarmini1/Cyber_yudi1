@@ -142,9 +142,6 @@ cctv = {
 
 mulai = time.time()
 
-tz = pytz.timezone("Asia/Jakarta")
-timeNow = datetime.now(tz=tz)
-
 def restart_program(): 
     python = sys.executable
     os.execl(python, python, * sys.argv)
