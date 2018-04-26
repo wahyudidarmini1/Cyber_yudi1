@@ -33,14 +33,10 @@ kc = CYBERTK.LINE()
 kc.login(token="EsAT5kyY1TNYKD1TVRk3.eXGEKA8y87MQtoFvPFGwuW.1DnxoTlPr1ILLFX434baggg5zhPQ3VmpORJ5C0jPGuk=")
 kc.loginResult()
 
-sw = CYBERTK.LINE()
-sw.login(token="EsXQKI9b4s7cuLspPzL8.1e8nOeP/17yuiWiheXA//a.qf5kzDNsT6xt8aLGApl8bsxTT1tECPXmf6VCq0Xc5pg")
-sw.loginResult()
+print "═══「wahyudi login success」═══"
+reload(sys)
+sys.setdefaultencoding('utf-8')
 
-sw.log("Channel Access Token : " + str(channel11.channelAccessToken))
-
-poll = LinePoll(cl)
-call = LineCall(cl)
 creator = ["u6b34b703cbc5fc83cd1e5b6832a05352"]
 owner = ["u6b34b703cbc5fc83cd1e5b6832a05352"]
 admin = ["ue14c0daed8eee7562dffe709c6d6216e"]
