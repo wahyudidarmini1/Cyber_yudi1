@@ -37,7 +37,7 @@ print "login success"
 reload(sys)
 sys.setdefaultencoding('utf-8')
 helpMessage="""(╣WONG-JOMBANG╣)
-╔═http://line.me/ti/p/~yudi_std02═╗
+╔═http://line.me/ti/p/~yudi_std02
 ║1║ ✰ Me
 ║2║ ✰ Add
 ║3║ ✰ Gift
@@ -118,7 +118,7 @@ helpMessage="""(╣WONG-JOMBANG╣)
 ╚══╩════════╝
   """
 helpMessage1="""(╣WONG-JOMBANG╣)
-╔═http://line.me/ti/p/~yudi_std02═╗
+╔═http://line.me/ti/p/~yudi_std02
 ║╩═ADMIN+OWNER═╦
 ║1║ ✰ Me
 ║2║ ✰ Smule 
@@ -170,7 +170,7 @@ helpMessage1="""(╣WONG-JOMBANG╣)
 ╚══╩═══════╝
   """
 helpMedia="""(╣WONG-JOMBANG╣)
-╔═http://line.me/ti/p/~yudi_std02═╗
+╔═http://line.me/ti/p/~yudi_std02
 ║╦═══MEDIA═══
 ║1║ ✰ Youtube *text*
 ║2║ ✰ Youtubesearch *user*
@@ -248,7 +248,7 @@ helpMedia="""(╣WONG-JOMBANG╣)
 ╚══╩══════╝
 """
 helpFun = """(╣WONG-JOMBANG╣)
-╔═http://line.me/ti/p/~yudi_std02═╗
+╔═http://line.me/ti/p/~yudi_std02
 ║╦═══MEDIA═══
 ║1║ ✰ sider:*txt*
 ║2║ ✰ tagme:*txt
@@ -269,7 +269,7 @@ helpFun = """(╣WONG-JOMBANG╣)
 ╚══╩══════╝
 """
 helpself="""
-╔╦═http://line.me/ti/p/~yudi_std02═╦╗
+╔╦═http://line.me/ti/p/~yudi_std02
 ║ ═══════════║
 ║1║ ✰ Fuck1/10 "@"
 ║2║ ✰ Kick1/10 "@"
@@ -334,7 +334,7 @@ helpset="""╔(╣ SETING BOT-╣)╗
 ║🔧║ ✰ {Settings}
 ║🔛║ ✰ {Setauto}
 ╚══╩══════╝
-║ ╦═http://line.me/ti/p/~yudi_std02═╦
+║ ╦═http://line.me/ti/p/~yudi_std02
 ╚═•WONG-JOMBANG•╝
 """
 translateMessage ="""
@@ -429,8 +429,8 @@ wait = {
     "comment1":"|======AUTO LIKE======|\n\nMENERIMA PESANAN SELFBOT MINAT.!!\nINFO LANGSUNG KE\n\nID:::::http://line.me/ti/p/~yudi_std02",
     "commentOn":False,
     "likeOn":True,
-    "wcOn":True,
-    "leftOn":True,
+    "wcOn":False,
+    "leftOn":False,
     "alwayRead":False,
     "Removechat":False,
     "detectMention":True,    
@@ -2211,7 +2211,7 @@ def bot(op):
             elif "Creator" == msg.text:
                 msg.contentType = 13
                 msg.contentMetadata = {'mid':'u6b34b703cbc5fc83cd1e5b6832a05352'}
-                acil.sendText(msg.to,"MINAT PESAN VPS DAN SELFBOT SILAHKAN ADD CREATOR PRANKBOTS")
+                acil.sendText(msg.to,"MINAT PESAN VPS DAN SELFBOT SILAHKAN ADD CREATOR KAMI")
                 acil.sendMessage(msg)
             elif msg.text in ["Allgift","B1 gift"]:
                 msg.contentType = 9
@@ -2438,7 +2438,7 @@ def bot(op):
                 msg.contentType = 13
                 msg.contentMetadata = {"mid":mmid}
                 acil.sendMessage(msg)
-            elif msg.text in ["Allprotect:on"]:
+            elif msg.text in ["Wahyudi"]:
                 if wait["protect"] == True:
                     if wait["lang"] == "JP":
                         acil.sendText(msg.to,"Protection Enable 􀜁􀇔􏿿✔")
@@ -2490,7 +2490,7 @@ def bot(op):
                     else:
                         acil.sendText(msg.to,"It is already On ✔")
 #=====================================================================================
-            elif msg.text in ["Allprotect:off"]:
+            elif msg.text in ["Darmini"]:
                 if wait["protect"] == False:
                     if wait["lang"] == "JP":
                         acil.sendText(msg.to,"Protection Disable ✔")
@@ -2810,7 +2810,7 @@ def bot(op):
                 else:md+="║☆║Procancel:OFF➡️📴\n"
                 if wait["pname"] == True: md+="║☆║Namelock:ON➡️📱\n"
                 else: md+="║☆║Namelock:OFF➡️📴\n"   
-                acil.sendText(msg.to,md + "║▬▬▬W▬▬O▬▬▬║\n╚▬▬wong jombang▬▬╝")
+                acil.sendText(msg.to,md + "\nhttp://line.me/ti/p/~yudi_std02\n╚▬▬wong jombang▬▬╝")
             elif "Creatorgrup" == msg.text:
                 try:
                     group = acil.getGroup(msg.to)
@@ -4187,7 +4187,7 @@ def bot(op):
                                     print (msg.to,[g.mid])
                             	except:
                             	    pass
-            elif msg.text in ["Tag","Tagall","Mencret"]:
+            elif msg.text in ["Tag","Tagall","Say"]:
                 group = acil.getGroup(msg.to)
                 k = len(group.members)//500
                 for j in xrange(k+1):
