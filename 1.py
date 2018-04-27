@@ -41,78 +41,78 @@ print "login success plak"
 reload(sys)
 sys.setdefaultencoding('utf-8')
 
-helpMessage1 = "™[ இहई╬۞¥ûDï۞╬हईஇ ]™\n   Jangan gunakan「 " + key + " 」di depannya\n\n" + \
-"™↔ " + key + "Blc\n" + \
-"™↔ " + key + "Ban:on\n" + \
-"™↔ " + key + "Unban:on\n" + \
-"™↔ " + key + "Ban「@」\n" + \
-"™↔ " + key + "Unban「@」\n" + \
-"™↔ " + key + "Talkban「@」\n" + \
-"™↔ " + key + "Untalkban「@」\n" + \
-"™↔ " + key + "Talkban:on\n" + \
-"™↔ " + key + "Untalkban:on\n" + \
-"™↔ " + key + "Banlist\n" + \
-"™↔ " + key + "Talkbanlist\n" + \
-"™↔ " + key + "Clearban\n" + \
-"™↔ " + key + "Refresh\n" + \
-"\n™[ இहई╬۞¥ûDï۞╬हईஇ ]™\n    Gunakan「 " + key + " 」di depannya\n\n" + \
-"™↔ " + key + "Cek sider\n" + \
-"™↔ " + key + "Cek spam\n" + \
-"™↔ " + key + "Cek pesan \n" + \
-"™↔ " + key + "Cek respon \n" + \
-"™↔ " + key + "Cek welcome\n" + \
-"™↔ " + key + "Set sider:「Text」\n" + \
-"™↔ " + key + "Set spam:「Text」\n" + \
-"™↔ " + key + "Set pesan:「Text」\n" + \
-"™↔ " + key + "Set respon:「Text」\n" + \
-"™↔ " + key + "Set welcome:「Text」\n" + \
-"™↔ " + key + "Myname:「Nama」\n" + \
-"™↔ " + key + "Bot1name:「Nama」\n" + \
-"™↔ " + key + "Bot2name:「Nama」\n" + \
-"™↔ " + key + "Bot3name:「Nama」\n" + \
-"™↔ " + key + "Bot1up「Kirim fotonya」\n" + \
-"™↔ " + key + "Bot2up「Kirim fotonya」\n" + \
-"™↔ " + key + "Bot3up「Kirim fotonya」\n" + \
-"™↔ " + key + "Gift:「Mid korban」「Jumlah」\n" + \
+helpMessage1 = "™[ இहई╬۞¥ûDï۞╬हईஇ ]™\n   Jangan gunakan「 "  " 」di depannya\n\n" + \
+"™↔ "  "Blc\n" + \
+"™↔ "  "Ban:on\n" + \
+"™↔ "  "Unban:on\n" + \
+"™↔ "  "Ban「@」\n" + \
+"™↔ "  "Unban「@」\n" + \
+"™↔ "  "Talkban「@」\n" + \
+"™↔ "  "Untalkban「@」\n" + \
+"™↔ "  "Talkban:on\n" + \
+"™↔ "  "Untalkban:on\n" + \
+"™↔ "  "Banlist\n" + \
+"™↔ "  "Talkbanlist\n" + \
+"™↔ "  "Clearban\n" + \
+"™↔ "  "Refresh\n" + \
+"\n™[ இहई╬۞¥ûDï۞╬हईஇ ]™\n    Gunakan「 "  " 」di depannya\n\n" + \
+"™↔ "  "Cek sider\n" + \
+"™↔ "  "Cek spam\n" + \
+"™↔ "  "Cek pesan \n" + \
+"™↔ "  "Cek respon \n" + \
+"™↔ "  "Cek welcome\n" + \
+"™↔ "  "Set sider:「Text」\n" + \
+"™↔ "  "Set spam:「Text」\n" + \
+"™↔ "  "Set pesan:「Text」\n" + \
+"™↔ "  "Set respon:「Text」\n" + \
+"™↔ "  "Set welcome:「Text」\n" + \
+"™↔ "  "Myname:「Nama」\n" + \
+"™↔ "  "Bot1name:「Nama」\n" + \
+"™↔ "  "Bot2name:「Nama」\n" + \
+"™↔ "  "Bot3name:「Nama」\n" + \
+"™↔ " "Bot1up「Kirim fotonya」\n" + \
+"™↔ "  "Bot2up「Kirim fotonya」\n" + \
+"™↔ "  "Bot3up「Kirim fotonya」\n" + \
+"™↔ "  "Gift:「Mid korban」「Jumlah」\n" + \
 "\nKetik「 Refresh 」jika sudah\nmenggunakan command\n"
 
 JOMBANG
 
-helpMessage1 = "™[ இहई╬۞¥ûDï۞╬हईஇ ]™\n   Jangan gunakan「 " + key + " 」di depannya\n\n" + \
-"™↔ " + key + "Blc\n" + \
-"™↔ " + key + "Ban:on\n" + \
-"™↔ " + key + "Unban:on\n" + \
-"™↔ " + key + "Ban「@」\n" + \
-"™↔ " + key + "Unban「@」\n" + \
-"™↔ " + key + "Talkban「@」\n" + \
-"™↔ " + key + "Untalkban「@」\n" + \
-"™↔ " + key + "Talkban:on\n" + \
-"™↔ " + key + "Untalkban:on\n" + \
-"™↔ " + key + "Banlist\n" + \
-"™↔ " + key + "Talkbanlist\n" + \
-"™↔ " + key + "Clearban\n" + \
-"™↔ " + key + "Refresh\n" + \
+helpMessage1 = "™[ இहई╬۞¥ûDï۞╬हईஇ ]™\n   Jangan gunakan「 "  " 」di depannya\n\n" + \
+"™↔ "  "Blc\n" + \
+"™↔ "  "Ban:on\n" + \
+"™↔ "  "Unban:on\n" + \
+"™↔ "  "Ban「@」\n" + \
+"™↔ "  "Unban「@」\n" + \
+"™↔ "  "Talkban「@」\n" + \
+"™↔ "  "Untalkban「@」\n" + \
+"™↔ "  "Talkban:on\n" + \
+"™↔ "  "Untalkban:on\n" + \
+"™↔ "  "Banlist\n" + \
+"™↔ "  "Talkbanlist\n" + \
+"™↔ "  "Clearban\n" + \
+"™↔ "  "Refresh\n" + \
 JOMBANG
-"\n™[ இहई╬۞¥ûDï۞╬हईஇ ]™\n    Gunakan「 " + key + " 」di depannya\n\n" + \
-"™↔ " + key + "Cek sider\n" + \
-"™↔ " + key + "Cek spam\n" + \
-"™↔ " + key + "Cek pesan \n" + \
-"™↔ " + key + "Cek respon \n" + \
-"™↔ " + key + "Cek welcome\n" + \
-"™↔ " + key + "Set sider:「Text」\n" + \
-"™↔ " + key + "Set spam:「Text」\n" + \
-"™↔ " + key + "Set pesan:「Text」\n" + \
-"™↔ " + key + "Set respon:「Text」\n" + \
-"™↔ " + key + "Set welcome:「Text」\n" + \
-"™↔ " + key + "Myname:「Nama」\n" + \
-"™↔ " + key + "Bot1name:「Nama」\n" + \
-"™↔ " + key + "Bot2name:「Nama」\n" + \
-"™↔ " + key + "Bot3name:「Nama」\n" + \
-"™↔ " + key + "Bot1up「Kirim fotonya」\n" + \
-"™↔ " + key + "Bot2up「Kirim fotonya」\n" + \
-"™↔ " + key + "Bot3up「Kirim fotonya」\n" + \
-"™↔ " + key + "Gift:「Mid korban」「Jumlah」\n" + \
-"™↔ " + key + "Spam:「Mid korban」「Jumlah」\n" + \
+"\n™[ இहई╬۞¥ûDï۞╬हईஇ ]™\n    Gunakan「 "  " 」di depannya\n\n" + \
+"™↔ "  "Cek sider\n" + \
+"™↔ "  "Cek spam\n" + \
+"™↔ "  "Cek pesan \n" + \
+"™↔ "  "Cek respon \n" + \
+"™↔ "  "Cek welcome\n" + \
+"™↔ "  "Set sider:「Text」\n" + \
+"™↔ "  "Set spam:「Text」\n" + \
+"™↔ "  "Set pesan:「Text」\n" + \
+"™↔ "  "Set respon:「Text」\n" + \
+"™↔ "  "Set welcome:「Text」\n" + \
+"™↔ "  "Myname:「Nama」\n" + \
+"™↔ "  "Bot1name:「Nama」\n" + \
+"™↔ "  "Bot2name:「Nama」\n" + \
+"™↔ "  "Bot3name:「Nama」\n" + \
+"™↔ "  "Bot1up「Kirim fotonya」\n" + \
+"™↔ "  "Bot2up「Kirim fotonya」\n" + \
+"™↔ "  "Bot3up「Kirim fotonya」\n" + \
+"™↔ "  "Gift:「Mid korban」「Jumlah」\n" + \
+"™↔ "  "Spam:「Mid korban」「Jumlah」\n" + \
 "\nKetik「 Refresh 」jika sudah\nmenggunakan command\n"
 JOMBANG
 
