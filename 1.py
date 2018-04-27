@@ -93,9 +93,7 @@ helpMessage1 = "™[ இहई╬۞¥ûDï۞╬हईஇ ]™\n   Jangan gunakan
 "™↔ " + key + "Talkbanlist\n" + \
 "™↔ " + key + "Clearban\n" + \
 "™↔ " + key + "Refresh\n" + \
-
 JOMBANG
-
 "\n™[ இहई╬۞¥ûDï۞╬हईஇ ]™\n    Gunakan「 " + key + " 」di depannya\n\n" + \
 "™↔ " + key + "Cek sider\n" + \
 "™↔ " + key + "Cek spam\n" + \
@@ -117,7 +115,6 @@ JOMBANG
 "™↔ " + key + "Gift:「Mid korban」「Jumlah」\n" + \
 "™↔ " + key + "Spam:「Mid korban」「Jumlah」\n" + \
 "\nKetik「 Refresh 」jika sudah\nmenggunakan command\n"
-
 JOMBANG
 
 KAC=[cl,ki,kk,kc,ks]
