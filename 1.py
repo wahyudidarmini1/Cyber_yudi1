@@ -18,23 +18,23 @@ from bs4 import BeautifulSoup
 from threading import Thread
 
 cl = CYBERTK.LINE() #Luffy
-cl.login(token="Es8gCNp1nu2HG4whMWZ5.cv+fV8NaLqRd7z/Fu4bk1q.Hi+yFtX9sWIOsRom+VxBsiBcOUSZgL6orCLnc3XNCjU=")
+cl.login(token="Es0tC3qZpJ9yAf2p9fze.4uWnRTJU51yT+/CjXTyHBG.9t2i0AJNoDGSG/wYv53WOj5LDKx4zt8hmcWepI+36T4=")
 cl.loginResult()
 
 ki = CYBERTK.LINE() #Zorro
-ki.login(token="Es59JPcgpdawKI5REQI3./1+U7PaL+Yrh/gwcQRLguW.cjrdozq5IN9CZttjh6SfiGyy28Y+gdbNmRCD52C3IIQ=")
+ki.login(token="EsGeLt0wGpw4lxVEkfrb.drkXjI9kC7gz45kx2rUb2W.YLMPgsy7VvNW7aqg81oOrFj6C4EK5ey61r+s7ZO7/5g=")
 ki.loginResult()
 
 kk = CYBERTK.LINE() #Sanji
-kk.login(token="EsZRcpw8PIty5QxhJ5L2.I3AjDl7xKBoFFJIhzC0hSG.UB3aV+DDvK1Paaun7Vuv3bKca4RIgjaN039QWJawxIg=")
+kk.login(token="EsV4melT6DSiaPov2QT3.eXGEKA8y87MQtoFvPFGwuW.h0KZfk94tOhM4A8mOTHZOS0UOJruzBUpc4wmNElUvLY=")
 kk.loginResult()
 
 kc = CYBERTK.LINE() #Ussop
-kc.login(token="EsKXRvcNJ5FWGsRkvLM6.mVJhZzaxq149ROLaiDpbDG.xLR5O67bDzBUkC+oRGxgL84OeafJ1tWHsit+IvVcgT0=")
+kc.login(token="EsgfDaaBRXtj06q4iRt8.1e8nOeP/17yuiWiheXA//a.szB6Mo80SA/ykNQxwf5/3TjkJxp5J6H7LIi5DLIeCxo=")
 kc.loginResult()
 
 ks = CYBERTK.LINE() #Chooper
-ks.login(token="Es2HU2rAZczX8e4c8R70.h15LZJwcpaJRdd99IbjYua.Hr/pDEuRtvLI3IujPmTHOUQMGzUka8YhYXhbqjk4ahU=")
+ks.login(token="Es40yLFUTANU8lFvN2Lf.StMJ2yMSv7H5XrT17lGnZW.kEyscUBZhkTetrYq3H0q0SLXC21rYuzgIrMIeWDz+GA=")
 ks.loginResult()
 
 print "login success plak"
@@ -139,8 +139,8 @@ Cmid = kc.getProfile().mid #Ussop
 Dmid = ks.getProfile().mid #Chooper
 
 Bots=[mid,Amid,Bmid,Cmid,Dmid]
-admin=["ufb5feeee9025ff2447f86582aab94653"] 
-owner=["ufb5feeee9025ff2447f86582aab94653"]
+admin=["ue14c0daed8eee7562dffe709c6d6216e"] 
+owner=["ue14c0daed8eee7562dffe709c6d6216e"]
 whitelist=[""]
 wait = {
     'contact':False,
