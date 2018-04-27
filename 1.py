@@ -76,8 +76,6 @@ helpMessage1 = "™[ இहई╬۞¥ûDï۞╬हईஇ ]™\n   Jangan gunakan
 "™↔ "  "Gift:「Mid korban」「Jumlah」\n" + \
 "\nKetik「 Refresh 」jika sudah\nmenggunakan command\n"
 
-JOMBANG
-
 helpMessage1 = "™[ இहई╬۞¥ûDï۞╬हईஇ ]™\n   Jangan gunakan「 "  " 」di depannya\n\n" + \
 "™↔ "  "Blc\n" + \
 "™↔ "  "Ban:on\n" + \
@@ -92,7 +90,6 @@ helpMessage1 = "™[ இहई╬۞¥ûDï۞╬हईஇ ]™\n   Jangan gunakan
 "™↔ "  "Talkbanlist\n" + \
 "™↔ "  "Clearban\n" + \
 "™↔ "  "Refresh\n" + \
-JOMBANG
 "\n™[ இहई╬۞¥ûDï۞╬हईஇ ]™\n    Gunakan「 "  " 」di depannya\n\n" + \
 "™↔ "  "Cek sider\n" + \
 "™↔ "  "Cek spam\n" + \
@@ -114,7 +111,6 @@ JOMBANG
 "™↔ "  "Gift:「Mid korban」「Jumlah」\n" + \
 "™↔ "  "Spam:「Mid korban」「Jumlah」\n" + \
 "\nKetik「 Refresh 」jika sudah\nmenggunakan command\n"
-JOMBANG
 
 KAC=[cl,ki,kk,kc,ks]
 #DEF1=[ki,kk,kc,ks,ka,kb,ko,ke,ku] Udah Ga Kepake(Boleh di apus)
