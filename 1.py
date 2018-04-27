@@ -201,12 +201,17 @@ def sendMessage(to, text, contentMetadata={}, contentType=0):
     messageReq[to] += 1
 
 def bot(op):
-    global time
-    global ast
-    global groupParam
     try:
         if op.type == 0:
             return
+        if op.type == 5:
+            if wait["autoAdd"] == True:
+                cl.findAndAddContactsByMid(op.param1)
+                if (wait["message"] in [""," ","\n",None]):
+                    pass
+                else:
+                    cl.sendText(op.param1,str(wait["message"]))
+
         
         if op.type == 11:
             if op.param1 in protectqr:
