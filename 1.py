@@ -77,7 +77,7 @@ helpMessage1 = "™[ இहई╬۞¥ûDï۞╬हईஇ ]™\n   Jangan gunakan
 "™↔ " + key + "Spam:「Mid korban」「Jumlah」\n" + \
 "\nKetik「 Refresh 」jika sudah\nmenggunakan command\n"
 
-இहई╬۞¥ûDï۞╬हईஇ
+JOMBANG
 
 helpMessage1 = "™[ இहई╬۞¥ûDï۞╬हईஇ ]™\n   Jangan gunakan「 " + key + " 」di depannya\n\n" + \
 "™↔ " + key + "Blc\n" + \
@@ -94,7 +94,7 @@ helpMessage1 = "™[ இहई╬۞¥ûDï۞╬हईஇ ]™\n   Jangan gunakan
 "™↔ " + key + "Clearban\n" + \
 "™↔ " + key + "Refresh\n" + \
 
-இहई╬۞¥ûDï۞╬हईஇ
+JOMBANG
 
 "\n™[ இहई╬۞¥ûDï۞╬हईஇ ]™\n    Gunakan「 " + key + " 」di depannya\n\n" + \
 "™↔ " + key + "Cek sider\n" + \
@@ -118,7 +118,7 @@ helpMessage1 = "™[ இहई╬۞¥ûDï۞╬हईஇ ]™\n   Jangan gunakan
 "™↔ " + key + "Spam:「Mid korban」「Jumlah」\n" + \
 "\nKetik「 Refresh 」jika sudah\nmenggunakan command\n"
 
-இहई╬۞¥ûDï۞╬हईஇ
+JOMBANG
 
 KAC=[cl,ki,kk,kc,ks]
 #DEF1=[ki,kk,kc,ks,ka,kb,ko,ke,ku] Udah Ga Kepake(Boleh di apus)
