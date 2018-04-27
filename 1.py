@@ -34,7 +34,7 @@ kc.login(token="Es40yLFUTANU8lFvN2Lf.StMJ2yMSv7H5XrT17lGnZW.kEyscUBZhkTetrYq3H0q
 kc.loginResult()
 
 ks = CYBERTK.LINE() #Chooper
-ks.login(token="Esx2WRzbGqatmcvRgmAa.SD28EqyjtLBjPT144PdcQG.mkG2Prb5slJtZ74V0hAvZh1op/hBvVJ8ekt3waO3tIU=")
+ks.login(token="EsJMcXRaDmExzzr5zTI9.VfG2daMSMKOL78PxRGOi6q.RcWGMagc5K3+6LlDanR2YYPvhF8BYa33FNlQhqSYMMo=")
 ks.loginResult()
 
 print "login success plak"
