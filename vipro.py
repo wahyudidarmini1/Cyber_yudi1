@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-#Chucky_Bot
+#Vipro Bot
 
 import LINETCR
 from LINETCR.lib.curve.ttypes import *
@@ -10,41 +10,11 @@ from googletrans import Translator
 from gtts import gTTS
 import time,random,sys,json,codecs,threading,glob,urllib,urllib2,urllib3,re,ast,os,subprocess,requests,tempfile
 
-cl = LINETCR.LINE()
-#cl.login(qr=True)
-cl.login(token='ErIcUdnFCIEVjw9RUnYe.4uWnRTJU51yT+/CjXTyHBG.62IuWFh+yNFYYIzW2gaSIb9xiwpGpel7ND+17rl/+gQ=')
-cl.loginResult()
-print "Cl-Login Success\n"
-
-ki = LINETCR.LINE()
-#ki.login(qr=True)
-ki.login(token='ErYq8uR6zdhpb4l8VNob.drkXjI9kC7gz45kx2rUb2W.Q+y+jPqM97ec795kfIamMF/JfdhJH7pgxmaq2VhBOzo=')
-ki.loginResult()
-print "Ki-Login Success\n"
-
-kk = LINETCR.LINE()
-#kk.login(qr=True)
-kk.login(token='ErVmcbe6ILNRNeRaKrh3.eXGEKA8y87MQtoFvPFGwuW.ilPJGgdrZ2bjxR6bow/H5sF8hyxrqF3d7qOUTYrnIko=')
-kk.loginResult()
-print "Kk-Login Success\n"
-
-kc = LINETCR.LINE()
-#kc.login(qr=True)
-kc.login(token='Erfr5XQAVjKIXwfYjT33.Z7tUqKO5oaEP2cnIzYreyW.mifl520WPj4RNQ7i40LVxjVm6sIFaLK092xFHbrv2+s=')
-kc.loginResult()
-print "Kc-Login Success\n"
-
-kr = LINETCR.LINE()
-#kr.login(qr=True)
-kr.login(token='ErTVmOPrbfJ5a5LO7zyf.StMJ2yMSv7H5XrT17lGnZW.rMF/76j2t8ytEcA7l0ue8Xn4olZdLm825eDypqbByMc=')
-kr.loginResult()
-print "Kr-Login Success\n"
-
-km = LINETCR.LINE()
-#km.login(qr=True)
-km.login(token='Erbw8FkQTsCSxWtKItOa.SD28EqyjtLBjPT144PdcQG.MRncp08pfgFL2ZQ080cJHVqAFkfPRtD6CYichKXOj6s=')
-km.loginResult()
-print "Km-Login Success\n\n=====[Sukses All Login]====="
+vipro = LINETCR.LINE()
+#vipro.login(qr=True)
+vipro.login(token='EpJgyNvzK8xQp88I04t9.2PnOnQMgNRHUYkUzkK6jEq./p92mOc1BPmafZPSgTcw4mkpBeT/czsWHBLRbK7Aewc=')
+vipro.loginResult()
+print "Vipro-Login Success\n\n=====[Sukses Login]====="
 
 reload(sys)
 sys.setdefaultencoding('utf-8')
@@ -58,7 +28,7 @@ selfMessage ="""
 ╠➩〘Me〙
 ╠➩〘Mymid〙
 ╠➩〘Mid @〙
-╠➩〘SearchID: (ID LINE)〙
+╠➩〘SearchID (ID LINE)〙
 ╠➩〘Checkdate (DD/MM/YY)〙
 ╠➩〘Kalender〙
 ╠➩〘Steal contact〙
@@ -75,9 +45,12 @@ selfMessage ="""
 ╠➩〘Contact @〙
 ╠➩〘Getvid @〙
 ╠➩〘Friendlist〙
+╠➩〘Micadd @〙
+╠➩〘Micdel @〙
+╠➩〘Miclist〙
 ╠═════════════════════════
-║             +=WONG JOMBANG=+
-║      line.me/ti/p/~yudi_std02 
+║             💠 By : Vipro 💠
+║    〽️ line.me/ti/p/~gjxvipro 〽️
 ╚═════════════════════════
 """
 
@@ -89,17 +62,15 @@ botMessage ="""
 ╠➩〘Respon〙
 ╠➩〘Runtime〙
 ╠➩〘copy @〙
-╠➩〘TC1 copy @〙
-╠➩〘TC2 copy @〙
-╠➩〘TC3 copy @〙
-╠➩〘TC4 copy @〙
-╠➩〘Backup all〙
-╠➩〘bio Text〙
-╠➩〘@bye (Usir Kapten)〙
-╠➩〘Bye all (Usir Semua)〙
+╠➩〘Copycontact〙
+╠➩〘Mybackup〙
+╠➩〘Mybio (Text)〙
+╠➩〘Myname (Text)〙
+╠➩〘@bye〙
+╠➩〘Bot on/off〙
 ╠═════════════════════════
-║            +=WONG JOMBANG=+
-║    line.me/ti/p/~yudi_std02
+║             💠 By : Vipro 💠
+║    〽️ line.me/ti/p/~gjxvipro 〽️
 ╚═════════════════════════
 """
 
@@ -125,7 +96,7 @@ mediaMessage ="""
 ╠➩〘berapakah Text〙
 ╠➩〘Youtube Judul Video〙
 ╠➩〘Youtubevideo Judul Video〙
-╠➩〘Youtubesearch Judul Video〙
+╠➩〘Youtubesearch:0 Judul Video〙
 ╠➩〘Image NamaGambar〙
 ╠➩〘Say Text〙
 ╠➩〘Say-en Text〙
@@ -137,8 +108,8 @@ mediaMessage ="""
 ╠➩〘Id@th Text (Translate ID Ke TH〙
 ╠➩〘En@id Text (Translate En Ke ID〙
 ╠═════════════════════════
-║             +=WONG JOMBANG=+
-║    line.me/ti/p/~yudi_std02
+║             💠 By : Vipro 💠
+║    〽️ line.me/ti/p/~gjxvipro 〽️
 ╚═════════════════════════
 """
 
@@ -147,13 +118,12 @@ groupMessage ="""
 ║           ☆☞ G R O U P ☜☆
 ╠═════════════════════════
 ╠➩〘Welcome〙
-╠➩〘Say:welcome〙
+╠➩〘Say welcome〙
 ╠➩〘Invite creator〙
 ╠➩〘Setview/Cctv〙
 ╠➩〘Viewseen/Ciduk〙
 ╠➩〘Gn: (NamaGroup)〙
 ╠➩〘Tag all〙
-╠➩〘Sepi〙
 ╠➩〘lurk on/off〙
 ╠➩〘lurkers〙
 ╠➩〘Recover〙
@@ -165,7 +135,6 @@ groupMessage ="""
 ╠➩〘List group〙
 ╠➩〘Pict group: (NamaGroup)〙
 ╠➩〘Spam: (Text)〙
-╠➩〘Spam〙
 ╠➩〘Add all〙
 ╠➩〘Kick: (Mid)〙
 ╠➩〘Invite: (Mid)〙
@@ -174,25 +143,27 @@ groupMessage ="""
 ╠➩〘Getgroup image〙
 ╠➩〘Urlgroup Image〙
 ╠═════════════════════════
-║             +=WONG JOMBANG=+
-║    line.me/ti/p/~yudi_std02
+║             💠 By : Vipro 💠
+║    〽️ line.me/ti/p/~gjxvipro 〽️
 ╚═════════════════════════
 """
-tjia="u6b34b703cbc5fc83cd1e5b6832a05352"
+vip="uda936836a9869eb86ec8ab992a4e8979"
 
 setMessage ="""
 ╔═════════════════════════
 ║              ☆☞ S E T ☜☆
 ╠═════════════════════════
 ╠➩〘Notif on/off〙
+╠➩〘Mimic on/off〙
 ╠➩〘Url on/off〙
 ╠➩〘Alwaysread on/off〙
 ╠➩〘Sider on/off〙
 ╠➩〘Contact on/off〙
+╠➩〘Sticker on〙
 ╠➩〘Simisimi on/off〙
 ╠═════════════════════════
-║             +=WONG JOMBANG=+
-║    line.me/ti/p/~yudi_std02
+║             💠 By : Vipro 💠
+║    〽️ line.me/ti/p/~gjxvipro 〽️
 ╚═════════════════════════
 """
 
@@ -200,26 +171,18 @@ creatorMessage ="""
 ╔═════════════════════════
 ║         ☆☞ C R E A T O R ☜☆
 ╠═════════════════════════
-╠➩〘Admin add @〙
-╠➩〘Admin remove @〙
-╠➩〘/cnkapten〙
-╠➩〘/cntc1〙
-╠➩〘/cntc2〙
-╠➩〘/cntc3〙
-╠➩〘/cntc4〙
 ╠➩〘Crash〙
 ╠➩〘Kickall〙
 ╠➩〘Bc: (Text)〙
-╠➩〘Nk: @〙
-╠➩〘Ulti @〙
 ╠➩〘Join group: (NamaGroup〙
 ╠➩〘Leave group: (NamaGroup〙
 ╠➩〘Leave all group〙
+╠➩〘Tag on/off〙
 ╠➩〘Bot restart〙
 ╠➩〘Turn off〙
 ╠═════════════════════════
-║             +=WONG JOMBANG=+
-║    line.me/ti/p/~yudi_std02
+║             💠 By : Vipro 💠
+║    〽️ line.me/ti/p/~gjxvipro 〽️
 ╚═════════════════════════
 """
 
@@ -227,7 +190,7 @@ adminMessage ="""
 ╔═════════════════════════
 ║            ☆☞ A D M I N ☜☆
 ╠═════════════════════════
-╠➩〘Admin list〙
+╠➩〘Allprotect on/off〙
 ╠➩〘Ban〙
 ╠➩〘Unban〙
 ╠➩〘Ban @〙
@@ -236,7 +199,7 @@ adminMessage ="""
 ╠➩〘Clear ban〙
 ╠➩〘Kill〙
 ╠➩〘Kick @〙
-╠➩〘Set member: (Jumlah)〙
+╠➩〘Set member: (Jumblah)〙
 ╠➩〘Ban group: (NamaGroup〙
 ╠➩〘Del ban: (NamaGroup〙
 ╠➩〘List ban〙
@@ -246,21 +209,21 @@ adminMessage ="""
 ╠➩〘Details group: (Gid)〙
 ╠➩〘Cancel invite: (Gid)〙
 ╠➩〘Invitemeto: (Gid)〙
-╠➩〘Kapten acc invite〙
-╠➩〘TC1 acc invite〙
-╠➩〘TC2 acc invite〙
-╠➩〘TC3 acc invite〙
-╠➩〘TC4 acc invite〙
+╠➩〘Acc invite〙
 ╠➩〘Removechat〙
+╠➩〘Qr on/off〙
+╠➩〘Autokick on/off〙
+╠➩〘Autocancel on/off〙
+╠➩〘Invitepro on/off〙
 ╠➩〘Join on/off〙
 ╠➩〘Joincancel on/off〙
-╠➩〘Respon on/off〙
+╠➩〘Respon1 on/off〙
+╠➩〘Respon2 on/off〙
+╠➩〘Respon3 on/off〙
 ╠➩〘Responkick on/off〙
-╠➩〘Leave on/off〙
-╠➩〘All join / (TC1/2/3/4 Join)〙
 ╠═════════════════════════
-║             +=WONG JOMBANG=+
-║    line.me/ti/p/~yudi_std02
+║             💠 By : Vipro 💠
+║    〽️ line.me/ti/p/~gjxvipro 〽️
 ╚═════════════════════════
 """
 
@@ -268,7 +231,6 @@ helpMessage ="""
 ╔═════════════════════════
 ║              ☆☞ H E L P ☜☆
 ╠═════════════════════════
-╠➩〘Help protect〙
 ╠➩〘Help self〙
 ╠➩〘Help bot〙
 ╠➩〘Help group〙
@@ -277,119 +239,64 @@ helpMessage ="""
 ╠➩〘Help admin〙
 ╠➩〘Help creator〙
 ╠➩〘Owner〙
-╠➩〘Admin〙
 ╠➩〘Speed〙
 ╠➩〘Speed test〙
 ╠➩〘Status〙
 ╠═════════════════════════
-║             +=WONG JOMBANG=+
-║    line.me/ti/p/~yudi_std02
-╚═════════════════════════
-"""
-
-protectMessage ="""
-╔═════════════════════════
-║           ☆☞ P R O T E C T ☜☆
-╠═════════════════════════
-╠➩〘Allprotect on/off〙
-╠➩〘Autocancel on/off〙
-╠➩〘Qr on/off〙
-╠➩〘Autokick on/off〙
-╠➩〘Ghost on/off〙
-╠➩〘Invitepro on/off〙
-╠═════════════════════════
-║             +=WONG JOMBANG=+
-║    line.me/ti/p/~yudi_std02
+║             💠 By : Vipro 💠
+║    〽️ line.me/ti/p/~gjxvipro 〽️
 ╚═════════════════════════
 """
 
 
-KAC=[cl]
-mid = cl.getProfile().mid
-#Amid = ki.getProfile().mid
-#Bmid = kk.getProfile().mid
-#Cmid = kc.getProfile().mid
-#Dmid = kr.getProfile().mid
-#Emid = km.getProfile().mid
+KAC=[vipro]
+mid = vipro.getProfile().mid
 Bots=[mid]
-Creator=["u6b34b703cbc5fc83cd1e5b6832a05352"]
-admin=["u6b34b703cbc5fc83cd1e5b6832a05352"]
+Creator=["uda936836a9869eb86ec8ab992a4e8979"]
+admin=["uda936836a9869eb86ec8ab992a4e8979"]
 
-contact = cl.getProfile()
-backup1 = cl.getProfile()
+contact = vipro.getProfile()
+backup1 = vipro.getProfile()
 backup1.displayName = contact.displayName
 backup1.statusMessage = contact.statusMessage                        
 backup1.pictureStatus = contact.pictureStatus
 
-#contact = ki.getProfile()
-#backup2 = ki.getProfile()
-#backup2.displayName = contact.displayName
-#backup2.statusMessage = contact.statusMessage                        
-#backup2.pictureStatus = contact.pictureStatus
-
-#contact = kk.getProfile()
-#backup3 = kk.getProfile()
-#backup3.displayName = contact.displayName
-#backup3.statusMessage = contact.statusMessage                        
-#backup3.pictureStatus = contact.pictureStatus
-
-#contact = kc.getProfile()
-#backup4 = kc.getProfile()
-#backup4.displayName = contact.displayName
-#backup4.statusMessage = contact.statusMessage                        
-#backup4.pictureStatus = contact.pictureStatus
-
-#contact = kr.getProfile()
-#backup5 = kr.getProfile()
-#backup5.displayName = contact.displayName
-#backup5.statusMessage = contact.statusMessage                        
-#backup5.pictureStatus = contact.pictureStatus
-
-responsename = cl.getProfile().displayName
-#responsename2 = ki.getProfile().displayName
-#responsename3 = kk.getProfile().displayName
-#responsename4 = kc.getProfile().displayName
-#responsename5 = kr.getProfile().displayName
+responsename = vipro.getProfile().displayName
 
 
 wait = {
     "LeaveRoom":True,
+    "Bot":True,
     "AutoJoin":False,
-    "AutoJoinCancel":True,
+    "AutoJoinCancel":False,
     "memberscancel":30,
     "Members":1,
-    "AutoCancel":{},
-    "AutoCancelon":False,  
-    "joinkick":False,
-    "AutoKick":{},
-    "AutoKickon":False,
+    "AutoCancel":False,
+    "AutoKick":False,
     'pap':{},
     'invite':{},
     'steal':{},
     'gift':{},
+    'copy':{},    
     'likeOn':{},
-    'Leave':{},    
-    'detectMention':True,
-    'kickMention':False,      
+    'detectMention':False,
+    'detectMention2':True,
+    'detectMention3':False,
+    'kickMention':False,  
+    'sticker':False,  
     'timeline':True,
     "Timeline":True,
-    "comment1":"Kenapa Kak?",
-    "comment2":"Wkwkwk ＼（○＾ω＾○）／",
-    "comment3":"Lucu Banget!!! ヘ(^_^)ヘ",
-    "comment4":"Nice Kak (^_^)",
-    "comment5":"Bot Auto Like ©By : Yudi\nContact Me : 👉 line.me/ti/p/~yudi_std02",    
+    "comment":"Bot Auto Like ©By : Vipro\nContact Me : 👉 line.me/ti/p/~gjxvipro",    
     "commentOn":True,
     "commentBlack":{},
     "message":"Thx For Add Me (^_^)\nInvite Me To Your Group ヘ(^_^)ヘ",    
     "blacklist":{},
     "wblacklist":False,
     "dblacklist":False,
-    "Qr":{},
-    "Qron":False,
+    "Qr":False,
     "Contact":False,
-    "Sambutan":True,
-    "Ghost":False,
-    "inviteprotect":False,   
+    "Sambutan":False,
+    "inviteprotect":False,    
     "alwaysRead":False,    
     "Sider":{},
     "Simi":{},    
@@ -413,6 +320,13 @@ wait2 = {
     "setTime":{},
     "ROM":{}
     }
+    
+mimic = {
+    "copy":False,
+    "copy2":False,
+    "status":False,
+    "target":{}
+    }    
 
 setTime = {}
 setTime = wait2['setTime']
@@ -564,32 +478,6 @@ def sendImageWithURL(self, to_, url):
          except Exception as e:
             raise e
 
-def sendAudio(self, to_, path):
-        M = Message()
-        M.text = None
-        M.to = to_
-        M.contentMetadata = None
-        M.contentPreview = None
-        M.contentType = 3
-        M_id = self._client.sendMessage(0,M).id
-        files = {
-            'file': open(path, 'rb'),
-        }
-        params = {
-            'name': 'media',
-            'oid': M_id,
-            'size': len(open(path, 'rb').read()),
-            'type': 'audio',
-            'ver': '1.0',
-        }
-        data = {
-            'params': json.dumps(params)
-        }
-        r = self.post_content('https://os.line.naver.jp/talk/m/upload.nhn', data=data, files=files)
-        if r.status_code != 201:
-            raise Exception('Upload audio failure.')
-        return True
-
 def sendAudioWithURL(self, to_, url):
         path = self.downloadFileWithURL(url)
         try:
@@ -639,9 +527,11 @@ def summon(to, nama):
     msg.contentMetadata ={'MENTION':'{"MENTIONEES":['+aa+']}','EMTVER':'4'}
     print "[Command] Tag All"
     try:
-       cl.sendMessage(msg)
+       vipro.sendMessage(msg)
     except Exception as error:
-       print error            
+       print error          
+                        
+       
 
 def restart_program():
     python = sys.executable
@@ -656,11 +546,11 @@ def bot(op):
 
         if op.type == 5:
            if wait["autoAdd"] == True:
-              cl.findAndAddContactsByMid(op.param1)
+              vipro.findAndAddContactsByMid(op.param1)
               if(wait["message"]in[""," ","\n",None]):
                 pass
               else:
-                cl.sendText(op.param1,str(wait["message"]))
+                vipro.sendText(op.param1,str(wait["message"]))
 
 
         if op.type == 55:
@@ -670,16 +560,28 @@ def bot(op):
 	      subprocess.Popen('echo "'+ user_id+'|'+str(op.createdTime)+'" >> dataSeen/%s.txt' % group_id, shell=True, stdout=subprocess.PIPE, )
 	    except Exception as e:
 	      print e
+	
+	    if op.type == 55:
+                try:
+                     if op.param1 in wait2['readPoint']:     
+                         if op.param2 in wait2['readMember'][op.param1]:
+                              pass
+                         else:
+                              wait2['readMember'][op.param1] += op.param2
+                         wait2['ROM'][op.param1][op.param2] = op.param2
+                         with open('sider.json', 'w') as fp:
+                          json.dump(wait2, fp, sort_keys=True, indent=4)
+                     else:
+                         pass
+                except:
+                    pass
 	      
         if op.type == 55:
                 try:
                     if cctv['cyduk'][op.param1]==True:
                         if op.param1 in cctv['point']:
-                            Name = cl.getContact(op.param2).displayName
-                            Name = ki.getContact(op.param2).displayName
-                            Name = kk.getContact(op.param2).displayName
-                            Name = kc.getContact(op.param2).displayName
-                            Name = kr.getContact(op.param2).displayName
+                            Name = vipro.getContact(op.param2).displayName
+#                            Name = summon(op.param2)
                             if Name in cctv['sidermem'][op.param1]:
                                 pass
                             else:
@@ -687,11 +589,17 @@ def bot(op):
                                 if " " in Name:
                                     nick = Name.split(' ')
                                     if len(nick) == 2:
-                                        random.choice(KAC).sendText(op.param1, "Haii " + "☞ " + nick[0] + " ☜" + "\nNgintip Aja Niih. . .\nChat Kek Idiih (-__-)   ")
+                                        vipro.sendText(op.param1, "Haii " + "☞ " + Name + " ☜" + "\nNgintip Aja Niih. . .\nChat Kek Idiih (-__-)   ")
+                                        time.sleep(0.2)
+                                        summon(op.param1,[op.param2])
                                     else:
-                                        random.choice(KAC).sendText(op.param1, "Haii " + "☞ " + nick[1] + " ☜" + "\nBetah Banget Jadi Penonton. . .\nChat Napa (-__-)   ")
+                                        vipro.sendText(op.param1, "Haii " + "☞ " + Name + " ☜" + "\nBetah Banget Jadi Penonton. . .\nChat Napa (-__-)   ")
+                                        time.sleep(0.2)
+                                        summon(op.param1,[op.param2])
                                 else:
-                                    random.choice(KAC).sendText(op.param1, "Haii " + "☞ " + Name + " ☜" + "\nNgapain Kak Ngintip Aja???\nSini Gabung Chat...   ")
+                                    vipro.sendText(op.param1, "Haii " + "☞ " + Name + " ☜" + "\nNgapain Kak Ngintip Aja???\nSini Gabung Chat...   ")
+                                    time.sleep(0.2)
+                                    summon(op.param1,[op.param2])
                         else:
                             pass
                     else:
@@ -704,139 +612,74 @@ def bot(op):
 	      
 
         if op.type == 22:
-            cl.leaveRoom(op.param1)
+            vipro.leaveRoom(op.param1)
 
         if op.type == 21:
-            cl.leaveRoom(op.param1)
+            vipro.leaveRoom(op.param1)
 
 
         if op.type == 13:
 	    print op.param3
             if op.param3 in mid:
 		if op.param2 in Creator:
-		    cl.acceptGroupInvitation(op.param1)
-            if op.param3 in Amid:
-		if op.param2 in Creator:
-		    ki.acceptGroupInvitation(op.param1)
-            if op.param3 in Bmid:
-		if op.param2 in Creator:
-		    kk.acceptGroupInvitation(op.param1)
-            if op.param3 in Cmid:
-		if op.param2 in Creator:
-		    kc.acceptGroupInvitation(op.param1)
-            if op.param3 in Dmid:
-		if op.param2 in Creator:
-		    kr.acceptGroupInvitation(op.param1)
- 
-            if op.param3 in mid:
-		if op.param2 in Amid:
-		    cl.acceptGroupInvitation(op.param1)
-            if op.param3 in mid:
-		if op.param2 in Bmid:
-		    cl.acceptGroupInvitation(op.param1)
-            if op.param3 in mid:
-		if op.param2 in Cmid:
-		    cl.acceptGroupInvitation(op.param1)
- 
-            if op.param3 in Amid:
-		if op.param2 in mid:
-		    ki.acceptGroupInvitation(op.param1)
-            if op.param3 in Amid:
-		if op.param2 in Bmid:
-		    ki.acceptGroupInvitation(op.param1)
-            if op.param3 in Amid:
-		if op.param2 in Cmid:
-		    ki.acceptGroupInvitation(op.param1)
- 
-            if op.param3 in Bmid:
-		if op.param2 in mid:
-		    kk.acceptGroupInvitation(op.param1)
-            if op.param3 in Bmid:
-		if op.param2 in Amid:
-		    kk.acceptGroupInvitation(op.param1)
-            if op.param3 in Bmid:
-		if op.param2 in Cmid:
-		    kk.acceptGroupInvitation(op.param1)
- 
-            if op.param3 in Cmid:
-		if op.param2 in mid:
-		    kc.acceptGroupInvitation(op.param1)
-            if op.param3 in Cmid:
-		if op.param2 in Amid:
-		    kc.acceptGroupInvitation(op.param1)
-            if op.param3 in Cmid:
-		if op.param2 in Cmid:
-		    kc.acceptGroupInvitation(op.param1)
- 
-            if op.param3 in Dmid:
-		if op.param2 in mid:
-		    kr.acceptGroupInvitation(op.param1)
-            if op.param3 in Dmid:
-		if op.param2 in Amid:
-		    kr.acceptGroupInvitation(op.param1)
-            if op.param3 in Dmid:
-		if op.param2 in Bmid:
-		    kr.acceptGroupInvitation(op.param1)
+		    vipro.acceptGroupInvitation(op.param1)
+
 		    
 	    if mid in op.param3:	        
                 if wait["AutoJoinCancel"] == True:
-		    G = cl.getGroup(op.param1)
+		    G = vipro.getGroup(op.param1)
                     if len(G.members) <= wait["memberscancel"]:
-                        cl.acceptGroupInvitation(op.param1)
-                        cl.sendText(op.param1,"Maaf " + cl.getContact(op.param2).displayName + "\nMember Kurang Dari 30 Orang\nUntuk Info, Silahkan Chat Owner Kami!")
-                        c = Message(to=op.param1, from_=None, text=None, contentType=13)
-                        c.contentMetadata={'mid':tjia}
-                        cl.sendMessage(c)                        
-                        cl.leaveGroup(op.param1)                        
+                        vipro.acceptGroupInvitation(op.param1)
+                        vipro.sendText(op.param1,"Maaf " + vipro.getContact(op.param2).displayName + "\nMember Kurang Dari 30 Orang\nUntuk Info, Silahkan Chat Owner Kami!")
+                        vipro.leaveGroup(op.param1)                        
 		    else:
-                        cl.acceptGroupInvitation(op.param1)
-			G = cl.getGroup(op.param1)
-			G.preventJoinByTicket = False
-			cl.updateGroup(G)
-			Ti = cl.reissueGroupTicket(op.param1)
-			ki.acceptGroupInvitationByTicket(op.param1,Ti)
-			kk.acceptGroupInvitationByTicket(op.param1,Ti)
-			kc.acceptGroupInvitationByTicket(op.param1,Ti)
-			kr.acceptGroupInvitationByTicket(op.param1,Ti)
-			G.preventJoinByTicket = True
-			cl.updateGroup(G)
-			cl.sendText(op.param1,"☆Ketik ☞Help☜ Untuk Bantuan☆\n☆Harap Gunakan Dengan Bijak ^_^ ☆")
+                        vipro.acceptGroupInvitation(op.param1)
+			vipro.sendText(op.param1,"☆Ketik ☞Help☜ Untuk Bantuan☆\n☆Harap Gunakan Dengan Bijak ^_^ ☆")
                         		    
  
 	    if mid in op.param3:
                 if wait["AutoJoin"] == True:
-		    G = cl.getGroup(op.param1)
+		    G = vipro.getGroup(op.param1)
                     if len(G.members) <= wait["Members"]:
-                        cl.rejectGroupInvitation(op.param1)
+                        vipro.rejectGroupInvitation(op.param1)
 		    else:
-                        cl.acceptGroupInvitation(op.param1)
-			G = cl.getGroup(op.param1)
-			G.preventJoinByTicket = False
-			cl.updateGroup(G)
-			Ti = cl.reissueGroupTicket(op.param1)
-			ki.acceptGroupInvitationByTicket(op.param1,Ti)
-			kk.acceptGroupInvitationByTicket(op.param1,Ti)
-			kc.acceptGroupInvitationByTicket(op.param1,Ti)
-			kr.acceptGroupInvitationByTicket(op.param1,Ti)
-			G.preventJoinByTicket = True
-			cl.updateGroup(G)
-			cl.sendText(op.param1,"☆Ketik ☞Help☜ Untuk Bantuan☆\n☆Harap Gunakan Dengan Bijak ^_^ ☆")
+                        vipro.acceptGroupInvitation(op.param1)
+			vipro.sendText(op.param1,"☆Ketik ☞Help☜ Untuk Bantuan☆\n☆Harap Gunakan Dengan Bijak ^_^ ☆")
 	    else:
-                if wait["AutoCancel"][op.param1] == True:
-		    if op.param3 in admin:
+                if wait["AutoCancel"] == True:
+		    if op.param3 in Bots:
 			pass
 		    else:
-                        cl.cancelGroupInvitation(op.param1, [op.param3])
+                        vipro.cancelGroupInvitation(op.param1, [op.param3])
 		else:
 		    if op.param3 in wait["blacklist"]:
-			cl.cancelGroupInvitation(op.param1, [op.param3])
-			cl.sendText(op.param1, "Blacklist Detected")
+			vipro.cancelGroupInvitation(op.param1, [op.param3])
+			vipro.sendText(op.param1, "Blacklist Detected")
 		    else:
 			pass
-
+			
+        if op.type == 13:
+            if op.param2 not in Creator:
+             if op.param2 not in admin:
+              if op.param2 not in Bots:
+                if op.param2 in Creator:
+                 if op.param2 in admin:
+                  if op.param2 in Bots:
+                    pass
+                elif wait["inviteprotect"] == True:
+                    wait ["blacklist"][op.param2] = True
+                    vipro.cancelGroupInvitation(op.param1,[op.param3])
+                    vipro.kickoutFromGroup(op.param1,[op.param2])
+                    if op.param2 not in Creator:
+                     if op.param2 not in admin:
+                      if op.param2 not in Bots:
+                        if op.param2 in Creator:
+                         if op.param2 in admin:
+                          if op.param2 in Bots:
+                            pass
 
         if op.type == 19:
-		if wait["AutoKick"][op.param1] == True:
+		if wait["AutoKick"] == True:
 		    try:
 			if op.param3 in Creator:
 			 if op.param3 in admin:
@@ -847,21 +690,21 @@ def bot(op):
 		           if op.param2 in Bots:
 		               pass
 		           else:
-		               random.choice(KAC).kickoutFromGroup(op.param1,[op.param2])
+		               vipro.kickoutFromGroup(op.param1,[op.param2])
 		               if op.param2 in wait["blacklist"]:
 		                   pass
 		        else:
-			    random.choice(KAC).inviteIntoGroup(op.param1,[op.param3])
+			    vipro.inviteIntoGroup(op.param1,[op.param3])
 		    except:
 		        try:
 			    if op.param2 not in Creator:
 			        if op.param2 not in admin:
 			            if op.param2 not in Bots:
-                                        random.choice(KAC).kickoutFromGroup(op.param1,[op.param2])
+                                        vipro.kickoutFromGroup(op.param1,[op.param2])
 			    if op.param2 in wait["blacklist"]:
 			        pass
 			    else:
-			        random.choice(KAC).inviteIntoGroup(op.param1,[op.param3])
+			        vipro.inviteIntoGroup(op.param1,[op.param3])
 		        except:
 			    print ("client Kick regulation or Because it does not exist in the group\ngid=["+op.param1+"]\nmid=["+op.param2+"]")
                         if op.param2 in wait["blacklist"]:
@@ -884,7 +727,6 @@ def bot(op):
                             wait["blacklist"][op.param2] = True
 		else:
 		    pass
-		
 
 
                 if mid in op.param3:
@@ -892,11 +734,11 @@ def bot(op):
                       if op.param2 in Bots:
                         pass
                     try:
-                        random.choice(KAC).kickoutFromGroup(op.param1,[op.param2])
-			random.choice(KAC).kickoutFromGroup(op.param1,[op.param2])
+                        vipro.kickoutFromGroup(op.param1,[op.param2])
+			vipro.kickoutFromGroup(op.param1,[op.param2])
                     except:
                         try:
-			    random.choice(KAC).kickoutFromGroup(op.param1,[op.param2])
+			    vipro.kickoutFromGroup(op.param1,[op.param2])
                         except:
                             print ("client Kick regulation or Because it does not exist in the group\ngid=["+op.param1+"]\nmid=["+op.param2+"]")
                         if op.param2 in wait["blacklist"]:
@@ -904,20 +746,6 @@ def bot(op):
                         else:
 			    if op.param2 in Bots:
 			        pass
-			    else:
-                                wait["blacklist"][op.param2] = True
-                    G = ki.getGroup(op.param1)
-                    G.preventJoinByTicket = False
-                    ki.updateGroup(G)
-                    Ti = ki.reissueGroupTicket(op.param1)
-                    cl.acceptGroupInvitationByTicket(op.param1,Ti)
-                    ki.acceptGroupInvitationByTicket(op.param1,Ti)
-                    kk.acceptGroupInvitationByTicket(op.param1,Ti)
-                    kc.acceptGroupInvitationByTicket(op.param1,Ti)
-                    kr.acceptGroupInvitationByTicket(op.param1,Ti)
-                    X = cl.getGroup(op.param1)
-                    X.preventJoinByTicket = True
-                    cl.updateGroup(X)
                     if op.param2 in wait["blacklist"]:
                         pass
                     else:
@@ -926,176 +754,22 @@ def bot(op):
 		        else:
                             wait["blacklist"][op.param2] = True
 
-                if Amid in op.param3:
-                    if op.param2 in Bots:
-                        pass
-                    try:
-                        kk.kickoutFromGroup(op.param1,[op.param2])
-                        kc.kickoutFromGroup(op.param1,[op.param2])
-                    except:
-                        try:
-                            random.choice(KAC).kickoutFromGroup(op.param1,[op.param2])
-                        except:
-                            print ("client Kick regulation or Because it does not exist in the group\ngid=["+op.param1+"]\nmid=["+op.param2+"]")
-                        if op.param2 in wait["blacklist"]:
-                            pass
-                        else:
-			    if op.param2 in Bots:
-			        pass
-			    else:
-                                wait["blacklist"][op.param2] = True
-
-                    X = kk.getGroup(op.param1)
-                    X.preventJoinByTicket = False
-                    cl.updateGroup(X)
-                    Ti = kk.reissueGroupTicket(op.param1)
-                    cl.acceptGroupInvitationByTicket(op.param1,Ti)
-                    ki.acceptGroupInvitationByTicket(op.param1,Ti)
-                    kk.acceptGroupInvitationByTicket(op.param1,Ti)
-                    kr.acceptGroupInvitationByTicket(op.param1,Ti)
-                    G = ki.getGroup(op.param1)
-                    G.preventJoinByTicket = True
-                    ki.updateGroup(G)
-                    if op.param2 in wait["blacklist"]:
-                        pass
-                    else:
-		        if op.param2 in Bots:
-			    pass
-		        else:
-                            wait["blacklist"][op.param2] = True
-
-                if Bmid in op.param3:
-                    if op.param2 in Bots:
-                        pass
-                    try:
-                        kc.kickoutFromGroup(op.param1,[op.param2])
-                        kk.kickoutFromGroup(op.param1,[op.param2])
-                    except:
-                        try:
-                            random.choice(KAC).kickoutFromGroup(op.param1,[op.param2])
-                        except:
-                            print ("client Kick regulation or Because it does not exist in the group\ngid=["+op.param1+"]\nmid=["+op.param2+"]")
-                        if op.param2 in wait["blacklist"]:
-                            pass
-                        else:
-			    if op.param2 in Bots:
-			        pass
-			    else:
-                                wait["blacklist"][op.param2] = True
-
-                    X = kc.getGroup(op.param1)
-                    X.preventJoinByTicket = False
-                    kc.updateGroup(X)
-                    Ti = kc.reissueGroupTicket(op.param1)
-                    cl.acceptGroupInvitationByTicket(op.param1,Ti)
-                    ki.acceptGroupInvitationByTicket(op.param1,Ti)
-                    kk.acceptGroupInvitationByTicket(op.param1,Ti)
-                    kc.acceptGroupInvitationByTicket(op.param1,Ti)
-                    kr.acceptGroupInvitationByTicket(op.param1,Ti)
-                    G = kk.getGroup(op.param1)
-                    G.preventJoinByTicket = True
-                    kk.updateGroup(G)
-                    if op.param2 in wait["blacklist"]:
-                        pass
-                    else:
-		        if op.param2 in Bots:
-			    pass
-		        else:
-                            wait["blacklist"][op.param2] = True
-
-                if Cmid in op.param3:
-                    if op.param2 in Bots:
-                        pass
-                    try:
-                        cl.kickoutFromGroup(op.param1,[op.param2])
-                        kk.kickoutFromGroup(op.param1,[op.param2])
-                    except:
-                        try:
-                            random.choice(KAC).kickoutFromGroup(op.param1,[op.param2])
-                        except:
-                            print ("client Kick regulation or Because it does not exist in the group\ngid=["+op.param1+"]\nmid=["+op.param2+"]")
-                        if op.param2 in wait["blacklist"]:
-                            pass
-                        else:
-			    if op.param2 in Bots:
-			        pass
-			    else:
-                                wait["blacklist"][op.param2] = True
-
-                    X = cl.getGroup(op.param1)
-                    X.preventJoinByTicket = False
-                    cl.updateGroup(X)
-                    Ti = cl.reissueGroupTicket(op.param1)
-                    cl.acceptGroupInvitationByTicket(op.param1,Ti)
-                    ki.acceptGroupInvitationByTicket(op.param1,Ti)
-                    kk.acceptGroupInvitationByTicket(op.param1,Ti)
-                    kc.acceptGroupInvitationByTicket(op.param1,Ti)
-                    kr.acceptGroupInvitationByTicket(op.param1,Ti)
-                    G = kc.getGroup(op.param1)
-                    G.preventJoinByTicket = True
-                    kc.updateGroup(G)
-                    if op.param2 in wait["blacklist"]:
-                        pass
-                    else:
-		        if op.param2 in Bots:
-			    pass
-		        else:
-                            wait["blacklist"][op.param2] = True
-                            
-                if Dmid in op.param3:
-                    if op.param2 in Bots:
-                        pass
-                    try:
-                        cl.kickoutFromGroup(op.param1,[op.param2])
-                        kk.kickoutFromGroup(op.param1,[op.param2])
-                    except:
-                        try:
-                            random.choice(KAC).kickoutFromGroup(op.param1,[op.param2])
-                        except:
-                            print ("client Kick regulation or Because it does not exist in the group\ngid=["+op.param1+"]\nmid=["+op.param2+"]")
-                        if op.param2 in wait["blacklist"]:
-                            pass
-                        else:
-			    if op.param2 in Bots:
-			        pass
-			    else:
-                                wait["blacklist"][op.param2] = True
-
-                    X = cl.getGroup(op.param1)
-                    X.preventJoinByTicket = False
-                    cl.updateGroup(X)
-                    Ti = cl.reissueGroupTicket(op.param1)
-                    cl.acceptGroupInvitationByTicket(op.param1,Ti)
-                    ki.acceptGroupInvitationByTicket(op.param1,Ti)
-                    kk.acceptGroupInvitationByTicket(op.param1,Ti)
-                    kc.acceptGroupInvitationByTicket(op.param1,Ti)
-                    kr.acceptGroupInvitationByTicket(op.param1,Ti)
-                    G = kc.getGroup(op.param1)
-                    G.preventJoinByTicket = True
-                    kc.updateGroup(G)
-                    if op.param2 in wait["blacklist"]:
-                        pass
-                    else:
-		        if op.param2 in Bots:
-			    pass
-		        else:
-                            wait["blacklist"][op.param2] = True                            
  
                 if Creator in op.param3:
                   if admin in op.param3:
                     if op.param2 in Bots:
                         pass
                     try:
-                        random.choice(KAC).kickoutFromGroup(op.param1,[op.param2])
-			random.choice(KAC).kickoutFromGroup(op.param1,[op.param2])
+                        vipro.kickoutFromGroup(op.param1,[op.param2])
+			vipro.kickoutFromGroup(op.param1,[op.param2])
                     except:
                         try:
 			    if op.param2 not in Bots:
-                                random.choice(KAC).kickoutFromGroup(op.param1,[op.param2])
+                                vipro.kickoutFromGroup(op.param1,[op.param2])
 			    if op.param2 in wait["blacklist"]:
 			        pass
 			    else:
-			        random.choice(KAC).inviteIntoGroup(op.param1,[op.param3])
+			        vipro.inviteIntoGroup(op.param1,[op.param3])
                         except:
                             print ("client Kick regulation or Because it does not exist in the group\ngid=["+op.param1+"]\nmid=["+op.param2+"]")
                         if op.param2 in wait["blacklist"]:
@@ -1104,7 +778,7 @@ def bot(op):
                             pass
                         else:
                             wait["blacklist"][op.param2] = True
-                    random.choice(KAC).inviteIntoGroup(op.param1,[op.param3])
+                    vipro.inviteIntoGroup(op.param1,[op.param3])
                     if op.param2 in wait["blacklist"]:
                         pass
                     if op.param2 in wait["whitelist"]:
@@ -1114,128 +788,59 @@ def bot(op):
 
 
         if op.type == 11:
-            if wait["Qr"][op.param1] == True:
-                if op.param2 not in Bots:
-                  if op.param2 not in admin:
-                    G = random.choice(KAC).getGroup(op.param1)
-                    G.preventJoinByTicket = True
-                    random.choice(KAC).kickoutFromGroup(op.param1,[op.param2])
-                    random.choice(KAC).updateGroup(G)
+            if wait["Qr"] == True:
+		if op.param2 in Creator:
+		 if op.param2 in admin:
+		  if op.param2 in Bots:
+		   pass		
+		else:
+                    vipro.kickoutFromGroup(op.param1,[op.param2])
+            else:
+                pass
 
 
         if op.type == 17:
           if wait["Sambutan"] == True:
-            if op.param2 in admin:
+            if op.param2 in Creator:
                 return
-            ginfo = cl.getGroup(op.param1)
-            contact = cl.getContact(op.param2)
+            ginfo = vipro.getGroup(op.param1)
+            contact = vipro.getContact(op.param2)
             image = "http://dl.profile.line-cdn.net/" + contact.pictureStatus
+            vipro.sendText(op.param1,"Hallo " + vipro.getContact(op.param2).displayName + "\nWelcome To ☞ " + str(ginfo.name) + " ☜" + "\nBudayakan Cek Note\nDan Semoga Betah Disini ^_^")
             c = Message(to=op.param1, from_=None, text=None, contentType=13)
             c.contentMetadata={'mid':op.param2}
-            cl.sendMessage(c)
-            cl.sendText(op.param1,"Hallo " + cl.getContact(op.param2).displayName + "\nWelcome To ☞ " + str(ginfo.name) + " ☜" + "\nBudayakan Cek Note\nDan Semoga Betah Disini ^_^")
-            cl.sendImageWithURL(op.param1,image)
+            vipro.sendMessage(c)  
+            vipro.sendImageWithURL(op.param1,image)
+            d = Message(to=op.param1, from_=None, text=None, contentType=7)
+            d.contentMetadata={
+                                    "STKID": "13269548",
+                                    "STKPKGID": "1329191",
+                                    "STKVER": "1" }                
+            vipro.sendMessage(d)             
             print "MEMBER JOIN TO GROUP"
-            
-            
-        if op.type == 17:
-          if wait["joinkick"] == True:
-            if op.param2 in admin:
-              if op.param2 in Bots:
-                return
-            random.choice(KAC).kickoutFromGroup(op.param1,[op.param2])
-            print "MEMBER JOIN KICK TO GROUP"
 
         if op.type == 15:
           if wait["Sambutan"] == True:
-            if op.param2 in admin:
+            if op.param2 in Creator:
                 return
-            cl.sendText(op.param1,"Good Bye " + cl.getContact(op.param2).displayName +  "\nSee You Next Time . . . (p′︵‵。) 🤗")
-            random.choice(KAC).inviteIntoGroup(op.param1,[op.param2])
+            vipro.sendText(op.param1,"Good Bye " + vipro.getContact(op.param2).displayName +  "\nSee You Next Time . . . (p′︵‵。) 🤗")
+            d = Message(to=op.param1, from_=None, text=None, contentType=7)
+            d.contentMetadata={
+                                    "STKID": "13269542",
+                                    "STKPKGID": "1329191",
+                                    "STKVER": "1" }                
+            vipro.sendMessage(d)                  
             print "MEMBER HAS LEFT THE GROUP"
-
-
-        if op.type == 13:
-            if op.param2 not in Creator:
-             if op.param2 not in admin:
-              if op.param2 not in Bots:
-                if op.param2 in Creator:
-                 if op.param2 in admin:
-                  if op.param2 in Bots:
-                    pass
-                elif wait["inviteprotect"] == True:
-                    wait ["blacklist"][op.param2] = True
-                    cl.cancelGroupInvitation(op.param1,[op.param3])
-                    random.choice(KAC).kickoutFromGroup(op.param1,[op.param2])
-
-        if op.type == 19:
-	 if wait["Ghost"] == True:
-          if op.param2 in admin:
-           if op.param2 in Bots:
-               pass
-          else:
-            try:
-              G = cl.getGroup(op.param1)
-              G.preventJoinByTicket = False
-              cl.updateGroup(G)
-              Ticket = cl.reissueGroupTicket(op.param1)
-              km.acceptGroupInvitationByTicket(op.param1,Ticket)
-              time.sleep(0.01)
-              km.kickoutFromGroup(op.param1,[op.param2])
-              c = Message(to=op.param1, from_=None, text=None, contentType=13)
-              c.contentMetadata={'mid':op.param2}
-              km.sendMessage(c)
-              km.leaveGroup(op.param1)
-              G.preventJoinByTicket = True
-              cl.updateGroup(G)
-              wait["blacklist"][op.param2] = True
-            except:
-              G = cl.getGroup(op.param1)
-              G.preventJoinByTicket = False
-              cl.updateGroup(G)
-              Ticket = cl.reissueGroupTicket(op.param1)
-              km.acceptGroupInvitationByTicket(op.param1,Ticket)
-              time.sleep(0.01)
-              km.kickoutFromGroup(op.param1,[op.param2])
-              c = Message(to=op.param1, from_=None, text=None, contentType=13)
-              c.contentMetadata={'mid':op.param2}
-              km.sendMessage(c)
-              km.leaveGroup(op.param1)
-              G.preventJoinByTicket = True
-              cl.updateGroup(G)
-              wait["blacklist"][op.param2] = True
-
-
-
+            
         if op.type == 26:
             msg = op.message
-
-
-
-            if wait["alwaysRead"] == True:
-                if msg.toType == 0:
-                    cl.sendChatChecked(msg.from_,msg.id)
-                else:
-                    cl.sendChatChecked(msg.to,msg.id)
-                    
-            if msg.contentType == 16:
-                if wait['likeOn'] == True:
-                     url = msg.contentMetadata["postEndUrl"]
-                     cl.like(url[25:58], url[66:], likeType=1005)
-                     ki.like(url[25:58], url[66:], likeType=1002)
-                     kk.like(url[25:58], url[66:], likeType=1004)
-                     kc.like(url[25:58], url[66:], likeType=1003)
-                     kr.like(url[25:58], url[66:], likeType=1001)
-                     cl.comment(url[25:58], url[66:], wait["comment1"])
-                     ki.comment(url[25:58], url[66:], wait["comment2"])
-                     kk.comment(url[25:58], url[66:], wait["comment3"])
-                     kc.comment(url[25:58], url[66:], wait["comment4"])
-                     kr.comment(url[25:58], url[66:], wait["comment5"])
-                     cl.sendText(msg.to,"Like Success")                     
-                     wait['likeOn'] = False
-
-        if op.type == 26:
-            msg = op.message
+            
+            if msg.from_ in mimic["target"] and mimic["status"] == True and mimic["target"][msg.from_] == True:
+                    text = msg.text
+                    if text is not None:
+                        vipro.sendText(msg.to,text)             
+            
+            
             if msg.to in settings["simiSimi"]:
                 if settings["simiSimi"][msg.to] == True:
                     if msg.text is not None:
@@ -1245,11 +850,11 @@ def bot(op):
                         data = json.loads(data)
                         if data['status'] == 200:
                             if data['result']['result'] == 100:
-                                cl.sendText(msg.to,data['result']['response'].encode('utf-8'))
+                                vipro.sendText(msg.to,data['result']['response'].encode('utf-8'))
 
             if 'MENTION' in msg.contentMetadata.keys() != None:
                  if wait["kickMention"] == True:
-                     contact = cl.getContact(msg.from_)
+                     contact = vipro.getContact(msg.from_)
                      cName = contact.displayName
                      balas = ["Aku Bilang Jangan Ngetag Lagi " + cName + "\nAku Kick Kamu! Sorry, Byee!!!"]
                      ret_ = random.choice(balas)                     
@@ -1257,81 +862,160 @@ def bot(op):
                      mention = ast.literal_eval(msg.contentMetadata['MENTION'])
                      mentionees = mention['MENTIONEES']
                      for mention in mentionees:
-                           if mention['M'] in admin:
-                                  cl.sendText(msg.to,ret_)
-                                  random.choice(KAC).kickoutFromGroup(msg.to,[msg.from_])
-                                  break                                  
                            if mention['M'] in Bots:
-                                  cl.sendText(msg.to,ret_)
-                                  random.choice(KAC).kickoutFromGroup(msg.to,[msg.from_])
-                                  break 
+                                  vipro.sendText(msg.to,ret_)
+                                  vipro.kickoutFromGroup(msg.to,[msg.from_])
+                                  break                              
                               
             if 'MENTION' in msg.contentMetadata.keys() != None:
                  if wait["detectMention"] == True:
-                     contact = cl.getContact(msg.from_)
+                     contact = vipro.getContact(msg.from_)
                      cName = contact.displayName
-                     balas = ["Sekali lagi nge tag gw sumpahin jomblo seumur hidup!","Dont Tag!! Lagi Sibuk",cName + " Ngapain Ngetag?",cName + " Nggak Usah Tag-Tag! Kalo Penting Langsung Pc Aja","Tag Mulu Lo Anjirr!","Dia Lagi Off", cName + " Kenapa Tag? Kangen?","Dia Lagi Tidur\nJangan Di Tag " + cName, "Jangan Suka Tag Gua " + cName, "Kamu Siapa " + cName + "?", "Ada Perlu Apa " + cName + "?","Woii " + cName + " Jangan Ngetag, Riibut!"]
+                     balas = ["Dont Tag!! Lagi Sibuk",cName + " Ngapain Ngetag?",cName + " Nggak Usah Tag-Tag! Kalo Penting Langsung Pc Aja","Dia Lagi Off", cName + " Kenapa Tag Saya?","Dia Lagi Tidur\nJangan Di Tag " + cName, "Jangan Suka Tag Gua " + cName, "Kamu Siapa " + cName + "?", "Ada Perlu Apa " + cName + "?","Woii " + cName + " Jangan Ngetag, Riibut!"]
                      ret_ = random.choice(balas)
                      name = re.findall(r'@(\w+)', msg.text)
                      mention = ast.literal_eval(msg.contentMetadata['MENTION'])
                      mentionees = mention['MENTIONEES']
                      for mention in mentionees:
-                           if mention['M'] in admin:
-                                  cl.sendText(msg.to,ret_)
-                                  break                                  
                            if mention['M'] in Bots:
-                                  cl.sendText(msg.to,ret_)
+                                  vipro.sendText(msg.to,ret_)
                                   break   
+                              
+            if 'MENTION' in msg.contentMetadata.keys() != None:
+                 if wait["detectMention2"] == True:          
+                    contact = vipro.getContact(msg.from_)
+                    cName = contact.displayName
+                    balas = ["Sekali lagi nge tag gw sumpahin jomblo seumur hidup!","Nggak Usah Tag-Tag! Kalo Penting Langsung Pc Aja","Woii " + cName + " Jangan Ngetag, Riibut!"]
+                    ret_ = random.choice(balas)
+                    name = re.findall(r'@(\w+)', msg.text)
+                    mention = ast.literal_eval(msg.contentMetadata['MENTION'])
+                    mentionees = mention['MENTIONEES']
+                    for mention in mentionees:
+                           if mention['M'] in Bots:
+                                  vipro.sendText(msg.to,ret_)
+                                  msg.contentType = 7   
+                                  msg.text = None
+                                  msg.contentMetadata = {
+                                                       "STKID": "20001316",
+                                                       "STKPKGID": "1582380",
+                                                       "STKVER": "1" }
+                                  vipro.sendMessage(msg)                                
+                                  break
+                              
+            if 'MENTION' in msg.contentMetadata.keys() != None:
+                 if wait["detectMention3"] == True:          
+                    contact = vipro.getContact(msg.from_)
+                    cName = contact.displayName
+                    balas = ["Woii " + cName + ", Dasar Jones Ngetag Mulu!"]
+                    balas1 = "Ini Foto Sii Jones Yang Suka Ngetag. . ."
+                    ret_ = random.choice(balas)
+                    image = "http://dl.profile.line-cdn.net/" + contact.pictureStatus
+                    name = re.findall(r'@(\w+)', msg.text)
+                    mention = ast.literal_eval(msg.contentMetadata['MENTION'])
+                    mentionees = mention['MENTIONEES']
+                    for mention in mentionees:
+                           if mention['M'] in Bots:
+                                  vipro.sendText(msg.to,ret_)
+                                  vipro.sendText(msg.to,balas1)
+                                  vipro.sendImageWithURL(msg.to,image)
+                                  msg.contentType = 7   
+                                  msg.text = None
+                                  msg.contentMetadata = {
+                                                       "STKID": "11764508",
+                                                       "STKPKGID": "6641",
+                                                       "STKVER": "1" }
+                                  vipro.sendMessage(msg)                                
+                                  break  
+                                  
+        if op.type == 25:
+            msg = op.message                                  
+                              
+            if msg.text in ["Bot on"]:
+                wait["Bot"] = True
+                vipro.sendText(msg.to,"Bot Sudah On Kembali.")  
+
+        if op.type == 25:
+          if wait["Bot"] == True:    
+            msg = op.message
+            
+            
+            if msg.contentType == 7:
+              if wait["sticker"] == True:
+                msg.contentType = 0
+                stk_id = msg.contentMetadata['STKID']
+                stk_ver = msg.contentMetadata['STKVER']
+                pkg_id = msg.contentMetadata['STKPKGID']
+                filler = "『 Sticker Check 』\nSTKID : %s\nSTKPKGID : %s\nSTKVER : %s\n『 Link 』\nline://shop/detail/%s" % (stk_id,pkg_id,stk_ver,pkg_id)
+                vipro.sendText(msg.to, filler)
+                wait["sticker"] = False
+            else:
+                pass              
+
+            if wait["alwaysRead"] == True:
+                if msg.toType == 0:
+                    vipro.sendChatChecked(msg.from_,msg.id)
+                else:
+                    vipro.sendChatChecked(msg.to,msg.id)
+                    
+                    
+            if msg.contentType == 16:
+                if wait['likeOn'] == True:
+                     url = msg.contentMetadata["postEndUrl"]
+                     vipro.like(url[25:58], url[66:], likeType=1005)
+                     vipro.comment(url[25:58], url[66:], wait["comment"])
+                     vipro.sendText(msg.to,"Like Success")                     
+                     wait['likeOn'] = False
+
 
             if msg.contentType == 13:
                 if wait["wblacklist"] == True:
 		    if msg.contentMetadata["mid"] not in admin:
                         if msg.contentMetadata["mid"] in wait["blacklist"]:
-                            random.choice(KAC).sendText(msg.to,"Sudah")
+                            vipro.sendText(msg.to,"Sudah")
                             wait["wblacklist"] = False
                         else:
                             wait["blacklist"][msg.contentMetadata["mid"]] = True
                             wait["wblacklist"] = False
-                            random.choice(KAC).sendText(msg.to,"Ditambahkan")
+                            vipro.sendText(msg.to,"Ditambahkan")
 		    else:
-			cl.sendText(msg.to,"Admin Detected~")
+			vipro.sendText(msg.to,"Admin Detected~")
 			
 
                 elif wait["dblacklist"] == True:
                     if msg.contentMetadata["mid"] in wait["blacklist"]:
                         del wait["blacklist"][msg.contentMetadata["mid"]]
-                        random.choice(KAC).sendText(msg.to,"Terhapus")
+                        vipro.sendText(msg.to,"Terhapus")
                         wait["dblacklist"] = False
 
                     else:
                         wait["dblacklist"] = False
-                        random.choice(KAC).sendText(msg.to,"Tidak Ada Black List")
+                        vipro.sendText(msg.to,"Tidak Ada Black List")
             
                     
  
                 elif wait["Contact"] == True:
                      msg.contentType = 0
-                     cl.sendText(msg.to,msg.contentMetadata["mid"])
+                     vipro.sendText(msg.to,msg.contentMetadata["mid"])
                      if 'displayName' in msg.contentMetadata:
-                         contact = cl.getContact(msg.contentMetadata["mid"])
+                         contact = vipro.getContact(msg.contentMetadata["mid"])
                          try:
-                             cu = cl.channel.getCover(msg.contentMetadata["mid"])
+                             cu = vipro.channel.getCover(msg.contentMetadata["mid"])
                          except:
                              cu = ""
-                         cl.sendText(msg.to,"Nama:\n" + msg.contentMetadata["displayName"] + "\n\nMid:\n" + msg.contentMetadata["mid"] + "\n\nStatus:\n" + contact.statusMessage + "\n\nPhoto Profile:\nhttp://dl.profile.line-cdn.net/" + contact.pictureStatus + "\n\nPhoto Cover:\n" + str(cu))
+                         vipro.sendText(msg.to,"Nama:\n" + msg.contentMetadata["displayName"] + "\n\nMid:\n" + msg.contentMetadata["mid"] + "\n\nStatus:\n" + contact.statusMessage + "\n\nPhoto Profile:\nhttp://dl.profile.line-cdn.net/" + contact.pictureStatus + "\n\nPhoto Cover:\n" + str(cu))
                      else:
-                         contact = cl.getContact(msg.contentMetadata["mid"])
+                         contact = vipro.getContact(msg.contentMetadata["mid"])
                          try:
-                             cu = cl.channel.getCover(msg.contentMetadata["mid"])
+                             cu = vipro.channel.getCover(msg.contentMetadata["mid"])
                          except:
                              cu = ""
-                         cl.sendText(msg.to,"Nama:\n" + msg.contentMetadata["displayName"] + "\n\nMid:\n" + msg.contentMetadata["mid"] + "\n\nStatus:\n" + contact.statusMessage + "\n\nPhoto Profile:\nhttp://dl.profile.line-cdn.net/" + contact.pictureStatus + "\n\nPhoto Cover:\n" + str(cu))
+                         vipro.sendText(msg.to,"Nama:\n" + msg.contentMetadata["displayName"] + "\n\nMid:\n" + msg.contentMetadata["mid"] + "\n\nStatus:\n" + contact.statusMessage + "\n\nPhoto Profile:\nhttp://dl.profile.line-cdn.net/" + contact.pictureStatus + "\n\nPhoto Cover:\n" + str(cu))
 
 
  
             elif msg.text == "Ginfo":
                 if msg.toType == 2:
-                    ginfo = cl.getGroup(msg.to)
+                    ginfo = vipro.getGroup(msg.to)
                     try:
                         gCreator = ginfo.creator.displayName
                     except:
@@ -1345,14 +1029,14 @@ def bot(op):
                             u = "close"
                         else:
                             u = "open"
-                        cl.sendText(msg.to,"[Group name]\n" + str(ginfo.name) + "\n\n[Gid]\n" + msg.to + "\n\n[Group creator]\n" + gCreator + "\n\n[Profile status]\nhttp://dl.profile.line.naver.jp/" + ginfo.pictureStatus + "\n\nMembers:" + str(len(ginfo.members)) + "members\nPending:" + sinvitee + "people\nURL:" + u + "it is inside")
+                        vipro.sendText(msg.to,"[Group name]\n" + str(ginfo.name) + "\n\n[Gid]\n" + msg.to + "\n\n[Group creator]\n" + gCreator + "\n\n[Profile status]\nhttp://dl.profile.line.naver.jp/" + ginfo.pictureStatus + "\n\nMembers:" + str(len(ginfo.members)) + "members\nPending:" + sinvitee + "people\nURL:" + u + "it is inside")
                     else:
-                        cl.sendText(msg.to,"[group name]\n" + str(ginfo.name) + "\n[gid]\n" + msg.to + "\n[group creator]\n" + gCreator + "\n[profile status]\nhttp://dl.profile.line.naver.jp/" + ginfo.pictureStatus)
+                        vipro.sendText(msg.to,"[group name]\n" + str(ginfo.name) + "\n[gid]\n" + msg.to + "\n[group creator]\n" + gCreator + "\n[profile status]\nhttp://dl.profile.line.naver.jp/" + ginfo.pictureStatus)
                 else:
                     if wait["lang"] == "JP":
-                        cl.sendText(msg.to,"Can not be used outside the group")
+                        vipro.sendText(msg.to,"Can not be used outside the group")
                     else:
-                        cl.sendText(msg.to,"Not for use less than group")
+                        vipro.sendText(msg.to,"Not for use less than group")
                         
 
  
@@ -1362,103 +1046,18 @@ def bot(op):
             elif msg.text in ["Creator","Owner"]:
                 msg.contentType = 13
                 msg.contentMetadata = {'mid': tjia}
-                cl.sendMessage(msg)
-		cl.sendText(msg.to,"Itu Owner Saya (^_^)")
-		
-            elif msg.text in ["Admin","admin"]:
-                msg.contentType = 13
-                admin1 = "ue8cce1c8e02545beb310c7689eafa61c"
-                admin2 = "ub288bb9affe0a6efbe346ec362aa1632"
-                admin3 = "ue14c0daed8eee7562dffe709c6d6216e"
-                msg.contentMetadata = {'mid': tjia}
-                random.choice(KAC).sendMessage(msg)
-                #msg.contentMetadata = {'mid': admin1}
-                #random.choice(KAC).sendMessage(msg)
-                #msg.contentMetadata = {'mid': admin2}
-                #random.choice(KAC).sendMessage(msg)
-                #msg.contentMetadata = {'mid': admin3}
-                #random.choice(KAC).sendMessage(msg)                
-		random.choice(KAC).sendText(msg.to,"Itu Admin Saya (^_^)")	
-		
- 
-                
-            elif "Admin add @" in msg.text:
-              if msg.from_ in Creator:
-                print "[Command]Admin add executing"
-                _name = msg.text.replace("Admin add @","")
-                _nametarget = _name.rstrip('  ')
-                gs = cl.getGroup(msg.to)
-                #gs = ki.getGroup(msg.to)
-                #gs = kk.getGroup(msg.to)
-                #gs = kc.getGroup(msg.to)
-                #gs = kr.getGroup(msg.to)
-                targets = []
-                for g in gs.members:
-                    if _nametarget == g.displayName:
-                        targets.append(g.mid)
-                if targets == []:
-                   random.choice(KAC).sendText(msg.to,"Contact Tidak Di Temukan")
-                else:
-                   for target in targets:
-                        try:
-                            admin.append(target)
-                            cl.sendText(msg.to,"Admin Ditambahkan")
-                        except:
-                            pass
-                print "[Command]Admin add executed"
-              else:
-                cl.sendText(msg.to,"Command Denied.")
-                cl.sendText(msg.to,"Creator Permission Required.")
-                
-            elif "Admin remove @" in msg.text:
-              if msg.from_ in Creator:
-                print "[Command]Admin Remove Executing"
-                _name = msg.text.replace("Admin remove @","")
-                _nametarget = _name.rstrip('  ')
-                gs = cl.getGroup(msg.to)
-                #gs = ki.getGroup(msg.to)
-                #gs = kk.getGroup(msg.to)
-                #gs = kc.getGroup(msg.to)
-                #gs = kr.getGroup(msg.to)
-                targets = []
-                for g in gs.members:
-                    if _nametarget == g.displayName:
-                        targets.append(g.mid)
-                if targets == []:
-                   random.choice(KAC).sendText(msg.to,"Contact Tidak Di Temukan")
-                else:
-                   for target in targets:
-                        try:
-                            admin.remove(target)
-                            cl.sendText(msg.to,"Admin Dihapus")
-                        except:
-                            pass
-                print "[Command]Admin remove executed"
-              else:
-                cl.sendText(msg.to,"Command Denied.")
-                cl.sendText(msg.to,"Creator Permission Required.")
-                
-            elif msg.text in ["Admin list","admin list","List admin"]:
-              if admin == []:
-                  cl.sendText(msg.to,"The Admin List Is Empty")
-              else:
-                  cl.sendText(msg.to,"Tunggu...")
-                  mc = "╔═════════════════════════\n║        ☆☞ +=WONG JOMBANG=+ ☜☆\n╠═════════════════════════\n"
-                  for mi_d in admin:
-                      mc += "╠••> " +cl.getContact(mi_d).displayName + "\n"
-                  cl.sendText(msg.to,mc + "╚═════════════════════════")
-                  print "[Command]Admin List executed"
-                 
+                vipro.sendMessage(msg)
+		vipro.sendText(msg.to,"Itu Majikan Kami (^_^)")
 
  
 
 	    elif msg.text in ["Group creator","Gcreator","gcreator"]:
-		ginfo = cl.getGroup(msg.to)
+		ginfo = vipro.getGroup(msg.to)
 		gCreator = ginfo.creator.mid
                 msg.contentType = 13
                 msg.contentMetadata = {'mid': gCreator}
-                cl.sendMessage(msg)
-		cl.sendText(msg.to,"Itu Yang Buat Grup Ini")
+                vipro.sendMessage(msg)
+		vipro.sendText(msg.to,"Itu Yang Buat Grup Ini")
  
 
                 
@@ -1466,14 +1065,14 @@ def bot(op):
                 if wait["Timeline"] == True:
                     msg.contentType = 0
                     msg.text = "post URL\n" + msg.contentMetadata["postEndUrl"]
-                    random.choice(KAC).sendText(msg.to,msg.text)
+                    vipro.sendText(msg.to,msg.text)
 
             
             if msg.contentType == 13:
                 if wait["steal"] == True:
                     _name = msg.contentMetadata["displayName"]
                     copy = msg.contentMetadata["mid"]
-                    groups = cl.getGroup(msg.to)
+                    groups = vipro.getGroup(msg.to)
                     pending = groups.invitee
                     targets = []
                     for s in groups.members:
@@ -1487,16 +1086,16 @@ def bot(op):
                     else:
                         for target in targets:
                             try:
-                                cl.findAndAddContactsByMid(target)
-                                contact = cl.getContact(target)
-                                cu = cl.channel.getCover(target)
+                                vipro.findAndAddContactsByMid(target)
+                                contact = vipro.getContact(target)
+                                cu = vipro.channel.getCover(target)
                                 path = str(cu)
                                 image = "http://dl.profile.line-cdn.net/" + contact.pictureStatus
-                                cl.sendText(msg.to,"Nama :\n" + contact.displayName + "\n\nMid :\n" + msg.contentMetadata["mid"] + "\n\nBio :\n" + contact.statusMessage)
-                                cl.sendText(msg.to,"Profile Picture " + contact.displayName)
-                                cl.sendImageWithURL(msg.to,image)
-                                cl.sendText(msg.to,"Cover " + contact.displayName)
-                                cl.sendImageWithURL(msg.to,path)
+                                vipro.sendText(msg.to,"Nama :\n" + contact.displayName + "\n\nMid :\n" + msg.contentMetadata["mid"] + "\n\nBio :\n" + contact.statusMessage)
+                                vipro.sendText(msg.to,"Profile Picture " + contact.displayName)
+                                vipro.sendImageWithURL(msg.to,image)
+                                vipro.sendText(msg.to,"Cover " + contact.displayName)
+                                vipro.sendImageWithURL(msg.to,path)
                                 wait["steal"] = False
                                 break
                             except:
@@ -1507,7 +1106,7 @@ def bot(op):
                 if wait["gift"] == True:
                     _name = msg.contentMetadata["displayName"]
                     copy = msg.contentMetadata["mid"]
-                    groups = cl.getGroup(msg.to)
+                    groups = vipro.getGroup(msg.to)
                     pending = groups.invitee
                     targets = []
                     for s in groups.members:
@@ -1521,7 +1120,7 @@ def bot(op):
                     else:
                         for target in targets:
                             try:
-                                cl.sendText(msg.to,"Gift Sudah Terkirim!")
+                                vipro.sendText(msg.to,"Gift Sudah Terkirim!")
                                 msg.contentType = 9
                                 msg.contentMetadata= {'PRDTYPE': 'STICKER',
                                                          'STKVER': '1',
@@ -1529,7 +1128,7 @@ def bot(op):
                                                          'STKPKGID': '1296261'}
                                 msg.to = target
                                 msg.text = None
-                                cl.sendMessage(msg)
+                                vipro.sendMessage(msg)
                                 wait['gift'] = False
                                 break
                             except:
@@ -1537,21 +1136,44 @@ def bot(op):
                                      wait["gift"] = False
                                      break
 
+            if msg.contentType == 13:
+                if wait["copy"] == True:
+                    _name = msg.contentMetadata["displayName"]
+                    copy = msg.contentMetadata["mid"]
+                    groups = vipro.getGroup(msg.to)
+                    targets = []
+                    for s in groups.members:
+                        if _name in s.displayName:
+                            print "[Target] Copy"
+                            break                             
+                        else:
+                            targets.append(copy)
+                    if targets == []:
+                        vipro.sendText(msg.to, "Not Found...")
+                        pass
+                    else:
+                        for target in targets:
+                            try:
+                                vipro.CloneContactProfile(target)
+                                vipro.sendText(msg.to, "Copied (^_^)")
+                                wait['copy'] = False
+                                break
+                            except:
+                                     msg.contentMetadata = {'mid': target}
+                                     wait["copy"] = False
+                                     break
+
 
             if msg.contentType == 13:
                 if wait['invite'] == True:
                      _name = msg.contentMetadata["displayName"]
                      invite = msg.contentMetadata["mid"]
-                     groups = cl.getGroup(msg.to)
-                     groups = ki.getGroup(msg.to)                     
-                     groups = kk.getGroup(msg.to)                     
-                     groups = kc.getGroup(msg.to)                     
-                     groups = kr.getGroup(msg.to)                     
+                     groups = vipro.getGroup(msg.to)
                      pending = groups.invitee
                      targets = []
                      for s in groups.members:
                          if _name in s.displayName:
-                             random.choice(KAC).sendText(msg.to, _name + " Berada DiGrup Ini")
+                             vipro.sendText(msg.to, _name + " Berada DiGrup Ini")
                          else:
                              targets.append(invite)
                      if targets == []:
@@ -1559,442 +1181,397 @@ def bot(op):
                      else:
                          for target in targets:
                              try:
-                                 cl.findAndAddContactsByMid(target)
-                                 ki.findAndAddContactsByMid(target)                                 
-                                 kk.findAndAddContactsByMid(target)                                 
-                                 kc.findAndAddContactsByMid(target)                                 
-                                 kr.findAndAddContactsByMid(target)                                 
-                                 random.choice(KAC).inviteIntoGroup(msg.to,[target])
-                                 random.choice(KAC).sendText(msg.to,"Invite " + _name)
+                                 vipro.findAndAddContactsByMid(target)
+                                 vipro.inviteIntoGroup(msg.to,[target])
+                                 vipro.sendText(msg.to,"Invite " + _name)
                                  wait['invite'] = False
                                  break                              
                              except:             
-                                      random.choice(KAC).sendText(msg.to,"Limit Invite")
+                                      vipro.sendText(msg.to,"Limit Invite")
                                       wait['invite'] = False
                                       break
                                   
  
             elif msg.text in ["Key creator","help creator","Help creator"]:
-                cl.sendText(msg.to,creatorMessage)
+                vipro.sendText(msg.to,creatorMessage)
 
             elif msg.text in ["Key group","help group","Help group"]:
-                cl.sendText(msg.to,groupMessage)
+                vipro.sendText(msg.to,groupMessage)
 
             elif msg.text in ["Key","help","Help"]:
-                cl.sendText(msg.to,helpMessage)
+                vipro.sendText(msg.to,helpMessage)
 
             elif msg.text in ["Key self","help self","Help self"]:
-                cl.sendText(msg.to,selfMessage)
+                vipro.sendText(msg.to,selfMessage)
 
             elif msg.text in ["Key bot","help bot","Help bot"]:
-                cl.sendText(msg.to,botMessage)
+                vipro.sendText(msg.to,botMessage)
 
             elif msg.text in ["Key set","help set","Help set"]:
-                cl.sendText(msg.to,setMessage)
+                vipro.sendText(msg.to,setMessage)
 
             elif msg.text in ["Key media","help media","Help media"]:
-                cl.sendText(msg.to,mediaMessage)
+                vipro.sendText(msg.to,mediaMessage)
                 
             elif msg.text in ["Key admin","help admin","Help admin"]:
-                cl.sendText(msg.to,adminMessage)    
-                
-            elif msg.text in ["Key protect","help protect","Help protect"]:
-                cl.sendText(msg.to,protectMessage)                 
+                vipro.sendText(msg.to,adminMessage)               
                 
 
  
             elif msg.text in ["List group"]:
-                    gid = cl.getGroupIdsJoined()
+                    gid = vipro.getGroupIdsJoined()
                     h = ""
 		    jml = 0
                     for i in gid:
-		        gn = cl.getGroup(i).name
+		        gn = vipro.getGroup(i).name
                         h += "♦【%s】\n" % (gn)
 		        jml += 1
-                    cl.sendText(msg.to,"=======[List Group]=======\n"+ h +"\nTotal Group: "+str(jml))
+                    vipro.sendText(msg.to,"=======[List Group]=======\n"+ h +"\nTotal Group: "+str(jml))
  
 	    elif "Ban group: " in msg.text:
 		grp = msg.text.replace("Ban group: ","")
-		gid = cl.getGroupIdsJoined()
+		gid = vipro.getGroupIdsJoined()
 		if msg.from_ in admin:
 		    for i in gid:
-		        h = cl.getGroup(i).name
+		        h = vipro.getGroup(i).name
 			if h == grp:
 			    wait["BlGroup"][i]=True
-			    cl.sendText(msg.to, "Success Ban Group : "+grp)
+			    vipro.sendText(msg.to, "Success Ban Group : "+grp)
 			else:
 			    pass
 		else:
-		    cl.sendText(msg.to, "Khusus Vipro")
+		    vipro.sendText(msg.to, "Khusus Admin")
  
             elif msg.text in ["List ban","List ban group"]:
 		if msg.from_ in admin:
                     if wait["BlGroup"] == {}:
-                        random.choice(KAC).sendText(msg.to,"Tidak Ada")
+                        vipro.sendText(msg.to,"Tidak Ada")
                     else:
                         mc = ""
                         for gid in wait["BlGroup"]:
-                            mc += "-> " +cl.getGroup(gid).name + "\n"
-                        random.choice(KAC).sendText(msg.to,"===[Ban Group]===\n"+mc)
+                            mc += "-> " +vipro.getGroup(gid).name + "\n"
+                        vipro.sendText(msg.to,"===[Ban Group]===\n"+mc)
 		else:
-		    cl.sendText(msg.to, "Khusus Admin")
+		    vipro.sendText(msg.to, "Khusus Admin")
  
 	    elif msg.text in ["Del ban: "]:
 		if msg.from_ in admin:
 		    ng = msg.text.replace("Del ban: ","")
 		    for gid in wait["BlGroup"]:
-		        if cl.getGroup(gid).name == ng:
+		        if vipro.getGroup(gid).name == ng:
 			    del wait["BlGroup"][gid]
-			    cl.sendText(msg.to, "Success del ban "+ng)
+			    vipro.sendText(msg.to, "Success del ban "+ng)
 		        else:
 			    pass
 		else:
-		    cl.sendText(msg.to, "Khusus Vipro")
+		    vipro.sendText(msg.to, "Khusus Admin")
  
             elif "Join group: " in msg.text:
 		ng = msg.text.replace("Join group: ","")
-		gid = cl.getGroupIdsJoined()
-		gid = ki.getGroupIdsJoined()
-		gid = kk.getGroupIdsJoined()
-		gid = kc.getGroupIdsJoined()
-		gid = kr.getGroupIdsJoined()
+		gid = vipro.getGroupIdsJoined()
 		try:
 		    if msg.from_ in Creator:
                         for i in gid:
-                            h = cl.getGroup(i).name
-                            h = ki.getGroup(i).name
-                            h = kk.getGroup(i).name
-                            h = kc.getGroup(i).name
-                            h = kr.getGroup(i).name
+                            h = vipro.getGroup(i).name
 		            if h == ng:
-		                random.choice(KAC).inviteIntoGroup(i,[Creator])
-			        cl.sendText(msg.to,"Success Join To ["+ h +"] Group")
+		                vipro.inviteIntoGroup(i,[Creator])
+			        vipro.sendText(msg.to,"Success Join To ["+ h +"] Group")
 			    else:
 			        pass
 		    else:
-		        cl.sendText(msg.to,"Khusus Vipro")
+		        vipro.sendText(msg.to,"Khusus Admin")
 		except Exception as e:
-		    cl.sendText(msg.to, str(e))
+		    vipro.sendText(msg.to, str(e))
  
 	    elif "Leave group: " in msg.text:
 		ng = msg.text.replace("Leave group: ","")
-		gid = cl.getGroupIdsJoined()
+		gid = vipro.getGroupIdsJoined()
 		if msg.from_ in Creator:
                     for i in gid:
-                        h = cl.getGroup(i).name
+                        h = vipro.getGroup(i).name
 		        if h == ng:
-			    cl.sendText(i,"Bot Di Paksa Keluar Oleh Owner!")
-		            cl.leaveGroup(i)
-			    ki.leaveGroup(i)
-			    kk.leaveGroup(i)
-			    kc.leaveGroup(i)
-			    kr.leaveGroup(i)
-			    cl.sendText(msg.to,"Success Left ["+ h +"] group")
+			    vipro.sendText(i,"Bot Di Paksa Keluar Oleh Owner!")
+		            vipro.leaveGroup(i)
+			    vipro.sendText(msg.to,"Success Left ["+ h +"] group")
 			else:
 			    pass
 		else:
-		    cl.sendText(msg.to,"Khusus Vipro")
+		    vipro.sendText(msg.to,"Khusus Admin")
  
 	    elif "Leave all group" == msg.text:
-		gid = cl.getGroupIdsJoined()
+		gid = vipro.getGroupIdsJoined()
                 if msg.from_ in Creator:
 		    for i in gid:
-			cl.sendText(i,"Bot Di Paksa Keluar Oleh Owner!")
-		        cl.leaveGroup(i)
-			ki.leaveGroup(i)
-			kk.leaveGroup(i)
-			kc.leaveGroup(i)
-			kr.leaveGroup(i)
-		    cl.sendText(msg.to,"Success Leave All Group")
+			vipro.sendText(i,"Bot Di Paksa Keluar Oleh Owner!")
+		        vipro.leaveGroup(i)
+		    vipro.sendText(msg.to,"Success Leave All Group")
 		else:
-		    cl.sendText(msg.to,"Khusus Vipro")
+		    vipro.sendText(msg.to,"Khusus Admin")
 		   
 
             elif "Pict group: " in msg.text:
                 saya = msg.text.replace('Pict group: ','')
-                gid = cl.getGroupIdsJoined()
+                gid = vipro.getGroupIdsJoined()
                 for i in gid:
-                    h = cl.getGroup(i).name
-                    gna = cl.getGroup(i)
+                    h = vipro.getGroup(i).name
+                    gna = vipro.getGroup(i)
                     if h == saya:
-                        cl.sendImageWithURL(msg.to,"http://dl.profile.line.naver.jp/"+ gna.pictureStatus)		    
+                        vipro.sendImageWithURL(msg.to,"http://dl.profile.line.naver.jp/"+ gna.pictureStatus)		    
 		    
  
             elif msg.text in ["cancelall","Cancelall"]:
                 if msg.toType == 2:
-                    X = cl.getGroup(msg.to)
+                    X = vipro.getGroup(msg.to)
                     if X.invitee is not None:
                         gInviMids = [contact.mid for contact in X.invitee]
-                        cl.cancelGroupInvitation(msg.to, gInviMids)
+                        vipro.cancelGroupInvitation(msg.to, gInviMids)
                     else:
-                        cl.sendText(msg.to,"Tidak Ada Yang Pending")
+                        vipro.sendText(msg.to,"Tidak Ada Yang Pending")
                 else:
-                    cl.sendText(msg.to,"Tidak Bisa Digunakan Diluar Group")
+                    vipro.sendText(msg.to,"Tidak Bisa Digunakan Diluar Group")
  
             elif msg.text in ["Ourl","Url on"]:
                 if msg.toType == 2:
-                    X = cl.getGroup(msg.to)
+                    X = vipro.getGroup(msg.to)
                     X.preventJoinByTicket = False
-                    cl.updateGroup(X)
-                    cl.sendText(msg.to,"Url Sudah Aktif")
+                    vipro.updateGroup(X)
+                    vipro.sendText(msg.to,"Url Sudah Aktif")
                 else:
-                    cl.sendText(msg.to,"Can not be used outside the group")
+                    vipro.sendText(msg.to,"Can not be used outside the group")
  
             elif msg.text in ["Curl","Url off"]:
                 if msg.toType == 2:
-                    X = cl.getGroup(msg.to)
+                    X = vipro.getGroup(msg.to)
                     X.preventJoinByTicket = True
-                    cl.updateGroup(X)
-                    cl.sendText(msg.to,"Url Sudah Di Nonaktifkan")
+                    vipro.updateGroup(X)
+                    vipro.sendText(msg.to,"Url Sudah Di Nonaktifkan")
 
                 else:
-                    cl.sendText(msg.to,"Can not be used outside the group")
+                    vipro.sendText(msg.to,"Can not be used outside the group")
  
             elif msg.text in ["Join on","Autojoin on"]:
 		if msg.from_ in admin:
                     wait["AutoJoin"] = True
                     wait["AutoJoinCancel"] = False
-                    cl.sendText(msg.to,"Auto Join Sudah Aktif")
+                    vipro.sendText(msg.to,"Auto Join Sudah Aktif")
 		else:
-		    cl.sendText(msg.to,"Khusus Vipro")
+		    vipro.sendText(msg.to,"Khusus Admin")
 
             elif msg.text in ["Join off","Autojoin off"]:
 		if msg.from_ in admin:
                     wait["AutoJoin"] = False
-                    cl.sendText(msg.to,"Auto Join Sudah Di Nonaktifkan")
+                    vipro.sendText(msg.to,"Auto Join Sudah Di Nonaktifkan")
 		else:
-		    cl.sendText(msg.to,"Khusus Vipro")
+		    vipro.sendText(msg.to,"Khusus Admin")
 		    
 		    
             elif msg.text in ["Joincancel on","Autojoincancel on"]:
 		if msg.from_ in admin:
                     wait["AutoJoinCancel"] = True
                     wait["AutoJoin"] = False
-                    cl.sendText(msg.to,"Auto Join Cancel Sudah Aktif")
+                    vipro.sendText(msg.to,"Auto Join Cancel Sudah Aktif")
 		else:
-		    cl.sendText(msg.to,"Khusus Vipro")
+		    vipro.sendText(msg.to,"Khusus Admin")
 
             elif msg.text in ["Joincancel off","Autojoincancel off"]:
 		if msg.from_ in admin:
                     wait["AutoJoinCancel"] = False
-                    cl.sendText(msg.to,"Auto Join Cancel Sudah Di Nonaktifkan")
+                    vipro.sendText(msg.to,"Auto Join Cancel Sudah Di Nonaktifkan")
 		else:
-		    cl.sendText(msg.to,"Khusus Vipro")		    
+		    vipro.sendText(msg.to,"Khusus Admin")		    
 		    
  
-            elif msg.text in ["Respon on"]:
+            elif msg.text in ["Respon1 on"]:
 		if msg.from_ in admin:
                     wait["detectMention"] = True
+                    wait["detectMention2"] = False
+                    wait["detectMention3"] = False
                     wait["kickMention"] = False
-                    cl.sendText(msg.to,"Auto Respon Sudah Aktif")
+                    vipro.sendText(msg.to,"Auto Respon1 Sudah Aktif")
 		else:
-		    cl.sendText(msg.to,"Khusus Vipro")
+		    vipro.sendText(msg.to,"Khusus Admin")
 
-            elif msg.text in ["Respon off"]:
+            elif msg.text in ["Respon1 off"]:
 		if msg.from_ in admin:
                     wait["detectMention"] = False
-                    cl.sendText(msg.to,"Auto Respon Sudah Off")
+                    vipro.sendText(msg.to,"Auto Respon1 Sudah Off")
 		else:
-		    cl.sendText(msg.to,"Khusus Vipro")	
+		    vipro.sendText(msg.to,"Khusus Admin")	
 		    
+		    
+            elif msg.text in ["Respon2 on"]:
+		if msg.from_ in admin:
+                    wait["detectMention"] = False
+                    wait["detectMention2"] = True
+                    wait["detectMention3"] = False
+                    wait["kickMention"] = False
+                    vipro.sendText(msg.to,"Auto Respon2 Sudah Aktif")
+		else:
+		    vipro.sendText(msg.to,"Khusus Admin")
+            elif msg.text in ["Respon2 off"]:
+		if msg.from_ in admin:
+                    wait["detectMention2"] = False
+                    vipro.sendText(msg.to,"Auto Respon2 Sudah Off")
+		else:
+		    vipro.sendText(msg.to,"Khusus Admin")	
+		    
+
+            elif msg.text in ["Respon3 on"]:
+		if msg.from_ in admin:
+                    wait["detectMention"] = False
+                    wait["detectMention2"] = False
+                    wait["detectMention3"] = True
+                    wait["kickMention"] = False
+                    vipro.sendText(msg.to,"Auto Respon3 Sudah Aktif")
+		else:
+		    vipro.sendText(msg.to,"Khusus Admin")
+
+            elif msg.text in ["Respon3 off"]:
+		if msg.from_ in admin:
+                    wait["detectMention3"] = False
+                    vipro.sendText(msg.to,"Auto Respon3 Sudah Off")
+		else:
+		    vipro.sendText(msg.to,"Khusus Admin")	
 		    
  
             elif msg.text in ["Responkick on"]:
 		if msg.from_ in admin:
                     wait["kickMention"] = True  
                     wait["detectMention"] = False
-                    cl.sendText(msg.to,"Auto Respon Kick Sudah Aktif")
+                    wait["detectMention2"] = False
+                    wait["detectMention3"] = False                    
+                    vipro.sendText(msg.to,"Auto Respon Kick Sudah Aktif")
 		else:
-		    cl.sendText(msg.to,"Khusus Vipro")
+		    vipro.sendText(msg.to,"Khusus Admin")
 
             elif msg.text in ["Responkick off"]:
 		if msg.from_ in admin:
                     wait["kickMention"] = False                    
-                    cl.sendText(msg.to,"Auto Respon Kick Sudah Off")
+                    vipro.sendText(msg.to,"Auto Respon Kick Sudah Off")
 		else:
-		    cl.sendText(msg.to,"Khusus Vipro")			  
- 
-            elif msg.text in ["Leave on"]:
-		if msg.from_ in admin:
-                    wait["Leave"] = True
-                    cl.sendText(msg.to,"Leave Sudah Aktif")
-		else:
-		    cl.sendText(msg.to,"Khusus Vipro")
+		    vipro.sendText(msg.to,"Khusus Admin")			  
 		    
  
 	    elif msg.text in ["Autocancel on"]:
 	     if msg.from_ in admin:	        
-                wait["AutoCancel"][msg.to] = True
-                wait["AutoCancelon"] = True
-                cl.sendText(msg.to,"Auto Cancel Sudah Aktif")
+                wait["AutoCancel"] = True
+                vipro.sendText(msg.to,"Auto Cancel Sudah Aktif")
 		print wait["AutoCancel"]
 	     else:
-		    cl.sendText(msg.to,"Khusus Nadya")		
+		    vipro.sendText(msg.to,"Khusus Admin")		
 
 	    elif msg.text in ["Autocancel off"]:
 	     if msg.from_ in admin:	        
-                wait["AutoCancel"][msg.to] = False
-                wait["AutoCancelon"] = False
-                cl.sendText(msg.to,"Auto Cancel Sudah Di Nonaktifkan")
+                wait["AutoCancel"] = False
+                vipro.sendText(msg.to,"Auto Cancel Sudah Di Nonaktifkan")
 		print wait["AutoCancel"]
 	     else:
-		    cl.sendText(msg.to,"Khusus Nadya")	
-
-
-	    elif msg.text in ["Joinkick on"]:
-	     if msg.from_ in admin:	        
-                wait["joinkick"] = True
-                wait["Sambutan"] = False
-                cl.sendText(msg.to,"Join Kick Sudah Aktif")
-	     else:
-		    cl.sendText(msg.to,"Khusus Nadya")		
-
-	    elif msg.text in ["Joinkick off"]:
-	     if msg.from_ in admin:	        
-                wait["joinkick"] = False
-                cl.sendText(msg.to,"Join Kick Sudah Di Nonaktifkan")
-	     else:
-		    cl.sendText(msg.to,"Khusus Nadya")	
-
+		    vipro.sendText(msg.to,"Khusus Admin")	
 		    
 
-	    elif msg.text in ["Invitepro on","Inviteprotect on"]:
+	    elif msg.text in ["Invitepro on"]:
 	     if msg.from_ in admin:	        
                 wait["inviteprotect"] = True
-                cl.sendText(msg.to,"Invite Protect Sudah Aktif")
+                vipro.sendText(msg.to,"Invite Protect Sudah Aktif")
+		print wait["inviteprotect"]
 	     else:
-		    cl.sendText(msg.to,"Khusus Nadya")		
+		    vipro.sendText(msg.to,"Khusus Admin")		
 
-	    elif msg.text in ["Invitepro off","Inviteprotect off"]:
+	    elif msg.text in ["Invitepro off"]:
 	     if msg.from_ in admin:	        
                 wait["inviteprotect"] = False
-                cl.sendText(msg.to,"Invite Protect Sudah Di Nonaktifkan")
+                vipro.sendText(msg.to,"Invite Protect Sudah Di Nonaktifkan")
+		print wait["inviteprotect"]
 	     else:
-		    cl.sendText(msg.to,"Khusus Nadya")		    
+		    vipro.sendText(msg.to,"Khusus Admin")		    
 
 	    elif "Qr on" in msg.text:
 	     if msg.from_ in admin:	        
-	        wait["Qr"][msg.to] = True
-	        wait["Qron"] = True
-	    	cl.sendText(msg.to,"QR Protect Sudah Aktif")
-		print wait["Qr"]	    	
+	        wait["Qr"] = True
+	    	vipro.sendText(msg.to,"QR Protect Sudah Aktif")
 	     else:
-		    cl.sendText(msg.to,"Khusus Nadya")	    	
+		    vipro.sendText(msg.to,"Khusus Admin")	    	
 
 	    elif "Qr off" in msg.text:
 	     if msg.from_ in admin:	        
-	    	wait["Qr"][msg.to] = False
-	    	wait["Qron"] = False
-	    	cl.sendText(msg.to,"Qr Protect Sudah Di Nonaktifkan")
-		print wait["Qr"]	    	
+	    	wait["Qr"] = False
+	    	vipro.sendText(msg.to,"Qr Protect Sudah Di Nonaktifkan")
 	     else:
-		    cl.sendText(msg.to,"Khusus Nadya")	    	
+		    vipro.sendText(msg.to,"Khusus Admin")	    	
+
                         
-	    elif msg.text in ["Autokick on"]:
-	     if msg.from_ in admin:	        
-                wait["AutoKick"][msg.to] = True
-                wait["AutoKickon"] = True
-                cl.sendText(msg.to,"Auto Kick Sudah Aktif")
-		print wait["AutoKick"]
-	     else:
-		    cl.sendText(msg.to,"Khusus Nadya")		
 
-	    elif msg.text in ["Autokick off"]:
-	     if msg.from_ in admin:	        
-                wait["AutoKick"][msg.to] = False
-                wait["AutoKickon"] = False
-                cl.sendText(msg.to,"Auto Kick Sudah Di Nonaktifkan")
-		print wait["AutoKick"]
+	    elif "Autokick on" in msg.text:
+	     if msg.from_ in admin:	 	        
+		     wait["AutoKick"] = True
+		     vipro.sendText(msg.to,"Auto Kick Sudah Aktif")
 	     else:
-		    cl.sendText(msg.to,"Khusus Nadya")	
+	        vipro.sendText(msg.to,"Khusus Admin")	     
 
-
-	    elif msg.text in ["Ghost on"]:
-	     if msg.from_ in admin:	        
-                wait["Ghost"] = True
-                cl.sendText(msg.to,"Ghost Sudah Aktif")
+	    elif "Autokick off" in msg.text:
+	     if msg.from_ in admin:	 	        
+		     wait["AutoKick"] = False
+		     vipro.sendText(msg.to,"Auto Kick Sudah Di Nonaktifkan")
 	     else:
-		    cl.sendText(msg.to,"Khusus Nadya")		
+	        vipro.sendText(msg.to,"Khusus Admin")	     
 
-	    elif msg.text in ["Ghost off"]:
-	     if msg.from_ in admin:	        
-                wait["Ghost"] = False
-                cl.sendText(msg.to,"Ghost Sudah Di Nonaktifkan")
-	     else:
-		    cl.sendText(msg.to,"Khusus Nadya")	     
 
             elif msg.text in ["Allprotect on"]:
 		if msg.from_ in admin:
-                    wait["AutoCancel"][msg.to] = True
-                    wait["AutoCancelon"] = True
-                    wait["inviteprotect"] = True 
-                    wait["joinkick"] = True 
-                    wait["AutoKick"][msg.to] = True
-                    wait["AutoKickon"] = True
-                    wait["Qr"][msg.to] = True
-                    wait["Qron"] = True
-                    wait["Ghost"] = True     
-                    cl.sendText(msg.to,"All Protect Sudah Aktif Semua")
-		    print wait["AutoCancel"]
-		    print wait["AutoKick"]
-		    print wait["Qr"]
+                    wait["AutoCancel"] = True
+                    wait["inviteprotect"] = True                   
+                    wait["AutoKick"] = True
+                    wait["Qr"] = True
+                    vipro.sendText(msg.to,"All Protect Sudah Aktif Semua")
 		else:
-		    cl.sendText(msg.to,"Khusus Nadya")
+		    vipro.sendText(msg.to,"Khusus Admin")
 
             elif msg.text in ["Allprotect off"]:
 		if msg.from_ in admin:
-                    wait["AutoCancel"][msg.to] = False
-                    wait["AutoCancelon"] = False
-                    wait["inviteprotect"] = False  
-                    wait["joinkick"] = False
-                    wait["AutoKick"][msg.to] = False
-                    wait["AutoKickon"] = False
-                    wait["Qr"][msg.to] = False
-                    wait["Qron"] = False
-                    wait["Ghost"] = False 
-                    cl.sendText(msg.to,"All Protect Sudah Di Nonaktifkan Semua")
-		    print wait["AutoCancel"]
-		    print wait["AutoKick"]
-		    print wait["Qr"]
-		else:                    
-		    cl.sendText(msg.to,"Khusus Nadya")
+                    wait["AutoCancel"] = False
+                    wait["inviteprotect"] = False                    
+                    wait["AutoKick"] = False
+                    wait["Qr"] = False
+                    vipro.sendText(msg.to,"All Protect Sudah Di Nonaktifkan Semua")
+		else:
+		    vipro.sendText(msg.to,"Khusus Admin")
+
 
             elif msg.text in ["K on","Contact on"]:
                 wait["Contact"] = True
-                cl.sendText(msg.to,"Contact Sudah Aktif")
+                vipro.sendText(msg.to,"Contact Sudah Aktif")
 
             elif msg.text in ["K off","Contact off"]:
                 wait["Contact"] = False
-                cl.sendText(msg.to,"Contact Sudah Di Nonaktifkan")
+                vipro.sendText(msg.to,"Contact Sudah Di Nonaktifkan")
                 
 
             elif msg.text in ["Alwaysread on"]:
                 wait["alwaysRead"] = True
-                cl.sendText(msg.to,"Always Read Sudah Aktif")
+                vipro.sendText(msg.to,"Always Read Sudah Aktif")
 
             elif msg.text in ["Alwaysread off"]:
                 wait["alwaysRead"] = False
-                cl.sendText(msg.to,"Always Read Sudah Di Nonaktifkan")                
+                vipro.sendText(msg.to,"Always Read Sudah Di Nonaktifkan")                
 
 
             elif msg.text in ["Notif on"]:
                 if wait["Sambutan"] == True:
                     if wait["lang"] == "JP":
-                        cl.sendText(msg.to,"Sambutan Di Aktifkanヾ(*´∀｀*)ﾉ")
+                        vipro.sendText(msg.to,"Sambutan Di Aktifkanヾ(*´∀｀*)ﾉ")
                 else:
                     wait["Sambutan"] = True
-                    wait["joinkick"] = False
                     if wait["lang"] == "JP":
-                        cl.sendText(msg.to,"Sudah Onヽ(´▽｀)/")
+                        vipro.sendText(msg.to,"Sudah Onヽ(´▽｀)/")
 
             elif msg.text in ["Notif off"]:
                 if wait["Sambutan"] == False:
                     if wait["lang"] == "JP":
-                        cl.sendText(msg.to,"Sambutan Di Nonaktifkan(　＾∇＾)")
+                        vipro.sendText(msg.to,"Sambutan Di Nonaktifkan(　＾∇＾)")
                 else:
                     wait["Sambutan"] = False
                     if wait["lang"] == "JP":
-                        cl.sendText(msg.to,"Sudah Off(p′︵‵。)")
+                        vipro.sendText(msg.to,"Sudah Off(p′︵‵。)")
                         
                         
             elif "Sider on" in msg.text:
@@ -2008,52 +1585,50 @@ def bot(op):
                 cctv['sidermem'][msg.to] = ""
                 cctv['cyduk'][msg.to]=True
                 wait["Sider"] = True
-                cl.sendText(msg.to,"Siap On Cek Sider")
+                vipro.sendText(msg.to,"Siap On Cek Sider")
                 
             elif "Sider off" in msg.text:
                 if msg.to in cctv['point']:
                     cctv['cyduk'][msg.to]=False
                     wait["Sider"] = False
-                    cl.sendText(msg.to, "Cek Sider Off")
+                    vipro.sendText(msg.to, "Cek Sider Off")
                 else:
-                    cl.sendText(msg.to, "Heh Belom Di Set")                         
+                    vipro.sendText(msg.to, "Heh Belom Di Set")                         
 
 
             elif msg.text in ["Status"]:
                 md = ""
-		if wait["Sambutan"] == True: md+="╠➩✔️ Notif : On\n"
+		if wait["Sambutan"] == True: md+="╠➩✔️ Sambutan : On\n"
 		else:md+="╠➩❌ Sambutan : Off\n"
-		if wait["joinkick"] == True: md+="╠➩✔️ Join Kick : On\n"
-		else:md+="╠➩❌ Join Kick : Off\n"		
 		if wait["AutoJoin"] == True: md+="╠➩✔️ Auto Join : On\n"
                 else: md +="╠➩❌ Auto Join : Off\n"
 		if wait["AutoJoinCancel"] == True: md+="╠➩✔️ Auto Join Cancel : On\n"
                 else: md +="╠➩❌ Auto Join Cancel : Off\n"                
-		if wait["Leave"] == True: md+="╠➩✔️ Leave : On\n"
-                else: md +="╠➩❌ Leave : Off\n"                
 		if wait["Contact"] == True: md+="╠➩✔️ Info Contact : On\n"
 		else: md+="╠➩❌ Info Contact : Off\n"
-                if wait["AutoCancelon"] == True:md+="╠➩✔️ Auto Cancel : On\n"
+                if wait["AutoCancel"] == True:md+="╠➩✔️ Auto Cancel : On\n"
                 else: md+= "╠➩❌ Auto Cancel : Off\n"
                 if wait["inviteprotect"] == True:md+="╠➩✔️ Invite Protect : On\n"
                 else: md+= "╠➩❌ Invite Protect : Off\n"                
-		if wait["Qron"] == True: md+="╠➩✔️ Qr Protect : On\n"
+		if wait["Qr"] == True: md+="╠➩✔️ Qr Protect : On\n"
 		else:md+="╠➩❌ Qr Protect : Off\n"
-		if wait["AutoKickon"] == True: md+="╠➩✔️ Auto Kick : On\n"
+		if wait["AutoKick"] == True: md+="╠➩✔️ Auto Kick : On\n"
 		else:md+="╠➩❌ Auto Kick : Off\n"
-		if wait["Ghost"] == True: md+="╠➩✔️ Ghost : On\n"
-		else:md+="╠➩❌ Ghost : Off\n"
 		if wait["alwaysRead"] == True: md+="╠➩✔️ Always Read : On\n"
 		else:md+="╠➩❌ Always Read: Off\n"
-		if wait["detectMention"] == True: md+="╠➩✔️ Auto Respon : On\n"
-		else:md+="╠➩❌ Auto Respon : Off\n"		
+		if wait["detectMention"] == True: md+="╠➩✔️ Auto Respon1 : On\n"
+		else:md+="╠➩❌ Auto Respon1 : Off\n"		
+		if wait["detectMention2"] == True: md+="╠➩✔️ Auto Respon2 : On\n"
+		else:md+="╠➩❌ Auto Respon2 : Off\n"	
+		if wait["detectMention3"] == True: md+="╠➩✔️ Auto Respon3 : On\n"
+		else:md+="╠➩❌ Auto Respon3 : Off\n"			
 		if wait["kickMention"] == True: md+="╠➩✔️ Auto Respon Kick : On\n"
 		else:md+="╠➩❌ Auto Respon Kick : Off\n"				
 		if wait["Sider"] == True: md+="╠➩✔️ Auto Sider : On\n"
 		else:md+="╠➩❌ Auto Sider: Off\n"	
 		if wait["Simi"] == True: md+="╠➩✔️ Simisimi : On\n"
 		else:md+="╠➩❌ Simisimi: Off\n"		
-                cl.sendText(msg.to,"╔═════════════════════════\n""║           ☆☞ S T A T U S ☜☆\n""╠═════════════════════════\n"+md+"╚═════════════════════════")
+                vipro.sendText(msg.to,"╔═════════════════════════\n""║           ☆☞ S T A T U S ☜☆\n""╠═════════════════════════\n"+md+"╚═════════════════════════")
 
 
             elif msg.text in ["Gift","gift"]:
@@ -2062,41 +1637,7 @@ def bot(op):
                                     'PRDTYPE': 'THEME',
                                     'MSGTPL': '8'}
                 msg.text = None
-                cl.sendMessage(msg)
-
-            elif msg.text in ["All gift"]:
-                msg.contentType = 9
-                msg.contentMetadata={'PRDID': 'a0768339-c2d3-4189-9653-2909e9bb6f58',
-                                    'PRDTYPE': 'THEME',
-                                    'MSGTPL': '5'}
-                msg.text = None
-                ki.sendMessage(msg)
-                kk.sendMessage(msg)
-                kc.sendMessage(msg)
-
-            elif msg.text in ["TC1 Gift","TC1 gift"]:
-                msg.contentType = 9
-                msg.contentMetadata={'PRDID': '696d7046-843b-4ed0-8aac-3113ed6c0733',
-                                    'PRDTYPE': 'THEME',
-                                    'MSGTPL': '6'}
-                msg.text = None
-                ki.sendMessage(msg)
-
-            elif msg.text in ["TC2 Gift","TC2 gift"]:
-                msg.contentType = 9
-                msg.contentMetadata={'PRDID': '8fe8cdab-96f3-4f84-95f1-6d731f0e273e',
-                                    'PRDTYPE': 'THEME',
-                                    'MSGTPL': '7'}
-                msg.text = None
-                kk.sendMessage(msg)
-
-            elif msg.text in ["TC3 Gift","TC3 gift"]:
-                msg.contentType = 9
-                msg.contentMetadata={'PRDID': 'ae3d9165-fab2-4e70-859b-c14a9d4137c4',
-                                    'PRDTYPE': 'THEME',
-                                    'MSGTPL': '8'}
-                msg.text = None
-                kc.sendMessage(msg)
+                vipro.sendMessage(msg)
                 
                 
             elif "Gift1 " in msg.text:
@@ -2106,7 +1647,7 @@ def bot(op):
                        nk2 = nk1.replace("@","")
                        nk3 = nk2.rstrip()
                        _name = nk3
-                       gs = cl.getGroup(msg.to)
+                       gs = vipro.getGroup(msg.to)
                        targets = []
                        for s in gs.members:
                            if _name in s.displayName:
@@ -2117,7 +1658,7 @@ def bot(op):
                        else:
                            for target in targets:
                                 try:
-                                    cl.sendText(msg.to,_name + " Check Your Gift")
+                                    vipro.sendText(msg.to,_name + " Check Your Gift")
                                     msg.contentType = 9
                                     msg.contentMetadata= {'PRDTYPE': 'STICKER',
                                                          'STKVER': '1',
@@ -2125,7 +1666,7 @@ def bot(op):
                                                          'STKPKGID': '1380280'}
                                     msg.to = target
                                     msg.text = None
-                                    cl.sendMessage(msg)
+                                    vipro.sendMessage(msg)
                                 except:
                                     msg.contentMetadata = {'mid': target}
 
@@ -2136,7 +1677,7 @@ def bot(op):
                        nk2 = nk1.replace("@","")
                        nk3 = nk2.rstrip()
                        _name = nk3
-                       gs = cl.getGroup(msg.to)
+                       gs = vipro.getGroup(msg.to)
                        targets = []
                        for s in gs.members:
                            if _name in s.displayName:
@@ -2147,7 +1688,7 @@ def bot(op):
                        else:
                            for target in targets:
                                 try:
-                                    cl.sendText(msg.to,_name + " Check Your Gift")
+                                    vipro.sendText(msg.to,_name + " Check Your Gift")
                                     msg.contentType = 9
                                     msg.contentMetadata= {'PRDTYPE': 'STICKER',
                                                          'STKVER': '1',
@@ -2155,7 +1696,7 @@ def bot(op):
                                                          'STKPKGID': '1360738'}
                                     msg.to = target
                                     msg.text = None
-                                    cl.sendMessage(msg)
+                                    vipro.sendMessage(msg)
                                 except:
                                     msg.contentMetadata = {'mid': target}
 
@@ -2166,7 +1707,7 @@ def bot(op):
                        nk2 = nk1.replace("@","")
                        nk3 = nk2.rstrip()
                        _name = nk3
-                       gs = cl.getGroup(msg.to)
+                       gs = vipro.getGroup(msg.to)
                        targets = []
                        for s in gs.members:
                            if _name in s.displayName:
@@ -2177,7 +1718,7 @@ def bot(op):
                        else:
                            for target in targets:
                                 try:
-                                    cl.sendText(msg.to,_name + " Check Your Gift")
+                                    vipro.sendText(msg.to,_name + " Check Your Gift")
                                     msg.contentType = 9
                                     msg.contentMetadata= {'PRDTYPE': 'STICKER',
                                                          'STKVER': '1',
@@ -2185,7 +1726,7 @@ def bot(op):
                                                          'STKPKGID': '1395389'}
                                     msg.to = target
                                     msg.text = None
-                                    cl.sendMessage(msg)
+                                    vipro.sendMessage(msg)
                                 except:
                                     msg.contentMetadata = {'mid': target}
 
@@ -2196,7 +1737,7 @@ def bot(op):
                        nk2 = nk1.replace("@","")
                        nk3 = nk2.rstrip()
                        _name = nk3
-                       gs = cl.getGroup(msg.to)
+                       gs = vipro.getGroup(msg.to)
                        targets = []
                        for s in gs.members:
                            if _name in s.displayName:
@@ -2207,7 +1748,7 @@ def bot(op):
                        else:
                            for target in targets:
                                 try:
-                                    cl.sendText(msg.to,_name + " Check Your Gift")
+                                    vipro.sendText(msg.to,_name + " Check Your Gift")
                                     msg.contentType = 9
                                     msg.contentMetadata= {'PRDTYPE': 'STICKER',
                                                          'STKVER': '1',
@@ -2215,7 +1756,7 @@ def bot(op):
                                                          'STKPKGID': '1329191'}
                                     msg.to = target
                                     msg.text = None
-                                    cl.sendMessage(msg)
+                                    vipro.sendMessage(msg)
                                 except:
                                     msg.contentMetadata = {'mid': target}
 
@@ -2226,7 +1767,7 @@ def bot(op):
                        nk2 = nk1.replace("@","")
                        nk3 = nk2.rstrip()
                        _name = nk3
-                       gs = cl.getGroup(msg.to)
+                       gs = vipro.getGroup(msg.to)
                        targets = []
                        for s in gs.members:
                            if _name in s.displayName:
@@ -2237,7 +1778,7 @@ def bot(op):
                        else:
                            for target in targets:
                                 try:
-                                    cl.sendText(msg.to,_name + " Check Your Gift")
+                                    vipro.sendText(msg.to,_name + " Check Your Gift")
                                     msg.contentType = 9
                                     msg.contentMetadata= {'PRDTYPE': 'STICKER',
                                                          'STKVER': '1',
@@ -2245,7 +1786,7 @@ def bot(op):
                                                          'STKPKGID': '9057'}
                                     msg.to = target
                                     msg.text = None
-                                    cl.sendMessage(msg)
+                                    vipro.sendMessage(msg)
                                 except:
                                     msg.contentMetadata = {'mid': target}
 
@@ -2256,7 +1797,7 @@ def bot(op):
                        nk2 = nk1.replace("@","")
                        nk3 = nk2.rstrip()
                        _name = nk3
-                       gs = cl.getGroup(msg.to)
+                       gs = vipro.getGroup(msg.to)
                        targets = []
                        for s in gs.members:
                            if _name in s.displayName:
@@ -2267,7 +1808,7 @@ def bot(op):
                        else:
                            for target in targets:
                                 try:
-                                    cl.sendText(msg.to,_name + " Check Your Gift")
+                                    vipro.sendText(msg.to,_name + " Check Your Gift")
                                     msg.contentType = 9
                                     msg.contentMetadata= {'PRDTYPE': 'STICKER',
                                                          'STKVER': '1',
@@ -2275,7 +1816,7 @@ def bot(op):
                                                          'STKPKGID': '9167'}
                                     msg.to = target
                                     msg.text = None
-                                    cl.sendMessage(msg)
+                                    vipro.sendMessage(msg)
                                 except:
                                     msg.contentMetadata = {'mid': target}
 
@@ -2286,7 +1827,7 @@ def bot(op):
                        nk2 = nk1.replace("@","")
                        nk3 = nk2.rstrip()
                        _name = nk3
-                       gs = cl.getGroup(msg.to)
+                       gs = vipro.getGroup(msg.to)
                        targets = []
                        for s in gs.members:
                            if _name in s.displayName:
@@ -2297,7 +1838,7 @@ def bot(op):
                        else:
                            for target in targets:
                                 try:
-                                    cl.sendText(msg.to,_name + " Check Your Gift")
+                                    vipro.sendText(msg.to,_name + " Check Your Gift")
                                     msg.contentType = 9
                                     msg.contentMetadata= {'PRDTYPE': 'STICKER',
                                                          'STKVER': '1',
@@ -2305,7 +1846,7 @@ def bot(op):
                                                          'STKPKGID': '7334'}
                                     msg.to = target
                                     msg.text = None
-                                    cl.sendMessage(msg)
+                                    vipro.sendMessage(msg)
                                 except:
                                     msg.contentMetadata = {'mid': target}
 
@@ -2316,7 +1857,7 @@ def bot(op):
                        nk2 = nk1.replace("@","")
                        nk3 = nk2.rstrip()
                        _name = nk3
-                       gs = cl.getGroup(msg.to)
+                       gs = vipro.getGroup(msg.to)
                        targets = []
                        for s in gs.members:
                            if _name in s.displayName:
@@ -2327,7 +1868,7 @@ def bot(op):
                        else:
                            for target in targets:
                                 try:
-                                    cl.sendText(msg.to,_name + " Check Your Gift")
+                                    vipro.sendText(msg.to,_name + " Check Your Gift")
                                     msg.contentType = 9
                                     msg.contentMetadata= {'PRDTYPE': 'STICKER',
                                                          'STKVER': '1',
@@ -2335,7 +1876,7 @@ def bot(op):
                                                          'STKPKGID': '1380280'}
                                     msg.to = target
                                     msg.text = None
-                                    cl.sendMessage(msg)
+                                    vipro.sendMessage(msg)
                                 except:
                                     msg.contentMetadata = {'mid': target}
 
@@ -2346,7 +1887,7 @@ def bot(op):
                        nk2 = nk1.replace("@","")
                        nk3 = nk2.rstrip()
                        _name = nk3
-                       gs = cl.getGroup(msg.to)
+                       gs = vipro.getGroup(msg.to)
                        targets = []
                        for s in gs.members:
                            if _name in s.displayName:
@@ -2357,7 +1898,7 @@ def bot(op):
                        else:
                            for target in targets:
                                 try:
-                                    cl.sendText(msg.to,_name + " Check Your Gift")
+                                    vipro.sendText(msg.to,_name + " Check Your Gift")
                                     msg.contentType = 9
                                     msg.contentMetadata= {'PRDTYPE': 'STICKER',
                                                          'STKVER': '1',
@@ -2365,7 +1906,7 @@ def bot(op):
                                                          'STKPKGID': '1405277'}
                                     msg.to = target
                                     msg.text = None
-                                    cl.sendMessage(msg)
+                                    vipro.sendMessage(msg)
                                 except:
                                     msg.contentMetadata = {'mid': target}
 
@@ -2376,7 +1917,7 @@ def bot(op):
                        nk2 = nk1.replace("@","")
                        nk3 = nk2.rstrip()
                        _name = nk3
-                       gs = cl.getGroup(msg.to)
+                       gs = vipro.getGroup(msg.to)
                        targets = []
                        for s in gs.members:
                            if _name in s.displayName:
@@ -2387,7 +1928,7 @@ def bot(op):
                        else:
                            for target in targets:
                                 try:
-                                    cl.sendText(msg.to,_name + " Check Your Gift")
+                                    vipro.sendText(msg.to,_name + " Check Your Gift")
                                     msg.contentType = 9
                                     msg.contentMetadata= {'PRDTYPE': 'STICKER',
                                                          'STKVER': '1',
@@ -2395,7 +1936,7 @@ def bot(op):
                                                          'STKPKGID': '1296261'}
                                     msg.to = target
                                     msg.text = None
-                                    cl.sendMessage(msg)
+                                    vipro.sendMessage(msg)
                                 except:
                                     msg.contentMetadata = {'mid': target}
 
@@ -2406,7 +1947,7 @@ def bot(op):
                                     'STKPKGID': '1',
                                     'STKVER': '100'}
                 msg.text = None
-                cl.sendMessage(msg)
+                vipro.sendMessage(msg)
 
             elif msg.text.lower() in ["hehehe","hehe"]:
                 msg.contentType = 7
@@ -2414,7 +1955,7 @@ def bot(op):
                                     'STKPKGID': '1',
                                     'STKVER': '100'}
                 msg.text = None
-                cl.sendMessage(msg)
+                vipro.sendMessage(msg)
 
             elif msg.text.lower() in ["galau"]:
                 msg.contentType = 7
@@ -2422,7 +1963,7 @@ def bot(op):
                                     'STKPKGID': '1',
                                     'STKVER': '100'}
                 msg.text = None
-                cl.sendMessage(msg)
+                vipro.sendMessage(msg)
 
             elif msg.text.lower() in ["you","kau","kamu"]:
                 msg.contentType = 7
@@ -2430,7 +1971,7 @@ def bot(op):
                                     'STKPKGID': '1',
                                     'STKVER': '100'}
                 msg.text = None
-                cl.sendMessage(msg)
+                vipro.sendMessage(msg)
 
             elif msg.text.lower() in ["marah","hadeuh","hadeh"]:
                 msg.contentType = 7
@@ -2438,7 +1979,7 @@ def bot(op):
                                     'STKPKGID': '1',
                                     'STKVER': '100'}
                 msg.text = None
-                cl.sendMessage(msg)
+                vipro.sendMessage(msg)
 
             elif msg.text.lower() in ["please","pliss","mohon","tolong"]:
                 msg.contentType = 7
@@ -2446,7 +1987,7 @@ def bot(op):
                                     'STKPKGID': '1',
                                     'STKVER': '100'}
                 msg.text = None
-                cl.sendMessage(msg)
+                vipro.sendMessage(msg)
 
             elif msg.text.lower() in ["haa","haaa","kaget"]:
                 msg.contentType = 7
@@ -2454,7 +1995,7 @@ def bot(op):
                                     'STKPKGID': '1',
                                     'STKVER': '100'}
                 msg.text = None
-                cl.sendMessage(msg)
+                vipro.sendMessage(msg)
 
             elif msg.text.lower() in ["lucu","ngakak","lol"]:
                 msg.contentType = 7
@@ -2462,7 +2003,7 @@ def bot(op):
                                     'STKPKGID': '1',
                                     'STKVER': '100'}
                 msg.text = None
-                cl.sendMessage(msg)
+                vipro.sendMessage(msg)
 
             elif msg.text.lower() in ["hmm","hmmm"]:
                 msg.contentType = 7
@@ -2470,7 +2011,7 @@ def bot(op):
                                     'STKPKGID': '1',
                                     'STKVER': '100'}
                 msg.text = None
-                cl.sendMessage(msg)
+                vipro.sendMessage(msg)
 
             elif msg.text.lower() in ["tidur"]:
                 msg.contentType = 7
@@ -2478,7 +2019,7 @@ def bot(op):
                                     'STKPKGID': '1',
                                     'STKVER': '100'}
                 msg.text = None
-                cl.sendMessage(msg)
+                vipro.sendMessage(msg)
 
             elif msg.text.lower() in ["gemes"]:
                 msg.contentType = 7
@@ -2486,7 +2027,7 @@ def bot(op):
                                     'STKPKGID': '1',
                                     'STKVER': '100'}
                 msg.text = None
-                cl.sendMessage(msg)
+                vipro.sendMessage(msg)
 
             elif msg.text.lower() in ["cantik","imut"]:
                 msg.contentType = 7
@@ -2494,7 +2035,7 @@ def bot(op):
                                     'STKPKGID': '1',
                                     'STKVER': '100'}
                 msg.text = None
-                cl.sendMessage(msg)
+                vipro.sendMessage(msg)
 
             elif msg.text.lower() in ["nyanyi","lalala"]:
                 msg.contentType = 7
@@ -2502,7 +2043,7 @@ def bot(op):
                                     'STKPKGID': '1',
                                     'STKVER': '100'}
                 msg.text = None
-                cl.sendMessage(msg)
+                vipro.sendMessage(msg)
 
             elif msg.text.lower() in ["gugup"]:
                 msg.contentType = 7
@@ -2510,7 +2051,7 @@ def bot(op):
                                     'STKPKGID': '1',
                                     'STKVER': '100'}
                 msg.text = None
-                cl.sendMessage(msg)
+                vipro.sendMessage(msg)
 
             elif msg.text.lower() in ["ok","oke","okay","oce","okee","sip","siph"]:
                 msg.contentType = 7
@@ -2518,7 +2059,7 @@ def bot(op):
                                     'STKPKGID': '1',
                                     'STKVER': '100'}
                 msg.text = None
-                cl.sendMessage(msg)
+                vipro.sendMessage(msg)
 
             elif msg.text.lower() in ["mantab","mantap","nice","keren"]:
                 msg.contentType = 7
@@ -2526,7 +2067,7 @@ def bot(op):
                                     'STKPKGID': '1',
                                     'STKVER': '100'}
                 msg.text = None
-                cl.sendMessage(msg)
+                vipro.sendMessage(msg)
 
             elif msg.text.lower() in ["ngejek"]:
                 msg.contentType = 7
@@ -2534,7 +2075,7 @@ def bot(op):
                                     'STKPKGID': '1',
                                     'STKVER': '100'}
                 msg.text = None
-                cl.sendMessage(msg)
+                vipro.sendMessage(msg)
 
             elif msg.text.lower() in ["nangis","sedih"]:
                 msg.contentType = 7
@@ -2542,7 +2083,7 @@ def bot(op):
                                     'STKPKGID': '1',
                                     'STKVER': '100'}
                 msg.text = None
-                cl.sendMessage(msg)
+                vipro.sendMessage(msg)
 
             elif msg.text.lower() in ["woi","kampret"]:
                 msg.contentType = 7
@@ -2550,7 +2091,7 @@ def bot(op):
                                     'STKPKGID': '1',
                                     'STKVER': '100'}
                 msg.text = None
-                cl.sendMessage(msg)
+                vipro.sendMessage(msg)
 
             elif msg.text.lower() in ["huft"]:
                 msg.contentType = 7
@@ -2558,40 +2099,11 @@ def bot(op):
                                     'STKPKGID': '1',
                                     'STKVER': '100'}
                 msg.text = None
-                cl.sendMessage(msg)
+                vipro.sendMessage(msg)
                 
-        
 
-
-            elif msg.text in ["Tagall","Tag all"]:
-                  group = cl.getGroup(msg.to)
-                  nama = [contact.mid for contact in group.members]
-
-                  cb = ""
-                  cb2 = ""
-                  strt = int(0)
-                  akh = int(0)
-                  for md in nama:
-                      akh = akh + int(6)
-
-                      cb += """{"S":"""+json.dumps(str(strt))+""","E":"""+json.dumps(str(akh))+""","M":"""+json.dumps(md)+"},"""
-
-                      strt = strt + int(7)
-                      akh = akh + 1
-                      cb2 += "@nrik \n"
-
-                  cb = (cb[:int(len(cb)-1)])
-                  msg.contentType = 0
-                  msg.text = cb2
-                  msg.contentMetadata ={'MENTION':'{"MENTIONEES":['+cb+']}','EMTVER':'4'}
-
-                  try:
-                      cl.sendMessage(msg)
-                  except Exception as error:
-                      print error
-                      
-            elif msg.text in ["Sepi"]:
-                 group = cl.getGroup(msg.to)
+            elif "tag all" == msg.text.lower():
+                 group = vipro.getGroup(msg.to)
                  nama = [contact.mid for contact in group.members]
                  nm1, nm2, nm3, nm4, nm5, jml = [], [], [], [], [], len(nama)
                  if jml <= 100:
@@ -2647,12 +2159,71 @@ def bot(op):
                  cnt = Message()
                  cnt.text = "Jumlah:\n" + str(jml) +  " Members"
                  cnt.to = msg.to
-                 cl.sendMessage(cnt)          
+                 vipro.sendMessage(cnt)
+                 
+            elif "tagall" == msg.text.lower():
+                 group = vipro.getGroup(msg.to)
+                 nama = [contact.mid for contact in group.members]
+                 nm1, nm2, nm3, nm4, nm5, jml = [], [], [], [], [], len(nama)
+                 if jml <= 100:
+                    summon(msg.to, nama)
+                 if jml > 100 and jml < 200:
+                    for i in range(0, 99):
+                        nm1 += [nama[i]]
+                    summon(msg.to, nm1)
+                    for j in range(100, len(nama)-1): 
+                        nm2 += [nama[j]]
+                    summon(msg.to, nm2)                 
+                 if jml > 200 and jml < 300:
+                    for i in range(0, 99):
+                        nm1 += [nama[i]]
+                    summon(msg.to, nm1)
+                    for j in range(100, 199):
+                        nm2 += [nama[j]]
+                    summon(msg.to, nm2)
+                    for k in range(200, len(nama)-1):
+                        nm3 += [nama[k]]
+                    summon(msg.to, nm3)
+                 if jml > 300  and jml < 400:
+                    for i in range(0, 99):
+                        nm1 += [nama[i]]
+                    summon(msg.to, nm1)
+                    for j in range(100, 199):
+                        nm2 += [nama[j]]
+                    summon(msg.to, nm2)
+                    for k in range(200, 299):
+                        nm3 += [nama[k]]
+                    summon(msg.to, nm3)
+                    for l in range(300, len(nama)-1):
+                    	nm4 += [nama[l]]
+                    summon(msg.to, nm4)
+                 if jml > 400  and jml < 500:
+                    for i in range(0, 99):
+                        nm1 += [nama[i]]
+                    summon(msg.to, nm1)
+                    for j in range(100, 199):
+                        nm2 += [nama[j]]
+                    summon(msg.to, nm2)
+                    for k in range(200, 299):
+                        nm3 += [nama[k]]
+                    summon(msg.to, nm3)
+                    for l in range(300, 399):
+                        nm4 += [nama[l]]
+                    summon(msg.to, nm4)
+                    for m in range(400, len(nama)-1):
+                        nm5 += [nama[m]]
+                    summon(msg.to, nm5)
+                 if jml > 500:
+                     print "Terlalu Banyak Men 500+"
+                 cnt = Message()
+                 cnt.text = "Jumlah:\n" + str(jml) +  " Members"
+                 cnt.to = msg.to
+                 vipro.sendMessage(cnt)                 
 
 
             elif msg.text in ["Setview","Setpoint","Cctv"]:
                 subprocess.Popen("echo '' > dataSeen/"+msg.to+".txt", shell=True, stdout=subprocess.PIPE)
-                cl.sendText(msg.to, "☆Checkpoint Checked☆")
+                vipro.sendText(msg.to, "☆Checkpoint Checked☆")
                 print "Setview"
 
             elif msg.text in ["Viewseen","Check","Ciduk","Cyduk"]:
@@ -2678,7 +2249,7 @@ def bot(op):
                         except IndexError:
                             conName.append('nones')
                             pass
-                    contactId = cl.getContacts(recheckData)
+                    contactId = vipro.getContacts(recheckData)
                     for v in range(len(recheckData)):
                         dataResult.append(contactId[v].displayName + ' ('+timeSeen[v]+')')
                         pass
@@ -2686,11 +2257,11 @@ def bot(op):
                         tukang = "╔═════════════════════════\n║         ☆☞ LIST VIEWERS ☜☆\n╠═════════════════════════\n╠➩"
                         grp = '\n╠➩ '.join(str(f) for f in dataResult)
                         total = '\n╠═════════════════════════\n╠➩ Total %i Viewers (%s)' % (len(dataResult), datetime.now().strftime('%H:%M:%S')) + "\n╚═════════════════════════"
-                        cl.sendText(msg.to, "%s %s %s" % (tukang, grp, total))
+                        vipro.sendText(msg.to, "%s %s %s" % (tukang, grp, total))
                         subprocess.Popen("echo '' > dataSeen/"+msg.to+".txt", shell=True, stdout=subprocess.PIPE)
-                        cl.sendText(msg.to, "☆Auto Checkpoint☆")                        
+                        vipro.sendText(msg.to, "☆Auto Checkpoint☆")                        
                     else:
-                        cl.sendText(msg.to, "☆Belum Ada Viewers☆")
+                        vipro.sendText(msg.to, "☆Belum Ada Viewers☆")
                     print "Viewseen"
 
 
@@ -2702,334 +2273,168 @@ def bot(op):
 		        mentionees = mention['MENTIONEES']
 		        print mentionees
 		        for mention in mentionees:
-			    ki.kickoutFromGroup(msg.to,[mention['M']])
+			    vipro.kickoutFromGroup(msg.to,[mention['M']])
 
 	    elif "Set member: " in msg.text:
 		if msg.from_ in admin:	 	        
 		    jml = msg.text.replace("Set member: ","")
-		    wait["memberscancel"] = int(jml)
-		    cl.sendText(msg.to, "Jumlah minimal member telah di set : "+jml)
+		    wait["Members"] = int(jml)
+		    vipro.sendText(msg.to, "Jumlah minimal member telah di set : "+jml)
 
 	    elif "Add all" in msg.text:
-		    thisgroup = cl.getGroups([msg.to])
+		    thisgroup = vipro.getGroups([msg.to])
 		    Mids = [contact.mid for contact in thisgroup[0].members]
 		    mi_d = Mids[:33]
-		    cl.findAndAddContactsByMids(mi_d)
-		    cl.sendText(msg.to,"Success Add all")
+		    vipro.findAndAddContactsByMids(mi_d)
+		    vipro.sendText(msg.to,"Success Add all")
 
 
             elif msg.text in ["Invite"]:
                 wait["invite"] = True
-                cl.sendText(msg.to,"Send Contact")
+                vipro.sendText(msg.to,"Send Contact")
                 
                 
 
             elif msg.text in ["Auto like"]:
                 wait["likeOn"] = True
-                cl.sendText(msg.to,"Share Post Kamu Yang Mau Di Like!")                
+                vipro.sendText(msg.to,"Shere Post Kamu Yang Mau Di Like!")                
 
 
             elif msg.text in ["Steal contact"]:
                 wait["steal"] = True
-                cl.sendText(msg.to,"Send Contact")
+                vipro.sendText(msg.to,"Send Contact")
                 
 
             elif msg.text in ["Giftbycontact"]:
                 wait["gift"] = True
-                cl.sendText(msg.to,"Send Contact") 
+                vipro.sendText(msg.to,"Send Contact") 
                 
+            elif msg.text in ["Copycontact"]:
+                wait["copy"] = True
+                vipro.sendText(msg.to,"Send Contact") 
+                
+            elif msg.text in ["Sticker on"]:
+                wait["sticker"] = True
+                vipro.sendText(msg.to,"Sticker ID Detect Already On.")  
+                
+            elif msg.text in ["Bot off"]:
+                wait["Bot"] = False
+                vipro.sendText(msg.to,"Bot Sudah Di Nonaktifkan.")  
 
 	    elif "Recover" in msg.text:
-		thisgroup = cl.getGroups([msg.to])
+		thisgroup = vipro.getGroups([msg.to])
 		Mids = [contact.mid for contact in thisgroup[0].members]
 		mi_d = Mids[:33]
-		cl.createGroup("Recover", mi_d)
-		cl.sendText(msg.to,"Success recover")
+		vipro.createGroup("Recover", mi_d)
+		vipro.sendText(msg.to,"Success recover")
 
 
 
             elif ("Gn: " in msg.text):
                 if msg.toType == 2:
-                    X = cl.getGroup(msg.to)
+                    X = vipro.getGroup(msg.to)
                     X.name = msg.text.replace("Gn: ","")
-                    cl.updateGroup(X)
+                    vipro.updateGroup(X)
                 else:
-                    cl.sendText(msg.to,"It can't be used besides the group.")
+                    vipro.sendText(msg.to,"It can't be used besides the group.")
 
             elif "Kick: " in msg.text:
                 midd = msg.text.replace("Kick: ","")
-		kicker = [ki,kk,kc]
 		if midd not in admin:
-		    random.choice(kicker).kickoutFromGroup(msg.to,[midd])
+		    vipro.kickoutFromGroup(msg.to,[midd])
 		else:
-		    cl.sendText(msg.to,"Admin Detected")
+		    vipro.sendText(msg.to,"Admin Detected")
 
             elif "Invite: " in msg.text:
                 midd = msg.text.replace("Invite: ","")
-                cl.findAndAddContactsByMid(midd)
-                ki.findAndAddContactsByMid(midd)
-                kk.findAndAddContactsByMid(midd)
-                kc.findAndAddContactsByMid(midd)
-                kr.findAndAddContactsByMid(midd)
-                random.choice(KAC).inviteIntoGroup(msg.to,[midd])
+                vipro.findAndAddContactsByMid(midd)
+                vipro.inviteIntoGroup(msg.to,[midd])
 
             elif "Invite creator" in msg.text:
-                midd = "u6b34b703cbc5fc83cd1e5b6832a05352"
-                random.choice(KAC).inviteIntoGroup(msg.to,[midd])
+                midd = "uda936836a9869eb86ec8ab992a4e8979"
+                vipro.inviteIntoGroup(msg.to,[midd])
 
             elif msg.text in ["Welcome","welcome","Welkam","welkam","Wc","wc"]:
-                gs = cl.getGroup(msg.to)
-                cl.sendText(msg.to,"Selamat Datang Di "+ gs.name)
+                gs = vipro.getGroup(msg.to)
+                vipro.sendText(msg.to,"Selamat Datang Di "+ gs.name)
                 msg.contentType = 7
                 msg.contentMetadata={'STKID': '247',
                                     'STKPKGID': '3',
                                     'STKVER': '100'}
                 msg.text = None
-                cl.sendMessage(msg)
+                vipro.sendMessage(msg)
 
 	    elif "Bc: " in msg.text:
 		bc = msg.text.replace("Bc: ","")
-		gid = cl.getGroupIdsJoined()
+		gid = vipro.getGroupIdsJoined()
 		if msg.from_ in Creator:
 		    for i in gid:
-			cl.sendText(i,"=======[BROADCAST]=======\n\n"+bc+"\n\nContact Me : line.me/ti/p/~yudi_std02")
-		    cl.sendText(msg.to,"Success BC BosQ")
+			vipro.sendText(i,"=======[BROADCAST]=======\n\n"+bc+"\n\nContact Me : line.me/ti/p/~nad_nad.")
+		    vipro.sendText(msg.to,"Success BC BosQ")
 		else:
-		    cl.sendText(msg.to,"Khusus Admin")
+		    vipro.sendText(msg.to,"Khusus Admin")
 
             elif msg.text in ["Cancel"]:
-                gid = cl.getGroupIdsInvited()
+                gid = vipro.getGroupIdsInvited()
                 for i in gid:
-                    cl.rejectGroupInvitation(i)
-                cl.sendText(msg.to,"All invitations have been refused")
-
-            elif msg.text in ["TC1 Cancel"]:
-                gid = ki.getGroupIdsInvited()
-                for i in gid:
-                    ki.rejectGroupInvitation(i)
-                ki.sendText(msg.to,"All invitations have been refused")
-
-            elif msg.text in ["TC2 Cancel"]:
-                gid = kk.getGroupIdsInvited()
-                for i in gid:
-                    kk.rejectGroupInvitation(i)
-                kk.sendText(msg.to,"All invitations have been refused")
-
-            elif msg.text in ["TC3 Cancel"]:
-                gid = kc.getGroupIdsInvited()
-                for i in gid:
-                    kc.rejectGroupInvitation(i)
-                kc.sendText(msg.to,"All invitations have been refused")
+                    vipro.rejectGroupInvitation(i)
+                vipro.sendText(msg.to,"All invitations have been refused")
 
             elif msg.text in ["Gurl"]:
                 if msg.toType == 2:
-                    x = cl.getGroup(msg.to)
+                    x = vipro.getGroup(msg.to)
                     if x.preventJoinByTicket == True:
                         x.preventJoinByTicket = False
-                        cl.updateGroup(x)
-                    gurl = cl.reissueGroupTicket(msg.to)
-                    cl.sendText(msg.to,"line://ti/g/" + gurl)
+                        vipro.updateGroup(x)
+                    gurl = vipro.reissueGroupTicket(msg.to)
+                    vipro.sendText(msg.to,"line://ti/g/" + gurl)
                 else:
                     if wait["lang"] == "JP":
-                        cl.sendText(msg.to,"Can't be used outside the group")
+                        vipro.sendText(msg.to,"Can't be used outside the group")
                     else:
-                        cl.sendText(msg.to,"Not for use less than group")
-
-            elif msg.text in ["All join","Masuk"]:
-		if msg.from_ in admin:
-		    G = cl.getGroup(msg.to)
-                    ginfo = cl.getGroup(msg.to)
-                    G.preventJoinByTicket = False
-                    cl.updateGroup(G)
-                    invsend = 0
-                    Ticket = cl.reissueGroupTicket(msg.to)
-                    ki.acceptGroupInvitationByTicket(msg.to,Ticket)
-                    time.sleep(0.2)
-                    kk.acceptGroupInvitationByTicket(msg.to,Ticket)
-                    time.sleep(0.2)
-                    kc.acceptGroupInvitationByTicket(msg.to,Ticket)
-                    time.sleep(0.2)
-                    kr.acceptGroupInvitationByTicket(msg.to,Ticket)
-                    time.sleep(0.2)
-                    G = cl.getGroup(msg.to)
-                    G.preventJoinByTicket = True
-                    ki.updateGroup(G)
-                    G.preventJoinByTicket(G)
-                    ki.updateGroup(G)
-		else:
-		    cl.sendText(msg.to,"Sape lu!")
-
-            elif msg.text in ["TC1 join"]:
-		if msg.from_ in admin:
-                    X = cl.getGroup(msg.to)
-                    X.preventJoinByTicket = False
-                    cl.updateGroup(X)
-                    invsend = 0
-                    Ti = cl.reissueGroupTicket(msg.to)
-                    ki.acceptGroupInvitationByTicket(msg.to,Ti)
-                    G = kk.getGroup(msg.to)
-                    G.preventJoinByTicket = True
-                    ki.updateGroup(G)
-		else:
-		    cl.sendText(msg.to,"Sape lu!")
-
-            elif msg.text in ["TC2 join"]:
-		if msg.from_ in admin:
-                    X = cl.getGroup(msg.to)
-                    X.preventJoinByTicket = False
-                    cl.updateGroup(X)
-                    invsend = 0
-                    Ti = cl.reissueGroupTicket(msg.to)
-                    kk.acceptGroupInvitationByTicket(msg.to,Ti)
-                    G = ki.getGroup(msg.to)
-                    G.preventJoinByTicket = True
-                    kk.updateGroup(G)
-		else:
-		    cl.sendText(msg.to,"Sape lu!")
-
-            elif msg.text in ["TC3 join"]:
-		if msg.from_ in admin:
-                    G = cl.getGroup(msg.to)
-                    ginfo = cl.getGroup(msg.to)
-                    G.preventJoinByTicket = False
-                    cl.updateGroup(G)
-                    invsend = 0
-                    Ticket = cl.reissueGroupTicket(msg.to)
-                    kc.acceptGroupInvitationByTicket(msg.to,Ticket)
-                    G.preventJoinByTicket = True
-                    kc.updateGroup(G)
-		else:
-		    cl.sendText(msg.to,"Sape lu!")                    
-
-            elif msg.text in ["TC4 join"]:
-		if msg.from_ in admin:
-                    G = cl.getGroup(msg.to)
-                    ginfo = cl.getGroup(msg.to)
-                    G.preventJoinByTicket = False
-                    cl.updateGroup(G)
-                    invsend = 0
-                    Ticket = cl.reissueGroupTicket(msg.to)
-                    kr.acceptGroupInvitationByTicket(msg.to,Ticket)
-                    G.preventJoinByTicket = True
-                    kr.updateGroup(G)
-		else:
-		    cl.sendText(msg.to,"Sape lu!")
-		    
-            elif msg.text in ["Ghost join"]:
-		if msg.from_ in admin:
-                    G = cl.getGroup(msg.to)
-                    ginfo = cl.getGroup(msg.to)
-                    G.preventJoinByTicket = False
-                    cl.updateGroup(G)
-                    invsend = 0
-                    Ticket = cl.reissueGroupTicket(msg.to)
-                    km.acceptGroupInvitationByTicket(msg.to,Ticket)
-                    G.preventJoinByTicket = True
-                    km.updateGroup(G)
-		else:
-		    cl.sendText(msg.to,"Sape lu!")		    
-
+                        vipro.sendText(msg.to,"Not for use less than group")
 
 
             elif msg.text in ["timeline"]:
 		try:
-                    url = cl.activity(limit=5)
-		    cl.sendText(msg.to,url['result']['posts'][0]['postInfo']['postId'])
+                    url = vipro.activity(limit=5)
+		    vipro.sendText(msg.to,url['result']['posts'][0]['postInfo']['postId'])
 		except Exception as E:
 		    print E
 
-            elif msg.text in ["Moleh"]:
-              if wait["Leave"] == True:		    
-                    #ki.leaveGroup(msg.to)
-                    kk.leaveGroup(msg.to)
-                    kc.leaveGroup(msg.to)
-                    kr.leaveGroup(msg.to)
-              else:
-		          cl.sendText(msg.to,"Leavenya Belum On")                    
-
             elif msg.text in ["@bye","@Bye"]:
-              if wait["Leave"] == True:	
-		    cl.leaveGroup(msg.to)
-		    wait["Leave"] = False
-              else:
-		          cl.sendText(msg.to,"Bilang Dulu Sama Admin Ku")		    
+		    vipro.leaveGroup(msg.to)		    
 		    
 
             elif msg.text in ["Absen"]:
-		cl.sendText(msg.to,"Pasukan Absen!!")
-                ki.sendText(msg.to,"yudi1 Hadiir  \(ˆ▿ˆ)/")
-                kk.sendText(msg.to,"yudi2 Hadiir  \(ˆ▿ˆ)/")
-                kc.sendText(msg.to,"yudi3 Hadiir  \(ˆ▿ˆ)/")
-                kr.sendText(msg.to,"Hadiir Semua Kapten  \(ˆ▿ˆ)/")
+		vipro.sendText(msg.to,"Hadir!!")
 
 
             elif msg.text.lower() in ["respon"]:
-                cl.sendText(msg.to,responsename)
-                ki.sendText(msg.to,responsename2)
-                kk.sendText(msg.to,responsename3)
-                kc.sendText(msg.to,responsename4)
-                kr.sendText(msg.to,responsename5)
+                vipro.sendText(msg.to,responsename)
 
             elif msg.text in ["Sp","Speed","speed"]:
                 start = time.time()
                 print("Speed")                
                 elapsed_time = time.time() - start
-		cl.sendText(msg.to, "Progress...")
-                random.choice(KAC).sendText(msg.to, "%sseconds" % (elapsed_time))
+		vipro.sendText(msg.to, "Progress...")
+                vipro.sendText(msg.to, "%sseconds" % (elapsed_time))
                 
             elif msg.text in ["Speed test"]:
                 start = time.time()
-                cl.sendText(msg.to, "Progress...")
+                vipro.sendText(msg.to, "Progress...")
                 elapsed_time = time.time() - start
-                random.choice(KAC).sendText(msg.to, "%sseconds" % (elapsed_time))                
-
-
-            elif "Nk: " in msg.text:
-		if msg.from_ in Creator:
-                    X = cl.getGroup(msg.to)
-                    X.preventJoinByTicket = False
-                    cl.updateGroup(X)
-                    invsend = 0
-                    Ti = cl.reissueGroupTicket(msg.to)
-                    kr.acceptGroupInvitationByTicket(msg.to,Ti)
-                    G = kk.getGroup(msg.to)
-                    G.preventJoinByTicket = True
-                    kk.updateGroup(G)
-
-                    nk0 = msg.text.replace("Nk: ","")
-                    nk1 = nk0.lstrip()
-                    nk2 = nk1.replace("@","")
-                    nk3 = nk2.rstrip()
-                    _name = nk3
-
-                    targets = []
-                    for s in X.members:
-                        if _name in s.displayName:
-                            targets.append(s.mid)
-                    if targets == []:
-                        sendMessage(msg.to,"user does not exist")
-                        pass
-                    else:
-                        for target in targets:
-			    if target not in admin:
-                                kr.kickoutFromGroup(msg.to,[target])
-                                kr.leaveGroup(msg.to)
-                                ki.sendText(msg.to,"Succes BosQ")
-                                kk.sendText(msg.to,"Pakyu~")
-			    else:
-			        cl.sendText(msg.to,"Admin Detected")
-		else:
-		    cl.sendText(msg.to,"Lu sape!")
+                vipro.sendText(msg.to, "%sseconds" % (elapsed_time))                
  
             elif msg.text in ["Ban"]:
                 if msg.from_ in admin:
                     wait["wblacklist"] = True
-                    ki.sendText(msg.to,"send contact")
+                    vipro.sendText(msg.to,"send contact")
 
             elif msg.text in ["Unban"]:
                 if msg.from_ in admin:
                     wait["dblacklist"] = True
-                    ki.sendText(msg.to,"send contact")
+                    vipro.sendText(msg.to,"send contact")
  
             elif "Ban @" in msg.text:
                 if msg.from_ in admin:
@@ -3037,15 +2442,13 @@ def bot(op):
                     print "@Ban by mention"
                     _name = msg.text.replace("Ban @","")
                     _nametarget = _name.rstrip('  ')
-                    gs = ki.getGroup(msg.to)
-                    gs = kk.getGroup(msg.to)
-                    gs = kc.getGroup(msg.to)
+                    gs = vipro.getGroup(msg.to)
                     targets = []
                     for g in gs.members:
                         if _nametarget == g.displayName:
                             targets.append(g.mid)
                     if targets == []:
-                        kc.sendText(msg.to,"Not found")
+                        vipro.sendText(msg.to,"Not found")
                     else:
                         for target in targets:
 			    if target not in admin:
@@ -3053,21 +2456,21 @@ def bot(op):
                                     wait["blacklist"][target] = True
                                     f=codecs.open('st2__b.json','w','utf-8')
                                     json.dump(wait["blacklist"], f, sort_keys=True, indent=4,ensure_ascii=False)
-                                    ki.sendText(msg.to,"Succes BosQ")
+                                    vipro.sendText(msg.to,"Succes BosQ")
                                 except:
-                                    ki.sendText(msg.to,"Error")
+                                    vipro.sendText(msg.to,"Error")
 			    else:
-				cl.sendText(msg.to,"Admin Detected~")
+				vipro.sendText(msg.to,"Admin Detected~")
  
             elif msg.text in ["Banlist","Ban list"]:
               if msg.from_ in admin:
                 if wait["blacklist"] == {}:
-                    random.choice(KAC).sendText(msg.to,"Tidak Ada")
+                    vipro.sendText(msg.to,"Tidak Ada")
                 else:
                     mc = ""
                     for mi_d in wait["blacklist"]:
-                        mc += "->" +cl.getContact(mi_d).displayName + "\n"
-                    random.choice(KAC).sendText(msg.to,"===[Blacklist User]===\n"+mc)
+                        mc += "->" +vipro.getContact(mi_d).displayName + "\n"
+                    vipro.sendText(msg.to,"===[Blacklist User]===\n"+mc)
 
  
             elif "Unban @" in msg.text:
@@ -3076,70 +2479,61 @@ def bot(op):
                 if msg.from_ in admin:
                     _name = msg.text.replace("Unban @","")
                     _nametarget = _name.rstrip('  ')
-                    gs = ki.getGroup(msg.to)
-                    gs = kk.getGroup(msg.to)
-                    gs = kc.getGroup(msg.to)
+                    gs = vipro.getGroup(msg.to)
                     targets = []
                     for g in gs.members:
                         if _nametarget == g.displayName:
                             targets.append(g.mid)
                     if targets == []:
-                        kk.sendText(msg.to,"Not found")
+                        vipro.sendText(msg.to,"Not found")
                     else:
                         for target in targets:
                             try:
                                 del wait["blacklist"][target]
                                 f=codecs.open('st2__b.json','w','utf-8')
                                 json.dump(wait["blacklist"], f, sort_keys=True, indent=4,ensure_ascii=False)
-                                ki.sendText(msg.to,"Succes BosQ")
+                                vipro.sendText(msg.to,"Succes BosQ")
                             except:
-                                ki.sendText(msg.to,"Succes BosQ")
+                                vipro.sendText(msg.to,"Succes BosQ")
                                 
                                 
             elif msg.text.lower() == 'clear ban':
                 if msg.from_ in admin:
                     wait["blacklist"] = {}
-                    cl.sendText(msg.to,"ヽ( ^ω^)ﾉ└ ❉Unbanned All Success❉ ┐") 
-
-            elif msg.text.lower() in ["bot","vipro"]:
-                cl.sendText(msg.to,"Apa Manggil~Manggil Aku!?") 
-                cl.sendText(msg.to,"☆Ketik ☞Help☜ Untuk Bantuan☆") 
+                    vipro.sendText(msg.to,"ヽ( ^ω^)ﾉ└ ❉Unbanned All Success❉ ┐") 
 
  
             elif msg.text in ["Kill ban"]:
 		if msg.from_ in admin:
                     if msg.toType == 2:
-                        group = cl.getGroup(msg.to)
+                        group = vipro.getGroup(msg.to)
                         gMembMids = [contact.mid for contact in group.members]
                         matched_list = []
                         for tag in wait["blacklist"]:
                             matched_list+=filter(lambda str: str == tag, gMembMids)
                         if matched_list == []:
-                            ki.sendText(msg.to,"There was no blacklist user")
+                            vipro.sendText(msg.to,"There was no blacklist user")
                             return
                         for jj in matched_list:
-                            random.choice(KAC).kickoutFromGroup(msg.to,[jj])
-                        ki.sendText(msg.to,"Blacklist emang pantas tuk di usir")
+                            vipro.kickoutFromGroup(msg.to,[jj])
+                        vipro.sendText(msg.to,"Blacklist emang pantas tuk di usir")
 		else:
-		    cl.sendText(msg.to, "Khusus creator")
+		    vipro.sendText(msg.to, "Khusus creator")
  
             elif msg.text in ["Kill"]:
                     if msg.toType == 2:
                       if msg.from_ in admin:
-                        group = ki.getGroup(msg.to)
+                        group = vipro.getGroup(msg.to)
                         gMembMids = [contact.mid for contact in group.members]
                         matched_list = []
                         for tag in wait["blacklist"]:
                             matched_list+=filter(lambda str: str == tag, gMembMids)
                         if matched_list == []:
-                            kk.sendText(msg.to,"Fuck You")
-                            kc.sendText(msg.to,"Fuck You")
+                            vipro.sendText(msg.to,"Fuck You")
                             return
                         for jj in matched_list:
                             try:
-                                klist=[ki,kk,kc]
-                                kicker=random.choice(klist)
-                                kicker.kickoutFromGroup(msg.to,[jj])
+                                vipro.kickoutFromGroup(msg.to,[jj])
                                 print (msg.to,[jj])
                             except:
                                 pass
@@ -3150,37 +2544,32 @@ def bot(op):
                      if msg.toType == 2:
                         print "Kick all member"
                         _name = msg.text.replace("Kickall","")
-                        gs = ki.getGroup(msg.to)
-                        gs = kk.getGroup(msg.to)
-                        gs = kc.getGroup(msg.to)
-                        ki.sendText(msg.to,"Sampai jumpaa~")
-                        kc.sendText(msg.to,"Dadaaah~")
+                        gs = vipro.getGroup(msg.to)
+                        vipro.sendText(msg.to,"Dadaaah~")
                         targets = []
                         for g in gs.members:
                             if _name in g.displayName:
                                 targets.append(g.mid)
                         if targets == []:
-                            ki.sendText(msg.to,"Not found.")
+                            vipro.sendText(msg.to,"Not found.")
                         else:
                             for target in targets:
 				if target not in admin:
                                     try:
-                                        klist=[ki,kk,kc]
-                                        kicker=random.choice(klist)
-                                        kicker.kickoutFromGroup(msg.to,[target])
+                                        vipro.kickoutFromGroup(msg.to,[target])
                                         print (msg.to,[g.mid])
                                     except Exception as e:
-                                        cl.sendText(msg.to,str(e))
-			    cl.inviteIntoGroup(msg.to, targets)
+                                        vipro.sendText(msg.to,str(e))
+			    vipro.inviteIntoGroup(msg.to, targets)
  
 
 	    elif msg.text in ["Bot restart","Reboot"]:
 		if msg.from_ in Creator:
-		    cl.sendText(msg.to, "Bot Has Been Restarted...")
+		    vipro.sendText(msg.to, "Bot Has Been Restarted...")
 		    restart_program()
 		    print "@Restart"
 		else:
-		    cl.sendText(msg.to, "No Access")
+		    vipro.sendText(msg.to, "No Access")
 		    
             elif msg.text in ["Turn off"]: 
 	        if msg.from_ in Creator:                
@@ -3194,128 +2583,36 @@ def bot(op):
             elif 'Crash' in msg.text:
               if msg.from_ in Creator:
                 msg.contentType = 13
-                msg.contentMetadata = {'mid': "NADYA,'"}
-                cl.sendMessage(msg)
+                msg.contentMetadata = {'mid': "vipro,'"}
+                vipro.sendMessage(msg)
 
  
             elif "copy @" in msg.text:
                    print "[COPY] Ok"
                    _name = msg.text.replace("copy @","")
                    _nametarget = _name.rstrip('  ')
-                   gs = cl.getGroup(msg.to)
+                   gs = vipro.getGroup(msg.to)
                    targets = []
                    for g in gs.members:
                        if _nametarget == g.displayName:
                            targets.append(g.mid)
                    if targets == []:
-                       cl.sendText(msg.to, "Not Found...")
+                       vipro.sendText(msg.to, "Not Found...")
                    else:
                        for target in targets:
                             try:
-                               cl.CloneContactProfile(target)
-                               cl.sendText(msg.to, "Copied (^_^)")
+                               vipro.CloneContactProfile(target)
+                               vipro.sendText(msg.to, "Copied (^_^)")
                             except Exception as e:
                                 print e
 
-            elif "TC1 copy @" in msg.text:
-                   print "[COPY] Ok"
-                   _name = msg.text.replace("TC1 copy @","")
-                   _nametarget = _name.rstrip('  ')
-                   gs = ki.getGroup(msg.to)
-                   targets = []
-                   for g in gs.members:
-                       if _nametarget == g.displayName:
-                           targets.append(g.mid)
-                   if targets == []:
-                       ki.sendText(msg.to, "Not Found...")
-                   else:
-                       for target in targets:
-                            try:
-                               ki.CloneContactProfile(target)
-                               ki.sendText(msg.to, "Copied (^_^)")
-                            except Exception as e:
-                                print e
-            elif "TC2 copy @" in msg.text:
-                   print "[COPY] Ok"
-                   _name = msg.text.replace("TC2 copy @","")
-                   _nametarget = _name.rstrip('  ')
-                   gs = kk.getGroup(msg.to)
-                   targets = []
-                   for g in gs.members:
-                       if _nametarget == g.displayName:
-                           targets.append(g.mid)
-                   if targets == []:
-                       kk.sendText(msg.to, "Not Found...")
-                   else:
-                       for target in targets:
-                            try:
-                               kk.CloneContactProfile(target)
-                               kk.sendText(msg.to, "Copied (^_^)")
-                            except Exception as e:
-                                print e
-                                
-            elif "TC3 copy @" in msg.text:
-                   print "[COPY] Ok"
-                   _name = msg.text.replace("TC3 copy @","")
-                   _nametarget = _name.rstrip('  ')
-                   gs = kc.getGroup(msg.to)
-                   targets = []
-                   for g in gs.members:
-                       if _nametarget == g.displayName:
-                           targets.append(g.mid)
-                   if targets == []:
-                       kc.sendText(msg.to, "Not Found...")
-                   else:
-                       for target in targets:
-                            try:
-                               kc.CloneContactProfile(target)
-                               kc.sendText(msg.to, "Copied (^_^)")
-                            except Exception as e:
-                                print e                                
-
-            elif "TC4 copy @" in msg.text:
-                   print "[COPY] Ok"
-                   _name = msg.text.replace("TC4 copy @","")
-                   _nametarget = _name.rstrip('  ')
-                   gs = kr.getGroup(msg.to)
-                   targets = []
-                   for g in gs.members:
-                       if _nametarget == g.displayName:
-                           targets.append(g.mid)
-                   if targets == []:
-                       kr.sendText(msg.to, "Not Found...")
-                   else:
-                       for target in targets:
-                            try:
-                               kr.CloneContactProfile(target)
-                               kr.sendText(msg.to, "Copied (^_^)")
-                            except Exception as e:
-                                print e
-
-            elif msg.text in ["Backup all"]:
+            elif msg.text in ["Mybackup"]:
                 try:
-                    ki.updateDisplayPicture(backup2.pictureStatus)
-                    ki.updateProfile(backup2)
-
-                    kk.updateDisplayPicture(backup3.pictureStatus)
-                    kk.updateProfile(backup3)
-
-                    kc.updateDisplayPicture(backup4.pictureStatus)
-                    kc.updateProfile(backup4)
-
-                    kr.updateDisplayPicture(backup5.pictureStatus)
-                    kr.updateProfile(backup5)
-                    
-                    cl.updateDisplayPicture(backup1.pictureStatus)
-                    cl.updateProfile(backup1)
-                    cl.sendText(msg.to, "All Done (^_^)")
+                    vipro.updateDisplayPicture(backup1.pictureStatus)
+                    vipro.updateProfile(backup1)
+                    vipro.sendText(msg.to, "Done (^_^)")
                 except Exception as e:
-                    cl.sendText(msg.to, str(e))
-                    
-                    
-
-                                
-
+                    vipro.sendText(msg.to, str(e))
 
  
 	    elif "musik " in msg.text:
@@ -3326,10 +2623,10 @@ def bot(op):
 					data = json.loads(data)
 					for song in data:
 						abc = song[3].replace('https://','http://')
-						cl.sendText(msg.to, "Title : " + song[0] + "\nLength : " + song[1] + "\nLink download : " + song[4])
-						cl.sendText(msg.to, "Lagu " + song[0] + "\nSedang Di Prosses... Tunggu Sebentar ^_^ ")
-						cl.sendAudioWithURL(msg.to,abc)
-						cl.sendText(msg.to, "Selamat Mendengarkan Lagu " + song[0])
+						vipro.sendText(msg.to, "Title : " + song[0] + "\nLength : " + song[1] + "\nLink download : " + song[4])
+						vipro.sendText(msg.to, "Lagu " + song[0] + "\nSedang Di Prosses... Tunggu Sebentar ^_^ ")
+						vipro.sendAudioWithURL(msg.to,abc)
+						vipro.sendText(msg.to, "Selamat Mendengarkan Lagu " + song[0])
 	
             elif 'lirik ' in msg.text.lower():
                 try:
@@ -3343,9 +2640,9 @@ def bot(op):
                         hasil += song[0]
                         hasil += ')\n\n'
                         hasil += song[5]
-                        cl.sendText(msg.to, hasil)
+                        vipro.sendText(msg.to, hasil)
                 except Exception as wak:
-                        cl.sendText(msg.to, str(wak))
+                        vipro.sendText(msg.to, str(wak))
                         
 	    elif "musrik " in msg.text:
 					songname = msg.text.replace("musrik ","")
@@ -3359,16 +2656,16 @@ def bot(op):
 						hasil += song[0]
 						hasil += ')\n\n'
 						hasil += song[5]
-						cl.sendText(msg.to, "Lagu " + song[0] + "\nSedang Di Prosses... Tunggu Sebentar ^_^ ")
-						cl.sendAudioWithURL(msg.to,abc)
-						cl.sendText(msg.to, "Title : " + song[0] + "\nLength : " + song[1] + "\nLink download : " + song[4] +"\n\n" + hasil)
-						cl.sendText(msg.to, "Selamat Mendengarkan Lagu " + song[0])
+						vipro.sendText(msg.to, "Lagu " + song[0] + "\nSedang Di Prosses... Tunggu Sebentar ^_^ ")
+						vipro.sendAudioWithURL(msg.to,abc)
+						vipro.sendText(msg.to, "Title : " + song[0] + "\nLength : " + song[1] + "\nLink download : " + song[4] +"\n\n" + hasil)
+						vipro.sendText(msg.to, "Selamat Mendengarkan Lagu " + song[0])
              
             
             
             elif "Fancytext " in msg.text:
                     txt = msg.text.replace("Fancytext ", "")
-                    cl.kedapkedip(msg.to,txt)
+                    vipro.kedapkedip(msg.to,txt)
                     print "[Command] Kedapkedip"
 
 
@@ -3376,112 +2673,119 @@ def bot(op):
                 if msg.toType == 2:
                     cover = msg.text.replace("cover @","")
                     _nametarget = cover.rstrip('  ')
-                    gs = cl.getGroup(msg.to)
+                    gs = vipro.getGroup(msg.to)
                     targets = []
                     for g in gs.members:
                         if _nametarget == g.displayName:
                             targets.append(g.mid)
                     if targets == []:
-                        cl.sendText(msg.to,"Not found")
+                        vipro.sendText(msg.to,"Not found")
                     else:
                         for target in targets:
                             try:
-                                h = cl.channel.getHome(target)
+                                h = vipro.channel.getHome(target)
                                 objId = h["result"]["homeInfo"]["objectId"]
-                                cl.sendImageWithURL(msg.to,"http://dl.profile.line-cdn.net/myhome/c/download.nhn?userid=" + target + "&oid=" + objId)
+                                vipro.sendImageWithURL(msg.to,"http://dl.profile.line-cdn.net/myhome/c/download.nhn?userid=" + target + "&oid=" + objId)
                             except Exception as error:
                                 print error
-                                cl.sendText(msg.to,"Upload image failed.")
+                                vipro.sendText(msg.to,"Upload image failed.")
 
             elif "Cover @" in msg.text:
                 if msg.toType == 2:
                     cover = msg.text.replace("Cover @","")
                     _nametarget = cover.rstrip('  ')
-                    gs = cl.getGroup(msg.to)
+                    gs = vipro.getGroup(msg.to)
                     targets = []
                     for g in gs.members:
                         if _nametarget == g.displayName:
                             targets.append(g.mid)
                     if targets == []:
-                        cl.sendText(msg.to,"Not found")
+                        vipro.sendText(msg.to,"Not found")
                     else:
                         for target in targets:
                             try:
-                                h = cl.channel.getHome(target)
+                                h = vipro.channel.getHome(target)
                                 objId = h["result"]["homeInfo"]["objectId"]
-                                cl.sendImageWithURL(msg.to,"http://dl.profile.line-cdn.net/myhome/c/download.nhn?userid=" + target + "&oid=" + objId)
+                                vipro.sendImageWithURL(msg.to,"http://dl.profile.line-cdn.net/myhome/c/download.nhn?userid=" + target + "&oid=" + objId)
                             except Exception as error:
                                 print error
-                                cl.sendText(msg.to,"Upload image failed.")
+                                vipro.sendText(msg.to,"Upload image failed.")
+                                
+            elif "Cpp" in msg.text:
+                if msg.from_ in admin:
+                    path = "vipro.jpg"
+                    vipro.sendText(msg.to,"Update PP :")
+                    vipro.sendImage(msg.to,path)
+                    vipro.updateProfilePicture(path)                                
                                 
                                 
             elif "pp @" in msg.text:
                 if msg.toType == 2:
                     cover = msg.text.replace("pp @","")
                     _nametarget = cover.rstrip('  ')
-                    gs = cl.getGroup(msg.to)
+                    gs = vipro.getGroup(msg.to)
                     targets = []
                     for g in gs.members:
                         if _nametarget == g.displayName:
                             targets.append(g.mid)
                     if targets == []:
-                        cl.sendText(msg.to,"Not found")
+                        vipro.sendText(msg.to,"Not found")
                     else:
                         for target in targets:
                             try:
-                                h = cl.getContact(target)
-                                cl.sendImageWithURL(msg.to,"http://dl.profile.line-cdn.net/" + h.pictureStatus)
+                                h = vipro.getContact(target)
+                                vipro.sendImageWithURL(msg.to,"http://dl.profile.line-cdn.net/" + h.pictureStatus)
                             except Exception as error:
                                 print error
-                                cl.sendText(msg.to,"Upload image failed.")
+                                vipro.sendText(msg.to,"Upload image failed.")
 
             elif "Pp @" in msg.text:
                 if msg.toType == 2:
                     cover = msg.text.replace("Pp @","")
                     _nametarget = cover.rstrip('  ')
-                    gs = cl.getGroup(msg.to)
+                    gs = vipro.getGroup(msg.to)
                     targets = []
                     for g in gs.members:
                         if _nametarget == g.displayName:
                             targets.append(g.mid)
                     if targets == []:
-                        cl.sendText(msg.to,"Not found")
+                        vipro.sendText(msg.to,"Not found")
                     else:
                         for target in targets:
                             try:
-                                h = cl.getContact(target)
-                                cl.sendImageWithURL(msg.to,"http://dl.profile.line-cdn.net/" + h.pictureStatus)
+                                h = vipro.getContact(target)
+                                vipro.sendImageWithURL(msg.to,"http://dl.profile.line-cdn.net/" + h.pictureStatus)
                             except Exception as error:
                                 print error
-                                cl.sendText(msg.to,"Upload image failed.")
+                                vipro.sendText(msg.to,"Upload image failed.")
 
             elif msg.text.lower() in ["pap owner","pap creator"]:
                                 link = ["http://dl.profile.line-cdn.net/0hFR-rB8h-GX0QCzWZMOZmKixOFxBnJR81aG9eSTUNREhtOVYqJWgFSWYDR05vOwp7K2sCGTELRUVo"]
                                 pilih = random.choice(link)
-                                cl.sendImageWithURL(msg.to,pilih)
+                                vipro.sendImageWithURL(msg.to,pilih)
 
  
             elif "Spam: " in msg.text:
                   bctxt = msg.text.replace("Spam: ", "")
                   t = 10
                   while(t):
-                    random.choice(KAC).sendText(msg.to, (bctxt))
+                    vipro.sendText(msg.to, (bctxt))
                     t-=1
 
             elif "Scbc " in msg.text:
                   bctxt = msg.text.replace("Scbc ", "")
-                  orang = cl.getAllContactIds()
+                  orang = vipro.getAllContactIds()
                   t = 20
                   for manusia in orang:
                     while(t):
-                      cl.sendText(manusia, (bctxt))
+                      vipro.sendText(manusia, (bctxt))
                       t-=1
 
             elif "Cbc " in msg.text:
                   broadcasttxt = msg.text.replace("Cbc ", "") 
-                  orang = cl.getAllContactIds()
+                  orang = vipro.getAllContactIds()
                   for manusia in orang:
-                    cl.sendText(manusia, (broadcasttxt))
+                    vipro.sendText(manusia, (broadcasttxt))
 
  
             elif 'ig ' in msg.text.lower():
@@ -3493,7 +2797,7 @@ def bot(op):
                     text = data[0].get('content').split()
                     data1 = soup.find_all('meta', attrs={'property':'og:image'})
                     text1 = data1[0].get('content').split()
-                    nadya = text1[0].replace("s150x150/","")
+                    tj = text1[0].replace("s150x150/","")
                     user = "Name: " + text[-2] + "\n"
                     user1 = "Username: " + text[-1] + "\n"
                     followers = "Followers: " + text[0] + "\n"
@@ -3502,10 +2806,10 @@ def bot(op):
                     link = "Link: " + "https://www.instagram.com/" + instagram
                     detail = "========INSTAGRAM INFO ========\n"
                     details = "\n========INSTAGRAM INFO ========"
-                    cl.sendText(msg.to, detail + user + user1 + followers + following + post + link + details)
-                    cl.sendImageWithURL(msg.to, nadya)
+                    vipro.sendText(msg.to, detail + user + user1 + followers + following + post + link + details)
+                    vipro.sendImageWithURL(msg.to, tj)
                 except Exception as njer:
-                	cl.sendText(msg.to, str(njer))
+                	vipro.sendText(msg.to, str(njer))
                 	
                 	
             elif "Checkig " in msg.text:
@@ -3530,10 +2834,10 @@ def bot(op):
                                 r = x.get(page)
                                 url = re.search(r'"video_url": "([^"]+)"', r.text).group(1)
                                 print(url)
-                                cl.sendVideoWithURL(msg.to,url)
+                                vipro.sendVideoWithURL(msg.to,url)
                             else:
                                 print (node['display_src'])
-                                cl.sendImageWithURL(msg.to,node['display_src'])
+                                vipro.sendImageWithURL(msg.to,node['display_src'])
                         end_cursor = re.search(r'"end_cursor": "([^"]+)"', r.text).group(1)                	
 
 
@@ -3546,9 +2850,9 @@ def bot(op):
                     html = response.read()
                     soup = BeautifulSoup(html, "html.parser")
                     results = soup.find(attrs={'class':'yt-uix-tile-link'})
-                    cl.sendText(msg.to,'https://www.youtube.com' + results['href'])
+                    vipro.sendText(msg.to,'https://www.youtube.com' + results['href'])
                 except:
-                    cl.sendText(msg.to,"Could not find it")
+                    vipro.sendText(msg.to,"Could not find it")
                     
                     
             elif 'Youtubevideo ' in msg.text:
@@ -3560,9 +2864,9 @@ def bot(op):
                         html = response.read()
                         soup = BeautifulSoup(html, "html.parser")
                         results = soup.find(attrs={'class': 'yt-uix-tile-link'})
-                        cl.sendVideoWithURL(msg.to,'https://www.youtube.com' + results['href'])
+                        vipro.sendVideoWithURL(msg.to,'https://www.youtube.com' + results['href'])
                     except:
-                        cl.sendText(msg.to, "Could not find it")                    
+                        vipro.sendText(msg.to, "Could not find it")                    
 
  
             elif "Say " in msg.text:
@@ -3570,32 +2874,32 @@ def bot(op):
                 lang = 'id'
                 tts = gTTS(text=say, lang=lang)
                 tts.save("hasil.mp3")
-                cl.sendAudio(msg.to,"hasil.mp3")
+                vipro.sendAudio(msg.to,"hasil.mp3")
 
             elif "Say-en " in msg.text:
                 say = msg.text.replace("Say-en ","")
                 lang = 'en'
                 tts = gTTS(text=say, lang=lang)
                 tts.save("hasil.mp3")
-                cl.sendAudio(msg.to,"hasil.mp3")
+                vipro.sendAudio(msg.to,"hasil.mp3")
 
             elif "Say-jp " in msg.text:
                 say = msg.text.replace("Say-jp ","")
                 lang = 'ja'
                 tts = gTTS(text=say, lang=lang)
                 tts.save("hasil.mp3")
-                cl.sendAudio(msg.to,"hasil.mp3")
+                vipro.sendAudio(msg.to,"hasil.mp3")
 
-            elif "Say:welcome" in msg.text:
-                gs = cl.getGroup(msg.to)
-                say = msg.text.replace("Say:welcome","Selamat Datang Di "+ gs.name)
+            elif "Say welcome" in msg.text:
+                gs = vipro.getGroup(msg.to)
+                say = msg.text.replace("Say welcome","Selamat Datang Di "+ gs.name)
                 lang = 'id'
                 tts = gTTS(text=say, lang=lang)
                 tts.save("hasil.mp3")
-                cl.sendAudio(msg.to,"hasil.mp3")
+                vipro.sendAudio(msg.to,"hasil.mp3")
                 
             elif "lurk on" == msg.text.lower():
-               if msg.from_ in admin:
+               #if msg.from_ in admin:
                 if msg.to in wait2['readPoint']:
                         try:
                             del wait2['readPoint'][msg.to]
@@ -3609,7 +2913,7 @@ def bot(op):
                         wait2['ROM'][msg.to] = {}
                         with open('sider.json', 'w') as fp:
                          json.dump(wait2, fp, sort_keys=True, indent=4)
-                         cl.sendText(msg.to,"Lurking already on")
+                         vipro.sendText(msg.to,"Lurking already on")
                 else:
                     try:
                             del wait2['readPoint'][msg.to]
@@ -3623,14 +2927,14 @@ def bot(op):
                     wait2['ROM'][msg.to] = {}
                     with open('sider.json', 'w') as fp:
                      json.dump(wait2, fp, sort_keys=True, indent=4)
-                     cl.sendText(msg.to, "Set the lastseens' point (｀・ω・´)\n\n" + datetime.now().strftime('%H:%M:%S'))
+                     vipro.sendText(msg.to, "Set the lastseens' point (｀・ω・´)\n\n" + datetime.now().strftime('%H:%M:%S'))
                      print wait2
 
 
             elif "lurk off" == msg.text.lower():
-               if msg.from_ in admin:
+               #if msg.from_ in admin:
                 if msg.to not in wait2['readPoint']:
-                    cl.sendText(msg.to,"Lurking already off")
+                    vipro.sendText(msg.to,"Lurking already off")
                 else:
                     try:
                             del wait2['readPoint'][msg.to]
@@ -3638,22 +2942,22 @@ def bot(op):
                             del wait2['setTime'][msg.to]
                     except:
                           pass
-                    cl.sendText(msg.to, "Delete reading point:\n" + datetime.now().strftime('%H:%M:%S'))
+                    vipro.sendText(msg.to, "Delete reading point:\n" + datetime.now().strftime('%H:%M:%S'))
 
 
 
                     
             elif "lurkers" == msg.text.lower():
-            	if msg.from_ in admin:
+            	#if msg.from_ in admin:
                     if msg.to in wait2['readPoint']:
                         if wait2["ROM"][msg.to].items() == []:
-                             cl.sendText(msg.to, "Lurkers:\nNone")
+                             vipro.sendText(msg.to, "Lurkers:\nNone")
                         else:
                             chiya = []
                             for rom in wait2["ROM"][msg.to].items():
                                 chiya.append(rom[1])
                                
-                            cmem = cl.getContacts(chiya)
+                            cmem = vipro.getContacts(chiya)
                             zx = ""
                             zxc = ""
                             zx2 = []
@@ -3675,154 +2979,76 @@ def bot(op):
                         print lol
                         msg.contentMetadata = lol
                         try:
-                          cl.sendMessage(msg)
-                          cl.sendText(msg.to, "Jika sudah lihat sider please\ntulis lurk on lagi kak  (｀・ω・´)\n \n"  +  datetime.now().strftime('%H:%M:%S'))
+                          vipro.sendMessage(msg)
+                          vipro.sendText(msg.to, "Jika sudah lihat sider please\ntulis lurk on lagi kak  (｀・ω・´)\n \n"  +  datetime.now().strftime('%H:%M:%S'))
                         except Exception as error:
                               print error
                         pass
                
                     else:
-                        cl.sendText(msg.to, "Lurking has not been set (｀・ω・´)\n \n"  +  datetime.now().strftime('%H:%M:%S'))    
-                
+                        vipro.sendText(msg.to, "Lurking has not been set (｀・ω・´)\n \n"  +  datetime.now().strftime('%H:%M:%S'))    
+
 
             elif msg.text.lower() in ["hi","hai","halo","hallo"]:
-                    beb = "Hi Sayang 😘 " +cl.getContact(msg.from_).displayName + " 􀸂􀆇starry heart􏿿"
-                    cl.sendText(msg.to,beb)
+                    beb = "Hi Sayang 😘 " +vipro.getContact(msg.from_).displayName + " 􀸂􀆇starry heart􏿿"
+                    vipro.sendText(msg.to,beb)
 
 
 
             elif "playstore " in msg.text.lower():
                 tob = msg.text.lower().replace("playstore ","")
-                cl.sendText(msg.to,"Sedang Mencari...")
-                cl.sendText(msg.to,"Title : "+tob+"\nSource : Google Play\nLink : https://play.google.com/store/search?q=" + tob)
-                cl.sendText(msg.to,"Tuh Linknya Kak (^_^)")
+                vipro.sendText(msg.to,"Sedang Mencari...")
+                vipro.sendText(msg.to,"Title : "+tob+"\nSource : Google Play\nLink : https://play.google.com/store/search?q=" + tob)
+                vipro.sendText(msg.to,"Tuh Linknya Kak (^_^)")
 
 
             elif "Mid @" in msg.text:
                 _name = msg.text.replace("Mid @","")
                 _nametarget = _name.rstrip(' ')
-                gs = cl.getGroup(msg.to)
+                gs = vipro.getGroup(msg.to)
                 for g in gs.members:
                     if _nametarget == g.displayName:
-                        random.choice(KAC).sendText(msg.to, g.mid)
+                        vipro.sendText(msg.to, g.mid)
                     else:
                         pass
 
 
-            elif "bio " in msg.text:
-                    string = msg.text.replace("bio ","")
+            elif "Mybio " in msg.text:
+                    string = msg.text.replace("Mybio ","")
                     if len(string.decode('utf-8')) <= 500:
-                        profile = cl.getProfile()
+                        profile = vipro.getProfile()
                         profile.statusMessage = string
-                        cl.updateProfile(profile)
-                        ki.updateProfile(profile)
-                        kk.updateProfile(profile)
-                        kc.updateProfile(profile)
-                        kr.updateProfile(profile)
-                        cl.sendText(msg.to,"All Done")
+                        vipro.updateProfile(profile)
+                        vipro.sendText(msg.to,"Done")
 
-            elif "/cnkapten" in msg.text:
+            elif "Myname " in msg.text:
 		if msg.from_ in Creator:
-                    string = msg.text.replace("/cnkapten","yudi Kapten")
+                    string = msg.text.replace("Myname ","")
                     if len(string.decode('utf-8')) <= 5000:
-                        profile = cl.getProfile()
+                        profile = vipro.getProfile()
                         profile.displayName = string
-                        cl.updateProfile(profile)
-                        cl.sendText(msg.to,"Done")
+                        vipro.updateProfile(profile)
+                        vipro.sendText(msg.to,"Done")
 
-            elif "/cntc1" in msg.text:
-		if msg.from_ in Creator:
-                    string = msg.text.replace("/cntc1","yudi TC1")
-                    if len(string.decode('utf-8')) <= 5000:
-                        profile = ki.getProfile()
-                        profile.displayName = string
-                        ki.updateProfile(profile)
-                        ki.sendText(msg.to,"Done")
-
-            elif "/cntc2" in msg.text:
-		if msg.from_ in Creator:
-                    string = msg.text.replace("/cntc2","yudi TC2")
-                    if len(string.decode('utf-8')) <= 5000:
-                        profile = kk.getProfile()
-                        profile.displayName = string
-                        kk.updateProfile(profile)
-                        kk.sendText(msg.to,"Done")
-
-            elif "/cntc3" in msg.text:
-		if msg.from_ in Creator:
-                    string = msg.text.replace("/cntc3","yudi TC3")
-                    if len(string.decode('utf-8')) <= 5000:
-                        profile = kc.getProfile()
-                        profile.displayName = string
-                        kc.updateProfile(profile)
-                        kc.sendText(msg.to,"Done")
-
-            elif "/cntc4" in msg.text:
-		if msg.from_ in Creator:
-                    string = msg.text.replace("/cntc4","yudi TC4")
-                    if len(string.decode('utf-8')) <= 5000:
-                        profile = cl.getProfile()
-                        profile.displayName = string
-                        kr.updateProfile(profile)
-                        kr.sendText(msg.to,"Done")
-
-
-            elif "Ulti " in msg.text:
-              if msg.from_ in Creator:
-                ulti0 = msg.text.replace("Ulti ","")
-                ulti1 = ulti0.rstrip()
-                ulti2 = ulti1.replace("@","")
-                ulti3 = ulti2.rstrip()
-                _name = ulti3
-                gs = cl.getGroup(msg.to)
-                ginfo = cl.getGroup(msg.to)
-                gs.preventJoinByTicket = False
-                cl.updateGroup(gs)
-                invsend = 0
-                Ticket = cl.reissueGroupTicket(msg.to)
-                km.acceptGroupInvitationByTicket(msg.to,Ticket)
-                time.sleep(0.2)
-                targets = []
-                for s in gs.members:
-                        if _name in s.displayName:
-                                targets.append(s.mid)
-                if targets ==[]:
-                        sendMessage(msg.to,"user does not exist")
-                        pass
-                else:
-                        for target in targets:
-                                try:
-                                        km.kickoutFromGroup(msg.to,[target])
-                                        km.leaveGroup(msg.to)
-                                        print (msg.to,[g.mid])
-                                except:
-                                        km.sendText(msg.t,"Ter ELIMINASI....")
-                                        km.sendText(msg.to,"WOLES brooo....!!!")
-                                        km.leaveGroup(msg.to)
-                                        gs = cl.getGroup(msg.to)
-                                        gs.preventJoinByTicket = True
-                                        cl.updateGroup(gs)
-                                        gs.preventJoinByTicket(gs)
-                                        cl.updateGroup(gs)
 
 
             elif msg.text.lower() in ["mymid","myid"]:
-                middd = "Name : " +cl.getContact(msg.from_).displayName + "\nMid : " +msg.from_
-                kr.sendText(msg.to,middd)
+                middd = "Name : " +vipro.getContact(msg.from_).displayName + "\nMid : " +msg.from_
+                vipro.sendText(msg.to,middd)
 
             elif msg.text.lower() in ["me"]:
                 msg.contentType = 13
                 msg.contentMetadata = {'mid': msg.from_}
-                cl.sendMessage(msg)
+                vipro.sendMessage(msg)
 
             elif "apakah " in msg.text:
                 apk = msg.text.replace("apakah ","")
-                rnd = ["Ya","Tidak","Bisa Jadi","Mungkin","Pikir Aja Sendiri","Meneketehe"]
+                rnd = ["Ya","Tidak","Bisa Jadi","Mungkin"]
                 p = random.choice(rnd)
                 lang = 'id'
                 tts = gTTS(text=p, lang=lang)
                 tts.save("hasil.mp3")
-                cl.sendAudio(msg.to,"hasil.mp3")
+                vipro.sendAudio(msg.to,"hasil.mp3")
                 
             elif "hari " in msg.text:
                 apk = msg.text.replace("hari ","")
@@ -3831,7 +3057,7 @@ def bot(op):
                 lang = 'id'
                 tts = gTTS(text=p, lang=lang)
                 tts.save("hasil.mp3")
-                cl.sendAudio(msg.to,"hasil.mp3")                
+                vipro.sendAudio(msg.to,"hasil.mp3")   
 
 
             elif "berapa " in msg.text:
@@ -3841,7 +3067,7 @@ def bot(op):
                 lang = 'id'
                 tts = gTTS(text=p, lang=lang)
                 tts.save("hasil.mp3")
-                cl.sendAudio(msg.to,"hasil.mp3")
+                vipro.sendAudio(msg.to,"hasil.mp3")
                 
             elif "berapakah " in msg.text:
                 apk = msg.text.replace("berapakah ","")
@@ -3850,7 +3076,7 @@ def bot(op):
                 lang = 'id'
                 tts = gTTS(text=p, lang=lang)
                 tts.save("hasil.mp3")
-                cl.sendAudio(msg.to,"hasil.mp3")                
+                vipro.sendAudio(msg.to,"hasil.mp3")                
 
             elif "kapan " in msg.text:
                 apk = msg.text.replace("kapan ","")
@@ -3859,18 +3085,18 @@ def bot(op):
                 lang = 'id'
                 tts = gTTS(text=p, lang=lang)
                 tts.save("hasil.mp3")
-                cl.sendAudio(msg.to,"hasil.mp3")
+                vipro.sendAudio(msg.to,"hasil.mp3")
 
  
             elif msg.text in ["Simisimi on","Simisimi:on"]:
                 settings["simiSimi"][msg.to] = True
                 wait["Simi"] = True
-                cl.sendText(msg.to," Simisimi Di Aktifkan")
+                vipro.sendText(msg.to," Simisimi Di Aktifkan")
                 
             elif msg.text in ["Simisimi off","Simisimi:off"]:
                 settings["simiSimi"][msg.to] = False
                 wait["Simi"] = False
-                cl.sendText(msg.to,"Simisimi Di Nonaktifkan")
+                vipro.sendText(msg.to,"Simisimi Di Nonaktifkan")
 
  
             elif "Image " in msg.text:
@@ -3882,7 +3108,7 @@ def bot(op):
                 path = random.choice(items)
                 print path
                 try:
-                    cl.sendImageWithURL(msg.to,path)
+                    vipro.sendImageWithURL(msg.to,path)
                 except:
                     pass
  
@@ -3898,7 +3124,7 @@ def bot(op):
                         for a in soup.select('.yt-lockup-title > a[title]'):
                             if '&list=' not in a['href']:
                                 hasil += ''.join((a['title'],'\nUrl : http://www.youtube.com' + a['href'],'\n\n'))
-                        cl.sendText(msg.to,hasil)
+                        vipro.sendText(msg.to,hasil)
                         print '[Command] Youtube Search'
 
 
@@ -3909,7 +3135,7 @@ def bot(op):
                 hasil = translator.translate(isi, dest='id')
                 A = hasil.text
                 A = A.encode('utf-8')
-                cl.sendText(msg.to, A)
+                vipro.sendText(msg.to, A)
 
             elif "Tr-en " in msg.text:
                 isi = msg.text.replace("Tr-en ","")
@@ -3917,7 +3143,7 @@ def bot(op):
                 hasil = translator.translate(isi, dest='en')
                 A = hasil.text
                 A = A.encode('utf-8')
-                cl.sendText(msg.to, A)
+                vipro.sendText(msg.to, A)
                 
             elif "Tr-th " in msg.text:
                 isi = msg.text.replace("Tr-th ","")
@@ -3925,7 +3151,7 @@ def bot(op):
                 hasil = translator.translate(isi, dest='th')
                 A = hasil.text
                 A = A.encode('utf-8')
-                cl.sendText(msg.to, A)                
+                vipro.sendText(msg.to, A)                
 
             
             elif "Id@en" in msg.text:
@@ -3939,7 +3165,7 @@ def bot(op):
                 page = urllib2.urlopen(request).read()
                 result = page[page.find(cari_hasil)+len(cari_hasil):]
                 result = result.split("<")[0]
-                cl.sendText(msg.to,"----Dari Indonesia----\n" + "" + kata + "\n\n----Ke Inggris----\n" + "" + result)
+                vipro.sendText(msg.to,"----Dari Indonesia----\n" + "" + kata + "\n\n----Ke Inggris----\n" + "" + result)
 
 
             elif "En@id" in msg.text:
@@ -3953,7 +3179,7 @@ def bot(op):
                 page = urllib2.urlopen(request).read()
                 result = page[page.find(cari_hasil)+len(cari_hasil):]
                 result = result.split("<")[0]
-                cl.sendText(msg.to,"----Dari Inggris----\n" + "" + kata + "\n\n----Ke Indonesia----\n" + "" + result)
+                vipro.sendText(msg.to,"----Dari Inggris----\n" + "" + kata + "\n\n----Ke Indonesia----\n" + "" + result)
                 
             
             elif "Id@th" in msg.text:
@@ -3967,7 +3193,7 @@ def bot(op):
                 page = urllib2.urlopen(request).read()
                 result = page[page.find(cari_hasil)+len(cari_hasil):]
                 result = result.split("<")[0]
-                cl.sendText(msg.to,"----Dari Indonesia----\n" + "" + kata + "\n\n----Ke Thailand----\n" + "" + result)
+                vipro.sendText(msg.to,"----Dari Indonesia----\n" + "" + kata + "\n\n----Ke Thailand----\n" + "" + result)
                 
             
             elif "Th@id" in msg.text:
@@ -3981,21 +3207,21 @@ def bot(op):
                 page = urllib2.urlopen(request).read()
                 result = page[page.find(cari_hasil)+len(cari_hasil):]
                 result = result.split("<")[0]
-                cl.sendText(msg.to,"----Dari Thailand----\n" + "" + kata + "\n\n----Ke Indonesia----\n" + "" + result)                
+                vipro.sendText(msg.to,"----Dari Thailand----\n" + "" + kata + "\n\n----Ke Indonesia----\n" + "" + result)                
  
             elif msg.text in ["Friendlist"]:    
-                contactlist = cl.getAllContactIds()
-                kontak = cl.getContacts(contactlist)
+                contactlist = vipro.getAllContactIds()
+                kontak = vipro.getContacts(contactlist)
                 num=1
                 msgs="═════════List Friend═════════"
                 for ids in kontak:
                     msgs+="\n[%i] %s" % (num, ids.displayName)
                     num=(num+1)
                 msgs+="\n═════════List Friend═════════\n\nTotal Friend : %i" % len(kontak)
-                cl.sendText(msg.to, msgs)
+                vipro.sendText(msg.to, msgs)
 
             elif msg.text in ["Memlist"]:   
-                kontak = cl.getGroup(msg.to)
+                kontak = vipro.getGroup(msg.to)
                 group = kontak.members
                 num=1
                 msgs="═════════List Member═�����═══════-"
@@ -4003,99 +3229,67 @@ def bot(op):
                     msgs+="\n[%i] %s" % (num, ids.displayName)
                     num=(num+1)
                 msgs+="\n═════════List Member═════════\n\nTotal Members : %i" % len(group)
-                cl.sendText(msg.to, msgs)
+                vipro.sendText(msg.to, msgs)
 
             
 
-            elif msg.text in ["Spam"]:
-#              if msg.from_ in admin:
-                cl.sendText(msg.to,"Aku belum mandi")
-                cl.sendText(msg.to,"Tak tun tuang")
-                cl.sendText(msg.to,"Tak tun tuang")
-                cl.sendText(msg.to,"Tapi masih cantik juga")
-                cl.sendText(msg.to,"Tak tun tuang")
-                cl.sendText(msg.to,"Tak tun tuang")
-                cl.sendText(msg.to,"apalagi kalau sudah mandi")
-                cl.sendText(msg.to,"Tak tun tuang")
-                cl.sendText(msg.to,"Pasti cantik sekali")
-                cl.sendText(msg.to,"yiha")
-                cl.sendText(msg.to,"Kalau orang lain melihatku")
-                cl.sendText(msg.to,"Tak tun tuang")
-                cl.sendText(msg.to,"Badak aku taba bana")
-                cl.sendText(msg.to,"Tak tun tuang")
-                cl.sendText(msg.to,"Tak tuntuang")
-                cl.sendText(msg.to,"Tapi kalau langsuang diidu")
-                cl.sendText(msg.to,"Tak tun tuang")
-                cl.sendText(msg.to,"Atagfirullah baunya")
-                cl.sendText(msg.to,"Males lanjutin ah")
-                cl.sendText(msg.to,"Sepi bat")
-                cl.sendText(msg.to,"Iya sepi udah udah")
-                cl.sendText(msg.to,"Gaada yang denger juga kita nyanyi")
-                cl.sendText(msg.to,"Nah")
-                cl.sendText(msg.to,"Mending gua makan dulu")
-                cl.sendText(msg.to,"Siyap")
-                cl.sendText(msg.to,"Okeh")
-                cl.sendText(msg.to,"Katanya owner kita Jomblo ya")
-                cl.sendText(msg.to,"Iya emang")
-                cl.sendText(msg.to,"Denger denger si lagi nyari pacar doi")
-                cl.sendText(msg.to,"Udah ah gosip mulu doain aja biar dapet")
  
             elif "Getvid @" in msg.text:
                 print "[Command]dp executing"
                 _name = msg.text.replace("Getvid @","")
                 _nametarget = _name.rstrip('  ')
-                gs = cl.getGroup(msg.to)
+                gs = vipro.getGroup(msg.to)
                 targets = []
                 for g in gs.members:
                     if _nametarget == g.displayName:
                         targets.append(g.mid)
                 if targets == []:
-                    cl.sendText(msg.to,"Contact not found")
+                    vipro.sendText(msg.to,"Contact not found")
                 else:
                     for target in targets:
                         try:
-                            contact = cl.getContact(target)
+                            contact = vipro.getContact(target)
                             path = "http://dl.profile.line-cdn.net/" + contact.pictureStatus
-                            cl.sendVideoWithURL(msg.to, path)
+                            vipro.sendVideoWithURL(msg.to, path)
                         except Exception as e:
                             raise e
                 print "[Command]dp executed"
 
 
-            elif "Group image" in msg.text:
-                group = cl.getGroup(msg.to)
+            elif "Getgroup image" in msg.text:
+                group = vipro.getGroup(msg.to)
                 path = "http://dl.profile.line-cdn.net/" + group.pictureStatus
-                cl.sendImageWithURL(msg.to,path)
+                vipro.sendImageWithURL(msg.to,path)
 
             elif "Urlgroup image" in msg.text:
-                group = cl.getGroup(msg.to)
+                group = vipro.getGroup(msg.to)
                 path = "http://dl.profile.line-cdn.net/" + group.pictureStatus
-                cl.sendText(msg.to,path)
+                vipro.sendText(msg.to,path)
  
             elif "Name" in msg.text:
                 key = eval(msg.contentMetadata["MENTION"])
                 key1 = key["MENTIONEES"][0]["M"]
-                contact = cl.getContact(key1)
-                cu = cl.channel.getCover(key1)
+                contact = vipro.getContact(key1)
+                cu = vipro.channel.getCover(key1)
                 try:
-                    cl.sendText(msg.to, "===[DisplayName]===\n" + contact.displayName)
+                    vipro.sendText(msg.to, "===[DisplayName]===\n" + contact.displayName)
                 except:
-                    cl.sendText(msg.to, "===[DisplayName]===\n" + contact.displayName)
+                    vipro.sendText(msg.to, "===[DisplayName]===\n" + contact.displayName)
 
 
             elif "Profile" in msg.text:
                 key = eval(msg.contentMetadata["MENTION"])
                 key1 = key["MENTIONEES"][0]["M"]
-                contact = cl.getContact(key1)
-                cu = cl.channel.getCover(key1)
+                contact = vipro.getContact(key1)
+                cu = vipro.channel.getCover(key1)
                 path = str(cu)
                 image = "http://dl.profile.line-cdn.net/" + contact.pictureStatus
                 try:
-                    cl.sendText(msg.to,"Nama :\n" + contact.displayName + "\n\nBio :\n" + contact.statusMessage)
-                    cl.sendText(msg.to,"Profile Picture " + contact.displayName)
-                    cl.sendImageWithURL(msg.to,image)
-                    cl.sendText(msg.to,"Cover " + contact.displayName)
-                    cl.sendImageWithURL(msg.to,path)
+                    vipro.sendText(msg.to,"Nama :\n" + contact.displayName + "\n\nBio :\n" + contact.statusMessage)
+                    vipro.sendText(msg.to,"Profile Picture " + contact.displayName)
+                    vipro.sendImageWithURL(msg.to,image)
+                    vipro.sendText(msg.to,"Cover " + contact.displayName)
+                    vipro.sendImageWithURL(msg.to,path)
                 except:
                     pass
 
@@ -4103,37 +3297,37 @@ def bot(op):
             elif "Contact" in msg.text:
                 key = eval(msg.contentMetadata["MENTION"])
                 key1 = key["MENTIONEES"][0]["M"]                
-                mmid = cl.getContact(key1)
+                mmid = vipro.getContact(key1)
                 msg.contentType = 13
                 msg.contentMetadata = {"mid": key1}
-                cl.sendMessage(msg)
+                vipro.sendMessage(msg)
 
             elif "Info" in msg.text:
                 key = eval(msg.contentMetadata["MENTION"])
                 key1 = key["MENTIONEES"][0]["M"]
-                contact = cl.getContact(key1)
-                cu = cl.channel.getCover(key1)
+                contact = vipro.getContact(key1)
+                cu = vipro.channel.getCover(key1)
                 try:
-                    cl.sendText(msg.to,"Nama :\n" + contact.displayName + "\n\nMid :\n" + contact.mid + "\n\nBio :\n" + contact.statusMessage + "\n\nProfile Picture :\nhttp://dl.profile.line-cdn.net/" + contact.pictureStatus + "\n\nHeader :\n" + str(cu))
+                    vipro.sendText(msg.to,"Nama :\n" + contact.displayName + "\n\nMid :\n" + contact.mid + "\n\nBio :\n" + contact.statusMessage + "\n\nProfile Picture :\nhttp://dl.profile.line-cdn.net/" + contact.pictureStatus + "\n\nHeader :\n" + str(cu))
                 except:
-                    cl.sendText(msg.to,"Nama :\n" + contact.displayName + "\n\nMid :\n" + contact.mid + "\n\nBio :\n" + contact.statusMessage + "\n\nProfile Picture :\n" + str(cu))
+                    vipro.sendText(msg.to,"Nama :\n" + contact.displayName + "\n\nMid :\n" + contact.mid + "\n\nBio :\n" + contact.statusMessage + "\n\nProfile Picture :\n" + str(cu))
 
 
             elif "Bio" in msg.text:
                 key = eval(msg.contentMetadata["MENTION"])
                 key1 = key["MENTIONEES"][0]["M"]
-                contact = cl.getContact(key1)
-                cu = cl.channel.getCover(key1)
+                contact = vipro.getContact(key1)
+                cu = vipro.channel.getCover(key1)
                 try:
-                    cl.sendText(msg.to, "===[StatusMessage]===\n" + contact.statusMessage)
+                    vipro.sendText(msg.to, "===[StatusMessage]===\n" + contact.statusMessage)
                 except:
-                    cl.sendText(msg.to, "===[StatusMessage]===\n" + contact.statusMessage)
+                    vipro.sendText(msg.to, "===[StatusMessage]===\n" + contact.statusMessage)
 
 
             elif msg.text.lower() == 'runtime':
                 eltime = time.time() - mulai
                 van = "Bot Sudah Berjalan Selama :\n"+waktu(eltime)
-                cl.sendText(msg.to,van)
+                vipro.sendText(msg.to,van)
                 
                  
             elif "Checkdate " in msg.text:
@@ -4145,7 +3339,7 @@ def bot(op):
                 usia = data["data"]["usia"]
                 ultah = data["data"]["ultah"]
                 zodiak = data["data"]["zodiak"]
-                cl.sendText(msg.to,"========== I N F O R M A S I ==========\n"+"Date Of Birth : "+lahir+"\nAge : "+usia+"\nUltah : "+ultah+"\nZodiak : "+zodiak+"\n========== I N F O R M A S I ==========")
+                vipro.sendText(msg.to,"========== I N F O R M A S I ==========\n"+"Date Of Birth : "+lahir+"\nAge : "+usia+"\nUltah : "+ultah+"\nZodiak : "+zodiak+"\n========== I N F O R M A S I ==========")
                 
    
             elif msg.text in ["Kalender","Time","Waktu"]:
@@ -4162,93 +3356,85 @@ def bot(op):
                 for k in range(0, len(bulan)):
                     if bln == str(k): bln = bulan[k-1]
                 rst = hasil + ", " + inihari.strftime('%d') + " - " + bln + " - " + inihari.strftime('%Y') + "\nJam : [ " + inihari.strftime('%H:%M:%S') + " ]"
-                cl.sendText(msg.to, rst)                
+                vipro.sendText(msg.to, rst)                
                  
                 
-            elif "SearchID: " in msg.text:
-                userid = msg.text.replace("SearchID: ","")
-                contact = cl.findContactsByUserid(userid)
+            elif "SearchID " in msg.text:
+                userid = msg.text.replace("SearchID ","")
+                contact = vipro.findContactsByUserid(userid)
                 msg.contentType = 13
                 msg.contentMetadata = {'mid': contact.mid}
-                cl.sendMessage(msg)
+                vipro.sendMessage(msg)
                 
-            elif "Searchid: " in msg.text:
-                userid = msg.text.replace("Searchid: ","")
-                contact = cl.findContactsByUserid(userid)
+            elif "Searchid " in msg.text:
+                userid = msg.text.replace("Searchid ","")
+                contact = vipro.findContactsByUserid(userid)
                 msg.contentType = 13
                 msg.contentMetadata = {'mid': contact.mid}
-                cl.sendMessage(msg)       
+                vipro.sendMessage(msg)       
                 
                 
             elif "removechat" in msg.text.lower():
                 if msg.from_ in admin:
                     try:
-                        cl.removeAllMessages(op.param2)
-                        ki.removeAllMessages(op.param2)
-                        kk.removeAllMessages(op.param2)
-                        kc.removeAllMessages(op.param2)
-                        kr.removeAllMessages(op.param2)
+                        vipro.removeAllMessages(op.param2)
                         print "[Command] Remove Chat"
-                        cl.sendText(msg.to,"Done")
+                        vipro.sendText(msg.to,"Done")
                     except Exception as error:
                         print error
-                        cl.sendText(msg.to,"Error")      
+                        vipro.sendText(msg.to,"Error")      
                         
                         
-            elif "Invitemeto: " in msg.text:
+            elif "Invitemeto " in msg.text:
                 if msg.from_ in admin:
-                    gid = msg.text.replace("Invitemeto: ","")
+                    gid = msg.text.replace("Invitemeto ","")
                     if gid == "":
-                        cl.sendText(msg.to,"Invalid group id")
+                        vipro.sendText(msg.to,"Invalid group id")
                     else:
                         try:
-                            cl.findAndAddContactsByMid(msg.from_)
-                            ki.findAndAddContactsByMid(msg.from_)
-                            kk.findAndAddContactsByMid(msg.from_)
-                            kc.findAndAddContactsByMid(msg.from_)
-                            kr.findAndAddContactsByMid(msg.from_)
-                            random.choice(KAC).inviteIntoGroup(gid,[msg.from_])
+                            vipro.findAndAddContactsByMid(msg.from_)
+                            vipro.inviteIntoGroup(gid,[msg.from_])
                         except:
-                            cl.sendText(msg.to,"Mungkin Saya Tidak Di Dalaam Grup Itu")
+                            vipro.sendText(msg.to,"Mungkin Saya Tidak Di Dalaam Grup Itu")
 
 
             elif msg.text in ["Glist"]:
-                cl.sendText(msg.to, "Tunggu Sebentar. . .")                    
-                gid = cl.getGroupIdsJoined()
+                vipro.sendText(msg.to, "Tunggu Sebentar. . .")                    
+                gid = vipro.getGroupIdsJoined()
                 h = ""
                 for i in gid:
-                    h += "╠➩" + "%s\n" % (cl.getGroup(i).name +" ~> ["+str(len(cl.getGroup(i).members))+"]")
-                cl.sendText(msg.to,"╔═════════════════════════\n║          ☆☞ LIST GROUPS☜☆\n╠═════════════════════════\n" + h + "╠═════════════════════════" + "\n║ Total Groups =" +" ["+str(len(gid))+"]\n╚═════════════════════════")
+                    h += "╠➩" + "%s\n" % (vipro.getGroup(i).name +" ~> ["+str(len(vipro.getGroup(i).members))+"]")
+                vipro.sendText(msg.to,"╔═════════════════════════\n║          ☆☞ LIST GROUPS☜☆\n╠═════════════════════════\n" + h + "╠═════════════════════════" + "\n║ Total Groups =" +" ["+str(len(gid))+"]\n╚═════════════════════════")
 
             elif msg.text in ["Glistmid"]:   
-                gruplist = kr.getGroupIdsJoined()
-                kontak = kr.getGroups(gruplist)
+                gruplist = vipro.getGroupIdsJoined()
+                kontak = vipro.getGroups(gruplist)
                 num=1
                 msgs="═════════List GrupMid═════════"
                 for ids in kontak:
                     msgs+="\n[%i] %s" % (num, ids.id)
                     num=(num+1)
                 msgs+="\n═════════List GrupMid═════════\n\nTotal Grup : %i" % len(kontak)
-                kr.sendText(msg.to, msgs)
+                vipro.sendText(msg.to, msgs)
 
 
 
-            elif "Google " in msg.text:
-                    a = msg.text.replace("Google ","")
+            elif "Google: " in msg.text:
+                    a = msg.text.replace("Google: ","")
                     b = urllib.quote(a)
-                    cl.sendText(msg.to,"Sedang Mencari...")
-                    cl.sendText(msg.to, "https://www.google.com/" + b)
-                    cl.sendText(msg.to,"Itu Dia Linknya. . .")     
+                    vipro.sendText(msg.to,"Sedang Mencari...")
+                    vipro.sendText(msg.to, "https://www.google.com/" + b)
+                    vipro.sendText(msg.to,"Itu Dia Linknya. . .")     
 
 
             elif "Details group: " in msg.text:
                 if msg.from_ in admin:
                     gid = msg.text.replace("Details group: ","")
                     if gid in [""," "]:
-                        cl.sendText(msg.to,"Grup id tidak valid")
+                        vipro.sendText(msg.to,"Grup id tidak valid")
                     else:
                         try:
-                            groups = cl.getGroup(gid)
+                            groups = vipro.getGroup(gid)
                             if groups.members is not None:
                                 members = str(len(groups.members))
                             else:
@@ -4258,114 +3444,117 @@ def bot(op):
                             else:
                                 pendings = "0"
                             h = "[" + groups.name + "]\n -+GroupID : " + gid + "\n -+Members : " + members + "\n -+MembersPending : " + pendings + "\n -+Creator : " + groups.creator.displayName + "\n -+GroupPicture : http://dl.profile.line.naver.jp/" + groups.pictureStatus
-                            cl.sendText(msg.to,h)
+                            vipro.sendText(msg.to,h)
                         except Exception as error:
-                            cl.sendText(msg.to,(error))
+                            vipro.sendText(msg.to,(error))
             
             elif "Cancel invite: " in msg.text:
                 if msg.from_ in admin:
                     gids = msg.text.replace("Cancel invite: ","")
-                    gid = cl.getGroup(gids)
+                    gid = vipro.getGroup(gids)
                     for i in gid:
                         if i is not None:
                             try:
-                                cl.rejectGroupInvitation(i)
+                                vipro.rejectGroupInvitation(i)
                             except:
-                                cl.sendText(msg.to,"Error!")
+                                vipro.sendText(msg.to,"Error!")
                                 break
                         else:
                             break
                     if gid is not None:
-                        cl.sendText(msg.to,"Berhasil tolak undangan dari grup " + gid.name)
+                        vipro.sendText(msg.to,"Berhasil tolak undangan dari grup " + gid.name)
                     else:
-                        cl.sendText(msg.to,"Grup tidak ditemukan")
+                        vipro.sendText(msg.to,"Grup tidak ditemukan")
             
-            elif msg.text in ["Kapten acc invite"]:
+            elif msg.text in ["Acc invite"]:
                 if msg.from_ in admin:
-                    gid = cl.getGroupIdsInvited()
+                    gid = vipro.getGroupIdsInvited()
                     _list = ""
                     for i in gid:
                         if i is not None:
-                            gids = cl.getGroup(i)
+                            gids = vipro.getGroup(i)
                             _list += gids.name
-                            cl.acceptGroupInvitation(i)
+                            vipro.acceptGroupInvitation(i)
                         else:
                             break
                     if gid is not None:
-                        cl.sendText(msg.to,"Berhasil terima semua undangan dari grup :\n" + _list)
+                        vipro.sendText(msg.to,"Berhasil terima semua undangan dari grup :\n" + _list)
                     else:
-                        cl.sendText(msg.to,"Tidak ada grup yang tertunda saat ini")  
-                        
-            elif msg.text in ["TC1 acc invite"]:
-                if msg.from_ in admin:
-                    gid = ki.getGroupIdsInvited()
-                    _list = ""
-                    for i in gid:
-                        if i is not None:
-                            gids = ki.getGroup(i)
-                            _list += gids.name
-                            ki.acceptGroupInvitation(i)
-                        else:
-                            break
-                    if gid is not None:
-                        ki.sendText(msg.to,"Berhasil terima semua undangan dari grup :\n" + _list)
-                    else:
-                        ki.sendText(msg.to,"Tidak ada grup yang tertunda saat ini")  
-                        
-            elif msg.text in ["TC2 acc invite"]:
-                if msg.from_ in admin:
-                    gid = kk.getGroupIdsInvited()
-                    _list = ""
-                    for i in gid:
-                        if i is not None:
-                            gids = kk.getGroup(i)
-                            _list += gids.name
-                            kk.acceptGroupInvitation(i)
-                        else:
-                            break
-                    if gid is not None:
-                        kk.sendText(msg.to,"Berhasil terima semua undangan dari grup :\n" + _list)
-                    else:
-                        kk.sendText(msg.to,"Tidak ada grup yang tertunda saat ini")  
-                        
-            elif msg.text in ["TC3 acc invite"]:
-                if msg.from_ in admin:
-                    gid = kc.getGroupIdsInvited()
-                    _list = ""
-                    for i in gid:
-                        if i is not None:
-                            gids = kc.getGroup(i)
-                            _list += gids.name
-                            kc.acceptGroupInvitation(i)
-                        else:
-                            break
-                    if gid is not None:
-                        kc.sendText(msg.to,"Berhasil terima semua undangan dari grup :\n" + _list)
-                    else:
-                        kc.sendText(msg.to,"Tidak ada grup yang tertunda saat ini")  
-                        
-            elif msg.text in ["TC4 acc invite"]:
-                if msg.from_ in admin:
-                    gid = kr.getGroupIdsInvited()
-                    _list = ""
-                    for i in gid:
-                        if i is not None:
-                            gids = kr.getGroup(i)
-                            _list += gids.name
-                            kr.acceptGroupInvitation(i)
-                        else:
-                            break
-                    if gid is not None:
-                        kr.sendText(msg.to,"Berhasil terima semua undangan dari grup :\n" + _list)
-                    else:
-                        kr.sendText(msg.to,"Tidak ada grup yang tertunda saat ini")                          
+                        vipro.sendText(msg.to,"Tidak ada grup yang tertunda saat ini")  
 
 
             elif "Gif gore" in msg.text:
             	gif = ("https://media.giphy.com/media/l2JHVsQiOZrNMGzYs/giphy.gif","https://media.giphy.com/media/OgltQ2hbilzJS/200w.gif")
                 gore = random.choice(gif)
-                cl.sendGifWithURL(msg.to,gore)
+                vipro.sendGifWithURL(msg.to,gore)
+                
 
+                
+            elif ("Micadd " in msg.text):
+                targets = []
+                key = eval(msg.contentMetadata["MENTION"])
+                key["MENTIONEES"][0]["M"]
+                for x in key["MENTIONEES"]:
+                    targets.append(x["M"])
+                for target in targets:
+                    try:
+                        mimic["target"][target] = True
+                        vipro.sendText(msg.to,"Target ditambahkan!")
+                        break
+                    except:
+                        vipro.sendText(msg.to,"Fail !")
+                        break
+                    
+            elif ("Micdel " in msg.text):
+                targets = []
+                key = eval(msg.contentMetadata["MENTION"])
+                key["MENTIONEES"][0]["M"]
+                for x in key["MENTIONEES"]:
+                    targets.append(x["M"])
+                for target in targets:
+                    try:
+                        del mimic["target"][target]
+                        vipro.sendText(msg.to,"Target dihapuskan!")
+                        break
+                    except:
+                        vipro.sendText(msg.to,"Fail !")
+                        break
+                    
+            elif msg.text in ["Miclist"]:
+                        if mimic["target"] == {}:
+                            vipro.sendText(msg.to,"Nothing")
+                        else:
+                            mc = "Target Mimic User:\n"
+                            for mi_d in mimic["target"]:
+                                mc += "?? "+vipro.getContact(mi_d).displayName + "\n"
+                            vipro.sendText(msg.to,mc)
+
+            elif "Mimic target " in msg.text:
+                        if mimic["copy"] == True:
+                            siapa = msg.text.replace("Mimic target ","")
+                            if siapa.rstrip(' ') == "me":
+                                mimic["copy2"] = "me"
+                                vipro.sendText(msg.to,"Mimic change to me")
+                            elif siapa.rstrip(' ') == "target":
+                                mimic["copy2"] = "target"
+                                vipro.sendText(msg.to,"Mimic change to target")
+                            else:
+                                vipro.sendText(msg.to,"I dont know")
+            
+            elif "Mimic " in msg.text:
+                cmd = msg.text.replace("Mimic ","")
+                if cmd == "on":
+                    if mimic["status"] == False:
+                        mimic["status"] = True
+                        vipro.sendText(msg.to,"Reply Message on")
+                    else:
+                        vipro.sendText(msg.to,"Sudah on")
+                elif cmd == "off":
+                    if mimic["status"] == True:
+                        mimic["status"] = False
+                        vipro.sendText(msg.to,"Reply Message off")
+                    else:
+                        vipro.sendText(msg.to,"Sudah off")
 
 
 
@@ -4379,12 +3568,12 @@ def bot(op):
 
 while True:
     try:
-        Ops = cl.fetchOps(cl.Poll.rev, 5)
+        Ops = vipro.fetchOps(vipro.Poll.rev, 5)
     except EOFError:
-        raise Exception("It might be wrong revision\n" + str(cl.Poll.rev))
+        raise Exception("It might be wrong revision\n" + str(vipro.Poll.rev))
 
     for Op in Ops:
         if (Op.type != OpType.END_OF_OPERATION):
-            cl.Poll.rev = max(cl.Poll.rev, Op.revision)
+            vipro.Poll.rev = max(vipro.Poll.rev, Op.revision)
             bot(Op)
 
