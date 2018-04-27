@@ -76,9 +76,9 @@ helpMessage1 = "™[ இहई╬۞¥ûDï۞╬हईஇ ]™\n   Jangan gunakan
 "™↔ " + key + "Gift:「Mid korban」「Jumlah」\n" + \
 "™↔ " + key + "Spam:「Mid korban」「Jumlah」\n" + \
 "\nKetik「 Refresh 」jika sudah\nmenggunakan command\n"
--==================-
+
 இहई╬۞¥ûDï۞╬हईஇ
--==================-
+
 helpMessage1 = "™[ இहई╬۞¥ûDï۞╬हईஇ ]™\n   Jangan gunakan「 " + key + " 」di depannya\n\n" + \
 "™↔ " + key + "Blc\n" + \
 "™↔ " + key + "Ban:on\n" + \
@@ -93,9 +93,9 @@ helpMessage1 = "™[ இहई╬۞¥ûDï۞╬हईஇ ]™\n   Jangan gunakan
 "™↔ " + key + "Talkbanlist\n" + \
 "™↔ " + key + "Clearban\n" + \
 "™↔ " + key + "Refresh\n" + \
--==================-
+
 இहई╬۞¥ûDï۞╬हईஇ
--==================-
+
 "\n™[ இहई╬۞¥ûDï۞╬हईஇ ]™\n    Gunakan「 " + key + " 」di depannya\n\n" + \
 "™↔ " + key + "Cek sider\n" + \
 "™↔ " + key + "Cek spam\n" + \
@@ -117,10 +117,9 @@ helpMessage1 = "™[ இहई╬۞¥ûDï۞╬हईஇ ]™\n   Jangan gunakan
 "™↔ " + key + "Gift:「Mid korban」「Jumlah」\n" + \
 "™↔ " + key + "Spam:「Mid korban」「Jumlah」\n" + \
 "\nKetik「 Refresh 」jika sudah\nmenggunakan command\n"
--==================-
+
 இहई╬۞¥ûDï۞╬हईஇ
--==================-
-"""
+
 KAC=[cl,ki,kk,kc,ks]
 #DEF1=[ki,kk,kc,ks,ka,kb,ko,ke,ku] Udah Ga Kepake(Boleh di apus)
 #DEF2=[cl,kk,kc,ks,ka,kb,ko,ke,ku] Udah Ga Kepake(Boleh di apus)
