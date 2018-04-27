@@ -1,32 +1,39 @@
 # -*- coding: utf-8 -*-
-#Vipro_Bot
 
-import LINETCR
-from LINETCR.lib.curve.ttypes import *
+import CYBERTK
+import goslate
+import requests
+import urllib
+import urllib2
+import subprocess
+import profile
+import client
+import wikipedia
+import requests
+from gtts import gTTS
+from CYBERTK.lib.curve.ttypes import *
 from datetime import datetime
+import time,random,sys,json,codecs,threading,glob,re
 from bs4 import BeautifulSoup
 from threading import Thread
-from googletrans import Translator
-from gtts import gTTS
-import time,random,sys,json,codecs,threading,glob,urllib,urllib2,urllib3,re,ast,os,subprocess,requests,tempfile
 
-cl = LINETCR.LINE() #wahyudi
+cl = CYBERTK.LINE() #wahyudi
 cl.login(token='Erbw8FkQTsCSxWtKItOa.SD28EqyjtLBjPT144PdcQG.MRncp08pfgFL2ZQ080cJHVqAFkfPRtD6CYichKXOj6s=')
 cl.loginResult()
 
-ki = LINETCR.LINE() #darmini
+ki = CYBERTK.LINE() #darmini
 ki.login(token='Er0Kj659SMB1eHHMP4l5.s0GaOrjP6Vfn98NxODhvLq.dVskwm24t+N1FrVjrMNrrDB4WCJNzjUDqKnQHPKyjck=')
 ki.loginResult()
 
-kk = LINETCR.LINE() #gito
+kk = CYBERTK.LINE() #gito
 kk.login(token='Erfr5XQAVjKIXwfYjT33.Z7tUqKO5oaEP2cnIzYreyW.mifl520WPj4RNQ7i40LVxjVm6sIFaLK092xFHbrv2+s=')
 kk.loginResult()
 
-kc = LINETCR.LINE() #adam
+kc = CYBERTK.LINE() #adam
 kc.login(token='ErbCGFJrfizHGRMwuCdf.0Gxc/M3RVqR4nYkPcDjtZW.zJruRkwA9G4MJ65S4qDZD2jGglGU4JH9T3y2oLjt7uM=')
 kc.loginResult()
 
-ks = LINETCR.LINE() #dimas
+ks = CYBERTK.LINE() #dimas
 ks.login(token='ErVN3iCCCVGqLmMh37u9.VfG2daMSMKOL78PxRGOi6q.joiZOkRzJMFaIdCw8fc05/MTTUDw6jFH7SynZMohCAo=')
 ks.loginResult()
 
