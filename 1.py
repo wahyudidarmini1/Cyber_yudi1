@@ -74,7 +74,7 @@ helpMessage1 = "™[ இहई╬۞¥ûDï۞╬हईஇ ]™\n   Jangan gunakan
 "™↔ " + key + "Bot2up「Kirim fotonya」\n" + \
 "™↔ " + key + "Bot3up「Kirim fotonya」\n" + \
 "™↔ " + key + "Gift:「Mid korban」「Jumlah」\n" + \
-"™↔ " + key + "Spam:「Mid korban」「Jumlah」\n" + \
+#"™↔ " + key + "Spam:「Mid korban」「Jumlah」\n" + \
 "\nKetik「 Refresh 」jika sudah\nmenggunakan command\n"
 
 JOMBANG
