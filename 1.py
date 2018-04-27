@@ -37,46 +37,10 @@ ks = CYBERTK.LINE() #Chooper
 ks.login(token="Es40yLFUTANU8lFvN2Lf.StMJ2yMSv7H5XrT17lGnZW.kEyscUBZhkTetrYq3H0q0SLXC21rYuzgIrMIeWDz+GA=")
 ks.loginResult()
 
-print 
+print "login success plak"
 reload(sys)
 sys.setdefaultencoding('utf-8')
 
-helpMessage1 = "™[ JOMBANG ]™\n   Jangan gunakan「 " + key + " 」di depannya\n\n" + \
-"™↔ " + key + "Blc\n" + \
-"™↔ " + key + "Ban:on\n" + \
-"™↔ " + key + "Unban:on\n" + \
-"™↔ " + key + "Ban「@」\n" + \
-"™↔ " + key + "Unban「@」\n" + \
-"™↔ " + key + "Talkban「@」\n" + \
-"™↔ " + key + "Untalkban「@」\n" + \
-"™↔ " + key + "Talkban:on\n" + \
-"™↔ " + key + "Untalkban:on\n" + \
-"™↔ " + key + "Banlist\n" + \
-"™↔ " + key + "Talkbanlist\n" + \
-"™↔ " + key + "Clearban\n" + \
-"™↔ " + key + "Refresh\n" + \
-"\n™[ இहई╬۞¥ûDï۞╬हईஇ ]™\n    Gunakan「 " + key + " 」di depannya\n\n" + \
-"™↔ " + key + "Cek sider\n" + \
-"™↔ " + key + "Cek spam\n" + \
-"™↔ " + key + "Cek pesan \n" + \
-"™↔ " + key + "Cek respon \n" + \
-"™↔ " + key + "Cek welcome\n" + \
-"™↔ " + key + "Set sider:「Text」\n" + \
-"™↔ " + key + "Set spam:「Text」\n" + \
-"™↔ " + key + "Set pesan:「Text」\n" + \
-"™↔ " + key + "Set respon:「Text」\n" + \
-"™↔ " + key + "Set welcome:「Text」\n" + \
-"™↔ " + key + "Myname:「Nama」\n" + \
-"™↔ " + key + "Bot1name:「Nama」\n" + \
-"™↔ " + key + "Bot2name:「Nama」\n" + \
-"™↔ " + key + "Bot3name:「Nama」\n" + \
-"™↔ " + key + "Bot1up「Kirim fotonya」\n" + \
-"™↔ " + key + "Bot2up「Kirim fotonya」\n" + \
-"™↔ " + key + "Bot3up「Kirim fotonya」\n" + \
-"™↔ " + key + "Gift:「Mid korban」「Jumlah」\n" + \
-"™↔ " + key + "Spam:「Mid korban」「Jumlah」\n" + \
-"\nKetik「 Refresh 」jika sudah\nmenggunakan command\n"
-JOMBANG
 helpMessage1 = "™[ இहई╬۞¥ûDï۞╬हईஇ ]™\n   Jangan gunakan「 " + key + " 」di depannya\n\n" + \
 "™↔ " + key + "Blc\n" + \
 "™↔ " + key + "Ban:on\n" + \
@@ -91,7 +55,6 @@ helpMessage1 = "™[ இहई╬۞¥ûDï۞╬हईஇ ]™\n   Jangan gunakan
 "™↔ " + key + "Talkbanlist\n" + \
 "™↔ " + key + "Clearban\n" + \
 "™↔ " + key + "Refresh\n" + \
-JOMBANG
 "\n™[ இहई╬۞¥ûDï۞╬हईஇ ]™\n    Gunakan「 " + key + " 」di depannya\n\n" + \
 "™↔ " + key + "Cek sider\n" + \
 "™↔ " + key + "Cek spam\n" + \
@@ -113,7 +76,51 @@ JOMBANG
 "™↔ " + key + "Gift:「Mid korban」「Jumlah」\n" + \
 "™↔ " + key + "Spam:「Mid korban」「Jumlah」\n" + \
 "\nKetik「 Refresh 」jika sudah\nmenggunakan command\n"
-JOMBANG
+-==================-
+இहई╬۞¥ûDï۞╬हईஇ
+-==================-
+helpMessage1 = "™[ இहई╬۞¥ûDï۞╬हईஇ ]™\n   Jangan gunakan「 " + key + " 」di depannya\n\n" + \
+"™↔ " + key + "Blc\n" + \
+"™↔ " + key + "Ban:on\n" + \
+"™↔ " + key + "Unban:on\n" + \
+"™↔ " + key + "Ban「@」\n" + \
+"™↔ " + key + "Unban「@」\n" + \
+"™↔ " + key + "Talkban「@」\n" + \
+"™↔ " + key + "Untalkban「@」\n" + \
+"™↔ " + key + "Talkban:on\n" + \
+"™↔ " + key + "Untalkban:on\n" + \
+"™↔ " + key + "Banlist\n" + \
+"™↔ " + key + "Talkbanlist\n" + \
+"™↔ " + key + "Clearban\n" + \
+"™↔ " + key + "Refresh\n" + \
+-==================-
+இहई╬۞¥ûDï۞╬हईஇ
+-==================-
+"\n™[ இहई╬۞¥ûDï۞╬हईஇ ]™\n    Gunakan「 " + key + " 」di depannya\n\n" + \
+"™↔ " + key + "Cek sider\n" + \
+"™↔ " + key + "Cek spam\n" + \
+"™↔ " + key + "Cek pesan \n" + \
+"™↔ " + key + "Cek respon \n" + \
+"™↔ " + key + "Cek welcome\n" + \
+"™↔ " + key + "Set sider:「Text」\n" + \
+"™↔ " + key + "Set spam:「Text」\n" + \
+"™↔ " + key + "Set pesan:「Text」\n" + \
+"™↔ " + key + "Set respon:「Text」\n" + \
+"™↔ " + key + "Set welcome:「Text」\n" + \
+"™↔ " + key + "Myname:「Nama」\n" + \
+"™↔ " + key + "Bot1name:「Nama」\n" + \
+"™↔ " + key + "Bot2name:「Nama」\n" + \
+"™↔ " + key + "Bot3name:「Nama」\n" + \
+"™↔ " + key + "Bot1up「Kirim fotonya」\n" + \
+"™↔ " + key + "Bot2up「Kirim fotonya」\n" + \
+"™↔ " + key + "Bot3up「Kirim fotonya」\n" + \
+"™↔ " + key + "Gift:「Mid korban」「Jumlah」\n" + \
+"™↔ " + key + "Spam:「Mid korban」「Jumlah」\n" + \
+"\nKetik「 Refresh 」jika sudah\nmenggunakan command\n"
+-==================-
+இहई╬۞¥ûDï۞╬हईஇ
+-==================-
+"""
 KAC=[cl,ki,kk,kc,ks]
 #DEF1=[ki,kk,kc,ks,ka,kb,ko,ke,ku] Udah Ga Kepake(Boleh di apus)
 #DEF2=[cl,kk,kc,ks,ka,kb,ko,ke,ku] Udah Ga Kepake(Boleh di apus)
@@ -142,7 +149,46 @@ wait = {
     'leaveRoom':True,
     'timeline':True,
     'autoAdd':False,
-   
+    'message':"""тerima Kasih Sudah Menambahkan Aku Jadi Teman
+≫ Aku Ga Jawab PM Karna aq Cuma Bot Protect ≪
+≫ இहई╬۞¥ûDï۞╬हईஇ ≪
+
+Ready:
+
+≫ bot protect ≪
+≫ SelfBot ≪
+
+
+ṡȗƿƿȏяṭєԀ ɞʏ:
+  
+☆ இहई╬۞¥ûDï۞╬हईஇ ☆
+☆ Destroyers ☆
+
+
+Minat? Silahkan PM!
+Idline: http://line.me/ti/p/~yudi_std02""",
+    "lang":"JP",
+    "comment":"Thanks for add me",
+    "commentOn":False,
+    "commentBlack":{},
+    "wblack":False,
+    "dblack":False,
+    "clock":False,
+    "cName":" ",
+    "cName2":" ",
+    "cName3":" ",
+    "cName4":" ",
+    "cName5":" ",
+    "blacklist":{},
+    "wblacklist":False,
+    "dblacklist":False,
+    "Protectgr":True,
+    #"Protectjoin":True, # Ga Kepake(Yang Gabung langsung di kick :D) Udah  Udah ada Protect Cancell
+    "Protectcancl":True,
+    "protectionOn":True,
+    "atjointicket":True
+    }
+
 wait2 = {
     'readPoint':{},
     'readMember':{},
@@ -2798,4 +2844,19 @@ while True:
                 thread1.join()
     except Exception as e:
         pass
+
+    © 2018 GitHub, Inc.
+    Terms
+    Privacy
+    Security
+    Status
+    Help
+
+    Contact GitHub
+    API
+    Training
+    Shop
+    Blog
+    About
+
 
