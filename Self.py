@@ -33,7 +33,7 @@ ki2.login(token="Esngy5vCtMITaj020NAa.SD28EqyjtLBjPT144PdcQG.ZoMwy8ZoNUrB5dBEEfa
 ki2.loginResult()
 
 ki3 = CYBERTK.LINE()
-ki3.login(token="EsJMcXRaDmExzzr5zTI9.VfG2daMSMKOL78PxRGOi6q.RcWGMagc5K3+6LlDanR2YYPvhF8BYa33FNlQhqSYMMo=")
+ki3.login(token="EsYcd6Yu02TEYesDUl73.Z7tUqKO5oaEP2cnIzYreyW.TTcUpUNnGiy1gVEWukZCrIYTYk6lcGJoApOZ+39D3bE=")
 ki3.loginResult()
 
 ki4 = CYBERTK.LINE()
