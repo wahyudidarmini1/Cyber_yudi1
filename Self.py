@@ -305,8 +305,8 @@ translateMessage ="""
 
 「 jombang ʙᴏᴛ」
 """
-KAC=[vipro,ki,ki2,ki3,ki4,ki5,ki6,ki7,ki8,ki9,ki10]
-DEF=[vipro,ki,ki2,ki3,ki4,ki5,ki6,ki7,ki8,ki9,ki10]
+KAC=[vipro,ki,ki2,ki3,ki4,ki10]
+DEF=[vipro,ki,ki2,ki3,ki4,ki10]
 mid = vipro.getProfile().mid
 kimid = ki.getProfile().mid
 ki2mid = ki2.getProfile().mid
@@ -315,9 +315,9 @@ ki4mid = ki4.getProfile().mid
 ki10mid = ki10.getProfile().mid
 Smid = owner.getProfile().mid
 Bots=[mid,kimid,ki2mid,ki3mid,ki4mid,ki10mid,Smid,"u6b34b703cbc5fc83cd1e5b6832a05352"]
-admin=[mid,kimid,ki2mid,ki3mid,ki4mid,Smid,"u6b34b703cbc5fc83cd1e5b6832a05352","u0d12b1262f4a73b199e39297d91b81db","u13181e91af18f3b9aa4ce7d5a5f81653","ud44f0da04a7ed7b6142302071316bef8","ub139a3d989ac57b879c51b75ecb80dcf"]
+admin=[mid,kimid,ki2mid,ki3mid,ki4mid,Smid,"u6b34b703cbc5fc83cd1e5b6832a05352","ue14c0daed8eee7562dffe709c6d6216e","u13181e91af18f3b9aa4ce7d5a5f81653","ud44f0da04a7ed7b6142302071316bef8","ub139a3d989ac57b879c51b75ecb80dcf"]
 creator=["u6b34b703cbc5fc83cd1e5b6832a05352"]
-admsa=["u6b34b703cbc5fc83cd1e5b6832a05352"]
+admsa=["u6b34b703cbc5fc83cd1e5b6832a05352","ue14c0daed8eee7562dffe709c6d6216e"]
 
 readOpen = codecs.open("st2__b.json","r","utf-8")
 read = json.load(readOpen)
