@@ -358,36 +358,6 @@ backup.displayName = contact.displayName
 backup.statusMessage = contact.statusMessage
 backup.pictureStatus = contact.pictureStatus
 
-contact = ki5.getProfile()
-backup = ki5.getProfile()
-backup.displayName = contact.displayName
-backup.statusMessage = contact.statusMessage
-backup.pictureStatus = contact.pictureStatus
-
-contact = ki6.getProfile()
-backup = ki6.getProfile()
-backup.displayName = contact.displayName
-backup.statusMessage = contact.statusMessage
-backup.pictureStatus = contact.pictureStatus
-
-contact = ki7.getProfile()
-backup = ki7.getProfile()
-backup.displayName = contact.displayName
-backup.statusMessage = contact.statusMessage
-backup.pictureStatus = contact.pictureStatus
-
-contact = ki8.getProfile()
-backup = ki8.getProfile()
-backup.displayName = contact.displayName
-backup.statusMessage = contact.statusMessage
-backup.pictureStatus = contact.pictureStatus
-
-contact = ki9.getProfile()
-backup = ki9.getProfile()
-backup.displayName = contact.displayName
-backup.statusMessage = contact.statusMessage
-backup.pictureStatus = contact.pictureStatus
-
 wait = {
     'contact':False,
     'autoJoin':True,
