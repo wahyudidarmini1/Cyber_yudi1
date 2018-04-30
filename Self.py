@@ -17,31 +17,31 @@ import time,random,sys,json,codecs,threading,glob,re
 from bs4 import BeautifulSoup
 from threading import Thread
 owner = CYBERTK.LINE() #Akun Utama
-owner.login(token="Es78bnERjKNbEJLI0CP2.AZs3a8Vf+ipnhLTOmQbtuG.AU2/L/5P4IAWRrmZOeOzFsUIXQ19jlsE+stzKhK+sOU=")
+owner.login(token="EsQTQ8MGmUKyeucJUAY2.AZs3a8Vf+ipnhLTOmQbtuG.XdQgWSA64WcANi594PW7/QFxeSB6zy2Y+WRvNw1S44A=")
 owner.loginResult()
     
 vipro = CYBERTK.LINE()
-vipro.login(token="EswXitR5bFB1Q9dF2MHb.drkXjI9kC7gz45kx2rUb2W.O/DD36aXIaDFhq+9Xo0nNod8V5kYukzf6H0ppRyB+9Q=")
+vipro.login(token="EsxmyceQORnbDSNHfafe.4uWnRTJU51yT+/CjXTyHBG.1QX6BWfKWj3tb99Oq3qJ2ob7KbJiwlcs3nUnWuMU4tQ=")
 vipro.loginResult()
 
 ki = CYBERTK.LINE()
-ki.login(token="EsAT5kyY1TNYKD1TVRk3.eXGEKA8y87MQtoFvPFGwuW.1DnxoTlPr1ILLFX434baggg5zhPQ3VmpORJ5C0jPGuk=")
+ki.login(token="Es40yLFUTANU8lFvN2Lf.StMJ2yMSv7H5XrT17lGnZW.kEyscUBZhkTetrYq3H0q0SLXC21rYuzgIrMIeWDz+GA=")
 ki.loginResult()
 
 ki2= CYBERTK.LINE()
-ki2.login(token="EsXQKI9b4s7cuLspPzL8.1e8nOeP/17yuiWiheXA//a.qf5kzDNsT6xt8aLGApl8bsxTT1tECPXmf6VCq0Xc5pg=")
+ki2.login(token="Esngy5vCtMITaj020NAa.SD28EqyjtLBjPT144PdcQG.ZoMwy8ZoNUrB5dBEEfafy/z9px7qrEnn0gpQSq3cZ8U=")
 ki2.loginResult()
 
 ki3 = CYBERTK.LINE()
-ki3.login(token="EsqqFxpV0wbhpqm119Qf.StMJ2yMSv7H5XrT17lGnZW.5y/gFUTpJASiv0SPf1fRU6e9iu9aBWYr6xpzfxlNC+o=")
+ki3.login(token="EsJMcXRaDmExzzr5zTI9.VfG2daMSMKOL78PxRGOi6q.RcWGMagc5K3+6LlDanR2YYPvhF8BYa33FNlQhqSYMMo=")
 ki3.loginResult()
 
 ki4 = CYBERTK.LINE()
-ki4.login(token="EsRTnS2XJvUseJVHj2Ua.SD28EqyjtLBjPT144PdcQG.cpDFMsy5pUKzJLzxpHVYu6AzHfVf7KZA1qKw/42/nW4=")
+ki4.login(token="EsnMKi93UnuOpfaG3f06.u5E0qHumGolsyebggFHFzG.HmAuW68/wD/4mg1WkZksDy8M6GJ+Egt8THruRrkQHh8=")
 ki4.loginResult()
 
 ki10 = CYBERTK.LINE() #Ghost
-ki10.login(token="EsYG5inLFlL4x1xgIyv1.hSPlQK0sOlldo8W2iFcJWq.+EM/UrNqR2ihNEkmgt4dQWUOL8H0TOPzAp5LbpGJN6c=")
+ki10.login(token="EsUd9bVNe0qoxbmdFHff.0Gxc/M3RVqR4nYkPcDjtZW.zzb4FOVPFChQjkp79eYrRX4T93EZVwv4qlbb5dDWOac=")
 ki10.loginResult()
 print "═══「wahyudi login success」═══"
 reload(sys)
