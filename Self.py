@@ -46,264 +46,264 @@ ki10.loginResult()
 print "═══「wahyudi login success」═══"
 reload(sys)
 sys.setdefaultencoding('utf-8')
-helpMenu="""╔═══「 jombang ʙᴏᴛ」═══╗
-╠╦═══════════════
-║║🔰 Me
-║║🔰 Add
-║║🔰 Gift
-║║🔰 Spam gift️
-║║🔰 Cn 「 text」
-║║🔰 Clockname 「 text」
-║║🔰 TL:「 text」
-║║🔰 Ban:「 mid」
-║║🔰 Unban:「 mid」
-║║🔰 Bl:on
-║║🔰 Unbl:on
-║║🔰 Mcheck
-║║🔰 Mybio:
-║║🔰 Mybots
-║║🔰 Mymid
-║║🔰 Mygroups
-║║🔰 Group id
-║║🔰 Message set:「 text」
-║║🔰 Message confirm
-║║🔰 Msg add:「 text」
-║║🔰 Com set:「 text」
-║║🔰 Comment
-║║🔰 Comban/del/cek
-║║🔰 Help set:「 text」
-║║🔰 Change
-║║🔰 Gn 「 text」
-║║🔰 Clink/Curl
-║║🔰 Kick:「 mid」
-║║🔰 Invite:「 mid」
-║║🔰 Creator
-║║🔰 Gcancel:「 jumlah」
-║║🔰 Gcancelall
-║║🔰 Ginfo
-║║🔰 Cctv/Ciduk
-║║🔰 Glink
-║║🔰 Spam on/off
-║║🔰 Gurl
-║║🔰 Clink
-║║🔰 Blocklist
-║║🔰 Banlist
-║║🔰 Update
-║║🔰 Creator
-║║🔰 Sc:「 mid」
-║║🔰 Ban "@"
-║║🔰 Unban "@"
-║║🔰 Sc @
-║║🔰 Nuke
-║║🔰 Backup
-║║🔰 Tagall
-║║🔰 Kick@mbl 
-║║🔰 Reinvite
-║║🔰 Conban
-║║🔰 Clearban
-║║🔰 Gid
-║║🔰 Grupname
-║║🔰 Lurk on/off
-║║🔰 Lurkers
-║║🔰 Wc️
-║║🔰 Sp
-║║🔰 stafflist
-║║🔰 Reboot
-║║🔰 Leaveallgroup
-║║🔰 Pmfavorite
-║║🔰 Broken
-╠╩═══════════════
-╚═══「 jombang ʙᴏᴛ」═══╝
+helpMenu="""「 jombang ʙᴏᴛ」
+
+🔰 Me
+🔰 Add
+🔰 Gift
+🔰 Spam gift️
+🔰 Cn 「 text」
+🔰 Clockname 「 text」
+🔰 TL:「 text」
+🔰 Ban:「 mid」
+🔰 Unban:「 mid」
+🔰 Bl:on
+🔰 Unbl:on
+🔰 Mcheck
+🔰 Mybio:
+🔰 Mybots
+🔰 Mymid
+🔰 Mygroups
+🔰 Group id
+🔰 Message set:「 text」
+🔰 Message confirm
+🔰 Msg add:「 text」
+🔰 Com set:「 text」
+🔰 Comment
+🔰 Comban/del/cek
+🔰 Help set:「 text」
+🔰 Change
+🔰 Gn 「 text」
+🔰 Clink/Curl
+🔰 Kick:「 mid」
+🔰 Invite:「 mid」
+🔰 Creator
+🔰 Gcancel:「 jumlah」
+🔰 Gcancelall
+🔰 Ginfo
+🔰 Cctv/Ciduk
+🔰 Glink
+🔰 Spam on/off
+🔰 Gurl
+🔰 Clink
+🔰 Blocklist
+🔰 Banlist
+🔰 Update
+🔰 Creator
+🔰 Sc:「 mid」
+🔰 Ban "@"
+🔰 Unban "@"
+🔰 Sc @
+🔰 Nuke
+🔰 Backup
+🔰 Tagall
+🔰 Kick@mbl 
+🔰 Reinvite
+🔰 Conban
+🔰 Clearban
+🔰 Gid
+🔰 Grupname
+🔰 Lurk on/off
+🔰 Lurkers
+🔰 Wc️
+🔰 Sp
+🔰 stafflist
+🔰 Reboot
+🔰 Leaveallgroup
+🔰 Pmfavorite
+🔰 Broken
+
+「 jombang ʙᴏᴛ」
   """
-helpMessage="""╔═══「 jombang ʙᴏᴛ」═══╗
-╠╦═══════════════
-║║🔵 「Menu」
-║║🔵 「Media」
-║║🔵 「Translate」
-║║🔵 「Self」
-║║🔵 「Settings」
-║║🔵 「Set」
-╠╩═══════════════
-╚═══「 jombang ʙᴏᴛ」═══╝
+helpMessage="""「 jombang ʙᴏᴛ」
+
+🔵 「Menu」
+🔵 「Media」
+🔵 「Translate」
+🔵 「Self」
+🔵 「Settings」
+🔵 「Set」
+
+「 jombang ʙᴏᴛ」
 """  
-helpMedia="""╔═══「 jombang ʙᴏᴛ」═══╗
-╠╦═══════════════
-║║🔘 Youtube 「 text」
-║║🔘 Youtubesearch 「 user」
-║║🔘 Ig 「 name」
-║║🔘 Gimage 
-║║🔘 Image 「 text」
-║║🔘 Google 「 text」
-║║🔘 Micadd @
-║║🔘 Micdel @
-║║🔘 Miclist
-║║🔘 Picturl @
-║║🔘 Coverurl @
-║║🔘 Copy @
-║║🔘 Getname @
-║║🔘 Getinfo @
-║║🔘 pict @️
-║║🔘 Getcontact @
-║║🔘 Getvid @
-║║🔘 Getmid @
-║║🔘 Copy @     
-║║🔘 Recopy
-║║🔘 Getcover @    
-║║🔘 Getbio @
-║║🔘 Getinfo @
-║║🔘 youinfo @
-║║🔘 info 「 mid」
-║║🔘 Contact 「 mid」
-║║🔘 Id 「 id line」
-║║🔘 Memlist
-║║🔘 Setimage:
-║║🔘 Papimage
-║║🔘 Setvideo:
-║║🔘 Papvideo
-║║🔘 Checkdate
-║║🔘 Myname
-║║🔘 Mybio
-║║🔘 Mypict
-║║🔘 Myvid
-║║🔘 Urlpict
-║║🔘 Mycover
-║║🔘 Urlcover
-║║🔘 Smule 「 id smule」
-║║🔘 Time
-║║🔘 Imagetxt 「 text」
-║║🔘 Playstore 「 text」
-║║🔘 Twitter 「 text」
-║║🔘 Github 「 text」
-║║🔘 Facebook 「 text」
-║║🔘 Wikipedia 「 text」
-║║🔘 Checkdate 「 ttl」
-╠╩═══════════════
-╚═══「 jombang ʙᴏᴛ」═══╝
+helpMedia="""「 jombang ʙᴏᴛ」
+
+🔘 Youtube 「 text」
+🔘 Youtubesearch 「 user」
+🔘 Ig 「 name」
+🔘 Gimage 
+🔘 Image 「 text」
+🔘 Google 「 text」
+🔘 Micadd @
+🔘 Micdel @
+🔘 Miclist
+🔘 Picturl @
+🔘 Coverurl @
+🔘 Copy @
+🔘 Getname @
+🔘 Getinfo @
+🔘 pict @️
+🔘 Getcontact @
+🔘 Getvid @
+🔘 Getmid @
+🔘 Copy @     
+🔘 Recopy
+🔘 Getcover @    
+🔘 Getbio @
+🔘 Getinfo @
+🔘 youinfo @
+🔘 info 「 mid」
+🔘 Contact 「 mid」
+🔘 Id 「 id line」
+🔘 Memlist
+🔘 Setimage:
+🔘 Papimage
+🔘 Setvideo:
+🔘 Papvideo
+🔘 Checkdate
+🔘 Myname
+🔘 Mybio
+🔘 Mypict
+🔘 Myvid
+🔘 Urlpict
+🔘 Mycover
+🔘 Urlcover
+🔘 Smule 「 id smule」
+🔘 Time
+🔘 Imagetxt 「 text」
+🔘 Playstore 「 text」
+🔘 Twitter 「 text」
+🔘 Github 「 text」
+🔘 Facebook 「 text」
+🔘 Wikipedia 「 text」
+🔘 Checkdate 「 ttl」
+
+「 jombang ʙᴏᴛ」
 """
-helpFun = """╔═══「 jombang ʙᴏᴛ」═══╗
-╠╦═══════════════
-║║🔰 sider:「 text」
-║║🔰 tagme:「 text」
-║║🔰 welcome:「 text」
-║║🔰 left:「 text」
-║║🔰 message set:「 text」
-║║🔰 cekresponse
-╠╩═══════════════
-╚═══「 jombang ʙᴏᴛ」═══╝
+helpFun = """「 jombang ʙᴏᴛ」
+
+🔰 sider:「 text」
+🔰 tagme:「 text」
+🔰 welcome:「 text」
+🔰 left:「 text」
+🔰 message set:「 text」
+🔰 cekresponse
+
+「 jombang ʙᴏᴛ」
 """
 helpself="""
-╔═══「 jombang ʙᴏᴛ」═══╗
-╠╦═══════════════
-║║💠 Fuck1/10 "@"
-║║💠 Kick1/10 "@"
-║║💠 All mid
-║║💠 Reinvite
-║║💠 B1-9 mid
-║║💠 B1-9name 「 text」
-║║💠 B1-9
-║║💠 B1-9 gift
-║║💠 B1-9 in
-║║💠 B1-9 bye
-║║💠 Allgift
-║║💠 Spam gift️
-║║💠 Botcopy
-║║💠 Botbackup
-║║💠 Botpict
-║║💠 Botcover
-║║💠 Allname 「 nama」
-║║💠 Allbio 「 status」
-║║💠 Botbyeall  
-╠╩═══════════════
-╚═══「 jombang ʙᴏᴛ」═══╝
+「 jombang ʙᴏᴛ」
+
+💠 Fuck1/10 "@"
+💠 Kick1/10 "@"
+💠 All mid
+💠 Reinvite
+💠 B1-9 mid
+💠 B1-9name 「 text」
+💠 B1-9
+💠 B1-9 gift
+💠 B1-9 in
+💠 B1-9 bye
+💠 Allgift
+💠 Spam gift️
+💠 Botcopy
+💠 Botbackup
+💠 Botpict
+💠 Botcover
+💠 Allname 「 nama」
+💠 Allbio 「 status」
+💠 Botbyeall  
+
+「 jombang ʙᴏᴛ」
   """
-helpset="""╔═══「 jombang ʙᴏᴛ」═══╗
-╠╦═══════════════
-║║🔶 Ban:on/Unbl:on
-║║🔶 Contact:on/off
-║║🔶 Add:on/off
-║║🔶 Join:on/off
-║║🔶 Leave:on/off
-║║🔶 Share:on/off
-║║🔶 Com:on/off
-║║🔶 Clock:on/off
-║║🔶 Respon:on/off
-║║🔶 Stickertag:on/off
-║║🔶 Welcome:on/off
-║║🔶 Left:on/off
-║║🔶 Sider:on/off
-║║🔶 Notag:on/off
-║║🔶 Mimic on/off
-║║🔶 Simsimi:on/off
-║║🔶 Read:0n/off
-║║🔶 Like:on/off
-║║🔶 Runtime
-║╠═「sᴇᴛᴛɪɴɢ ɢʀᴏᴜᴘ」═
-║║🔶 Pro:on/off
-║║🔶 Prolink:on/off
-║║🔶 Proinvite:on/off
-║║🔶 Procancel:on/off
-║║🔶 Namelock:on/off
-║║🔶 Projoin:on/off
-║║🔶 Ghost:on/off
-║║🔶 Allprotect:on/off
-╠╩═══════════════
-╚═══「 jombang ʙᴏᴛ」═══╝
+helpset="""「 jombang ʙᴏᴛ」
+
+🔶 Ban:on/Unbl:on
+🔶 Contact:on/off
+🔶 Add:on/off
+🔶 Join:on/off
+🔶 Leave:on/off
+🔶 Share:on/off
+🔶 Com:on/off
+🔶 Clock:on/off
+🔶 Respon:on/off
+🔶 Stickertag:on/off
+🔶 Welcome:on/off
+🔶 Left:on/off
+🔶 Sider:on/off
+🔶 Notag:on/off
+🔶 Mimic on/off
+🔶 Simsimi:on/off
+🔶 Read:0n/off
+🔶 Like:on/off
+🔶 Runtime
+「sᴇᴛᴛɪɴɢ ɢʀᴏᴜᴘ」═
+🔶 Pro:on/off
+🔶 Prolink:on/off
+🔶 Proinvite:on/off
+🔶 Procancel:on/off
+🔶 Namelock:on/off
+🔶 Projoin:on/off
+🔶 Ghost:on/off
+🔶 Allprotect:on/off
+
+「 jombang ʙᴏᴛ」
 """
 translateMessage ="""
-╔═══「 jombang ʙᴏᴛ」═══╗
-╠╦═══════════════
-║║🔴 Afrika/
-║║🔴 Albanian/
-║║🔴 Arab/
-║║🔴 Armenian/
-║║🔴 Bengali/
-║║🔴 Catalan/
-║║🔴 Chinese/
-║║🔴 Croatian/
-║║🔴 Czech/
-║║🔴 Danish/
-║║🔴 Dutch/
-║║🔴 English/
-║║🔴 Australia/
-║║🔴 Uk/
-║║🔴 Us/
-║║🔴 Esperanto/
-║║🔴 Finnish/
-║║🔴 French/
-║║🔴 German/
-║║🔴 Greek/
-║║🔴 Hindi/
-║║🔴 Hungarian/
-║║🔴 Icelandic/
-║║🔴 Indonesia/
-║║🔴 Italia/
-║║🔴 Japanese/
-║║🔴 Khmer/
-║║🔴 Korean/
-║║🔴 Latin/
-║║🔴 Latvian/
-║║🔴 Macedonian/
-║║🔴 Malaysia/
-║║🔴 Norwegian/
-║║🔴 Polish/
-║║🔴 Portuguese/
-║║🔴 Romanian/
-║║🔴 Russian/
-║║🔴 Sarbian/
-║║🔴 Sinhala/
-║║🔴 Slovak/
-║║🔴 Spanish/
-║║🔴 Spain/
-║║🔴 Swadhili/
-║║🔴 Swedish/
-║║🔴 Tamil/
-║║🔴 Thai/
-║║🔴 Turki/
-║║🔴 Ukrainian/
-║║🔴 Vietnam/
-║║🔴 Welsh/
-╠╩═══════════════
-╚═══「 jombang ʙᴏᴛ」═══╝
+「 jombang ʙᴏᴛ」
+
+🔴 Afrika/
+🔴 Albanian/
+🔴 Arab/
+🔴 Armenian/
+🔴 Bengali/
+🔴 Catalan/
+🔴 Chinese/
+🔴 Croatian/
+🔴 Czech/
+🔴 Danish/
+🔴 Dutch/
+🔴 English/
+🔴 Australia/
+🔴 Uk/
+🔴 Us/
+🔴 Esperanto/
+🔴 Finnish/
+🔴 French/
+🔴 German/
+🔴 Greek/
+🔴 Hindi/
+🔴 Hungarian/
+🔴 Icelandic/
+🔴 Indonesia/
+🔴 Italia/
+🔴 Japanese/
+🔴 Khmer/
+🔴 Korean/
+🔴 Latin/
+🔴 Latvian/
+🔴 Macedonian/
+🔴 Malaysia/
+🔴 Norwegian/
+🔴 Polish/
+🔴 Portuguese/
+🔴 Romanian/
+🔴 Russian/
+🔴 Sarbian/
+🔴 Sinhala/
+🔴 Slovak/
+🔴 Spanish/
+🔴 Spain/
+🔴 Swadhili/
+🔴 Swedish/
+🔴 Tamil/
+🔴 Thai/
+🔴 Turki/
+🔴 Ukrainian/
+🔴 Vietnam/
+🔴 Welsh/
+
+「 jombang ʙᴏᴛ」
 """
 KAC=[vipro,ki,ki2,ki3,ki4,ki5,ki6,ki7,ki8,ki9,ki10]
 DEF=[vipro,ki,ki2,ki3,ki4,ki5,ki6,ki7,ki8,ki9,ki10]
