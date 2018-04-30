@@ -18,23 +18,23 @@ from bs4 import BeautifulSoup
 from threading import Thread
 
 cl = CYBERTK.LINE() #wahyudi
-cl.login(token='Erbw8FkQTsCSxWtKItOa.SD28EqyjtLBjPT144PdcQG.MRncp08pfgFL2ZQ080cJHVqAFkfPRtD6CYichKXOj6s=')
+cl.login(token='EsQTQ8MGmUKyeucJUAY2.AZs3a8Vf+ipnhLTOmQbtuG.XdQgWSA64WcANi594PW7/QFxeSB6zy2Y+WRvNw1S44A=')
 cl.loginResult()
 
 ki = CYBERTK.LINE() #darmini
-ki.login(token='Er0Kj659SMB1eHHMP4l5.s0GaOrjP6Vfn98NxODhvLq.dVskwm24t+N1FrVjrMNrrDB4WCJNzjUDqKnQHPKyjck=')
+ki.login(token='EsxmyceQORnbDSNHfafe.4uWnRTJU51yT+/CjXTyHBG.1QX6BWfKWj3tb99Oq3qJ2ob7KbJiwlcs3nUnWuMU4tQ=')
 ki.loginResult()
 
 kk = CYBERTK.LINE() #gito
-kk.login(token='Erfr5XQAVjKIXwfYjT33.Z7tUqKO5oaEP2cnIzYreyW.mifl520WPj4RNQ7i40LVxjVm6sIFaLK092xFHbrv2+s=')
+kk.login(token='Es40yLFUTANU8lFvN2Lf.StMJ2yMSv7H5XrT17lGnZW.kEyscUBZhkTetrYq3H0q0SLXC21rYuzgIrMIeWDz+GA=')
 kk.loginResult()
 
 kc = CYBERTK.LINE() #adam
-kc.login(token='ErbCGFJrfizHGRMwuCdf.0Gxc/M3RVqR4nYkPcDjtZW.zJruRkwA9G4MJ65S4qDZD2jGglGU4JH9T3y2oLjt7uM=')
+kc.login(token='Esngy5vCtMITaj020NAa.SD28EqyjtLBjPT144PdcQG.ZoMwy8ZoNUrB5dBEEfafy/z9px7qrEnn0gpQSq3cZ8U=')
 kc.loginResult()
 
 ks = CYBERTK.LINE() #dimas
-ks.login(token='ErVN3iCCCVGqLmMh37u9.VfG2daMSMKOL78PxRGOi6q.joiZOkRzJMFaIdCw8fc05/MTTUDw6jFH7SynZMohCAo=')
+ks.login(token='EsJMcXRaDmExzzr5zTI9.VfG2daMSMKOL78PxRGOi6q.RcWGMagc5K3+6LlDanR2YYPvhF8BYa33FNlQhqSYMMo=')
 ks.loginResult()
 
 print "login success plak"
