@@ -984,8 +984,8 @@ def bot(op):
                                 except:
                                     try:
                                         G = ki4.getGroup(op.param1)
-                                        except:
-                                            pass
+                                          except:
+                                              pass
                     G.name = wait['pro_name'][op.param1]
                     try:
                         vipro.updateGroup(G)
@@ -1001,8 +1001,8 @@ def bot(op):
                                 except:
                                     try:
                                         ki4.updateGroup(G)
-                                        except:
-                                            pass
+                                          except:
+                                              pass
                     if op.param2 in Bots:
                         pass
                     else:
@@ -1017,8 +1017,8 @@ def bot(op):
                                 except:
                                     try:
                                         ki4.kickoutFromGroup(op.param1,[op.param2])
-                                        except:
-                                            pass
+                                          except:
+                                              pass
         if op.type == 26:
             msg = op.message
             if msg.from_ in mimic["target"] and mimic["status"] == True and mimic["target"][msg.from_] == True:
